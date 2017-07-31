@@ -25,23 +25,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         
         self.rootNavigationController = UINavigationController(rootViewController: RootViewController())
-        self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar01_normal"), selectedImage: UIImage(named: "tabbar01_selected"))
+        self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
         self.moreNavigationController = UINavigationController(rootViewController: MoreViewController())
-        self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "tabbar01_normal"), selectedImage: UIImage(named: "tabbar01_selected"))
+        self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "icon_tabbar_onsite"), selectedImage: UIImage(named: "icon_tabbar_onsite_selected"))
 
         self.homeTabBarController = UITabBarController()
         self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.moreNavigationController!]
         
         // 设置字体颜色
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for: UIControlState.selected)
+        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)
+        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.black], for: UIControlState.selected)
         // 设置字体大小
-        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 10.0)], for: UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 11.0)], for: UIControlState.normal)
         // 设置字体偏移
-        UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, -5.0)
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, 0.0)
         // 设置图标选中时颜色
-        UITabBar.appearance().tintColor = UIColor.red
+        UITabBar.appearance().tintColor = UIColor.black
         
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()
