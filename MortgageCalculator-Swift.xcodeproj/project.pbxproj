@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
+		53A4EF2A1F2ED46B00EF58EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF291F2ED46B00EF58EB /* ViewController.swift */; };
+		53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */; };
+		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
+		53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53A4EF291F2ED46B00EF58EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53A4EF2C1F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53A4EF311F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53A4EF331F2ED46B00EF58EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53A4EF211F2ED46B00EF58EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53A4EF1B1F2ED46B00EF58EB = {
+			isa = PBXGroup;
+			children = (
+				53A4EF261F2ED46B00EF58EB /* MortgageCalculator-Swift */,
+				53A4EF251F2ED46B00EF58EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53A4EF251F2ED46B00EF58EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53A4EF261F2ED46B00EF58EB /* MortgageCalculator-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */,
+				53A4EF291F2ED46B00EF58EB /* ViewController.swift */,
+				53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */,
+				53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */,
+				53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */,
+				53A4EF331F2ED46B00EF58EB /* Info.plist */,
+			);
+			path = "MortgageCalculator-Swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53A4EF231F2ED46B00EF58EB /* MortgageCalculator-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A4EF361F2ED46B00EF58EB /* Build configuration list for PBXNativeTarget "MortgageCalculator-Swift" */;
+			buildPhases = (
+				53A4EF201F2ED46B00EF58EB /* Sources */,
+				53A4EF211F2ED46B00EF58EB /* Frameworks */,
+				53A4EF221F2ED46B00EF58EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MortgageCalculator-Swift";
+			productName = "MortgageCalculator-Swift";
+			productReference = 53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53A4EF1C1F2ED46B00EF58EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.longdai;
+				TargetAttributes = {
+					53A4EF231F2ED46B00EF58EB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6JC78V6G2N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 53A4EF1F1F2ED46B00EF58EB /* Build configuration list for PBXProject "MortgageCalculator-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53A4EF1B1F2ED46B00EF58EB;
+			productRefGroup = 53A4EF251F2ED46B00EF58EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53A4EF231F2ED46B00EF58EB /* MortgageCalculator-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53A4EF221F2ED46B00EF58EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */,
+				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
+				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53A4EF201F2ED46B00EF58EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4EF2A1F2ED46B00EF58EB /* ViewController.swift in Sources */,
+				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4EF2C1F2ED46B00EF58EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4EF311F2ED46B00EF58EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53A4EF341F2ED46B00EF58EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53A4EF351F2ED46B00EF58EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53A4EF371F2ED46B00EF58EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JC78V6G2N;
+				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.longdai.MortgageCalculator-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53A4EF381F2ED46B00EF58EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JC78V6G2N;
+				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.longdai.MortgageCalculator-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53A4EF1F1F2ED46B00EF58EB /* Build configuration list for PBXProject "MortgageCalculator-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A4EF341F2ED46B00EF58EB /* Debug */,
+				53A4EF351F2ED46B00EF58EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A4EF361F2ED46B00EF58EB /* Build configuration list for PBXNativeTarget "MortgageCalculator-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A4EF371F2ED46B00EF58EB /* Debug */,
+				53A4EF381F2ED46B00EF58EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53A4EF1C1F2ED46B00EF58EB /* Project object */;
+}
