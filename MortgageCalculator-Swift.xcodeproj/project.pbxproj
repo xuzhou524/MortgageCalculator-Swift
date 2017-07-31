@@ -302,6 +302,7 @@
 				53A4EF381F2ED46B00EF58EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
