@@ -6,6 +6,7 @@
 #*.xcworkspacedata
 build/
 .DS_Store
+*.xcuserstate
 ._.*
 xcuserdata/
 DerivedData/
