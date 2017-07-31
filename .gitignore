@@ -4,7 +4,6 @@
 #*.xcbkptlist
 #*.xcscheme
 #*.xcworkspacedata
-*.xcuserstate
 build/
 .DS_Store
 ._.*
