@@ -1,5 +1,5 @@
 //
-//  RootViewController.swift
+//  MoreViewController.swift
 //  MortgageCalculator-Swift
 //
 //  Created by gozap on 2017/7/31.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class MoreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "首页"
-        self.view.backgroundColor = UIColor.white;
-
+        self.navigationItem.title = "更多"
+        self.view.backgroundColor = UIColor.gray;
+        
         // Do any additional setup after loading the view.
     }
 

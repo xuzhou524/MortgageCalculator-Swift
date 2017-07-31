@@ -12,14 +12,39 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var rootNavigationController: UINavigationController?
+    var moreNavigationController: UINavigationController?
+    
+    var homeTabBarController: UITabBarController?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow()
         self.window?.frame = UIScreen.main.bounds
         self.window?.backgroundColor = UIColor.white
+        
+        self.rootNavigationController = UINavigationController(rootViewController: RootViewController())
+        self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar01_normal"), selectedImage: UIImage(named: "tabbar01_selected"))
+
+        self.moreNavigationController = UINavigationController(rootViewController: MoreViewController())
+        self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "tabbar01_normal"), selectedImage: UIImage(named: "tabbar01_selected"))
+
+        self.homeTabBarController = UITabBarController()
+        self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.moreNavigationController!]
+        
+        // 设置字体颜色
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for: UIControlState.selected)
+        // 设置字体大小
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 10.0)], for: UIControlState.normal)
+        // 设置字体偏移
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, -5.0)
+        // 设置图标选中时颜色
+        UITabBar.appearance().tintColor = UIColor.red
+        
+        self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = RootViewController()
         
         return true
     }

@@ -12,6 +12,7 @@
 		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
 		53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */; };
 		53A4EF3A1F2ED9CB00EF58EB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF391F2ED9CB00EF58EB /* RootViewController.swift */; };
+		53A4EF441F2EDAE300EF58EB /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF431F2EDAE300EF58EB /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		53A4EF311F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53A4EF331F2ED46B00EF58EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A4EF391F2ED9CB00EF58EB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		53A4EF431F2EDAE300EF58EB /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */,
 				53A4EF391F2ED9CB00EF58EB /* RootViewController.swift */,
+				53A4EF431F2EDAE300EF58EB /* MoreViewController.swift */,
 				53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */,
 				53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */,
 				53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A4EF441F2EDAE300EF58EB /* MoreViewController.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				53A4EF3A1F2ED9CB00EF58EB /* RootViewController.swift in Sources */,
 			);
