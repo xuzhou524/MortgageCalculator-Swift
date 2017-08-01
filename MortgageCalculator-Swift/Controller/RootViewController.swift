@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class RootViewController: UIViewController {
     
@@ -16,11 +17,16 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "首页"
         self.view.backgroundColor = UIColor.white;
+        self.navigationController?.navigationBar.isTranslucent = false;
 
         self.rootSegmentedVC = UISegmentedControl(items: ["我的","你的","他的"])
-        self.rootSegmentedVC?.frame = CGRect(x: 10, y: 100, width: 300, height: 50)
         self.view.addSubview(self.rootSegmentedVC!)
-        
+        self.rootSegmentedVC?.snp.makeConstraints { (make) -> Void in
+            make.centerX.equalTo(self.view)
+            make.top.equalTo(self.view).offset(10)
+            make.height.equalTo(35)
+            make.width.equalTo(300)
+        }
     }
 
     override func didReceiveMemoryWarning() {
