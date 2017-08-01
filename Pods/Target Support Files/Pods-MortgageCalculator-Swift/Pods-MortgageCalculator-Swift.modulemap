@@ -1,0 +1,6 @@
+framework module Pods_MortgageCalculator_Swift {
+  umbrella header "Pods-MortgageCalculator-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
