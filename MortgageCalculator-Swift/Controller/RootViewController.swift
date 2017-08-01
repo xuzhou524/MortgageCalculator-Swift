@@ -21,6 +21,7 @@ class RootViewController: UIViewController {
 
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
         self.rootSegmentedVC?.tintColor = UIColor.black
+        
         self.rootSegmentedVC?.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints { (make) -> Void in
