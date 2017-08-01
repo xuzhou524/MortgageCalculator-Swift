@@ -9,13 +9,18 @@
 import UIKit
 
 class RootViewController: UIViewController {
+    
+    var rootSegmentedVC : UISegmentedControl?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "首页"
         self.view.backgroundColor = UIColor.white;
 
-        // Do any additional setup after loading the view.
+        self.rootSegmentedVC = UISegmentedControl(items: ["我的","你的","他的"])
+        self.rootSegmentedVC?.frame = CGRect(x: 10, y: 100, width: 300, height: 50)
+        self.view.addSubview(self.rootSegmentedVC!)
+        
     }
 
     override func didReceiveMemoryWarning() {
