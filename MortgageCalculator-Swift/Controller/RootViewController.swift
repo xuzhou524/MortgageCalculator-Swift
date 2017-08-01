@@ -19,16 +19,25 @@ class RootViewController: UIViewController {
         self.view.backgroundColor = UIColor.white;
         self.navigationController?.navigationBar.isTranslucent = false;
 
-        self.rootSegmentedVC = UISegmentedControl(items: ["我的","你的","他的"])
+        self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
+        self.rootSegmentedVC?.tintColor = UIColor.black
+        self.rootSegmentedVC?.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints { (make) -> Void in
-            make.centerX.equalTo(self.view)
             make.top.equalTo(self.view).offset(10)
+            make.left.equalTo(self.view).offset(15)
+            make.right.equalTo(self.view).offset(-15)
             make.height.equalTo(35)
-            make.width.equalTo(300)
         }
+        self.rootSegmentedVC?.addTarget(self, action: #selector(RootViewController.segmentDidchange), for: .valueChanged)
     }
-
+    
+    func segmentDidchange(segmented:UISegmentedControl){
+        
+        print(segmented.selectedSegmentIndex)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
