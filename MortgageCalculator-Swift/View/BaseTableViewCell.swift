@@ -28,9 +28,10 @@ class BaseTableViewCell: UITableViewCell {
         self.sebView()
     }
     func sebView() ->Void{
-        
+        self.selectionStyle = .none
         self.titleLabel = UILabel()
         self.titleLabel?.text = "贷款金额（万元）";
+        self.titleLabel?.font = XZClient.XZFont2(size: 16)
         self.contentView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)
@@ -38,7 +39,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.bgTextFieldView = UIView()
-        self.bgTextFieldView?.layer.borderWidth = 1
+        self.bgTextFieldView?.layer.borderWidth = 0.5
         self.bgTextFieldView?.layer.borderColor = UIColor.black.cgColor
         self.bgTextFieldView?.layer.cornerRadius = 5
         self.contentView.addSubview(self.bgTextFieldView!)
@@ -50,6 +51,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.textField = UITextField()
+        self.textField?.font = XZClient.XZFont2(size: 16)
         self.contentView.addSubview(self.textField!)
         self.textField?.snp.makeConstraints({ (make) in
             make.top.bottom.equalTo(self.bgTextFieldView!)
@@ -62,7 +64,7 @@ class BaseTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.topSepView!)
         self.topSepView?.snp.makeConstraints({ (make) in
             make.left.right.top.equalTo(self.contentView)
-            make.height.equalTo(1)
+            make.height.equalTo(0.5)
         })
         
         self.bottomSepView = UIImageView()
@@ -70,7 +72,7 @@ class BaseTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.bottomSepView!)
         self.bottomSepView?.snp.makeConstraints({ (make) in
             make.left.right.bottom.equalTo(self.contentView)
-            make.height.equalTo(1)
+            make.height.equalTo(0.5)
         })
         
         self.bottomShortSepView = UIImageView()
@@ -79,7 +81,7 @@ class BaseTableViewCell: UITableViewCell {
         self.bottomShortSepView?.snp.makeConstraints({ (make) in
             make.right.bottom.equalTo(self.contentView)
             make.left.equalTo(self.contentView).offset(15)
-            make.height.equalTo(1)
+            make.height.equalTo(0.5)
         })
         
     }

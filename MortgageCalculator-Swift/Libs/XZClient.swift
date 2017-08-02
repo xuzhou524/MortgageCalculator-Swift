@@ -10,15 +10,20 @@ import UIKit
 
 class XZClient: NSObject{
     
-    static var screenWidth : CGFloat{
-        get{
-            return UIScreen.main.bounds.width
-        }
+    class func ScreenWidth() -> CGFloat{
+        return UIScreen.main.bounds.width
     }
     
-    static var screenHeight : CGFloat{
-        get{
-            return UIScreen.main.bounds.height
-        }
+    class func ScreenHeight() -> CGFloat{
+        return UIScreen.main.bounds.height
     }
+    
+    class func XZFont2(size:CGFloat) -> UIFont{
+        return  UIFont.init(name: "NotoSansHans-Light", size: size)!
+    }
+    
+    class func XZFont(size:CGFloat) -> UIFont{
+        return  UIFont.init(name: "NotoSansHans-DemiLight", size: size)!
+    }
+    
 }

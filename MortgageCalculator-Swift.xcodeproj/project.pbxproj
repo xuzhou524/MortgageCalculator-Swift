@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
+		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
+		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
+		5321DE421F31C3AB00184F9D /* NotoSansHans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3E1F31C3AB00184F9D /* NotoSansHans-Regular.otf */; };
+		5321DE431F31C3AB00184F9D /* NotoSansHans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3F1F31C3AB00184F9D /* NotoSansHans-Thin.otf */; };
+		5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */; };
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
 		53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */; };
 		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
@@ -28,7 +33,6 @@
 		53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770E1F307EE60074B52C /* XZSwiftColor.swift */; };
 		53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */; };
 		53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */; };
-		53D777191F308A380074B52C /* CombinationLoabsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777181F308A380074B52C /* CombinationLoabsTableViewCell.swift */; };
 		53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */; };
 		5E7AF110415A12DA72166F19 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +41,11 @@
 		27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
+		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
+		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
+		5321DE3E1F31C3AB00184F9D /* NotoSansHans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Regular.otf"; sourceTree = "<group>"; };
+		5321DE3F1F31C3AB00184F9D /* NotoSansHans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Thin.otf"; sourceTree = "<group>"; };
+		5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottonTableViewCell.swift; sourceTree = "<group>"; };
 		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A4EF2C1F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +68,6 @@
 		53D7770E1F307EE60074B52C /* XZSwiftColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftColor.swift; sourceTree = "<group>"; };
 		53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNavigationController.swift; sourceTree = "<group>"; };
 		53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoansTypeTableViewCell.swift; sourceTree = "<group>"; };
-		53D777181F308A380074B52C /* CombinationLoabsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationLoabsTableViewCell.swift; sourceTree = "<group>"; };
 		53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationLoabsTableViewController.swift; sourceTree = "<group>"; };
 		9A03C1CF6B798BED0E72F7DD /* Pods-MortgageCalculator-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +91,17 @@
 				42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5321DE3B1F31C3AB00184F9D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */,
+				5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */,
+				5321DE3E1F31C3AB00184F9D /* NotoSansHans-Regular.otf */,
+				5321DE3F1F31C3AB00184F9D /* NotoSansHans-Thin.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		53A4EF1B1F2ED46B00EF58EB = {
@@ -148,7 +167,7 @@
 			children = (
 				53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */,
 				53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */,
-				53D777181F308A380074B52C /* CombinationLoabsTableViewCell.swift */,
+				5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +175,7 @@
 		53D777071F307EE60074B52C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				5321DE3B1F31C3AB00184F9D /* Font */,
 				53D777081F307EE60074B52C /* Extension */,
 				53D7770A1F307EE60074B52C /* UITableView+FINAutomaticHeightCell */,
 				5321DE391F31BDF200184F9D /* XZClient.swift */,
@@ -254,7 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */,
+				5321DE421F31C3AB00184F9D /* NotoSansHans-Regular.otf in Resources */,
+				5321DE431F31C3AB00184F9D /* NotoSansHans-Thin.otf in Resources */,
 				53A4EF731F2F075500EF58EB /* tabbar_home@2x.png in Resources */,
+				5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */,
+				5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */,
 				53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */,
 				53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */,
 				53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */,
@@ -324,10 +348,10 @@
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
 				53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */,
-				53D777191F308A380074B52C /* CombinationLoabsTableViewCell.swift in Sources */,
 				53D777131F307EE60074B52C /* XZSetting.swift in Sources */,
 				53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */,
 				53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */,
+				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
 				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,

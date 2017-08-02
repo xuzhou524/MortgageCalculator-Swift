@@ -25,9 +25,10 @@ class LoansTypeTableViewCell: UITableViewCell {
     }
     
     func sebView() ->Void{
-        
+        self.selectionStyle = .none
         self.titleLabel = UILabel()
         self.titleLabel?.text = "贷款方式";
+        self.titleLabel?.font = XZClient.XZFont2(size: 16)
         self.contentView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)
@@ -37,7 +38,7 @@ class LoansTypeTableViewCell: UITableViewCell {
         self.typeSegmented = UISegmentedControl(items: ["等额本息","等额本金"])
         self.typeSegmented?.tintColor = UIColor.black
         self.typeSegmented?.selectedSegmentIndex = 0
-        self.typeSegmented?.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .normal)
+        self.typeSegmented?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 14)], for: .normal)
         self.contentView.addSubview(self.typeSegmented!)
         self.typeSegmented?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)
@@ -51,7 +52,7 @@ class LoansTypeTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.bottomSepView!)
         self.bottomSepView?.snp.makeConstraints({ (make) in
             make.left.right.bottom.equalTo(self.contentView)
-            make.height.equalTo(1)
+            make.height.equalTo(0.5)
         })
     }
     

@@ -15,6 +15,7 @@ class CommercialLoansTableViewController: UITableViewController {
         self.tableView.separatorStyle = .none
         regClass(self.tableView, cell: BaseTableViewCell.self)
         regClass(self.tableView, cell: LoansTypeTableViewCell.self)
+        regClass(self.tableView, cell: BottonTableViewCell.self)
     }
 
     // MARK: - Table view data source
@@ -23,16 +24,23 @@ class CommercialLoansTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 4 {
+            return 90
+        }
         return 50
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        if indexPath.row == 4 {
+            let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
+            return cell
+        }
+        
         if indexPath.row == 3 {
-            
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             return cell
         }
