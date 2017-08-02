@@ -31,7 +31,7 @@ class BaseTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         self.titleLabel = UILabel()
         self.titleLabel?.text = "贷款金额（万元）";
-        self.titleLabel?.font = XZClient.XZFont2(size: 16)
+        self.titleLabel?.font = XZClient.XZFont2(size: 15)
         self.contentView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)
@@ -46,12 +46,12 @@ class BaseTableViewCell: UITableViewCell {
         self.bgTextFieldView?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)
             make.right.equalTo(self.contentView).offset(-15)
-            make.left.equalTo(self.contentView.snp.centerX).offset(10);
+            make.left.equalTo(self.contentView.snp.centerX).offset(20);
             make.height.equalTo(32);
         })
         
         self.textField = UITextField()
-        self.textField?.font = XZClient.XZFont2(size: 16)
+        self.textField?.font = XZClient.XZFont2(size: 15)
         self.contentView.addSubview(self.textField!)
         self.textField?.snp.makeConstraints({ (make) in
             make.top.bottom.equalTo(self.bgTextFieldView!)

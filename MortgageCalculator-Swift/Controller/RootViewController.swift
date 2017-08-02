@@ -23,7 +23,7 @@ class RootViewController: UIViewController {
 
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
         self.rootSegmentedVC?.tintColor = UIColor.black
-        self.rootSegmentedVC?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 16)], for: .normal)
+        self.rootSegmentedVC?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 15)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints({ (make) in
             make.top.equalTo(self.view).offset(10)
