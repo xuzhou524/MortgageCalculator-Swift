@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var rootNavigationController: UINavigationController?
+    var remindNavigationController: UINavigationController?
     var moreNavigationController: UINavigationController?
     
     var homeTabBarController: UITabBarController?
@@ -27,11 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.rootNavigationController = UINavigationController(rootViewController: RootViewController())
         self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
+        self.remindNavigationController = UINavigationController(rootViewController: remindTableViewController())
+        self.remindNavigationController?.tabBarItem = UITabBarItem(title: "提醒", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
+        
         self.moreNavigationController = UINavigationController(rootViewController: MoreViewController())
         self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "icon_tabbar_onsite"), selectedImage: UIImage(named: "icon_tabbar_onsite_selected"))
 
         self.homeTabBarController = UITabBarController()
-        self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.moreNavigationController!]
+        self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.remindNavigationController!, self.moreNavigationController!]
         
         // 设置字体颜色
         //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)

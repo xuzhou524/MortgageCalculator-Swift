@@ -1,19 +1,21 @@
 //
-//  MoreViewController.swift
+//  remindTableViewController.swift
 //  MortgageCalculator-Swift
 //
-//  Created by gozap on 2017/7/31.
+//  Created by gozap on 2017/8/2.
 //  Copyright © 2017年 com.longdai. All rights reserved.
 //
 
 import UIKit
 
-class MoreViewController: UIViewController {
+class remindTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "更多"
-        self.view.backgroundColor = UIColor.gray;
+        self.navigationItem.title = "提醒"
+        self.view.backgroundColor = XZSwiftColor.textColor;
+        
+        
         
     }
 

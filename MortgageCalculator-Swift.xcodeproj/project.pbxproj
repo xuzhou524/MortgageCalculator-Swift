@@ -11,6 +11,11 @@
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
 		5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */; };
+		5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE481F31E2A900184F9D /* tabbar_profile_selected@2x.png */; };
+		5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE491F31E2A900184F9D /* tabbar_profile_selected@3x.png */; };
+		5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */; };
+		5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */; };
+		5321DE511F31E35A00184F9D /* remindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE501F31E35A00184F9D /* remindTableViewController.swift */; };
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
 		53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */; };
 		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
@@ -42,6 +47,11 @@
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
 		5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottonTableViewCell.swift; sourceTree = "<group>"; };
+		5321DE481F31E2A900184F9D /* tabbar_profile_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected@2x.png"; sourceTree = "<group>"; };
+		5321DE491F31E2A900184F9D /* tabbar_profile_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected@3x.png"; sourceTree = "<group>"; };
+		5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@2x.png"; sourceTree = "<group>"; };
+		5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@3x.png"; sourceTree = "<group>"; };
+		5321DE501F31E35A00184F9D /* remindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = remindTableViewController.swift; sourceTree = "<group>"; };
 		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A4EF2C1F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +147,10 @@
 			children = (
 				53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */,
 				53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */,
+				5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */,
+				5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */,
+				5321DE481F31E2A900184F9D /* tabbar_profile_selected@2x.png */,
+				5321DE491F31E2A900184F9D /* tabbar_profile_selected@3x.png */,
 				53A4EF6D1F2F075500EF58EB /* tabbar_home@2x.png */,
 				53A4EF6E1F2F075500EF58EB /* tabbar_home@3x.png */,
 				53A4EF6F1F2F075500EF58EB /* tabbar_home_selected@2x.png */,
@@ -150,6 +164,7 @@
 			children = (
 				53A4EF871F2F353100EF58EB /* RootViewController.swift */,
 				53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */,
+				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
 				53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */,
 				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
 			);
@@ -268,16 +283,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */,
+				5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */,
 				53A4EF731F2F075500EF58EB /* tabbar_home@2x.png in Resources */,
 				5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */,
 				5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */,
 				53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */,
+				5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */,
 				53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */,
 				53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */,
 				53A4EF751F2F075500EF58EB /* tabbar_home_selected@2x.png in Resources */,
+				5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */,
 				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
 				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
+				5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
+				5321DE511F31E35A00184F9D /* remindTableViewController.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
 				53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */,
