@@ -13,7 +13,7 @@ class MoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "更多"
-        self.view.backgroundColor = UIColor.gray;
+        self.view.backgroundColor = UIColor.white;
         
     }
 

@@ -13,7 +13,7 @@ class remindTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "提醒"
-        self.view.backgroundColor = XZSwiftColor.textColor;
+        self.view.backgroundColor = XZSwiftColor.white;
         
         
         
