@@ -51,15 +51,3 @@ func getCell<T: UITableViewCell>(_ tableView:UITableView ,cell: T.Type ,indexPat
     return tableView.dequeueReusableCell(withIdentifier: "\(cell)", for: indexPath) as! T ;
 }
 
-func XZFont(_ fontSize: CGFloat) -> UIFont {
-    return UIFont(name: "Helvetica-Bold", size: fontSize)!;
-}
-
-func XZFont2(_ fontSize: CGFloat) -> UIFont {
-    return UIFont(name: "Helvetica", size: fontSize)!;
-}
-
-func XZFont3(_ fontSize: CGFloat) -> UIFont {
-    return UIFont(name: "Courier New", size: fontSize)!;
-}
-

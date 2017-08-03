@@ -16,6 +16,14 @@
 		5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */; };
 		5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */; };
 		5321DE511F31E35A00184F9D /* remindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE501F31E35A00184F9D /* remindTableViewController.swift */; };
+		5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E9811F3323E000AC3059 /* titleTableViewCell.swift */; };
+		5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9831F33258900AC3059 /* arrow_right@2x.png */; };
+		5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9841F33258900AC3059 /* arrow_right@3x.png */; };
+		5342E9891F33261300AC3059 /* about_criticism.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9871F33261300AC3059 /* about_criticism.png */; };
+		5342E98A1F33261300AC3059 /* about_praise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9881F33261300AC3059 /* about_praise.png */; };
+		5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */; };
+		539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795271F3327D5009AFED4 /* Icon-60@2x.png */; };
+		5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795281F3327D5009AFED4 /* Icon-60@3x.png */; };
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
 		53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */; };
 		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
@@ -52,6 +60,14 @@
 		5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@2x.png"; sourceTree = "<group>"; };
 		5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@3x.png"; sourceTree = "<group>"; };
 		5321DE501F31E35A00184F9D /* remindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = remindTableViewController.swift; sourceTree = "<group>"; };
+		5342E9811F3323E000AC3059 /* titleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
+		5342E9831F33258900AC3059 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		5342E9841F33258900AC3059 /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
+		5342E9871F33261300AC3059 /* about_criticism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_criticism.png; sourceTree = "<group>"; };
+		5342E9881F33261300AC3059 /* about_praise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_praise.png; sourceTree = "<group>"; };
+		5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		539795271F3327D5009AFED4 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		539795281F3327D5009AFED4 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A4EF2C1F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +161,12 @@
 		53A4EF6A1F2F075500EF58EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				539795271F3327D5009AFED4 /* Icon-60@2x.png */,
+				539795281F3327D5009AFED4 /* Icon-60@3x.png */,
+				5342E9871F33261300AC3059 /* about_criticism.png */,
+				5342E9881F33261300AC3059 /* about_praise.png */,
+				5342E9831F33258900AC3059 /* arrow_right@2x.png */,
+				5342E9841F33258900AC3059 /* arrow_right@3x.png */,
 				53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */,
 				53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */,
 				5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */,
@@ -177,6 +199,8 @@
 				53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */,
 				53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */,
 				5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */,
+				5342E9811F3323E000AC3059 /* titleTableViewCell.swift */,
+				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,17 +308,23 @@
 			files = (
 				53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */,
 				5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */,
+				5342E98A1F33261300AC3059 /* about_praise.png in Resources */,
+				5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */,
+				5342E9891F33261300AC3059 /* about_criticism.png in Resources */,
 				53A4EF731F2F075500EF58EB /* tabbar_home@2x.png in Resources */,
 				5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */,
 				5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */,
 				53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */,
 				5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */,
+				5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */,
+				539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */,
 				53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */,
 				53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */,
 				53A4EF751F2F075500EF58EB /* tabbar_home_selected@2x.png in Resources */,
 				5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */,
 				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
+				5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */,
 				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
 				5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */,
 			);
@@ -358,11 +388,13 @@
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				5321DE511F31E35A00184F9D /* remindTableViewController.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
+				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
 				53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				53D777131F307EE60074B52C /* XZSetting.swift in Sources */,
 				53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */,
 				53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */,
+				5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */,
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
