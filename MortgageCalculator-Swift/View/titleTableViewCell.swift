@@ -46,8 +46,8 @@ class titleTableViewCell: UITableViewCell {
         
         self.detaileLabel = UILabel()
         self.detaileLabel?.text = "v1.0.0"
-        self.detaileLabel?.textColor = XZSwiftColor.textColor
-        self.detaileLabel?.font = XZClient.XZFont2(size: 14)
+        self.detaileLabel?.textColor = XZSwiftColor.xzGlay129
+        self.detaileLabel?.font = XZClient.XZFont2(size: 15)
         self.detaileLabel?.textAlignment = .right;
         self.contentView.addSubview(self.detaileLabel!)
         self.detaileLabel!.snp.makeConstraints({ (make) -> Void in

@@ -31,14 +31,14 @@ class MoreTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.iconImageView!)
         self.iconImageView?.snp.makeConstraints({ (make) -> Void in
             make.centerX.equalTo(self.contentView)
-            make.top.equalTo(self.contentView).offset(40);
+            make.top.equalTo(self.contentView).offset(30);
             make.width.height.equalTo(80)
         });
         
         self.titleLabel = UILabel()
         self.titleLabel?.text = "想容易,就用易"
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
-        self.titleLabel?.textColor = XZSwiftColor.textColor
+        self.titleLabel?.textColor = XZSwiftColor.xzGlay129
         self.contentView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) -> Void in
             make.centerX.equalTo(self.contentView)

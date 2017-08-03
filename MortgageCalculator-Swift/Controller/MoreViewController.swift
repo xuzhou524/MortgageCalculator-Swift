@@ -32,7 +32,7 @@ class MoreViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath as NSIndexPath).row == 0 {
-            return 180
+            return 170
         }
         if (indexPath as NSIndexPath).row == 1{
             return 80
