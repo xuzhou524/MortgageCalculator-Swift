@@ -22,6 +22,7 @@
 		5342E9891F33261300AC3059 /* about_criticism.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9871F33261300AC3059 /* about_criticism.png */; };
 		5342E98A1F33261300AC3059 /* about_praise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9881F33261300AC3059 /* about_praise.png */; };
 		5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */; };
+		534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FB71A1F39BB73006E3144 /* LoanModel.swift */; };
 		539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795271F3327D5009AFED4 /* Icon-60@2x.png */; };
 		5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795281F3327D5009AFED4 /* Icon-60@3x.png */; };
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
@@ -66,6 +67,7 @@
 		5342E9871F33261300AC3059 /* about_criticism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_criticism.png; sourceTree = "<group>"; };
 		5342E9881F33261300AC3059 /* about_praise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_praise.png; sourceTree = "<group>"; };
 		5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		534FB71A1F39BB73006E3144 /* LoanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
 		539795271F3327D5009AFED4 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		539795281F3327D5009AFED4 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,14 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		534FB7191F39BB32006E3144 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				534FB71A1F39BB73006E3144 /* LoanModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		53A4EF1B1F2ED46B00EF58EB = {
 			isa = PBXGroup;
 			children = (
@@ -150,9 +160,10 @@
 				53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */,
 				53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */,
 				53A4EF331F2ED46B00EF58EB /* Info.plist */,
-				53D777071F307EE60074B52C /* Libs */,
-				53A4EF841F2F350C00EF58EB /* Controller */,
 				53A4EF851F2F350C00EF58EB /* View */,
+				53A4EF841F2F350C00EF58EB /* Controller */,
+				534FB7191F39BB32006E3144 /* Model */,
+				53D777071F307EE60074B52C /* Libs */,
 				53A4EF6A1F2F075500EF58EB /* Resources */,
 			);
 			path = "MortgageCalculator-Swift";
@@ -400,6 +411,7 @@
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
 				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
+				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
 				5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */,
 				53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */,
 			);
