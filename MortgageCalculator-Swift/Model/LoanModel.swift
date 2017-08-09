@@ -26,15 +26,15 @@ class LoanModel: NSObject {
     }
     
     //每月应还利息
-    class func averageCapitalPlusInterestMonthInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , numberMonth:CGFont) -> CGFloat{
+    class func averageCapitalPlusInterestMonthInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , numberMonth:CGFloat) -> CGFloat{
         //每月应还利息 = 贷款本金 × 月利率×〔(1+月利率)^还款月数 - (1+月利率)^(还款月序号-1)〕/〔(1+月利率)^还款月数-1〕
-        return UIScreen.main.bounds.width
+        return (principal * monthRate * (pow(1+monthRate,totalMonths) - pow(1+monthRate,numberMonth-1))/(pow(1+monthRate,totalMonths)-1))
     }
     
     //每月应还本金
-    class func averageCapitalPlusInterestMonthPrincipal(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , numberMonth:CGFont) -> CGFloat{
+    class func averageCapitalPlusInterestMonthPrincipal(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , numberMonth:CGFloat) -> CGFloat{
         //每月应还本金 = 贷款本金 × 月利率 × (1+月利率)^(还款月序号 - 1) /〔(1+月利率)^还款月数-1〕
-        return UIScreen.main.bounds.width
+        return (principal * monthRate * pow(1+monthRate,numberMonth-1)/(pow(1+monthRate,totalMonths)-1))
     }
     
     //总利息
@@ -56,7 +56,7 @@ class LoanModel: NSObject {
     }
     
     //每月应还利息
-    class func equalPrincipalMonthInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , numberMonth:CGFont) -> CGFloat{
+    class func equalPrincipalMonthInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , numberMonth:CGFloat) -> CGFloat{
         //每月应还利息 = 剩余本金×月利率 = (贷款本金 - 已归还本金累计额) × 月利率
         return UIScreen.main.bounds.width
     }
