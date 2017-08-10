@@ -254,7 +254,7 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
         });
         
         self.totalAmountLabel = UILabel()
-        self.totalAmountLabel?.text = ""
+        self.totalAmountLabel?.text = "152432.00"
         self.totalAmountLabel?.font = XZClient.XZFont2(size: 18)
         self.totalAmountLabel?.textColor = XZSwiftColor.xzGlay129
         self.contentView.addSubview(self.totalAmountLabel!)
@@ -274,7 +274,7 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
         });
         
         self.interestRateLabel = UILabel()
-        self.interestRateLabel?.text = "4.9%"
+        self.interestRateLabel?.text = "1245222.00"
         self.interestRateLabel?.font = XZClient.XZFont2(size: 18)
         self.interestRateLabel?.textColor = XZSwiftColor.xzGlay129
         self.contentView.addSubview(self.interestRateLabel!)
