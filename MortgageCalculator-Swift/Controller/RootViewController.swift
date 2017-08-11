@@ -26,7 +26,7 @@ class RootViewController: UIViewController {
         self.rootSegmentedVC?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 15)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints({ (make) in
-            make.top.equalTo(self.view).offset(10)
+            make.top.equalTo(self.view).offset(15)
             make.left.equalTo(self.view).offset(15)
             make.right.equalTo(self.view).offset(-15)
             make.height.equalTo(35)
@@ -46,7 +46,7 @@ class RootViewController: UIViewController {
                 self.view.addSubview((self.commerciaiLoansVC?.view)!)
                 self.commerciaiLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
-                    make.top.equalTo(self.view).offset(65)
+                    make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
@@ -56,7 +56,7 @@ class RootViewController: UIViewController {
                 self.view.addSubview((self.combinationLoansVC?.view)!)
                 self.combinationLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
-                    make.top.equalTo(self.view).offset(65)
+                    make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
                 })
             }
             self.view.addSubview((self.combinationLoansVC?.view)!)
