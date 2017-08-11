@@ -9,7 +9,9 @@
 import UIKit
 
 class CommercialLoansTableViewController: UITableViewController {
-
+    
+     var rootNavigationController: XZSwiftNavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
@@ -37,6 +39,7 @@ class CommercialLoansTableViewController: UITableViewController {
         
         if indexPath.row == 4 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
+            cell.calculateButton?.addTarget(self, action: #selector(CommercialLoansTableViewController.calculateClick), for: .touchUpInside)
             return cell
         }
         
@@ -65,6 +68,11 @@ class CommercialLoansTableViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    func calculateClick(){
+        let cityVC = LoanDetailsTableViewController()
+        self.rootNavigationController?.pushViewController(cityVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

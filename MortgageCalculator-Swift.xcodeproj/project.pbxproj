@@ -201,8 +201,8 @@
 			children = (
 				53A4EF871F2F353100EF58EB /* RootViewController.swift */,
 				53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */,
-				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
 				53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */,
+				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
 				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
 				5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */,
 			);

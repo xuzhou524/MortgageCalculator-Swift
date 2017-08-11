@@ -42,6 +42,7 @@ class RootViewController: UIViewController {
         if segmented.selectedSegmentIndex == 0 || segmented.selectedSegmentIndex == 1{
             if ((self.commerciaiLoansVC) == nil) {
                 self.commerciaiLoansVC = CommercialLoansTableViewController()
+                self.commerciaiLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.view.addSubview((self.commerciaiLoansVC?.view)!)
                 self.commerciaiLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)

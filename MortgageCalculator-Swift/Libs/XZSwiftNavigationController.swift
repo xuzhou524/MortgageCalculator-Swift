@@ -32,11 +32,11 @@ class XZSwiftNavigationController: UINavigationController {
         
         self.navigationBar.titleTextAttributes = [
             NSFontAttributeName : XZClient.XZFont2(size: 18),
-            NSForegroundColorAttributeName : UIColor.white
+            NSForegroundColorAttributeName : XZSwiftColor.black
         ]
         self.navigationBar.setBackgroundImage(createImageWithColor(XZSwiftColor.navignationColor), for: .default)
         self.navigationBar.barStyle = .default;
-        self.navigationBar.tintColor = XZSwiftColor.white
+        self.navigationBar.tintColor = XZSwiftColor.black
     }
 
     override func didReceiveMemoryWarning() {

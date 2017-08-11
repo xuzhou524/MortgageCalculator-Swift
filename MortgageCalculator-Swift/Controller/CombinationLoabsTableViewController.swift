@@ -9,7 +9,9 @@
 import UIKit
 
 class CombinationLoabsTableViewController: UITableViewController {
-
+    
+    var rootNavigationController: XZSwiftNavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none

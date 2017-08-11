@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var rootNavigationController: UINavigationController?
-    var remindNavigationController: UINavigationController?
-    var moreNavigationController: UINavigationController?
+    var rootNavigationController: XZSwiftNavigationController?
+    var remindNavigationController: XZSwiftNavigationController?
+    var moreNavigationController: XZSwiftNavigationController?
     
     var homeTabBarController: UITabBarController?
     
@@ -25,13 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.frame = UIScreen.main.bounds
         self.window?.backgroundColor = UIColor.white
         
-        self.rootNavigationController = UINavigationController(rootViewController: RootViewController())
+        self.rootNavigationController = XZSwiftNavigationController(rootViewController: RootViewController())
         self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
-        self.remindNavigationController = UINavigationController(rootViewController: remindTableViewController())
+        self.remindNavigationController = XZSwiftNavigationController(rootViewController: remindTableViewController())
         self.remindNavigationController?.tabBarItem = UITabBarItem(title: "提醒", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
         
-        self.moreNavigationController = UINavigationController(rootViewController: MoreViewController())
+        self.moreNavigationController = XZSwiftNavigationController(rootViewController: MoreViewController())
         self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "icon_tabbar_onsite"), selectedImage: UIImage(named: "icon_tabbar_onsite_selected"))
 
         self.homeTabBarController = UITabBarController()
