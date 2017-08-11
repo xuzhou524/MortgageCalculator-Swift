@@ -36,7 +36,7 @@ class LoansTypeTableViewCell: UITableViewCell {
         })
         
         self.typeSegmented = UISegmentedControl(items: ["等额本息","等额本金"])
-        self.typeSegmented?.tintColor = UIColor.black
+        self.typeSegmented?.tintColor = XZSwiftColor.xzGlay50
         self.typeSegmented?.selectedSegmentIndex = 0
         self.typeSegmented?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 14)], for: .normal)
         self.contentView.addSubview(self.typeSegmented!)
@@ -48,7 +48,7 @@ class LoansTypeTableViewCell: UITableViewCell {
         })
         
         self.bottomSepView = UIImageView()
-        self.bottomSepView?.backgroundColor = UIColor.black
+        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay50
         self.contentView.addSubview(self.bottomSepView!)
         self.bottomSepView?.snp.makeConstraints({ (make) in
             make.left.right.bottom.equalTo(self.contentView)

@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 设置字体偏移
         UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, 0.0)
         // 设置图标选中时颜色
-        UITabBar.appearance().tintColor = UIColor.black
+        UITabBar.appearance().tintColor = XZSwiftColor.xzGlay50
         
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()

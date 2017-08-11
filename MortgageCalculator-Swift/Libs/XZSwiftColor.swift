@@ -57,4 +57,10 @@ class XZSwiftColor: UIColor{
             return colorWith255RGB(129, g: 129, b: 129);
         }
     }
+    
+    static var xzGlay50 : UIColor{
+        get{
+            return colorWith255RGB(50, g: 50, b: 50);
+        }
+    }
 }

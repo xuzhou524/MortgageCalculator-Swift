@@ -22,7 +22,7 @@ class RootViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false;
 
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
-        self.rootSegmentedVC?.tintColor = UIColor.black
+        self.rootSegmentedVC?.tintColor = XZSwiftColor.xzGlay50
         self.rootSegmentedVC?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 15)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints({ (make) in

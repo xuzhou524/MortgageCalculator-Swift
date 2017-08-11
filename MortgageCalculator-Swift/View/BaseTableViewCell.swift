@@ -40,7 +40,7 @@ class BaseTableViewCell: UITableViewCell {
         
         self.bgTextFieldView = UIView()
         self.bgTextFieldView?.layer.borderWidth = 0.5
-        self.bgTextFieldView?.layer.borderColor = UIColor.black.cgColor
+        self.bgTextFieldView?.layer.borderColor = XZSwiftColor.xzGlay50.cgColor
         self.bgTextFieldView?.layer.cornerRadius = 5
         self.contentView.addSubview(self.bgTextFieldView!)
         self.bgTextFieldView?.snp.makeConstraints({ (make) in
@@ -60,7 +60,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.topSepView = UIImageView()
-        self.topSepView?.backgroundColor = UIColor.black
+        self.topSepView?.backgroundColor = XZSwiftColor.xzGlay50
         self.contentView.addSubview(self.topSepView!)
         self.topSepView?.snp.makeConstraints({ (make) in
             make.left.right.top.equalTo(self.contentView)
@@ -68,7 +68,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.bottomSepView = UIImageView()
-        self.bottomSepView?.backgroundColor = UIColor.black
+        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay50
         self.contentView.addSubview(self.bottomSepView!)
         self.bottomSepView?.snp.makeConstraints({ (make) in
             make.left.right.bottom.equalTo(self.contentView)
@@ -76,7 +76,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.bottomShortSepView = UIImageView()
-        self.bottomShortSepView?.backgroundColor = UIColor.black
+        self.bottomShortSepView?.backgroundColor = XZSwiftColor.xzGlay50
         self.contentView.addSubview(self.bottomShortSepView!)
         self.bottomShortSepView?.snp.makeConstraints({ (make) in
             make.right.bottom.equalTo(self.contentView)
