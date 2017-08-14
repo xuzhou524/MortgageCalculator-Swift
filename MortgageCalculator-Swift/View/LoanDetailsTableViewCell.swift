@@ -198,7 +198,7 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
         unitLabel.font = XZClient.XZFont2(size: 14)
         self.contentView.addSubview(unitLabel)
         unitLabel.snp.makeConstraints({ (make) -> Void in
-            make.bottom.equalTo(self.amountLabel!)
+            make.bottom.equalTo(self.amountLabel!).offset(-2)
             make.left.equalTo((self.amountLabel?.snp.right)!)
         });
     }
