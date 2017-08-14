@@ -9,6 +9,10 @@
 import UIKit
 
 class LoanDetailsTableViewController: UITableViewController {
+    var loanAmountStr : String?
+    var loanNumberStr : String?
+    var loanRateStr : String?
+    var loanTypeInt : NSInteger?
 
     override func viewDidLoad() {
         super.viewDidLoad()
