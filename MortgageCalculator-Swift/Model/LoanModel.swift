@@ -9,8 +9,8 @@
 import UIKit
 
 class LoanModel: NSObject {
-    // principal     贷款本金
-    // monthRate     月利率
+    // principal     贷款本金 （单位：元）
+    // monthRate     年利率
     // totalMonths   还款月数
     // numberMonth   还款月序号
     
