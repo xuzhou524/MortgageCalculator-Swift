@@ -76,8 +76,11 @@ class LoanDetailsTableViewCell: UITableViewCell {
         switch loanTypeInt {
         case 0:
             self.periodLabel?.text = "第" + periodStr + "期"
+            //月供
             self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            //每月本金
             self.principalLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthPrincipal(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
+            //每月利息
             self.interestLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
         case 1:
             self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!), monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!)))
