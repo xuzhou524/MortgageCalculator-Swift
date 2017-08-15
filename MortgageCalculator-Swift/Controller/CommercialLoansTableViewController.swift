@@ -10,7 +10,13 @@ import UIKit
 
 class CommercialLoansTableViewController: UITableViewController {
     
-     var rootNavigationController: XZSwiftNavigationController?
+    var rootNavigationController: XZSwiftNavigationController?
+    
+    var loanAmontTextFiled:UITextField?
+    var loanPeriodTextFiled:UITextField?
+    var loanRateTextFiled:UITextField?
+    
+    var typeSegmented : UISegmentedControl?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +51,7 @@ class CommercialLoansTableViewController: UITableViewController {
         
         if indexPath.row == 3 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
+            self.typeSegmented = cell.typeSegmented
             return cell
         }
         
@@ -55,24 +62,38 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            self.loanAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "贷款利率（%）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.textField?.text = "4.9"
+            self.loanRateTextFiled = cell.textField
         }
         
         return cell
     }
     
     func calculateClick(){
-        let cityVC = LoanDetailsTableViewController()
-        self.rootNavigationController?.pushViewController(cityVC, animated: true)
+        let loanAmontStr = self.loanAmontTextFiled?.text
+        let loanPeriodStr = self.loanPeriodTextFiled?.text
+        let loanRateStr = self.loanRateTextFiled?.text
+        
+        if  ((loanAmontStr?.Lenght)! > 0 && (loanPeriodStr?.Lenght)! > 0) {
+            let loanDetailsVC = LoanDetailsTableViewController()
+            loanDetailsVC.loanAmountStr = loanAmontStr
+            loanDetailsVC.loanNumberStr = loanPeriodStr
+            loanDetailsVC.loanRateStr = loanRateStr
+            loanDetailsVC.loanTypeInt = self.typeSegmented?.selectedSegmentIndex
+            self.rootNavigationController?.pushViewController(loanDetailsVC, animated: true)
+        }
     }
     
     override func didReceiveMemoryWarning() {

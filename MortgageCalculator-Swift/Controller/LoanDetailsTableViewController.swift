@@ -90,6 +90,7 @@ class LoanDetailsTableViewController: UITableViewController {
             switch indexPath.row {
             case 0:
                 let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
+                cell.bind(loanAmountStr: self.loanAmountStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.loanRateStr!, loanTypeInt: self.loanTypeInt!)
                 return cell
             case 1:
                 let cell = getCell(tableView, cell: LoanDetails_DescribeTableViewCell.self, indexPath: indexPath)

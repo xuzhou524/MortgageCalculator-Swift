@@ -202,6 +202,20 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
             make.left.equalTo((self.amountLabel?.snp.right)!)
         });
     }
+    func bind(loanAmountStr: String, loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
+        switch loanTypeInt {
+        case 0:
+            self.amountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+        
+        case 1:
+            self.amountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!), monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!)))
+        
+        default: break
+        }
+ 
+        
+        
+    }
 }
 
 class LoanDetails_DescribeTableViewCell: UITableViewCell {
