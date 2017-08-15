@@ -41,7 +41,7 @@ class LoanDetailsTableViewController: UITableViewController {
         if section == 0 {
             return 3
         }
-        return 30
+        return Int.init(self.loanNumberStr!)! * 12
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -104,6 +104,7 @@ class LoanDetailsTableViewController: UITableViewController {
             }
         }else{
             let cell = getCell(tableView, cell: LoanDetailsTableViewCell.self, indexPath: indexPath)
+            cell.bind(periodStr: String.init(format: "%d",indexPath.row + 1), loanAmountStr: self.loanAmountStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.loanRateStr!, loanTypeInt: self.loanTypeInt!)
             return cell
         }
         return UITableViewCell()

@@ -70,7 +70,20 @@ class LoanDetailsTableViewCell: UITableViewCell {
             make.left.equalTo((self.principalLabel?.snp.right)!)
             make.width.equalTo(XZClient.ScreenWidth()/4.0)
         });
-        
+    }
+    
+    func bind(periodStr: String,loanAmountStr: String, loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
+        switch loanTypeInt {
+        case 0:
+            self.periodLabel?.text = "第" + periodStr + "期"
+            self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            self.principalLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthPrincipal(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
+            self.interestLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
+        case 1:
+            self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!), monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!)))
+            
+        default: break
+        }
     }
 }
 
