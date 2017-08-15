@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				53A4EF871F2F353100EF58EB /* RootViewController.swift */,
 				53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */,
+				530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */,
 				53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */,
 				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
 				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
@@ -404,6 +407,7 @@
 			files = (
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				5321DE511F31E35A00184F9D /* remindTableViewController.swift in Sources */,
+				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,
 				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,

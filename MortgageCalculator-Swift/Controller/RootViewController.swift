@@ -13,6 +13,7 @@ class RootViewController: UIViewController {
     
     var rootSegmentedVC : UISegmentedControl?
     var commerciaiLoansVC : CommercialLoansTableViewController?
+    var accumulationLoansVC : AccumulationFundTableViewController?
     var combinationLoansVC : CombinationLoabsTableViewController?
 
     override func viewDidLoad() {
@@ -39,7 +40,7 @@ class RootViewController: UIViewController {
     }
     
     func segmentDidchange(segmented:UISegmentedControl){
-        if segmented.selectedSegmentIndex == 0 || segmented.selectedSegmentIndex == 1{
+        if segmented.selectedSegmentIndex == 0 {
             if ((self.commerciaiLoansVC) == nil) {
                 self.commerciaiLoansVC = CommercialLoansTableViewController()
                 self.commerciaiLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
@@ -50,9 +51,21 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
+        }else if  segmented.selectedSegmentIndex == 1 {
+            if ((self.accumulationLoansVC) == nil) {
+                self.accumulationLoansVC = AccumulationFundTableViewController()
+                self.accumulationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
+                self.view.addSubview((self.accumulationLoansVC?.view)!)
+                self.accumulationLoansVC?.view.snp.makeConstraints({ (make) in
+                    make.left.right.bottom.equalTo(self.view)
+                    make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
+                })
+            }
+            self.view.addSubview((self.accumulationLoansVC?.view)!)
         }else{
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = CombinationLoabsTableViewController()
+                self.combinationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.view.addSubview((self.combinationLoansVC?.view)!)
                 self.combinationLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)

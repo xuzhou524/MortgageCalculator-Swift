@@ -1,14 +1,14 @@
 //
-//  CommercialLoansTableViewController.swift
+//  AccumulationFundTableViewController.swift
 //  MortgageCalculator-Swift
 //
-//  Created by gozap on 2017/8/1.
+//  Created by gozap on 2017/8/15.
 //  Copyright © 2017年 com.longdai. All rights reserved.
 //
 
 import UIKit
 
-class CommercialLoansTableViewController: UITableViewController {
+class AccumulationFundTableViewController: UITableViewController {
     
     var rootNavigationController: XZSwiftNavigationController?
     
@@ -25,12 +25,12 @@ class CommercialLoansTableViewController: UITableViewController {
         regClass(self.tableView, cell: LoansTypeTableViewCell.self)
         regClass(self.tableView, cell: BottonTableViewCell.self)
     }
-
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -74,7 +74,7 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.textField?.text = "4.9"
+            cell.textField?.text = "3.25"
             self.loanRateTextFiled = cell.textField
         }
         return cell
@@ -99,5 +99,5 @@ class CommercialLoansTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
