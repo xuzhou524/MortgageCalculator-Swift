@@ -83,8 +83,12 @@ class LoanDetailsTableViewCell: UITableViewCell {
             //每月利息
             self.interestLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
         case 1:
-            self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!), monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!)))
-            
+            //月供
+            self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            //每月本金
+            self.principalLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthPrincipal(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            //每月利息
+            self.interestLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
         default: break
         }
     }
@@ -221,11 +225,11 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
     func bind(loanAmountStr: String, loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
         switch loanTypeInt {
         case 0:
+            self.titleLabel?.text = "每月月供"
             self.amountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
-        
         case 1:
-            self.amountLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
-        
+            self.titleLabel?.text = "首月月供"
+            self.amountLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalFirstMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
         default: break
         }
     }
@@ -394,7 +398,8 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
             self.totalAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
             self.interestRateLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(loanAmountStr)!) * 10000.0)
         case 1:
-            self.totalAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(loanAmountStr)!), monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!)))
+            self.totalAmountLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            self.interestRateLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(loanAmountStr)!) * 10000.0)
             
         default: break
         }
