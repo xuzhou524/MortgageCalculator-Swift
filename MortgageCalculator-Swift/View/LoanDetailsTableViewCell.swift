@@ -70,6 +70,14 @@ class LoanDetailsTableViewCell: UITableViewCell {
             make.left.equalTo((self.principalLabel?.snp.right)!)
             make.width.equalTo(XZClient.ScreenWidth()/4.0)
         });
+        
+        let linBView = UIView()
+        linBView.backgroundColor = XZSwiftColor.xzGlay230
+        self.contentView.addSubview(linBView)
+        linBView.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(0.5);
+            make.left.bottom.right.equalTo(self.contentView)
+        }
     }
     
     func bind(periodStr: String,loanAmountStr: String, loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
@@ -84,11 +92,11 @@ class LoanDetailsTableViewCell: UITableViewCell {
             self.interestLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
         case 1:
             //月供
-            self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            self.monthAmountLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12,numberMonth:CGFloat(Double(periodStr)!)))
             //每月本金
             self.principalLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthPrincipal(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
             //每月利息
-            self.interestLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
+            self.interestLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)))
         default: break
         }
     }
