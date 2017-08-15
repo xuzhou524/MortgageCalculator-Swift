@@ -212,9 +212,6 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
         
         default: break
         }
- 
-        
-        
     }
 }
 
@@ -295,7 +292,12 @@ class LoanDetails_DescribeTableViewCell: UITableViewCell {
             make.bottom.equalTo(self.totalAmountLabel!)
             make.left.equalTo(self.periodTitleLabel!)
         });
-        
+    }
+    
+    func bind(loanAmountStr: String, loanNumberStr : String,loanRateStr : String){
+        self.totalAmountLabel?.text = loanAmountStr + "万元"
+        self.interestRateLabel?.text = loanRateStr + "%"
+        self.periodLabel?.text = loanNumberStr + "年"
     }
 }
 
@@ -367,6 +369,18 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
         linBView.snp.makeConstraints { (make) -> Void in
             make.height.equalTo(0.5);
             make.left.bottom.right.equalTo(self.contentView)
+        }
+    }
+    
+    func bind(loanAmountStr: String, loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
+        switch loanTypeInt {
+        case 0:
+            self.totalAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+            self.interestRateLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(loanAmountStr)!) * 10000.0)
+        case 1:
+            self.totalAmountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(loanAmountStr)!), monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!)))
+            
+        default: break
         }
     }
 }

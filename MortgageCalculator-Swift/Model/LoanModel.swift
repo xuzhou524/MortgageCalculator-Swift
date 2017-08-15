@@ -34,7 +34,7 @@ class LoanModel: NSObject {
         return (principal * monthRate / 100 / 12 * pow(1+monthRate / 100 / 12,numberMonth-1)/(pow(1+monthRate / 100 / 12,totalMonths)-1))
     }
     //总利息
-    class func averageCapitalPlusInterestTotalInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat , monthAmount:CGFloat) -> CGFloat{
+    class func averageCapitalPlusInterestTotalInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat) -> CGFloat{
         //总利息 = 还款月数 × 每月月供额 - 贷款本金
         let monthAmount = principal * monthRate / 100 / 12 * pow(1+monthRate / 100 / 12,totalMonths)/(pow(1+monthRate / 100 / 12,totalMonths)-1)
         return (totalMonths * monthAmount - principal)
