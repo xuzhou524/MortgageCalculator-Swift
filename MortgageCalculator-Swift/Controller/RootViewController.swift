@@ -18,6 +18,9 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Thread.sleep(forTimeInterval: 1.0) //延长3秒
+        
         self.navigationItem.title = "房贷计算器"
         self.view.backgroundColor = UIColor.white;
         self.navigationController?.navigationBar.isTranslucent = false;

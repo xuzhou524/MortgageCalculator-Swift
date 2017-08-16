@@ -33,7 +33,6 @@
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
 		53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */; };
 		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
-		53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */; };
 		53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */; };
 		53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */; };
 		53A4EF731F2F075500EF58EB /* tabbar_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6D1F2F075500EF58EB /* tabbar_home@2x.png */; };
@@ -84,7 +83,6 @@
 		53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A4EF2C1F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53A4EF311F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53A4EF331F2ED46B00EF58EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_onsite@2x.png"; sourceTree = "<group>"; };
 		53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_onsite_selected@2x.png"; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */,
 				53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */,
 				53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */,
-				53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */,
 				53A4EF331F2ED46B00EF58EB /* Info.plist */,
 				53A4EF851F2F350C00EF58EB /* View */,
 				53A4EF841F2F350C00EF58EB /* Controller */,
@@ -332,7 +329,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53A4EF321F2ED46B00EF58EB /* LaunchScreen.storyboard in Resources */,
 				5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */,
 				5342E98A1F33261300AC3059 /* about_praise.png in Resources */,
 				5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */,
@@ -448,14 +444,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		53A4EF301F2ED46B00EF58EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53A4EF311F2ED46B00EF58EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -557,6 +545,7 @@
 			baseConfigurationReference = 9A03C1CF6B798BED0E72F7DD /* Pods-MortgageCalculator-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -577,6 +566,7 @@
 			baseConfigurationReference = 42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
