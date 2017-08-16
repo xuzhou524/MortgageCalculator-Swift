@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "icon_tabbar_onsite"), selectedImage: UIImage(named: "icon_tabbar_onsite_selected"))
 
         self.homeTabBarController = UITabBarController()
-        self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.remindNavigationController!, self.moreNavigationController!]
+        self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.moreNavigationController!]
         
         // 设置字体颜色
         //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)
