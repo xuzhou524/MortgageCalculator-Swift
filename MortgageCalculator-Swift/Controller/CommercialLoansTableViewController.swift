@@ -21,9 +21,19 @@ class CommercialLoansTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
+        
         regClass(self.tableView, cell: BaseTableViewCell.self)
         regClass(self.tableView, cell: LoansTypeTableViewCell.self)
         regClass(self.tableView, cell: BottonTableViewCell.self)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(CommercialLoansTableViewController.backupgroupTap))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        tapGestureRecognizer.cancelsTouchesInView = false
+    }
+    
+    func backupgroupTap(){
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 
     // MARK: - Table view data source
@@ -81,6 +91,9 @@ class CommercialLoansTableViewController: UITableViewController {
     }
     
     func calculateClick(){
+        
+        self.backupgroupTap()
+        
         let loanAmontStr = self.loanAmontTextFiled?.text
         let loanPeriodStr = self.loanPeriodTextFiled?.text
         let loanRateStr = self.loanRateTextFiled?.text

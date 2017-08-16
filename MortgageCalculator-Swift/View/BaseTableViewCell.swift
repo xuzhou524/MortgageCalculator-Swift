@@ -51,6 +51,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.textField = UITextField()
+        self.textField?.keyboardType = .numberPad
         self.textField?.font = XZClient.XZFont2(size: 15)
         self.contentView.addSubview(self.textField!)
         self.textField?.snp.makeConstraints({ (make) in

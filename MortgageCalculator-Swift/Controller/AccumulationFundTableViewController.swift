@@ -24,6 +24,15 @@ class AccumulationFundTableViewController: UITableViewController {
         regClass(self.tableView, cell: BaseTableViewCell.self)
         regClass(self.tableView, cell: LoansTypeTableViewCell.self)
         regClass(self.tableView, cell: BottonTableViewCell.self)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(CommercialLoansTableViewController.backupgroupTap))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        tapGestureRecognizer.cancelsTouchesInView = false
+    }
+    
+    func backupgroupTap(){
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     
     // MARK: - Table view data source
@@ -45,7 +54,7 @@ class AccumulationFundTableViewController: UITableViewController {
         
         if indexPath.row == 4 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
-            cell.calculateButton?.addTarget(self, action: #selector(CommercialLoansTableViewController.calculateClick), for: .touchUpInside)
+            cell.calculateButton?.addTarget(self, action: #selector(AccumulationFundTableViewController.calculateClick), for: .touchUpInside)
             return cell
         }
         
@@ -81,6 +90,9 @@ class AccumulationFundTableViewController: UITableViewController {
     }
     
     func calculateClick(){
+        
+        self.backupgroupTap()
+        
         let loanAmontStr = self.loanAmontTextFiled?.text
         let loanPeriodStr = self.loanPeriodTextFiled?.text
         let loanRateStr = self.loanRateTextFiled?.text

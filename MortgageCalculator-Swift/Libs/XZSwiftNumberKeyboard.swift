@@ -195,6 +195,7 @@ class XZSwiftNumberKeyboard: UIView {
         let str = self.textField?.text
         
         print("%d",length ?? 1)
+        print("%d",location ?? 1)
         //print("%@",string)
         print("%@",str ?? "1")
         
