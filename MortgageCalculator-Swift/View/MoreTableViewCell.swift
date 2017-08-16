@@ -36,7 +36,7 @@ class MoreTableViewCell: UITableViewCell {
         });
         
         self.titleLabel = UILabel()
-        self.titleLabel?.text = "想容易,就用易"
+        self.titleLabel?.text = "想容易,就用易贷款"
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
         self.titleLabel?.textColor = XZSwiftColor.xzGlay129
         self.contentView.addSubview(self.titleLabel!)

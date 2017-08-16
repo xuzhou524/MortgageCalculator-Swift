@@ -61,7 +61,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.topSepView = UIImageView()
-        self.topSepView?.backgroundColor = XZSwiftColor.xzGlay50
+        self.topSepView?.backgroundColor = XZSwiftColor.xzGlay230
         self.contentView.addSubview(self.topSepView!)
         self.topSepView?.snp.makeConstraints({ (make) in
             make.left.right.top.equalTo(self.contentView)
@@ -69,7 +69,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.bottomSepView = UIImageView()
-        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay50
+        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
         self.contentView.addSubview(self.bottomSepView!)
         self.bottomSepView?.snp.makeConstraints({ (make) in
             make.left.right.bottom.equalTo(self.contentView)
@@ -77,7 +77,7 @@ class BaseTableViewCell: UITableViewCell {
         })
         
         self.bottomShortSepView = UIImageView()
-        self.bottomShortSepView?.backgroundColor = XZSwiftColor.xzGlay50
+        self.bottomShortSepView?.backgroundColor = XZSwiftColor.xzGlay230
         self.contentView.addSubview(self.bottomShortSepView!)
         self.bottomShortSepView?.snp.makeConstraints({ (make) in
             make.right.bottom.equalTo(self.contentView)

@@ -210,9 +210,9 @@
 				530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */,
 				53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */,
 				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
-				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
 				5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */,
 				537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */,
+				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,8 +224,8 @@
 				53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */,
 				5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */,
 				5342E9811F3323E000AC3059 /* titleTableViewCell.swift */,
-				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 				538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */,
+				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -563,7 +563,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.longdai.MortgageCalculator-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.MortgageCalculator-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -582,7 +582,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.longdai.MortgageCalculator-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.MortgageCalculator-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";

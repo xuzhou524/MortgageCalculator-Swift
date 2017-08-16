@@ -48,7 +48,7 @@ class LoansTypeTableViewCell: UITableViewCell {
         })
         
         self.bottomSepView = UIImageView()
-        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay50
+        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
         self.contentView.addSubview(self.bottomSepView!)
         self.bottomSepView?.snp.makeConstraints({ (make) in
             make.left.right.bottom.equalTo(self.contentView)
