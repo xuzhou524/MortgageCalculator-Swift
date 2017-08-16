@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -49,6 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()
+        
+        #if DEBUG
+        #else
+            Fabric.with([Crashlytics.self])
+        #endif
         
         return true
     }
