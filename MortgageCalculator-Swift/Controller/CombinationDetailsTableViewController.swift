@@ -104,13 +104,13 @@ class CombinationDetailsTableViewController: UITableViewController {
                 return cell
             case 2:
                 let cell = getCell(tableView, cell: LoanDetails_CumulativeTableViewCell.self, indexPath: indexPath)
-                cell.bind(loanAmountStr: self.accumulationAmontStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.accumulationRateStr!, loanTypeInt: self.loanTypeInt!)
+                cell.binds(businessAmountStr: self.businessAmontStr!, businessRateStr: self.businessRateStr!, accumulationAmountStr: self.accumulationAmontStr!, accumulationRateStr: self.accumulationRateStr!, loanNumberStr: self.loanNumberStr!, loanTypeInt: self.loanTypeInt!)
                 return cell
             default: break
             }
         }else{
             let cell = getCell(tableView, cell: LoanDetailsTableViewCell.self, indexPath: indexPath)
-            cell.bind(periodStr: String.init(format: "%d",indexPath.row + 1), loanAmountStr: self.accumulationAmontStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.accumulationRateStr!, loanTypeInt: self.loanTypeInt!)
+            cell.binds(periodStr:String.init(format: "%d",indexPath.row + 1), accumulationAmontStr: self.accumulationAmontStr!, accumulationRateStr: self.accumulationRateStr!,businessAmontStr: self.businessAmontStr!, businessRateStr: self.businessRateStr!, loanNumberStr: self.loanNumberStr!, loanTypeInt: self.loanTypeInt!)
             return cell
         }
         return UITableViewCell()

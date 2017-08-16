@@ -100,6 +100,33 @@ class LoanDetailsTableViewCell: UITableViewCell {
         default: break
         }
     }
+    
+    func binds(periodStr: String,accumulationAmontStr: String, accumulationRateStr : String ,businessAmontStr: String,businessRateStr : String, loanNumberStr : String,loanTypeInt : NSInteger){
+        self.periodLabel?.text = "第" + periodStr + "期"
+        switch loanTypeInt {
+        case 0:
+            //月供
+            let monthAmonunt = LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12)
+            self.monthAmountLabel?.text = String.init(format: "%.2f",monthAmonunt )
+            //每月本金
+            let principal = LoanModel.averageCapitalPlusInterestMonthPrincipal(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)) + LoanModel.averageCapitalPlusInterestMonthPrincipal(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!))
+            self.principalLabel?.text = String.init(format: "%.2f", principal)
+            //每月利息
+            let interest = LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)) + LoanModel.averageCapitalPlusInterestMonthInterest(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!))
+            self.interestLabel?.text = String.init(format: "%.2f", interest)
+        case 1:
+            //月供
+            let monthAmonunt = LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12,numberMonth:CGFloat(Double(periodStr)!)) + LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12,numberMonth:CGFloat(Double(periodStr)!))
+            self.monthAmountLabel?.text = String.init(format: "%.2f", monthAmonunt)
+            //每月本金
+            let principal = LoanModel.equalPrincipalMonthPrincipal(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + LoanModel.equalPrincipalMonthPrincipal(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, totalMonths: CGFloat(Double(loanNumberStr)!) * 12)
+            self.principalLabel?.text = String.init(format: "%.2f", principal)
+            //每月利息
+            let interest =  LoanModel.equalPrincipalMonthInterest(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!)) + LoanModel.equalPrincipalMonthInterest(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!) , totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth:CGFloat(Double(periodStr)!))
+            self.interestLabel?.text = String.init(format: "%.2f", interest)
+        default: break
+        }
+    }
 }
 
 
@@ -576,6 +603,27 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
         case 1:
             self.totalAmountLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
             self.interestRateLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(loanAmountStr)!) * 10000.0)
+            
+        default: break
+        }
+    }
+    
+    func binds(businessAmountStr: String,businessRateStr: String,accumulationAmountStr: String,accumulationRateStr : String, loanNumberStr : String,loanTypeInt : NSInteger){
+        switch loanTypeInt {
+        case 0:
+            let monthAlso = LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(businessAmountStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(accumulationAmountStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12)
+            self.totalAmountLabel?.text = String.init(format: "%.2f", monthAlso)
+            
+            let nterestRateMonthAlso = LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(businessAmountStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(businessAmountStr)!) * 10000.0 + LoanModel.averageCapitalPlusInterestTotalInterest(principal: CGFloat(Double(accumulationAmountStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(accumulationAmountStr)!) * 10000.0
+            self.interestRateLabel?.text = String.init(format: "%.2f", nterestRateMonthAlso)
+            
+        case 1:
+            let monthAlso = LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(businessAmountStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(accumulationAmountStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12)
+            
+            self.totalAmountLabel?.text = String.init(format: "%.2f",monthAlso)
+            
+            let nterestRateMonthAlso = LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(businessAmountStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(businessAmountStr)!) * 10000.0 + LoanModel.equalPrincipalTotalInterest(principal: CGFloat(Double(accumulationAmountStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + CGFloat(Double(accumulationAmountStr)!) * 10000.0
+            self.interestRateLabel?.text = String.init(format: "%.2f", nterestRateMonthAlso)
             
         default: break
         }
