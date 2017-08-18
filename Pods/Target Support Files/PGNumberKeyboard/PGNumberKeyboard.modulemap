@@ -1,6 +1,0 @@
-framework module PGNumberKeyboard {
-  umbrella header "PGNumberKeyboard-umbrella.h"
-
-  export *
-  module * { export * }
-}
