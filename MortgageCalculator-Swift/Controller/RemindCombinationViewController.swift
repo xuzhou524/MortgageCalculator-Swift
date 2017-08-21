@@ -43,24 +43,25 @@ class RemindCombinationViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 9
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 6 {
+        if indexPath.row == 8 {
             return 90
         }
         return 50
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 6 {
+        if indexPath.row == 8 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
-            cell.calculateButton?.addTarget(self, action: #selector(CombinationLoabsTableViewController.calculateClick), for: .touchUpInside)
+            cell.calculateButton?.addTarget(self, action: #selector(RemindCombinationViewController.saveClick), for: .touchUpInside)
+            cell.calculateButton?.setTitle("保存", for: .normal)
             return cell
         }
         
-        if indexPath.row == 5 {
+        if indexPath.row == 7 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             self.typeSegmented = cell.typeSegmented
             return cell
@@ -100,12 +101,25 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             self.loanPeriodTextFiled = cell.textField
+        }else if indexPath.row == 5 {
+            cell.titleLabel?.text = "还款日期"
+            cell.topSepView?.isHidden = true
+            cell.bottomSepView?.isHidden = true
+            cell.bottomShortSepView?.isHidden = false
+            cell.textField?.text = "15"
+            self.loanPeriodTextFiled = cell.textField
+        }else if indexPath.row == 6 {
+            cell.titleLabel?.text = "已还期数"
+            cell.topSepView?.isHidden = true
+            cell.bottomSepView?.isHidden = true
+            cell.bottomShortSepView?.isHidden = false
+            cell.textField?.text = "8"
+            self.loanPeriodTextFiled = cell.textField
         }
-        
         return cell
     }
     
-    func calculateClick(){
+    func saveClick(){
         
         self.backupgroupTap()
         let accumulationAmontStr = self.accumulationAmontTextFiled?.text

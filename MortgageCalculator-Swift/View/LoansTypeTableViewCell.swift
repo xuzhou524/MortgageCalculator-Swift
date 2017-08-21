@@ -27,7 +27,7 @@ class LoansTypeTableViewCell: UITableViewCell {
     func sebView() ->Void{
         self.selectionStyle = .none
         self.titleLabel = UILabel()
-        self.titleLabel?.text = "贷款方式";
+        self.titleLabel?.text = "还款方式";
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
         self.contentView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) in
