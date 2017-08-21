@@ -70,18 +70,21 @@ class RemindAccumulationViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             self.loanAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "贷款利率（%）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             cell.textField?.text = "3.25"
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 3 {
@@ -89,6 +92,7 @@ class RemindAccumulationViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = false
             cell.textField?.text = "15"
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 4 {
@@ -96,7 +100,8 @@ class RemindAccumulationViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.textField?.text = "8"
+            cell.summeryLabel?.isHidden = true
+            cell.textField?.text = "0"
             self.loanRateTextFiled = cell.textField
         }
         return cell

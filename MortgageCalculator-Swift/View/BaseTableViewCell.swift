@@ -14,6 +14,8 @@ class BaseTableViewCell: UITableViewCell {
     var bgTextFieldView : UIView?
     var textField: UITextField?
     
+    var summeryLabel: UILabel?
+    
     var topSepView : UIImageView?
     var bottomSepView : UIImageView?
     var bottomShortSepView : UIImageView?
@@ -50,13 +52,23 @@ class BaseTableViewCell: UITableViewCell {
             make.height.equalTo(32);
         })
         
+        self.summeryLabel = UILabel()
+        self.summeryLabel?.text = "号"
+        self.summeryLabel?.isHidden = true
+        self.summeryLabel?.font = XZClient.XZFont2(size: 15)
+        self.bgTextFieldView?.addSubview(self.summeryLabel!)
+        self.summeryLabel?.snp.makeConstraints({ (make) in
+            make.centerY.equalTo(self.bgTextFieldView!)
+            make.right.equalTo(self.bgTextFieldView!).offset(-10)
+        })
+        
         self.textField = UITextField()
         self.textField?.keyboardType = .numberPad
         self.textField?.font = XZClient.XZFont2(size: 15)
-        self.contentView.addSubview(self.textField!)
+        self.bgTextFieldView?.addSubview(self.textField!)
         self.textField?.snp.makeConstraints({ (make) in
             make.top.bottom.equalTo(self.bgTextFieldView!)
-            make.right.equalTo(self.bgTextFieldView!).offset(-8)
+            make.right.equalTo(self.bgTextFieldView!).offset(-25)
             make.left.equalTo(self.bgTextFieldView!).offset(8);
         })
         

@@ -74,12 +74,14 @@ class RemindCombinationViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             self.accumulationAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "公积金贷款利率（%）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             cell.textField?.text = "3.25"
             self.accumulationRateTextFiled = cell.textField
         }else if indexPath.row == 2 {
@@ -87,12 +89,14 @@ class RemindCombinationViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             self.businessAmontTextFiled = cell.textField
         }else if indexPath.row == 3 {
             cell.titleLabel?.text = "商业贷款利率（%）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             cell.textField?.text = "4.9"
             self.businessRateTextFiled = cell.textField
         }else if indexPath.row == 4 {
@@ -100,12 +104,14 @@ class RemindCombinationViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = true
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 5 {
             cell.titleLabel?.text = "还款日期"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.summeryLabel?.isHidden = false
             cell.textField?.text = "15"
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 6 {
@@ -113,7 +119,8 @@ class RemindCombinationViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.textField?.text = "8"
+            cell.summeryLabel?.isHidden = true
+            cell.textField?.text = "0"
             self.loanPeriodTextFiled = cell.textField
         }
         return cell
