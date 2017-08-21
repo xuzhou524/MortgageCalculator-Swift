@@ -34,7 +34,8 @@ class remindTableViewController: UIViewController {
     }
     
     func rightTapPed(){
-        
+        let editorVC = RemindEditorViewController()
+        self.navigationController?.pushViewController(editorVC, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

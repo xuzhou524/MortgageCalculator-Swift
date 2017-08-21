@@ -20,6 +20,7 @@
 		5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */; };
 		5332A97D1F4A905E001465E4 /* bianji.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332A97C1F4A905E001465E4 /* bianji.png */; };
 		5332A97F1F4A911A001465E4 /* selectbianji.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332A97E1F4A911A001465E4 /* selectbianji.png */; };
+		5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */; };
 		5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E9811F3323E000AC3059 /* titleTableViewCell.swift */; };
 		5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9831F33258900AC3059 /* arrow_right@2x.png */; };
 		5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9841F33258900AC3059 /* arrow_right@3x.png */; };
@@ -72,6 +73,7 @@
 		5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindTableViewCell.swift; sourceTree = "<group>"; };
 		5332A97C1F4A905E001465E4 /* bianji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bianji.png; sourceTree = "<group>"; };
 		5332A97E1F4A911A001465E4 /* selectbianji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectbianji.png; sourceTree = "<group>"; };
+		5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindEditorViewController.swift; sourceTree = "<group>"; };
 		5342E9811F3323E000AC3059 /* titleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
 		5342E9831F33258900AC3059 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		5342E9841F33258900AC3059 /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
@@ -138,6 +140,36 @@
 				5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		5332A9801F4AB1E2001465E4 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				53A4EF871F2F353100EF58EB /* RootViewController.swift */,
+				53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */,
+				530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */,
+				53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */,
+				5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */,
+				537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */,
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
+		5332A9811F4AB1F3001465E4 /* Remind */ = {
+			isa = PBXGroup;
+			children = (
+				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
+				5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */,
+			);
+			name = Remind;
+			sourceTree = "<group>";
+		};
+		5332A9821F4AB220001465E4 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
+			);
+			name = More;
 			sourceTree = "<group>";
 		};
 		534FB7191F39BB32006E3144 /* Model */ = {
@@ -210,14 +242,9 @@
 		53A4EF841F2F350C00EF58EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				53A4EF871F2F353100EF58EB /* RootViewController.swift */,
-				53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */,
-				530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */,
-				53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */,
-				5321DE501F31E35A00184F9D /* remindTableViewController.swift */,
-				5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */,
-				537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */,
-				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
+				5332A9801F4AB1E2001465E4 /* Calculator */,
+				5332A9811F4AB1F3001465E4 /* Remind */,
+				5332A9821F4AB220001465E4 /* More */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -427,6 +454,7 @@
 				5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */,
 				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
+				5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */,
 				53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				53D777131F307EE60074B52C /* XZSetting.swift in Sources */,
 				53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */,
