@@ -23,6 +23,7 @@
 		5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */; };
 		5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */; };
 		5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */; };
+		5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A98B1F4AB9BD001465E4 /* RemindTableViewController.swift */; };
 		5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E9811F3323E000AC3059 /* titleTableViewCell.swift */; };
 		5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9831F33258900AC3059 /* arrow_right@2x.png */; };
 		5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9841F33258900AC3059 /* arrow_right@3x.png */; };
@@ -78,6 +79,7 @@
 		5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCommercialViewController.swift; sourceTree = "<group>"; };
 		5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindAccumulationViewController.swift; sourceTree = "<group>"; };
 		5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCombinationViewController.swift; sourceTree = "<group>"; };
+		5332A98B1F4AB9BD001465E4 /* RemindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindTableViewController.swift; sourceTree = "<group>"; };
 		5342E9811F3323E000AC3059 /* titleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
 		5342E9831F33258900AC3059 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		5342E9841F33258900AC3059 /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		5332A9811F4AB1F3001465E4 /* Remind */ = {
 			isa = PBXGroup;
 			children = (
+				5332A98B1F4AB9BD001465E4 /* RemindTableViewController.swift */,
 				5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */,
 				5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */,
 				5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */,
@@ -471,6 +474,7 @@
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
+				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,
 				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
 				537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */,
