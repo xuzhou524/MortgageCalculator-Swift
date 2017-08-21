@@ -1,5 +1,5 @@
 //
-//  remindTableViewController.swift
+//  RemindTableViewController.swift
 //  MortgageCalculator-Swift
 //
 //  Created by gozap on 2017/8/2.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class remindTableViewController: UIViewController {
+class RemindTableViewController: UIViewController {
     
     var remindDayTitleView : RemindDayTitleView?
     
@@ -27,7 +27,7 @@ class remindTableViewController: UIViewController {
         let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:28, height:28))
         rightButton.setImage(UIImage(named: "selectbianji"), for: .normal)
         rightButton.setImage(UIImage(named: "bianji"), for: .highlighted)
-        rightButton.addTarget(self,action:#selector(remindTableViewController.rightTapPed),for:.touchUpInside)
+        rightButton.addTarget(self,action:#selector(RemindTableViewController.rightTapPed),for:.touchUpInside)
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
         

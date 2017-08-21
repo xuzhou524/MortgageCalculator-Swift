@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.rootNavigationController = XZSwiftNavigationController(rootViewController: RootViewController())
         self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
-        self.remindNavigationController = XZSwiftNavigationController(rootViewController: remindTableViewController())
+        self.remindNavigationController = XZSwiftNavigationController(rootViewController: RemindTableViewController())
         self.remindNavigationController?.tabBarItem = UITabBarItem(title: "提醒", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
         
         self.moreNavigationController = XZSwiftNavigationController(rootViewController: MoreViewController())
