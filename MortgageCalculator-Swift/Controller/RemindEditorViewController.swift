@@ -10,9 +10,9 @@ import UIKit
 
 class RemindEditorViewController: UIViewController {
     var rootSegmentedVC : UISegmentedControl?
-    var commerciaiLoansVC : CommercialLoansTableViewController?
-    var accumulationLoansVC : AccumulationFundTableViewController?
-    var combinationLoansVC : CombinationLoabsTableViewController?
+    var commerciaiLoansVC : RemindCommercialViewController?
+    var accumulationLoansVC : RemindAccumulationViewController?
+    var combinationLoansVC : RemindCombinationViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +40,7 @@ class RemindEditorViewController: UIViewController {
     func segmentDidchange(segmented:UISegmentedControl){
         if segmented.selectedSegmentIndex == 0 {
             if ((self.commerciaiLoansVC) == nil) {
-                self.commerciaiLoansVC = CommercialLoansTableViewController()
-                self.commerciaiLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
+                self.commerciaiLoansVC = RemindCommercialViewController()
                 self.view.addSubview((self.commerciaiLoansVC?.view)!)
                 self.commerciaiLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
@@ -51,8 +50,7 @@ class RemindEditorViewController: UIViewController {
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
         }else if  segmented.selectedSegmentIndex == 1 {
             if ((self.accumulationLoansVC) == nil) {
-                self.accumulationLoansVC = AccumulationFundTableViewController()
-                self.accumulationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
+                self.accumulationLoansVC = RemindAccumulationViewController()
                 self.view.addSubview((self.accumulationLoansVC?.view)!)
                 self.accumulationLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
@@ -62,8 +60,7 @@ class RemindEditorViewController: UIViewController {
             self.view.addSubview((self.accumulationLoansVC?.view)!)
         }else{
             if ((self.combinationLoansVC) == nil) {
-                self.combinationLoansVC = CombinationLoabsTableViewController()
-                self.combinationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
+                self.combinationLoansVC = RemindCombinationViewController()
                 self.view.addSubview((self.combinationLoansVC?.view)!)
                 self.combinationLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)

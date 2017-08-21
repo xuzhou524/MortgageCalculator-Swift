@@ -21,6 +21,9 @@
 		5332A97D1F4A905E001465E4 /* bianji.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332A97C1F4A905E001465E4 /* bianji.png */; };
 		5332A97F1F4A911A001465E4 /* selectbianji.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332A97E1F4A911A001465E4 /* selectbianji.png */; };
 		5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */; };
+		5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */; };
+		5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */; };
+		5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */; };
 		5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E9811F3323E000AC3059 /* titleTableViewCell.swift */; };
 		5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9831F33258900AC3059 /* arrow_right@2x.png */; };
 		5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9841F33258900AC3059 /* arrow_right@3x.png */; };
@@ -74,6 +77,9 @@
 		5332A97C1F4A905E001465E4 /* bianji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bianji.png; sourceTree = "<group>"; };
 		5332A97E1F4A911A001465E4 /* selectbianji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectbianji.png; sourceTree = "<group>"; };
 		5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindEditorViewController.swift; sourceTree = "<group>"; };
+		5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCommercialViewController.swift; sourceTree = "<group>"; };
+		5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindAccumulationViewController.swift; sourceTree = "<group>"; };
+		5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCombinationViewController.swift; sourceTree = "<group>"; };
 		5342E9811F3323E000AC3059 /* titleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
 		5342E9831F33258900AC3059 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		5342E9841F33258900AC3059 /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 			children = (
 				5321DE501F31E35A00184F9D /* RemindTableViewController.swift */,
 				5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */,
+				5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */,
+				5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */,
+				5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */,
 			);
 			name = Remind;
 			sourceTree = "<group>";
@@ -448,7 +457,10 @@
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				5321DE511F31E35A00184F9D /* RemindTableViewController.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
+				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
 				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
+				5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */,
+				5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,
 				5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */,
