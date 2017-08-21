@@ -23,6 +23,18 @@ class remindTableViewController: UIViewController {
             make.top.left.top.right.equalTo(self.view)
             make.height.equalTo(250)
         });
+        
+        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:28, height:28))
+        rightButton.setImage(UIImage(named: "selectbianji"), for: .normal)
+        rightButton.setImage(UIImage(named: "bianji"), for: .highlighted)
+        rightButton.addTarget(self,action:#selector(remindTableViewController.rightTapPed),for:.touchUpInside)
+        let rightBarButton = UIBarButtonItem(customView: rightButton)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+        
+    }
+    
+    func rightTapPed(){
+        
     }
 
     override func didReceiveMemoryWarning() {

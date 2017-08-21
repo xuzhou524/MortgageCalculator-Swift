@@ -117,7 +117,7 @@ class RemindDayTitleView: UIView {
         }
         
         let summeryLabel = UILabel()
-        summeryLabel.text = "*注: 距离还款日还有1天时会有提醒"
+        summeryLabel.text = "*注: 距离还款日还有1天时有提醒"
         summeryLabel.textColor = XZSwiftColor.white
         summeryLabel.font = XZClient.XZFont(size: 14)
         self.backgroundView?.addSubview(summeryLabel)
