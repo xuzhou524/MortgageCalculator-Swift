@@ -13,8 +13,6 @@ import UIKit
     @objc optional func editChanage( sender : UIButton)
 }
 
-
-
 class XZSwiftNumberKeyboard: UIView {
     var delegate: XZSwiftNumberKeyboardDelegate?
     
@@ -35,7 +33,6 @@ class XZSwiftNumberKeyboard: UIView {
     
     var textField : UITextField?
     
-    
     func initWithTextField(textField : UITextField){
         self.textField = textField
         self.backgroundColor = XZSwiftColor.convenientBackgroundColor
@@ -43,7 +40,6 @@ class XZSwiftNumberKeyboard: UIView {
         self.setupKeyBoard()
         textField.reloadInputViews()
     }
-    
 
     func setupKeyBoard() ->Void{
         let space = 1

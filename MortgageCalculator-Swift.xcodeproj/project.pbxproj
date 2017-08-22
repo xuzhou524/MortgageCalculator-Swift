@@ -24,6 +24,7 @@
 		5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */; };
 		5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */; };
 		5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A98B1F4AB9BD001465E4 /* RemindTableViewController.swift */; };
+		5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */; };
 		5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E9811F3323E000AC3059 /* titleTableViewCell.swift */; };
 		5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9831F33258900AC3059 /* arrow_right@2x.png */; };
 		5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9841F33258900AC3059 /* arrow_right@3x.png */; };
@@ -80,6 +81,7 @@
 		5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindAccumulationViewController.swift; sourceTree = "<group>"; };
 		5332A9891F4AB8D8001465E4 /* RemindCombinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCombinationViewController.swift; sourceTree = "<group>"; };
 		5332A98B1F4AB9BD001465E4 /* RemindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindTableViewController.swift; sourceTree = "<group>"; };
+		5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanCacheManage.swift; sourceTree = "<group>"; };
 		5342E9811F3323E000AC3059 /* titleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
 		5342E9831F33258900AC3059 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		5342E9841F33258900AC3059 /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				534FB71A1F39BB73006E3144 /* LoanModel.swift */,
+				5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,
+				5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */,
 				5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */,
 				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
