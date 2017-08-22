@@ -15,19 +15,19 @@ import UIKit
 
 class LoanCacheManage: NSObject , NSCoding {
     
-    var  businessPrincipalStr : String?
-    var  accumulationPrincipalStr : String?
+    var  businessPrincipalStr : String?               //商业贷款金额
+    var  accumulationPrincipalStr : String?           //公积金贷款金额
     
-    var  numberYearStr : String?
+    var  numberYearStr : String?                      //贷款年限
     
-    var  businessRateStr : String?
-    var  accumulationRateStr : String?
+    var  businessRateStr : String?                    //商业利率
+    var  accumulationRateStr : String?                //公积金利率
     
-    var  loanTypeStr : String?
-    var  reimbursementTypeStr : String?
+    var  loanTypeStr : String?                        //贷款方式
+    var  reimbursementTypeStr : String?               //还款方式
     
-    var  repaymentDate :String?
-    var  alsoNumberMonth :String?
+    var  repaymentDate :String?                       //还款日期
+    var  alsoNumberMonth :String?                     //已还期数
     
     required init?(coder aDecoder: NSCoder) {
         super.init()

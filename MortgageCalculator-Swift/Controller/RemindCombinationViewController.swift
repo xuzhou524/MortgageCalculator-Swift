@@ -17,6 +17,8 @@ class RemindCombinationViewController: UITableViewController {
     var businessRateTextFiled:UITextField?
     
     var loanPeriodTextFiled:UITextField?
+    var repaymentDateTextFiled : UITextField?
+    var alsoNumberMonthTextFiled : UITextField?
     
     var typeSegmented : UISegmentedControl?
     
@@ -113,7 +115,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = false
             cell.textField?.text = "15"
-            self.loanPeriodTextFiled = cell.textField
+            self.repaymentDateTextFiled = cell.textField
         }else if indexPath.row == 6 {
             cell.titleLabel?.text = "已还期数"
             cell.topSepView?.isHidden = true
@@ -121,7 +123,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.text = "0"
-            self.loanPeriodTextFiled = cell.textField
+            self.alsoNumberMonthTextFiled = cell.textField
         }
         return cell
     }

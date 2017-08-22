@@ -10,9 +10,11 @@ import UIKit
 
 class RemindCommercialViewController: UITableViewController {
 
-    var loanAmontTextFiled:UITextField?
-    var loanPeriodTextFiled:UITextField?
-    var loanRateTextFiled:UITextField?
+    var loanAmontTextFiled : UITextField?
+    var loanPeriodTextFiled : UITextField?
+    var loanRateTextFiled : UITextField?
+    var repaymentDateTextFiled : UITextField?
+    var alsoNumberMonthTextFiled : UITextField?
     
     var typeSegmented : UISegmentedControl?
     
@@ -95,7 +97,7 @@ class RemindCommercialViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = false
             cell.textField?.text = "15"
-            self.loanRateTextFiled = cell.textField
+            self.repaymentDateTextFiled = cell.textField
         }else if indexPath.row == 4 {
             cell.titleLabel?.text = "已还期数"
             cell.topSepView?.isHidden = true
@@ -103,7 +105,7 @@ class RemindCommercialViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.text = "0"
-            self.loanRateTextFiled = cell.textField
+            self.alsoNumberMonthTextFiled = cell.textField
         }
         return cell
     }
