@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TMCache
 
 class RemindCombinationViewController: UITableViewController {
     
@@ -130,18 +131,26 @@ class RemindCombinationViewController: UITableViewController {
     
     func saveClick(){
         
-        self.backupgroupTap()
-        let accumulationAmontStr = self.accumulationAmontTextFiled?.text
-        let accumulationRateStr = self.accumulationRateTextFiled?.text
-        
-        let businessAmontStr = self.businessAmontTextFiled?.text
-        let businessRateStr = self.businessRateTextFiled?.text
-        
-        let loanPeriodStr = self.loanPeriodTextFiled?.text
-        
-        if  ((businessAmontStr?.Lenght)! > 0 && (accumulationAmontStr?.Lenght)! > 0 && (loanPeriodStr?.Lenght)! > 0) {
-           
+        if  ((self.businessAmontTextFiled?.text?.Lenght)! <= 0 || (self.businessRateTextFiled?.text?.Lenght)! <= 0 || (self.accumulationAmontTextFiled?.text?.Lenght)! <= 0 || (self.accumulationRateTextFiled?.text?.Lenght)! <= 0) {
+            return
         }
+        
+        self.backupgroupTap()
+        
+        let loanModel = LoanCacheManage.init()
+        loanModel.businessPrincipalStr = self.businessAmontTextFiled?.text
+        loanModel.businessRateStr = self.businessRateTextFiled?.text
+        
+        loanModel.accumulationPrincipalStr = self.accumulationAmontTextFiled?.text
+        loanModel.accumulationRateStr = self.accumulationRateTextFiled?.text
+        
+        loanModel.numberYearStr = self.loanPeriodTextFiled?.text
+        loanModel.repaymentDateStr = self.repaymentDateTextFiled?.text
+        loanModel.alsoNumberMonthStr = self.alsoNumberMonthTextFiled?.text
+        
+        loanModel.loanTypeStr = "3"
+        loanModel.reimbursementTypeStr = String(describing: self.typeSegmented?.selectedSegmentIndex)
+        TMCache.shared().setObject(loanModel, forKey: kTMCacheLoanManage)
     }
     
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TMCache
 
 class RemindTableViewController: UIViewController {
     
@@ -31,6 +32,12 @@ class RemindTableViewController: UIViewController {
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let loanModels = TMCache.shared().object(forKey: kTMCacheLoanManage) as! LoanCacheManage
+        print("=======%@",loanModels.businessPrincipalStr!)
     }
     
     func rightTapPed(){

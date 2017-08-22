@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TMCache
 
 class RemindAccumulationViewController: UITableViewController {
     
@@ -111,15 +112,23 @@ class RemindAccumulationViewController: UITableViewController {
     
     func saveClick(){
         
-        self.backupgroupTap()
-        
-        let loanAmontStr = self.loanAmontTextFiled?.text
-        let loanPeriodStr = self.loanPeriodTextFiled?.text
-        let loanRateStr = self.loanRateTextFiled?.text
-        
-        if  ((loanAmontStr?.Lenght)! > 0 && (loanPeriodStr?.Lenght)! > 0) {
-            
+        if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0) {
+            return
         }
+        
+        
+        self.backupgroupTap()
+    
+        let loanModel = LoanCacheManage.init()
+        loanModel.accumulationPrincipalStr = self.loanAmontTextFiled?.text
+        loanModel.numberYearStr = self.loanPeriodTextFiled?.text
+        loanModel.accumulationRateStr = self.loanRateTextFiled?.text
+        loanModel.repaymentDateStr = self.repaymentDateTextFiled?.text
+        loanModel.alsoNumberMonthStr = self.alsoNumberMonthTextFiled?.text
+        
+        loanModel.loanTypeStr = "2"
+        loanModel.reimbursementTypeStr = String(describing: self.typeSegmented?.selectedSegmentIndex)
+        TMCache.shared().setObject(loanModel, forKey: kTMCacheLoanManage)
     }
     
     override func didReceiveMemoryWarning() {

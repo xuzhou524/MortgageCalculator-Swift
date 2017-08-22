@@ -8,11 +8,7 @@
 
 import UIKit
 
-// principal     贷款本金 （单位：元）
-// monthRate     年利率
-// totalMonths   还款月数
-// numberMonth   还款月序号
-
+let kTMCacheLoanManage = "kTMCacheLoanManage"
 class LoanCacheManage: NSObject , NSCoding {
     
     var  businessPrincipalStr : String?               //商业贷款金额
@@ -23,11 +19,15 @@ class LoanCacheManage: NSObject , NSCoding {
     var  businessRateStr : String?                    //商业利率
     var  accumulationRateStr : String?                //公积金利率
     
-    var  loanTypeStr : String?                        //贷款方式
-    var  reimbursementTypeStr : String?               //还款方式
+    var  loanTypeStr : String?                        //贷款方式        1 商业贷款     2 公积金贷款    3 组合贷款
+    var  reimbursementTypeStr : String?               //还款方式        1 等额本金     2 等额本息
     
-    var  repaymentDate :String?                       //还款日期
-    var  alsoNumberMonth :String?                     //已还期数
+    var  repaymentDateStr :String?                       //还款日期
+    var  alsoNumberMonthStr :String?                     //已还期数
+    
+    required override init(){
+        super.init()
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init()
@@ -53,11 +53,11 @@ class LoanCacheManage: NSObject , NSCoding {
         if aDecoder.containsValue(forKey: "reimbursementTypeStr") {
             self.reimbursementTypeStr = aDecoder.decodeObject(forKey: "reimbursementTypeStr") as? String
         }
-        if aDecoder.containsValue(forKey: "repaymentDate") {
-            self.repaymentDate = aDecoder.decodeObject(forKey: "repaymentDate") as? String
+        if aDecoder.containsValue(forKey: "repaymentDateStr") {
+            self.repaymentDateStr = aDecoder.decodeObject(forKey: "repaymentDateStr") as? String
         }
-        if aDecoder.containsValue(forKey: "alsoNumberMonth") {
-            self.alsoNumberMonth = aDecoder.decodeObject(forKey: "alsoNumberMonth") as? String
+        if aDecoder.containsValue(forKey: "alsoNumberMonthStr") {
+            self.alsoNumberMonthStr = aDecoder.decodeObject(forKey: "alsoNumberMonthStr") as? String
         }
     }
     
@@ -69,8 +69,8 @@ class LoanCacheManage: NSObject , NSCoding {
         aCoder.encode(self.accumulationRateStr, forKey: "accumulationRateStr")
         aCoder.encode(self.loanTypeStr, forKey: "loanTypeStr")
         aCoder.encode(self.reimbursementTypeStr, forKey: "reimbursementTypeStr")
-        aCoder.encode(self.repaymentDate, forKey: "repaymentDate")
-        aCoder.encode(self.alsoNumberMonth, forKey: "alsoNumberMonth")
+        aCoder.encode(self.repaymentDateStr, forKey: "repaymentDateStr")
+        aCoder.encode(self.alsoNumberMonthStr, forKey: "alsoNumberMonthStr")
     }
     
 }
