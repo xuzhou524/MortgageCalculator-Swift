@@ -13,6 +13,14 @@ class RemindTableViewController: UIViewController {
     
     var remindDayTitleView : RemindDayTitleView?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (TMCache.shared().object(forKey: kTMCacheLoanManage) != nil) {
+            let loanModels = TMCache.shared().object(forKey: kTMCacheLoanManage) as! LoanCacheManage
+            print("=======%@",loanModels.businessPrincipalStr!)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "提醒"
@@ -31,13 +39,6 @@ class RemindTableViewController: UIViewController {
         rightButton.addTarget(self,action:#selector(RemindTableViewController.rightTapPed),for:.touchUpInside)
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        let loanModels = TMCache.shared().object(forKey: kTMCacheLoanManage) as! LoanCacheManage
-        print("=======%@",loanModels.businessPrincipalStr!)
     }
     
     func rightTapPed(){
