@@ -26,6 +26,13 @@ class RemindTableViewController: UIViewController {
         self.navigationItem.title = "提醒"
         self.view.backgroundColor = XZSwiftColor.white;
         
+        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:28, height:28))
+        rightButton.setImage(UIImage(named: "selectbianji"), for: .normal)
+        rightButton.setImage(UIImage(named: "bianji"), for: .highlighted)
+        rightButton.addTarget(self,action:#selector(RemindTableViewController.rightTapPed),for:.touchUpInside)
+        let rightBarButton = UIBarButtonItem(customView: rightButton)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+        
         self.remindDayTitleView = RemindDayTitleView()
         self.view.addSubview(self.remindDayTitleView!)
         self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
@@ -33,12 +40,6 @@ class RemindTableViewController: UIViewController {
             make.height.equalTo(250)
         });
         
-        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:28, height:28))
-        rightButton.setImage(UIImage(named: "selectbianji"), for: .normal)
-        rightButton.setImage(UIImage(named: "bianji"), for: .highlighted)
-        rightButton.addTarget(self,action:#selector(RemindTableViewController.rightTapPed),for:.touchUpInside)
-        let rightBarButton = UIBarButtonItem(customView: rightButton)
-        self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
     func rightTapPed(){
