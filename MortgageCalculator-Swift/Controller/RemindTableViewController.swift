@@ -12,6 +12,8 @@ import TMCache
 class RemindTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var remindDayTitleView : RemindDayTitleView?
+    var loanCacheModel : LoanCacheManage?
+    
     fileprivate var _tableView: UITableView!
     fileprivate var tableView: UITableView{
         get{
@@ -35,8 +37,9 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if (TMCache.shared().object(forKey: kTMCacheLoanManage) != nil) {
-            let loanModels = TMCache.shared().object(forKey: kTMCacheLoanManage) as! LoanCacheManage
-            print("=======%@",loanModels.businessPrincipalStr!)
+            self.loanCacheModel = TMCache.shared().object(forKey: kTMCacheLoanManage) as? LoanCacheManage
+            //print("=======%@",self.loanCacheModel?.businessPrincipalStr! as Any)
+            self.tableView.reloadData()
         }
     }
     
@@ -79,8 +82,10 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         case 0:
             return 60
         case 1:
-            return 130
-            //return 80
+            if self.loanCacheModel?.loanTypeStr == "3" {
+                return 130
+            }
+            return 80
         case 2:
             return 80
         default: break
@@ -91,14 +96,41 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
-            //cell.bind(loanAmountStr: self.loanAmountStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.loanRateStr!, loanTypeInt: self.loanTypeInt!)
-            return cell
+            if self.loanCacheModel?.loanTypeStr == "1"{  //商业贷款
+                let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
+                
+               if let str = self.loanCacheModel?.businessPrincipalStr,
+                let str2 = self.loanCacheModel?.numberYearStr,
+                let str3 = self.loanCacheModel?.businessRateStr,
+                let i = self.loanCacheModel?.reimbursementTypeStr
+               {
+                print(i)
+                cell.bind(loanAmountStr: str,
+                          loanNumberStr: str2,
+                          loanRateStr: str3,
+                          loanTypeInt:NSInteger(i)!)
+                }
+                cell.titleLabel?.text = "下次月供"
+                return cell
+            }else if self.loanCacheModel?.loanTypeStr == "2"{ //公积金贷款
+                let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
+                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.accumulationRateStr)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
+                cell.titleLabel?.text = "下次月供"
+                return cell
+            }else if self.loanCacheModel?.loanTypeStr == "3" { //组合贷款
+                let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
+                cell.binds(accumulationAmontStr: (self.loanCacheModel?.accumulationPrincipalStr)!, accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!, businessAmontStr: (self.loanCacheModel?.businessPrincipalStr!)!, businessRateStr: (self.loanCacheModel?.businessRateStr!)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
+                cell.titleLabel?.text = "下次月供"
+                return cell
+            }
+            
         case 1:
-            let cell = getCell(tableView, cell: LoanDetails_DescribesTableViewCell.self, indexPath: indexPath)
-            //cell.bind(businessAmountStr: self.businessAmontStr!, businessRateStr: self.businessRateStr!, accumulationAmountStr: self.accumulationAmontStr!, accumulationRateStr: self.accumulationRateStr!, loanNumberStr: self.loanNumberStr!)
-
-            //let cell = getCell(tableView, cell: LoanDetails_DescribeTableViewCell.self, indexPath: indexPath)
+            if self.loanCacheModel?.loanTypeStr == "3" {
+                let cell = getCell(tableView, cell: LoanDetails_DescribesTableViewCell.self, indexPath: indexPath)
+                //cell.bind(businessAmountStr: self.businessAmontStr!, businessRateStr: self.businessRateStr!, accumulationAmountStr: self.accumulationAmontStr!, accumulationRateStr: self.accumulationRateStr!, loanNumberStr: self.loanNumberStr!)
+                return cell
+            }
+            let cell = getCell(tableView, cell: LoanDetails_DescribeTableViewCell.self, indexPath: indexPath)
             //cell.bind(loanAmountStr: self.loanAmountStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.loanRateStr!)
             return cell
         case 2:

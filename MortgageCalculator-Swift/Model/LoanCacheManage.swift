@@ -20,7 +20,7 @@ class LoanCacheManage: NSObject , NSCoding {
     var  accumulationRateStr : String?                //公积金利率
     
     var  loanTypeStr : String?                        //贷款方式        1 商业贷款     2 公积金贷款    3 组合贷款
-    var  reimbursementTypeStr : String?               //还款方式        1 等额本金     2 等额本息
+    var  reimbursementTypeStr : String?               //还款方式        0 等额本金     0 等额本息
     
     var  repaymentDateStr :String?                       //还款日期
     var  alsoNumberMonthStr :String?                     //已还期数

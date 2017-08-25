@@ -42,6 +42,7 @@ class RemindEditorViewController: UIViewController {
             if ((self.commerciaiLoansVC) == nil) {
                 self.commerciaiLoansVC = RemindCommercialViewController()
                 self.view.addSubview((self.commerciaiLoansVC?.view)!)
+                self.commerciaiLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.commerciaiLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
                     make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
@@ -52,6 +53,7 @@ class RemindEditorViewController: UIViewController {
             if ((self.accumulationLoansVC) == nil) {
                 self.accumulationLoansVC = RemindAccumulationViewController()
                 self.view.addSubview((self.accumulationLoansVC?.view)!)
+                self.accumulationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.accumulationLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
                     make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
@@ -62,6 +64,7 @@ class RemindEditorViewController: UIViewController {
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = RemindCombinationViewController()
                 self.view.addSubview((self.combinationLoansVC?.view)!)
+                self.combinationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.combinationLoansVC?.view.snp.makeConstraints({ (make) in
                     make.left.right.bottom.equalTo(self.view)
                     make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)

@@ -258,7 +258,7 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
         });
     }
     
-    func bind(loanAmountStr: String, loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
+    func bind(loanAmountStr: String , loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger){
         switch loanTypeInt {
         case 0:
             self.titleLabel?.text = "每月月供"

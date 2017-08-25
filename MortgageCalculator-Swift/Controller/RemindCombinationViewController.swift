@@ -10,7 +10,7 @@ import UIKit
 import TMCache
 
 class RemindCombinationViewController: UITableViewController {
-    
+    var rootNavigationController: XZSwiftNavigationController?
     var accumulationAmontTextFiled:UITextField?
     var accumulationRateTextFiled:UITextField?
     
@@ -149,8 +149,9 @@ class RemindCombinationViewController: UITableViewController {
         loanModel.alsoNumberMonthStr = self.alsoNumberMonthTextFiled?.text
         
         loanModel.loanTypeStr = "3"
-        loanModel.reimbursementTypeStr = String(describing: self.typeSegmented?.selectedSegmentIndex)
+        loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
         TMCache.shared().setObject(loanModel, forKey: kTMCacheLoanManage)
+        self.rootNavigationController?.popViewController(animated: true)
     }
     
     override func didReceiveMemoryWarning() {
