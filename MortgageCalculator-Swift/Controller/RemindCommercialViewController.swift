@@ -15,9 +15,8 @@ class RemindCommercialViewController: UITableViewController {
     var loanAmontTextFiled : UITextField?
     var loanPeriodTextFiled : UITextField?
     var loanRateTextFiled : UITextField?
-    var repaymentDateTextFiled : UITextField?
-    var alsoNumberMonthTextFiled : UITextField?
-    
+    var finalPaymentTextFiled : UITextField?
+
     var typeSegmented : UISegmentedControl?
     
     override func viewDidLoad() {
@@ -44,25 +43,25 @@ class RemindCommercialViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 6
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 6 {
+        if indexPath.row == 5 {
             return 90
         }
         return 50
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 6 {
+        if indexPath.row == 5 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
             cell.calculateButton?.addTarget(self, action: #selector(RemindCommercialViewController.saveClick), for: .touchUpInside)
             cell.calculateButton?.setTitle("保存", for: .normal)
             return cell
         }
         
-        if indexPath.row == 5 {
+        if indexPath.row == 4 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             self.typeSegmented = cell.typeSegmented
             return cell
@@ -93,21 +92,12 @@ class RemindCommercialViewController: UITableViewController {
             cell.textField?.text = "4.9"
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 3 {
-            cell.titleLabel?.text = "还款日期"
+            cell.titleLabel?.text = "最后还款日期"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = false
-            cell.textField?.text = "15"
-            self.repaymentDateTextFiled = cell.textField
-        }else if indexPath.row == 4 {
-            cell.titleLabel?.text = "已还期数"
-            cell.topSepView?.isHidden = true
-            cell.bottomSepView?.isHidden = true
-            cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = true
-            cell.textField?.text = "0"
-            self.alsoNumberMonthTextFiled = cell.textField
+            self.finalPaymentTextFiled = cell.textField
         }
         return cell
     }
@@ -124,8 +114,15 @@ class RemindCommercialViewController: UITableViewController {
         loanModel.businessPrincipalStr = self.loanAmontTextFiled?.text
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
         loanModel.businessRateStr = self.loanRateTextFiled?.text
-        loanModel.repaymentDateStr = self.repaymentDateTextFiled?.text
-        loanModel.alsoNumberMonthStr = self.alsoNumberMonthTextFiled?.text
+        loanModel.finalPaymentStr = self.finalPaymentTextFiled?.text
+    
+        let str = (self.finalPaymentTextFiled?.text)! as NSString
+        
+        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2))
+        loanModel.repaymentDateStr = repaymentDate
+        
+        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2))
+        loanModel.alsoNumberMonthStr = self.finalPaymentTextFiled?.text
         
         loanModel.loanTypeStr = "1"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)

@@ -18,8 +18,8 @@ class RemindCombinationViewController: UITableViewController {
     var businessRateTextFiled:UITextField?
     
     var loanPeriodTextFiled:UITextField?
-    var repaymentDateTextFiled : UITextField?
-    var alsoNumberMonthTextFiled : UITextField?
+    var finalPaymentTextFiled : UITextField?
+
     
     var typeSegmented : UISegmentedControl?
     
@@ -46,25 +46,25 @@ class RemindCombinationViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 8
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 8 {
+        if indexPath.row == 7 {
             return 90
         }
         return 50
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 8 {
+        if indexPath.row == 7 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
             cell.calculateButton?.addTarget(self, action: #selector(RemindCombinationViewController.saveClick), for: .touchUpInside)
             cell.calculateButton?.setTitle("保存", for: .normal)
             return cell
         }
         
-        if indexPath.row == 7 {
+        if indexPath.row == 6 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             self.typeSegmented = cell.typeSegmented
             return cell
@@ -110,21 +110,12 @@ class RemindCombinationViewController: UITableViewController {
             cell.summeryLabel?.isHidden = true
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 5 {
-            cell.titleLabel?.text = "还款日期"
+            cell.titleLabel?.text = "最后还款日期"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = false
-            cell.textField?.text = "15"
-            self.repaymentDateTextFiled = cell.textField
-        }else if indexPath.row == 6 {
-            cell.titleLabel?.text = "已还期数"
-            cell.topSepView?.isHidden = true
-            cell.bottomSepView?.isHidden = true
-            cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = true
-            cell.textField?.text = "0"
-            self.alsoNumberMonthTextFiled = cell.textField
+            self.finalPaymentTextFiled = cell.textField
         }
         return cell
     }
@@ -145,8 +136,10 @@ class RemindCombinationViewController: UITableViewController {
         loanModel.accumulationRateStr = self.accumulationRateTextFiled?.text
         
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
-        loanModel.repaymentDateStr = self.repaymentDateTextFiled?.text
-        loanModel.alsoNumberMonthStr = self.alsoNumberMonthTextFiled?.text
+        loanModel.finalPaymentStr = self.finalPaymentTextFiled?.text
+        
+        loanModel.repaymentDateStr = self.finalPaymentTextFiled?.text
+        loanModel.alsoNumberMonthStr = self.finalPaymentTextFiled?.text
         
         loanModel.loanTypeStr = "3"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
