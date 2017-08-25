@@ -43,6 +43,7 @@ class RemindDayTitleView: UIView {
     }
     
     func sebView(){
+        self.backgroundColor = XZSwiftColor.white;
         
         self.leftLinSepView = UIView()
         self.leftLinSepView?.backgroundColor = XZSwiftColor.xzGlay129
@@ -51,7 +52,7 @@ class RemindDayTitleView: UIView {
             make.centerX.equalTo(self).offset(-100)
             make.width.equalTo(2)
             make.top.equalTo(self)
-            make.height.equalTo(80)
+            make.height.equalTo(70)
         });
         self.leftLinSepView?.layer.shadowOpacity = 1
         self.leftLinSepView?.layer.shadowColor = XZSwiftColor.xzGlay129.cgColor
