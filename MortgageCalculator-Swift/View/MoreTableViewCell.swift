@@ -23,6 +23,7 @@ class MoreTableViewCell: UITableViewCell {
     }
     
     func sebView(){
+        self.selectionStyle = .none
         self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.iconImageView = UIImageView()
         self.iconImageView!.layer.cornerRadius = 15.0;
@@ -66,6 +67,7 @@ class More_InterTableViewCell: UITableViewCell {
     
     func sebView(){
         self.contentView.backgroundColor = XZSwiftColor.white
+        self.selectionStyle = .none
         
         let oneView = UIView()
         oneView.backgroundColor = XZSwiftColor.white

@@ -25,6 +25,8 @@ class LoanCacheManage: NSObject , NSCoding {
     var  repaymentDateStr :String?                       //还款日期
     var  alsoNumberMonthStr :String?                     //已还期数
     
+    var  finalPaymentStr :String?                     //最后还款时间   eg: 20170805
+    
     required override init(){
         super.init()
     }
@@ -59,6 +61,9 @@ class LoanCacheManage: NSObject , NSCoding {
         if aDecoder.containsValue(forKey: "alsoNumberMonthStr") {
             self.alsoNumberMonthStr = aDecoder.decodeObject(forKey: "alsoNumberMonthStr") as? String
         }
+        if aDecoder.containsValue(forKey: "finalPaymentStr") {
+            self.finalPaymentStr = aDecoder.decodeObject(forKey: "finalPaymentStr") as? String
+        }
     }
     
     func encode(with aCoder: NSCoder) {
@@ -71,6 +76,7 @@ class LoanCacheManage: NSObject , NSCoding {
         aCoder.encode(self.reimbursementTypeStr, forKey: "reimbursementTypeStr")
         aCoder.encode(self.repaymentDateStr, forKey: "repaymentDateStr")
         aCoder.encode(self.alsoNumberMonthStr, forKey: "alsoNumberMonthStr")
+        aCoder.encode(self.finalPaymentStr, forKey: "finalPaymentStr")
     }
     
 }

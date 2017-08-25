@@ -26,6 +26,7 @@ class LoanDetailsTableViewCell: UITableViewCell {
     }
     
     func sebView(){
+        self.selectionStyle = .none
         self.contentView.backgroundColor = XZSwiftColor.white
         self.periodLabel = UILabel()
         self.periodLabel?.text = "第一期"
@@ -219,6 +220,7 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
     }
     
     func sebView(){
+        self.selectionStyle = .none
         self.contentView.backgroundColor = XZSwiftColor.white
         
         self.titleLabel = UILabel()
@@ -285,6 +287,85 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
     }
 }
 
+class LoanNextMouth_TitleTableViewCell: UITableViewCell {
+    
+    var titleLabel: UILabel?
+    var amountLabel: UILabel?
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier:reuseIdentifier)
+        self.sebView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.sebView()
+    }
+    
+    func sebView(){
+        self.selectionStyle = .none
+        self.contentView.backgroundColor = XZSwiftColor.white
+        
+        self.titleLabel = UILabel()
+        self.titleLabel?.text = "下次月供"
+        self.titleLabel?.font = XZClient.XZFont2(size: 14)
+        self.contentView.addSubview(self.titleLabel!)
+        self.titleLabel?.snp.makeConstraints({ (make) -> Void in
+            make.top.equalTo(self.contentView).offset(15)
+            make.left.equalTo(self.contentView).offset(15)
+        });
+        
+        let label = UILabel()
+        label.text = "¥"
+        label.font = XZClient.XZFont2(size: 20)
+        self.contentView.addSubview(label)
+        label.snp.makeConstraints({ (make) -> Void in
+            make.top.equalTo((self.titleLabel?.snp.bottom)!).offset(13)
+            make.left.equalTo(self.titleLabel!)
+        });
+        
+        self.amountLabel = UILabel()
+        self.amountLabel?.text = "5647.64"
+        self.amountLabel?.font = XZClient.XZFont2(size: 22)
+        self.contentView.addSubview(self.amountLabel!)
+        self.amountLabel?.snp.makeConstraints({ (make) -> Void in
+            make.bottom.equalTo(label)
+            make.left.equalTo(label.snp.right).offset(3)
+        });
+        
+        let unitLabel = UILabel()
+        unitLabel.text = "元"
+        unitLabel.font = XZClient.XZFont2(size: 14)
+        self.contentView.addSubview(unitLabel)
+        unitLabel.snp.makeConstraints({ (make) -> Void in
+            make.bottom.equalTo(self.amountLabel!).offset(-2)
+            make.left.equalTo((self.amountLabel?.snp.right)!)
+        });
+    }
+    
+    func bind(loanAmountStr: String , loanNumberStr : String,loanRateStr : String,loanTypeInt : NSInteger ,numberMonth : NSInteger){
+        switch loanTypeInt {
+        case 0:
+            self.amountLabel?.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+        case 1:
+            self.amountLabel?.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12, numberMonth: CGFloat(numberMonth) + 1.0))
+        default: break
+        }
+    }
+    
+    func binds(accumulationAmontStr: String, accumulationRateStr : String ,businessAmontStr: String,businessRateStr : String, loanNumberStr : String,loanTypeInt : NSInteger , numberMonth : NSInteger) {
+        switch loanTypeInt {
+        case 0:
+            let monthAlso = LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12)
+            self.amountLabel?.text = String.init(format: "%.2f", monthAlso)
+        case 1:
+            let monthAlso = LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth: CGFloat(numberMonth) + 1.0) + LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth: CGFloat(numberMonth) + 1.0)
+            self.amountLabel?.text = String.init(format: "%.2f", monthAlso)
+        default: break
+        }
+    }
+}
+
 class LoanDetails_DescribeTableViewCell: UITableViewCell {
     
     var totalAmountTitleLabel: UILabel?
@@ -307,6 +388,7 @@ class LoanDetails_DescribeTableViewCell: UITableViewCell {
     }
     
     func sebView(){
+        self.selectionStyle = .none
         self.contentView.backgroundColor = XZSwiftColor.white
         
         self.totalAmountTitleLabel = UILabel()
@@ -402,6 +484,7 @@ class LoanDetails_DescribesTableViewCell: UITableViewCell {
     }
     
     func sebView(){
+        self.selectionStyle = .none
         self.contentView.backgroundColor = XZSwiftColor.white
         
         self.accumulationAmountTitleLabel = UILabel()
@@ -541,6 +624,7 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
     
     func sebView(){
         self.contentView.backgroundColor = XZSwiftColor.white
+        self.selectionStyle = .none
         
         let linView = UIView()
         linView.backgroundColor = XZSwiftColor.xzGlay230
@@ -628,6 +712,6 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
         default: break
         }
     }
-    
+
 }
 

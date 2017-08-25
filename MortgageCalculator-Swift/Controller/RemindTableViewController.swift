@@ -25,7 +25,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
                 _tableView?.delegate = self
                 _tableView?.dataSource = self
                 
-                regClass(_tableView, cell:LoanDetails_TitleTableViewCell.self)
+                regClass(_tableView, cell:LoanNextMouth_TitleTableViewCell.self)
                 regClass(_tableView, cell:LoanDetails_DescribeTableViewCell.self)
                 regClass(_tableView, cell:LoanDetails_CumulativeTableViewCell.self)
                 regClass(_tableView, cell:LoanDetails_DescribesTableViewCell.self)
@@ -96,46 +96,50 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
+            let cell = getCell(tableView, cell: LoanNextMouth_TitleTableViewCell.self, indexPath: indexPath)
             if self.loanCacheModel?.loanTypeStr == "1"{  //商业贷款
-                let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
-                
                if let str = self.loanCacheModel?.businessPrincipalStr,
                 let str2 = self.loanCacheModel?.numberYearStr,
                 let str3 = self.loanCacheModel?.businessRateStr,
-                let i = self.loanCacheModel?.reimbursementTypeStr
+                let i = self.loanCacheModel?.reimbursementTypeStr,
+                let i2 = self.loanCacheModel?.alsoNumberMonthStr
                {
-                print(i)
                 cell.bind(loanAmountStr: str,
                           loanNumberStr: str2,
                           loanRateStr: str3,
-                          loanTypeInt:NSInteger(i)!)
+                          loanTypeInt:NSInteger(i)!,
+                          numberMonth: NSInteger(i2)!)
                 }
-                cell.titleLabel?.text = "下次月供"
+            }else if self.loanCacheModel?.loanTypeStr == "2"{ //公积金贷款
+                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.accumulationRateStr)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!, numberMonth: NSInteger((self.loanCacheModel?.alsoNumberMonthStr)!)!)
+            }else if self.loanCacheModel?.loanTypeStr == "3" { //组合贷款
+                cell.binds(accumulationAmontStr: (self.loanCacheModel?.accumulationPrincipalStr)!, accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!, businessAmontStr: (self.loanCacheModel?.businessPrincipalStr!)!, businessRateStr: (self.loanCacheModel?.businessRateStr!)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!, numberMonth: NSInteger((self.loanCacheModel?.alsoNumberMonthStr)!)!)
+            }
+            return cell
+        case 1:
+            if self.loanCacheModel?.loanTypeStr == "1"{  //商业贷款
+                let cell = getCell(tableView, cell: LoanDetails_DescribeTableViewCell.self, indexPath: indexPath)
+                cell.bind(loanAmountStr: (self.loanCacheModel?.businessPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.businessRateStr)!)
                 return cell
             }else if self.loanCacheModel?.loanTypeStr == "2"{ //公积金贷款
-                let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
-                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.accumulationRateStr)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
-                cell.titleLabel?.text = "下次月供"
+                let cell = getCell(tableView, cell: LoanDetails_DescribeTableViewCell.self, indexPath: indexPath)
+                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.accumulationRateStr)!)
                 return cell
             }else if self.loanCacheModel?.loanTypeStr == "3" { //组合贷款
-                let cell = getCell(tableView, cell: LoanDetails_TitleTableViewCell.self, indexPath: indexPath)
-                cell.binds(accumulationAmontStr: (self.loanCacheModel?.accumulationPrincipalStr)!, accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!, businessAmontStr: (self.loanCacheModel?.businessPrincipalStr!)!, businessRateStr: (self.loanCacheModel?.businessRateStr!)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
-                cell.titleLabel?.text = "下次月供"
-                return cell
-            }
-            
-        case 1:
-            if self.loanCacheModel?.loanTypeStr == "3" {
                 let cell = getCell(tableView, cell: LoanDetails_DescribesTableViewCell.self, indexPath: indexPath)
-                //cell.bind(businessAmountStr: self.businessAmontStr!, businessRateStr: self.businessRateStr!, accumulationAmountStr: self.accumulationAmontStr!, accumulationRateStr: self.accumulationRateStr!, loanNumberStr: self.loanNumberStr!)
+                cell.bind(businessAmountStr: (self.loanCacheModel?.businessPrincipalStr!)!, businessRateStr: (self.loanCacheModel?.businessRateStr!)!, accumulationAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!)
                 return cell
             }
-            let cell = getCell(tableView, cell: LoanDetails_DescribeTableViewCell.self, indexPath: indexPath)
-            //cell.bind(loanAmountStr: self.loanAmountStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.loanRateStr!)
-            return cell
         case 2:
             let cell = getCell(tableView, cell: LoanDetails_CumulativeTableViewCell.self, indexPath: indexPath)
-            //cell.bind(loanAmountStr: self.loanAmountStr!, loanNumberStr: self.loanNumberStr!, loanRateStr: self.loanRateStr!, loanTypeInt: self.loanTypeInt!)
+            if self.loanCacheModel?.loanTypeStr == "1"{  //商业贷款
+                cell.bind(loanAmountStr: (self.loanCacheModel?.businessPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.businessRateStr)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
+            }else if self.loanCacheModel?.loanTypeStr == "2"{ //公积金贷款
+                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.accumulationRateStr)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
+                return cell
+            }else if self.loanCacheModel?.loanTypeStr == "3" { //组合贷款
+                cell.binds(businessAmountStr: (self.loanCacheModel?.businessPrincipalStr!)!, businessRateStr: (self.loanCacheModel?.businessRateStr!)!, accumulationAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanTypeInt:  NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!)
+            }
             return cell
         default: break
         }
