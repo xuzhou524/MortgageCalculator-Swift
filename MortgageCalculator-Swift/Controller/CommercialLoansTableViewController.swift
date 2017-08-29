@@ -72,12 +72,14 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "贷款利率（%）"
@@ -85,6 +87,7 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.textField?.text = "4.9"
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
         }
         return cell

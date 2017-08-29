@@ -75,6 +75,7 @@ class RemindCommercialViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "贷款年限（年）"
@@ -82,6 +83,7 @@ class RemindCommercialViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
+            cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "贷款利率（%）"
@@ -90,6 +92,7 @@ class RemindCommercialViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.text = "4.9"
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 3 {
             cell.titleLabel?.text = "首次还款日"
@@ -98,6 +101,7 @@ class RemindCommercialViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.placeholder = "eg：20170524"
+            cell.textField?.keyboardType = .numberPad
             self.startPaymentTextFiled = cell.textField
         }
         return cell

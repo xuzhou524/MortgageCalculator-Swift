@@ -78,6 +78,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.accumulationAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "公积金贷款利率（%）"
@@ -86,6 +87,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.text = "3.25"
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.accumulationRateTextFiled = cell.textField
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "商业贷款金额（万元）"
@@ -93,6 +95,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.businessAmontTextFiled = cell.textField
         }else if indexPath.row == 3 {
             cell.titleLabel?.text = "商业贷款利率（%）"
@@ -101,6 +104,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.text = "4.9"
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.businessRateTextFiled = cell.textField
         }else if indexPath.row == 4 {
             cell.titleLabel?.text = "贷款年限（年）"
@@ -108,6 +112,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
+            cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 5 {
             cell.titleLabel?.text = "首次还款日"
@@ -116,6 +121,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = true
             cell.textField?.placeholder = "eg：20170524"
+            cell.textField?.keyboardType = .numberPad
             self.startPaymentTextFiled = cell.textField
         }
         return cell
