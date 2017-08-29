@@ -66,6 +66,9 @@ class LoanCacheManage: NSObject , NSCoding {
         if aDecoder.containsValue(forKey: "finalPaymentStr") {
             self.finalPaymentStr = aDecoder.decodeObject(forKey: "finalPaymentStr") as? String
         }
+        if aDecoder.containsValue(forKey: "startPaymentStr") {
+            self.startPaymentStr = aDecoder.decodeObject(forKey: "startPaymentStr") as? String
+        }
     }
     
     func encode(with aCoder: NSCoder) {
@@ -79,6 +82,7 @@ class LoanCacheManage: NSObject , NSCoding {
         aCoder.encode(self.repaymentDateStr, forKey: "repaymentDateStr")
         aCoder.encode(self.alsoNumberMonthStr, forKey: "alsoNumberMonthStr")
         aCoder.encode(self.finalPaymentStr, forKey: "finalPaymentStr")
+        aCoder.encode(self.startPaymentStr, forKey: "startPaymentStr")
     }
     
 }

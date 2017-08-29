@@ -80,12 +80,12 @@ class RemindDayTitleView: UIView {
             make.left.equalTo(self).offset(30)
             make.right.equalTo(self).offset(-30)
         });
-        self.backgroundView?.layer.masksToBounds = true
+        //self.backgroundView?.layer.masksToBounds = true
         self.backgroundView?.layer.cornerRadius = 3
         self.backgroundView?.layer.shadowOpacity = 0.8
         self.backgroundView?.layer.shadowColor = XZSwiftColor.xzGlay129.cgColor
         self.backgroundView?.layer.shadowOffset = CGSize(width: 0, height: 0)
-        self.backgroundView?.layer.shadowRadius = 2
+        self.backgroundView?.layer.shadowRadius = 5
         
         self.titleLabel = UILabel()
         self.titleLabel?.text = "距离还款日还有"
