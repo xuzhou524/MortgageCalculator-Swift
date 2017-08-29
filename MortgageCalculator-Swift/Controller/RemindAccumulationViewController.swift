@@ -14,7 +14,7 @@ class RemindAccumulationViewController: UITableViewController {
     var loanAmontTextFiled:UITextField?
     var loanPeriodTextFiled:UITextField?
     var loanRateTextFiled:UITextField?
-    var finalPaymentTextFiled : UITextField?
+    var startPaymentTextFiled : UITextField?
     
     var typeSegmented : UISegmentedControl?
     
@@ -90,12 +90,13 @@ class RemindAccumulationViewController: UITableViewController {
             cell.textField?.text = "3.25"
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 3 {
-            cell.titleLabel?.text = "最后还款日期"
+            cell.titleLabel?.text = "首次还款日"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = false
-            self.finalPaymentTextFiled = cell.textField
+            cell.summeryLabel?.isHidden = true
+            cell.textField?.placeholder = "eg：20170524"
+            self.startPaymentTextFiled = cell.textField
         }
         return cell
     }
@@ -112,10 +113,11 @@ class RemindAccumulationViewController: UITableViewController {
         loanModel.accumulationPrincipalStr = self.loanAmontTextFiled?.text
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
         loanModel.accumulationRateStr = self.loanRateTextFiled?.text
-        loanModel.finalPaymentStr = self.finalPaymentTextFiled?.text
+        loanModel.startPaymentStr = self.startPaymentTextFiled?.text
         
-        loanModel.repaymentDateStr = self.finalPaymentTextFiled?.text
-        loanModel.alsoNumberMonthStr = self.finalPaymentTextFiled?.text
+        let str = (self.startPaymentTextFiled?.text)! as NSString
+        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期
+        loanModel.repaymentDateStr = repaymentDate
         
         loanModel.loanTypeStr = "2"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)

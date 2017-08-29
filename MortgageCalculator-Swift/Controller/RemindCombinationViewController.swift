@@ -18,7 +18,7 @@ class RemindCombinationViewController: UITableViewController {
     var businessRateTextFiled:UITextField?
     
     var loanPeriodTextFiled:UITextField?
-    var finalPaymentTextFiled : UITextField?
+    var startPaymentTextFiled : UITextField?
 
     
     var typeSegmented : UISegmentedControl?
@@ -110,12 +110,13 @@ class RemindCombinationViewController: UITableViewController {
             cell.summeryLabel?.isHidden = true
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 5 {
-            cell.titleLabel?.text = "最后还款日期"
+            cell.titleLabel?.text = "首次还款日"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = false
-            self.finalPaymentTextFiled = cell.textField
+            cell.summeryLabel?.isHidden = true
+            cell.textField?.placeholder = "eg：20170524"
+            self.startPaymentTextFiled = cell.textField
         }
         return cell
     }
@@ -134,12 +135,13 @@ class RemindCombinationViewController: UITableViewController {
         
         loanModel.accumulationPrincipalStr = self.accumulationAmontTextFiled?.text
         loanModel.accumulationRateStr = self.accumulationRateTextFiled?.text
-        
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
-        loanModel.finalPaymentStr = self.finalPaymentTextFiled?.text
         
-        loanModel.repaymentDateStr = self.finalPaymentTextFiled?.text
-        loanModel.alsoNumberMonthStr = self.finalPaymentTextFiled?.text
+        loanModel.startPaymentStr = self.startPaymentTextFiled?.text
+        
+        let str = (self.startPaymentTextFiled?.text)! as NSString
+        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期
+        loanModel.repaymentDateStr = repaymentDate
         
         loanModel.loanTypeStr = "3"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)

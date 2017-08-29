@@ -92,11 +92,12 @@ class RemindCommercialViewController: UITableViewController {
             cell.textField?.text = "4.9"
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 3 {
-            cell.titleLabel?.text = "首次还款日期"
+            cell.titleLabel?.text = "首次还款日"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = false
+            cell.summeryLabel?.isHidden = true
+            cell.textField?.placeholder = "eg：20170524"
             self.startPaymentTextFiled = cell.textField
         }
         return cell
@@ -117,7 +118,6 @@ class RemindCommercialViewController: UITableViewController {
         loanModel.startPaymentStr = self.startPaymentTextFiled?.text
     
         let str = (self.startPaymentTextFiled?.text)! as NSString
-        
         let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期
         loanModel.repaymentDateStr = repaymentDate
 
