@@ -15,7 +15,7 @@ class RemindCommercialViewController: UITableViewController {
     var loanAmontTextFiled : UITextField?
     var loanPeriodTextFiled : UITextField?
     var loanRateTextFiled : UITextField?
-    var finalPaymentTextFiled : UITextField?
+    var startPaymentTextFiled : UITextField?
 
     var typeSegmented : UISegmentedControl?
     
@@ -92,12 +92,12 @@ class RemindCommercialViewController: UITableViewController {
             cell.textField?.text = "4.9"
             self.loanRateTextFiled = cell.textField
         }else if indexPath.row == 3 {
-            cell.titleLabel?.text = "最后还款日期"
+            cell.titleLabel?.text = "首次还款日期"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.summeryLabel?.isHidden = false
-            self.finalPaymentTextFiled = cell.textField
+            self.startPaymentTextFiled = cell.textField
         }
         return cell
     }
@@ -114,16 +114,13 @@ class RemindCommercialViewController: UITableViewController {
         loanModel.businessPrincipalStr = self.loanAmontTextFiled?.text
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
         loanModel.businessRateStr = self.loanRateTextFiled?.text
-        loanModel.finalPaymentStr = self.finalPaymentTextFiled?.text
+        loanModel.startPaymentStr = self.startPaymentTextFiled?.text
     
-        let str = (self.finalPaymentTextFiled?.text)! as NSString
+        let str = (self.startPaymentTextFiled?.text)! as NSString
         
-        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2))
+        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期
         loanModel.repaymentDateStr = repaymentDate
-        
-        let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2))
-        loanModel.alsoNumberMonthStr = self.finalPaymentTextFiled?.text
-        
+
         loanModel.loanTypeStr = "1"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
         

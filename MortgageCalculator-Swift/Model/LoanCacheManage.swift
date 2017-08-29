@@ -23,9 +23,11 @@ class LoanCacheManage: NSObject , NSCoding {
     var  reimbursementTypeStr : String?               //还款方式        0 等额本金     0 等额本息
     
     var  repaymentDateStr :String?                       //还款日期
+    
     var  alsoNumberMonthStr :String?                     //已还期数
     
     var  finalPaymentStr :String?                     //最后还款时间   eg: 20170805
+    var  startPaymentStr :String?                     //开始还款时间   eg: 20170805
     
     required override init(){
         super.init()

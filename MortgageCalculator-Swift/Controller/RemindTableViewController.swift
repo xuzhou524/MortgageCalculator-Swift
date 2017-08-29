@@ -38,7 +38,21 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         super.viewWillAppear(animated)
         if (TMCache.shared().object(forKey: kTMCacheLoanManage) != nil) {
             self.loanCacheModel = TMCache.shared().object(forKey: kTMCacheLoanManage) as? LoanCacheManage
-            //print("=======%@",self.loanCacheModel?.businessPrincipalStr! as Any)
+            //当前时间戳
+            let date = Date()
+            
+            let dfmatter = DateFormatter()
+            dfmatter.dateFormat="yyyyMMdd"
+            //首次还款时间戳
+            let dayStr = dfmatter.date(from:(self.loanCacheModel?.repaymentDateStr)!)
+   
+            let gregorians = Calendar.init(identifier: .gregorian)
+            let result = gregorians.compare(Date(), to: dayStr!, toGranularity: .month)
+            if result.rawValue == 1 {  //开始还款
+               //var monthNumber = gregorians.dateComponents(Set<Calendar.Component>, from: Date(), to: dayStr!)
+            }else{
+                self.loanCacheModel?.alsoNumberMonthStr = "0"
+            }
             self.tableView.reloadData()
         }
     }
