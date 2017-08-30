@@ -82,7 +82,10 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        if (self.loanCacheModel != nil) {
+            return 1
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,6 +109,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        self.remindDayTitleViewData()
         switch indexPath.row {
         case 0:
             let cell = getCell(tableView, cell: LoanNextMouth_TitleTableViewCell.self, indexPath: indexPath)
@@ -156,6 +160,27 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         default: break
         }
         return UITableViewCell()
+    }
+
+    func remindDayTitleViewData(){
+        var dayStr = String()
+        let calendar: Calendar = Calendar(identifier: .gregorian)
+        var comps: DateComponents = DateComponents()
+        comps = calendar.dateComponents([.year,.month,.day, .weekday, .hour, .minute,.second], from: Date())
+        if (comps.month == 12) {
+            dayStr = String(comps.year! + 1) + "01" + (self.loanCacheModel?.repaymentDateStr)!
+        }else if (comps.month! < 10) {
+            dayStr = String(comps.year!) + "0" + String(comps.month! + 1) + (self.loanCacheModel?.repaymentDateStr)!
+        }else{
+            dayStr = String(comps.year!) + String(comps.month! + 1) + (self.loanCacheModel?.repaymentDateStr)!
+        }
+        let dfmatter = DateFormatter()
+        dfmatter.dateFormat="yyyyMMdd"
+        //首次还款时间戳
+        let dayStrs = dfmatter.date(from:dayStr)
+        let gregorians = Calendar.init(identifier: .gregorian)
+        let dayNumber = gregorians.dateComponents([.month , .day , .hour], from:Date(), to:dayStrs!)
+        self.remindDayTitleView?.dayLabel?.text = String(dayNumber.day!)
     }
 
     func rightTapPed(){
