@@ -67,12 +67,14 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
         
-        self.remindDayTitleView = RemindDayTitleView()
-        self.view.addSubview(self.remindDayTitleView!)
-        self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
-            make.top.left.top.right.equalTo(self.view)
-            make.height.equalTo(260)
-        });
+        if (TMCache.shared().object(forKey: kTMCacheLoanManage) != nil) {
+            self.remindDayTitleView = RemindDayTitleView()
+            self.view.addSubview(self.remindDayTitleView!)
+            self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
+                make.top.left.top.right.equalTo(self.view)
+                make.height.equalTo(260)
+            });
+        }
         
         self.view.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { (make) -> Void in
@@ -167,9 +169,10 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         let calendar: Calendar = Calendar(identifier: .gregorian)
         var comps: DateComponents = DateComponents()
         comps = calendar.dateComponents([.year,.month,.day, .weekday, .hour, .minute,.second], from: Date())
+        
         if (comps.month == 12) {
             dayStr = String(comps.year! + 1) + "01" + (self.loanCacheModel?.repaymentDateStr)!
-        }else if (comps.month! < 10) {
+        }else if (comps.month! < 9) {
             dayStr = String(comps.year!) + "0" + String(comps.month! + 1) + (self.loanCacheModel?.repaymentDateStr)!
         }else{
             dayStr = String(comps.year!) + String(comps.month! + 1) + (self.loanCacheModel?.repaymentDateStr)!

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530338371F591DE700848A6E /* selectbianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338351F591DE600848A6E /* selectbianji@3x.png */; };
+		530338381F591DE700848A6E /* selectbianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338361F591DE700848A6E /* selectbianji@2x.png */; };
+		5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338391F591E3B00848A6E /* bianji@3x.png */; };
+		5303383C1F591E3B00848A6E /* bianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5303383A1F591E3B00848A6E /* bianji@2x.png */; };
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
@@ -17,8 +21,6 @@
 		5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */; };
 		5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */; };
 		5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */; };
-		5332A97D1F4A905E001465E4 /* bianji.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332A97C1F4A905E001465E4 /* bianji.png */; };
-		5332A97F1F4A911A001465E4 /* selectbianji.png in Resources */ = {isa = PBXBuildFile; fileRef = 5332A97E1F4A911A001465E4 /* selectbianji.png */; };
 		5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */; };
 		5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */; };
 		5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */; };
@@ -64,6 +66,10 @@
 /* Begin PBXFileReference section */
 		27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		530338351F591DE600848A6E /* selectbianji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectbianji@3x.png"; sourceTree = "<group>"; };
+		530338361F591DE700848A6E /* selectbianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectbianji@2x.png"; sourceTree = "<group>"; };
+		530338391F591E3B00848A6E /* bianji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@3x.png"; sourceTree = "<group>"; };
+		5303383A1F591E3B00848A6E /* bianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@2x.png"; sourceTree = "<group>"; };
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
@@ -74,8 +80,6 @@
 		5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@2x.png"; sourceTree = "<group>"; };
 		5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@3x.png"; sourceTree = "<group>"; };
 		5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindTableViewCell.swift; sourceTree = "<group>"; };
-		5332A97C1F4A905E001465E4 /* bianji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bianji.png; sourceTree = "<group>"; };
-		5332A97E1F4A911A001465E4 /* selectbianji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectbianji.png; sourceTree = "<group>"; };
 		5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindEditorViewController.swift; sourceTree = "<group>"; };
 		5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCommercialViewController.swift; sourceTree = "<group>"; };
 		5332A9871F4AB7EE001465E4 /* RemindAccumulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindAccumulationViewController.swift; sourceTree = "<group>"; };
@@ -229,8 +233,10 @@
 		53A4EF6A1F2F075500EF58EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5332A97E1F4A911A001465E4 /* selectbianji.png */,
-				5332A97C1F4A905E001465E4 /* bianji.png */,
+				5303383A1F591E3B00848A6E /* bianji@2x.png */,
+				530338391F591E3B00848A6E /* bianji@3x.png */,
+				530338361F591DE700848A6E /* selectbianji@2x.png */,
+				530338351F591DE600848A6E /* selectbianji@3x.png */,
 				539795271F3327D5009AFED4 /* Icon-60@2x.png */,
 				539795281F3327D5009AFED4 /* Icon-60@3x.png */,
 				5342E9871F33261300AC3059 /* about_criticism.png */,
@@ -377,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530338371F591DE700848A6E /* selectbianji@3x.png in Resources */,
 				5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */,
 				5342E98A1F33261300AC3059 /* about_praise.png in Resources */,
 				5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */,
@@ -386,18 +393,19 @@
 				5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */,
 				53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */,
 				5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */,
+				5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */,
 				5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */,
 				539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */,
 				53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */,
-				5332A97F1F4A911A001465E4 /* selectbianji.png in Resources */,
 				53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */,
+				5303383C1F591E3B00848A6E /* bianji@2x.png in Resources */,
 				53A4EF751F2F075500EF58EB /* tabbar_home_selected@2x.png in Resources */,
 				5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */,
+				530338381F591DE700848A6E /* selectbianji@2x.png in Resources */,
 				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
 				5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */,
 				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
-				5332A97D1F4A905E001465E4 /* bianji.png in Resources */,
 				5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

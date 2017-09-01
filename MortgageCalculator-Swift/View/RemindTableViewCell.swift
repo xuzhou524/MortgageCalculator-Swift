@@ -98,7 +98,7 @@ class RemindDayTitleView: UIView {
         }
         
         self.dayLabel = UILabel()
-        self.dayLabel?.text = "9"
+        self.dayLabel?.text = "0"
         self.dayLabel?.textColor = XZSwiftColor.white
         self.dayLabel?.font = XZClient.XZFont(size: 60)
         self.backgroundView?.addSubview(self.dayLabel!)
