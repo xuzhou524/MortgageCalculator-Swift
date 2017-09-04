@@ -9,7 +9,6 @@
 import UIKit
 import SnapKit
 
-
 class RootViewController: UIViewController {
     
     var rootSegmentedVC : UISegmentedControl?

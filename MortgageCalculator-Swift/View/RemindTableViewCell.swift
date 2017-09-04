@@ -98,9 +98,9 @@ class RemindDayTitleView: UIView {
         }
         
         self.dayLabel = UILabel()
-        self.dayLabel?.text = "0"
+        self.dayLabel?.text = "暂无"
         self.dayLabel?.textColor = XZSwiftColor.white
-        self.dayLabel?.font = XZClient.XZFont(size: 60)
+        self.dayLabel?.font = XZClient.XZFont(size: 55)
         self.backgroundView?.addSubview(self.dayLabel!)
         self.dayLabel?.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.backgroundView!).offset(-5)
@@ -124,7 +124,7 @@ class RemindDayTitleView: UIView {
         self.backgroundView?.addSubview(summeryLabel)
         summeryLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.backgroundView!).offset(15)
-            make.bottom.equalTo(self.backgroundView!).offset(-10)
+            make.bottom.equalTo(self.backgroundView!).offset(-15)
         }
     }
 }

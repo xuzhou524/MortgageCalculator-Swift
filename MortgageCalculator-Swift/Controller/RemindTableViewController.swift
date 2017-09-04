@@ -67,20 +67,19 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
         
-        if (TMCache.shared().object(forKey: kTMCacheLoanManage) != nil) {
-            self.remindDayTitleView = RemindDayTitleView()
-            self.view.addSubview(self.remindDayTitleView!)
-            self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
-                make.top.left.top.right.equalTo(self.view)
-                make.height.equalTo(260)
-            });
-            
-            self.view.addSubview(self.tableView)
-            self.tableView.snp.makeConstraints { (make) -> Void in
-                make.left.right.bottom.equalTo(self.view)
-                make.top.equalTo((self.remindDayTitleView?.snp.bottom)!).offset(10)
-            }
+        self.remindDayTitleView = RemindDayTitleView()
+        self.view.addSubview(self.remindDayTitleView!)
+        self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
+            make.top.left.top.right.equalTo(self.view)
+            make.height.equalTo(260)
+        });
+        
+        self.view.addSubview(self.tableView)
+        self.tableView.snp.makeConstraints { (make) -> Void in
+            make.left.right.bottom.equalTo(self.view)
+            make.top.equalTo((self.remindDayTitleView?.snp.bottom)!).offset(10)
         }
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
