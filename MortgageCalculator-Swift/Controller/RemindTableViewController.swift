@@ -74,12 +74,12 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
                 make.top.left.top.right.equalTo(self.view)
                 make.height.equalTo(260)
             });
-        }
-        
-        self.view.addSubview(self.tableView)
-        self.tableView.snp.makeConstraints { (make) -> Void in
-            make.left.right.bottom.equalTo(self.view)
-            make.top.equalTo((self.remindDayTitleView?.snp.bottom)!).offset(10)
+            
+            self.view.addSubview(self.tableView)
+            self.tableView.snp.makeConstraints { (make) -> Void in
+                make.left.right.bottom.equalTo(self.view)
+                make.top.equalTo((self.remindDayTitleView?.snp.bottom)!).offset(10)
+            }
         }
     }
     
@@ -183,7 +183,12 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         let dayStrs = dfmatter.date(from:dayStr)
         let gregorians = Calendar.init(identifier: .gregorian)
         let dayNumber = gregorians.dateComponents([.month , .day , .hour], from:Date(), to:dayStrs!)
-        self.remindDayTitleView?.dayLabel?.text = String(dayNumber.day!)
+        if dayNumber.day == 0 {
+            self.remindDayTitleView?.dayLabel?.text = "明天"
+        }else{
+            self.remindDayTitleView?.dayLabel?.text = String(dayNumber.day!)
+        }
+        
     }
 
     func rightTapPed(){
