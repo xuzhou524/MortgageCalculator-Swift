@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -37,9 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.homeTabBarController = UITabBarController()
         self.homeTabBarController?.viewControllers = [self.rootNavigationController!,self.remindNavigationController!, self.moreNavigationController!]
         
-        // 设置字体颜色
-        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.normal)
-        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.black], for: UIControlState.selected)
         // 设置字体大小
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 11.0)], for: UIControlState.normal)
         // 设置字体偏移
@@ -49,16 +47,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()
-        
+    
+        return true
+    }
+    
+    func pushRegisterNotifcation() {
+        if #available(iOS 10.0, *) {
+            let center = UNUserNotificationCenter.current()
+            center.delegate = self as? UNUserNotificationCenterDelegate
+            center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, error) in
+                if granted {
+                    center.getNotificationSettings(completionHandler: { (settings) in
+                        print(settings)
+                    })
+                } else {
+                    print("失败")
+                }
+            }
+        } else {
+            let seetings = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(seetings)
+        }
+    }
+
+    /** 接收本地通知  运行*/
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+        let aler = UIAlertView.init(title: notification.userInfo?[AnyHashable("title")] as? String, message: notification.userInfo?[AnyHashable("body")] as? String, delegate: self, cancelButtonTitle: "我知道了")
+        aler.show()
+    }
+
+    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        self.pushRegisterNotifcation()
         return true
     }
 
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("=========%@",deviceToken)
+        
+    }
+
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+         
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
@@ -68,7 +101,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        //UIApplication.shared.applicationIconBadgeNumber = 0
+        //let aler = UIAlertView.init(title: "本地通知", message: "消息内容", delegate:self, cancelButtonTitle: "取消")
+        //aler.show()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
