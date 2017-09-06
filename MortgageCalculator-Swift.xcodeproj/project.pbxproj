@@ -34,6 +34,15 @@
 		5342E98A1F33261300AC3059 /* about_praise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9881F33261300AC3059 /* about_praise.png */; };
 		5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */; };
 		534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FB71A1F39BB73006E3144 /* LoanModel.swift */; };
+		5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */; };
+		5365B7F11F5F9445001FFEA5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F01F5F9444001FFEA5 /* libz.tbd */; };
+		5365B7F31F5F944F001FFEA5 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F21F5F944F001FFEA5 /* libstdc++.tbd */; };
+		5365B7F51F5F9459001FFEA5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F41F5F9459001FFEA5 /* JavaScriptCore.framework */; };
+		5365B7F71F5F9463001FFEA5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F61F5F9463001FFEA5 /* ImageIO.framework */; };
+		5365B7F91F5F946F001FFEA5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */; };
+		5365B7FB1F5F9490001FFEA5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */; };
+		5365B7FD1F5F949C001FFEA5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FC1F5F949C001FFEA5 /* Photos.framework */; };
+		5365B7FE1F5F94C8001FFEA5 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7B81F5F8C99001FFEA5 /* ShareSDK.framework */; };
 		537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */; };
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
@@ -122,6 +131,14 @@
 		5365B7D71F5F8C99001FFEA5 /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		5365B7D91F5F8C99001FFEA5 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
 		5365B7DA1F5F8C99001FFEA5 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
+		5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		5365B7F01F5F9444001FFEA5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5365B7F21F5F944F001FFEA5 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		5365B7F41F5F9459001FFEA5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5365B7F61F5F9463001FFEA5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5365B7FC1F5F949C001FFEA5 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNumberKeyboard.swift; sourceTree = "<group>"; };
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -158,6 +175,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5365B7FE1F5F94C8001FFEA5 /* ShareSDK.framework in Frameworks */,
+				5365B7FD1F5F949C001FFEA5 /* Photos.framework in Frameworks */,
+				5365B7FB1F5F9490001FFEA5 /* AssetsLibrary.framework in Frameworks */,
+				5365B7F91F5F946F001FFEA5 /* libsqlite3.tbd in Frameworks */,
+				5365B7F71F5F9463001FFEA5 /* ImageIO.framework in Frameworks */,
+				5365B7F51F5F9459001FFEA5 /* JavaScriptCore.framework in Frameworks */,
+				5365B7F31F5F944F001FFEA5 /* libstdc++.tbd in Frameworks */,
+				5365B7F11F5F9445001FFEA5 /* libz.tbd in Frameworks */,
+				5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */,
 				5E7AF110415A12DA72166F19 /* Pods_MortgageCalculator_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +487,14 @@
 		820F151D5DAEB95076796356 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5365B7FC1F5F949C001FFEA5 /* Photos.framework */,
+				5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */,
+				5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */,
+				5365B7F61F5F9463001FFEA5 /* ImageIO.framework */,
+				5365B7F41F5F9459001FFEA5 /* JavaScriptCore.framework */,
+				5365B7F21F5F944F001FFEA5 /* libstdc++.tbd */,
+				5365B7F01F5F9444001FFEA5 /* libz.tbd */,
+				5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */,
 				27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */,
 			);
 			name = Frameworks;
@@ -763,6 +797,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "MortgageCalculator-Swift/MortgageCalculator-Swift.entitlements";
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -785,6 +823,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "MortgageCalculator-Swift/MortgageCalculator-Swift.entitlements";
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
