@@ -48,7 +48,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()
     
+        self.share()
+        
         return true
+    }
+    
+    func share (){
+        ShareSDK.registerActivePlatforms(
+            [
+                SSDKPlatformType.typeSinaWeibo.rawValue,
+                SSDKPlatformType.typeWechat.rawValue,
+                SSDKPlatformType.typeQQ.rawValue
+            ],
+            onImport: {(platform : SSDKPlatformType) -> Void in
+                switch platform
+                {
+                case SSDKPlatformType.typeSinaWeibo:
+                    ShareSDKConnector.connectWeibo(WeiboSDK.classForCoder())
+                case SSDKPlatformType.typeWechat:
+                    ShareSDKConnector.connectWeChat(WXApi.classForCoder())
+                case SSDKPlatformType.typeQQ:
+                    ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
+                default:
+                    break
+                }
+        },
+            onConfiguration: {(platform : SSDKPlatformType , appInfo : NSMutableDictionary?) -> Void in
+                switch platform
+                {
+                case SSDKPlatformType.typeSinaWeibo:
+                    //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
+                    appInfo?.ssdkSetupSinaWeibo(byAppKey: "3112753426",
+                                                appSecret: "8d827d8c5849b1d763f2d077d20e109e",
+                                                redirectUri: "http://www.sharesdk.cn",
+                                                authType: SSDKAuthTypeBoth)
+                    
+                case SSDKPlatformType.typeWechat:
+                    //设置微信应用信息
+                    appInfo?.ssdkSetupWeChat(byAppId: "wx88234dc1246eb81b",
+                                             appSecret: "1c4d416db0008c17e01d616cb3866db7")
+                case SSDKPlatformType.typeQQ:
+                    //设置QQ应用信息
+                    appInfo?.ssdkSetupQQ(byAppId: "1106322229",
+                                         appKey: "8VdCCqTx3ZaVovun",
+                                         authType: SSDKAuthTypeBoth)
+                default:
+                    break
+                }
+        })
     }
     
     func pushRegisterNotifcation() {
