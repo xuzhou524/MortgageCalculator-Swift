@@ -222,9 +222,9 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         //每周三，13点触发
         var components:DateComponents = DateComponents()
         //components.weekday = 2;//周-
-        components.day = Int((self.loanCacheModel?.repaymentDateStr)!)!;
+        components.day = Int((self.loanCacheModel?.repaymentDateStr)!)! - 1;
         components.hour = 10;//10点
-        //components.minute = 33
+        //components.minute = 14
         if #available(iOS 10.0, *) {
             let content = UNMutableNotificationContent()
             content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：一月一度的还款日（明天）到了，请及时查询还款账号是否有money,以免影响你信誉！"]
