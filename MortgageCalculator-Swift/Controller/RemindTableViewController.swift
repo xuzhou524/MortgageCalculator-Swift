@@ -222,7 +222,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         //每周三，13点触发
         var components:DateComponents = DateComponents()
         //components.weekday = 2;//周-
-        components.day = Int((self.loanCacheModel?.repaymentDateStr)!)! - 1;
+        components.day = Int((self.loanCacheModel?.repaymentDateStr)!)!;
         components.hour = 10;//10点
         //components.minute = 33
         if #available(iOS 10.0, *) {
