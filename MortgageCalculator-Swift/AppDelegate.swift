@@ -85,8 +85,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     
                 case SSDKPlatformType.typeWechat:
                     //设置微信应用信息
-                    appInfo?.ssdkSetupWeChat(byAppId: "wx88234dc1246eb81b",
-                                             appSecret: "1c4d416db0008c17e01d616cb3866db7")
+                    appInfo?.ssdkSetupWeChat(byAppId: "wx2953898b22ac41ac",
+                                             appSecret: "13cbbcc3af24d269bb36683a487d6a83")
                 case SSDKPlatformType.typeQQ:
                     //设置QQ应用信息
                     appInfo?.ssdkSetupQQ(byAppId: "1106322229",
