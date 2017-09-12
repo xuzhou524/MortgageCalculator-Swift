@@ -10,7 +10,7 @@ import UIKit
 
 class FriendshipRecommenViewController: UITableViewController {
 
-    let iconArray = ["longdai","onePai","fangdai","fangdai","fangdai","tianqi"]
+    let iconArray = ["longdai","v2ex","fangdai","onePai","fangdai","tianqi"]
     let appUrlArray = ["","","","",""]
     
     override func viewDidLoad() {
