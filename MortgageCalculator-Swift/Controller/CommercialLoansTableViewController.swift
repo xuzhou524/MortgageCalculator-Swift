@@ -107,6 +107,7 @@ class CommercialLoansTableViewController: UITableViewController {
             loanDetailsVC.loanNumberStr = loanPeriodStr
             loanDetailsVC.loanRateStr = loanRateStr
             loanDetailsVC.loanTypeInt = self.typeSegmented?.selectedSegmentIndex
+            loanDetailsVC.hidesBottomBarWhenPushed = true
             self.rootNavigationController?.pushViewController(loanDetailsVC, animated: true)
         }
     }

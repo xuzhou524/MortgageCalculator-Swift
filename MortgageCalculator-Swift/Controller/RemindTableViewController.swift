@@ -193,6 +193,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
 
     func rightTapPed(){
         let editorVC = RemindEditorViewController()
+        editorVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(editorVC, animated: true)
     }
     

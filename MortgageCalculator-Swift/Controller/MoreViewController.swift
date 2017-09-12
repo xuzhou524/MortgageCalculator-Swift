@@ -27,7 +27,7 @@ class MoreViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -69,12 +69,13 @@ class MoreViewController: UITableViewController {
         if (indexPath as NSIndexPath).row == 3 {
             baseCell.titleLabel?.text = "新浪微博"
             baseCell.detaileLabel?.text = "徐_Aaron"
-        }
-        if (indexPath as NSIndexPath).row == 4 {
+        }else if (indexPath as NSIndexPath).row == 4 {
             baseCell.titleLabel?.text = "推荐给贷友"
             baseCell.detaileLabel?.text = ""
-        }
-        if (indexPath as NSIndexPath).row == 5 {
+        }else if (indexPath as NSIndexPath).row == 5 {
+            baseCell.titleLabel?.text = "为你发现"
+            baseCell.detaileLabel?.text = ""
+        }else if (indexPath as NSIndexPath).row == 6 {
             let infoDict = Bundle.main.infoDictionary
             if let info = infoDict {
                 // app版本
@@ -89,6 +90,10 @@ class MoreViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 4 {
            self.share()
+        }else if indexPath.row == 5 {
+            let friendVC = FriendshipRecommenViewController()
+            friendVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(friendVC, animated: true);
         }
     }
     

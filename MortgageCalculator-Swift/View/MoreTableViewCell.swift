@@ -32,7 +32,7 @@ class MoreTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.iconImageView!)
         self.iconImageView?.snp.makeConstraints({ (make) -> Void in
             make.centerX.equalTo(self.contentView)
-            make.top.equalTo(self.contentView).offset(30);
+            make.top.equalTo(self.contentView).offset(30)
             make.width.height.equalTo(80)
         });
         
