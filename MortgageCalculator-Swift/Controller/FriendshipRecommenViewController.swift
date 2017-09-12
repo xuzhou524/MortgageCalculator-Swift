@@ -11,7 +11,7 @@ import UIKit
 class FriendshipRecommenViewController: UITableViewController {
 
     let iconArray = ["longdai","v2ex","fangdai","onePai","fangdai","tianqi"]
-    let appUrlArray = ["","","","",""]
+    let appUrlArray = ["https://itunes.apple.com/cn/app/id900365369?mt=8","https://itunes.apple.com/cn/app/id1078157349?mt=8","https://itunes.apple.com/cn/app/id1272033544?mt=8","https://itunes.apple.com/cn/app/id1239242152?mt=8","https://itunes.apple.com/cn/app/id1272033544?mt=8","https://itunes.apple.com/cn/app/id1107521185?mt=8"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,4 +43,15 @@ class FriendshipRecommenViewController: UITableViewController {
         return friendshipCell
 
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string:self.appUrlArray[indexPath.row])!, options: [:], completionHandler: nil)
+        } else {
+            let urlString = self.appUrlArray[indexPath.row]
+            let url = NSURL(string: urlString)
+            UIApplication.shared.openURL(url! as URL)
+        }
+    }
+    
 }
