@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Crashlytics
+
 class FriendshipRecommenViewController: UITableViewController {
 
     let iconArray = ["longdai","v2ex","fangdai","onePai","fangdai","tianqi"]
@@ -36,15 +38,14 @@ class FriendshipRecommenViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let friendshipCell = getCell(tableView, cell: FriendshipTableViewCell.self, indexPath: indexPath)
         friendshipCell.selectionStyle = .none
         friendshipCell.iconImageView?.image = UIImage.init(named: self.iconArray[indexPath.row])
         return friendshipCell
-
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Answers.logCustomEvent(withName: self.iconArray[indexPath.row], customAttributes: [:])
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(URL(string:self.appUrlArray[indexPath.row])!, options: [:], completionHandler: nil)
         } else {
