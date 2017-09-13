@@ -44,6 +44,16 @@
 				<string>QQ41E132D6</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.xuzhou.MortgageCalculator-Swift</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>yongyifangdai</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>2</string>
