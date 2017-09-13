@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class MoreViewController: UITableViewController {
 
@@ -123,7 +124,12 @@ class MoreViewController: UITableViewController {
     }
     
     func zanImageViewTap(){
-        if #available(iOS 10.0, *) {
+        if #available(iOS 10.3, *) {
+            #if DEBUG
+            #else
+                SKStoreReviewController.requestReview()
+            #endif
+        }else if #available(iOS 10.0, *) {
             UIApplication.shared.open(URL(string:"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8")!, options: [:], completionHandler: nil)
         } else {
             let urlString = "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"
