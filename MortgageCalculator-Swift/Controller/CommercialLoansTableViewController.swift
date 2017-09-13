@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Crashlytics
+
 
 class CommercialLoansTableViewController: UITableViewController {
     
@@ -94,6 +96,7 @@ class CommercialLoansTableViewController: UITableViewController {
     }
     
     func calculateClick(){
+        Crashlytics.sharedInstance().crash()
         
         self.backupgroupTap()
         
