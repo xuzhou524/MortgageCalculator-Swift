@@ -1,15 +1,22 @@
 PODS:
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.12)
   - SnapKit (3.0.2)
   - TMCache (1.2.4)
 
 DEPENDENCIES:
-  - SnapKit (~> 3.0.2)
-  - TMCache (~> 1.2.0)
+  - Crashlytics
+  - Fabric
+  - SnapKit
+  - TMCache
 
 SPEC CHECKSUMS:
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   TMCache: a93984b045a5ee84bd8941bd5e0b54296059cc52
 
-PODFILE CHECKSUM: 11a4693c6a31c87e6935a32148013c4048f5fbc1
+PODFILE CHECKSUM: cb13a9e40d3542ca1a64be0482db55029332a781
 
-COCOAPODS: 1.1.0.beta.2
+COCOAPODS: 1.3.1

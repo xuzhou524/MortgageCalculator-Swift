@@ -1,2467 +1,928 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>004B401C1A6A1C6BA19339BB9471596B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00D658DFAECDC5BBE944568260F657B3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>22ADB3B5AE9CD8E0BF7162A3726685FD</string>
-				<string>AE05CF526B3BB1ADDFE24D7F35BD9EA3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>015A368F878AC3E2CEAE21DDE8026304</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGNING_REQUIRED</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string>NO_SIGNING/</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>015F52AA2CE1F1C015EB9F045B827069</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D3010E40DE95ACB8D3E037410AD87FE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TMCache/TMCache-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/TMCache/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/TMCache/TMCache.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>TMCache</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0189B079305D288BDD3070D761A5B575</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMakerRelatable.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMakerRelatable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0694A59CA7B6AE49EB7B00CFE6064D5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BC0BCF55273825C260A5CB7D404731C9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>073B4604965B9630BF4B14C711CAE196</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintInsetTarget.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintInsetTarget.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08744D2519C9A867B0AB564596BACB38</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>28D25A3175D7D7A8C482CA7EE7B930D9</string>
-				<string>B19F1FC0FD165A5D93778B328161DEAB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0AD73C5BE4A1DFA69B391B8AF36EFDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C0E7409569FEFA976B52D20CB89F6A0F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0BB43B7F35328A88F1E90E2215A0704B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C0E7409569FEFA976B52D20CB89F6A0F</string>
-				<string>F199373D2F7C28CD02891E44ACAAD74C</string>
-				<string>1F59AA5AAB6CE7647F630CB78FB431D6</string>
-				<string>62C985DD7FCFC012E86FCB5C8A02D9E0</string>
-				<string>1059C7103FFB35F67CDF593440047574</string>
-				<string>61150FD950F85C5F0E25F89BE518D9D0</string>
-				<string>50D11127369620EA3C736D22BA0A134E</string>
-				<string>073B4604965B9630BF4B14C711CAE196</string>
-				<string>ECC7CA91E5E619B2643E295A7A4BA63D</string>
-				<string>6D7D2C413C73389590308FA57CA47125</string>
-				<string>A10419D08E873595A7068ABF245B5988</string>
-				<string>C8642A128EA598CEEAFD6B64248A51B7</string>
-				<string>EBDAED46EE6C014D724649207082D139</string>
-				<string>F98D93D6F425C2AFC7A1862D094F4C93</string>
-				<string>D197106F5410FE405892DF6E6B37697E</string>
-				<string>AF826AB105956B174E19396CCA9754FB</string>
-				<string>9787FEFA2CD13E16DDA8947237315891</string>
-				<string>F525D334B284E3FED4DEBC8C8BB8D849</string>
-				<string>0189B079305D288BDD3070D761A5B575</string>
-				<string>1FA3CF78D6A93624E6354E38A47C85AC</string>
-				<string>C72C5E4C2E49697C9B6A2E964872BDD9</string>
-				<string>FF854C8B82B3D22F6B058CF33C9BD505</string>
-				<string>C52FA1567369B4DAC83B41E9B6F306B7</string>
-				<string>1AD18E6E9D57F9990B642165851DBCC8</string>
-				<string>F5CF9AFA61ADFB8D8143764D88950795</string>
-				<string>0BD94F5708DEC450E0E0F1A8CC07F19E</string>
-				<string>311B6E101ECF70471CF8BD69787A8A37</string>
-				<string>C69371F3677561C35D3DB5E2B2905D67</string>
-				<string>13A09523A2B6C6B1F73333E7FA64C719</string>
-				<string>7A41E4B77F74ECACF16723E24C782E3A</string>
-				<string>CEBEAF9BC4FD63D65147307AFB41B7B7</string>
-				<string>103E457D71972BFDAEDC0DDC06871443</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SnapKit</string>
-			<key>path</key>
-			<string>SnapKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0BD94F5708DEC450E0E0F1A8CC07F19E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintView+Extensions.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintView+Extensions.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E26FB872C5822242113A8AB8289C550</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>56B5E09A148CE8AFB9B36B0799C3975F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>103E457D71972BFDAEDC0DDC06871443</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CF33A0CB63EAE9644668550399FFF42D</string>
-				<string>DA8A60BDE797B7F98A636E318E6207C6</string>
-				<string>2D607A4CBE57D0EAE6E3BDAE6A2BD696</string>
-				<string>A74EBA0808D6DE6F97847E1E50C4A8D4</string>
-				<string>AC662113B5DDDD6D74BDD86AA4E3BCEE</string>
-				<string>3921083E772C539DA9251B87D57EA911</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/SnapKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1059C7103FFB35F67CDF593440047574</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintDescription.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintDescription.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>13A09523A2B6C6B1F73333E7FA64C719</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LayoutConstraint.swift</string>
-			<key>path</key>
-			<string>Source/LayoutConstraint.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1425B48C0A30DA9B503A68F05BDD54EF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SnapKit.framework</string>
-			<key>path</key>
-			<string>SnapKit.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>144FA068287FBD2AF1D79929BC943F0E</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>64582395B362D90653CBD2D5D828E047</string>
-			<key>remoteInfo</key>
-			<string>TMCache</string>
-		</dict>
-		<key>16487AE22A42B4D511D03D2009FB8961</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DEE933740B14BA2A9A2CA53710630D78</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>17DA1DE0276793853A169C612A8EBDDD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1AD18E6E9D57F9990B642165851DBCC8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintRelation.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintRelation.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1D30D21F93445E234471B98A9AEC3278</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DA15FE08A423A8D485EF6A80B084F6E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5CF9AFA61ADFB8D8143764D88950795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1F59AA5AAB6CE7647F630CB78FB431D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintConfig.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintConfig.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F81E0438D299A35E0B247379EF7A1BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0189B079305D288BDD3070D761A5B575</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1FA3CF78D6A93624E6354E38A47C85AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMultiplierTarget.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMultiplierTarget.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22ADB3B5AE9CD8E0BF7162A3726685FD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>45319D7530A5813BBC50488DB60612B1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-MortgageCalculator-Swift/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_MortgageCalculator_Swift</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>23AF5EDD532EE4593193A150C43F9270</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C033A25A9976656A514DEEB6DAA3CBAF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2745FC0D1FD4C706199F8FD988DDE349</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1AD18E6E9D57F9990B642165851DBCC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2776C78A885A9BC4762B82FD45B01546</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A10419D08E873595A7068ABF245B5988</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>28D25A3175D7D7A8C482CA7EE7B930D9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2D607A4CBE57D0EAE6E3BDAE6A2BD696</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SnapKit/SnapKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SnapKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SnapKit/SnapKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>SnapKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2950251666A7D4A7C7BCE6CC0A79A856</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TMCache.m</string>
-			<key>path</key>
-			<string>TMCache/TMCache.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A1A6BC3F636E806C6ECF52F932844B1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_MortgageCalculator_Swift.framework</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2D3D891344F4ED6F1F6FEE79EED38C8A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>073B4604965B9630BF4B14C711CAE196</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D607A4CBE57D0EAE6E3BDAE6A2BD696</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SnapKit.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>015A368F878AC3E2CEAE21DDE8026304</string>
-				<string>44CDBB6D11DE06DB64D6268622BDC47E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>311B6E101ECF70471CF8BD69787A8A37</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintViewDSL.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintViewDSL.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>333BE33319997835212A6141E6560131</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13A09523A2B6C6B1F73333E7FA64C719</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>356E34B7EF87D22770F8B07438957514</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ECC7CA91E5E619B2643E295A7A4BA63D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>387CE102E198EF4C06B0F7B0DA7E71C8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3921083E772C539DA9251B87D57EA911</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SnapKit-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A60B950821F39D3572192A0A8836B6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A41E4B77F74ECACF16723E24C782E3A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3CDF1336E9376C0C804E47E3C8328ED2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TMDiskCache.m</string>
-			<key>path</key>
-			<string>TMCache/TMDiskCache.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E72351D7721FB16938EF9A19BD9F465</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AD73C5BE4A1DFA69B391B8AF36EFDB9</string>
-				<string>6AC473A33F18BE7513B11B4607385413</string>
-				<string>A12AD4C010994E0BF064322E3019B95F</string>
-				<string>CC187465DE92F89911980D1A618E7F0A</string>
-				<string>FBC0EC9E8F22CC00DB310523BC23042D</string>
-				<string>65DC9BC80A7AD19FE2C8289DA5AFE7A2</string>
-				<string>992CE96A48F0B716367888453092E0AC</string>
-				<string>2D3D891344F4ED6F1F6FEE79EED38C8A</string>
-				<string>356E34B7EF87D22770F8B07438957514</string>
-				<string>EC0537FC2514B52D48F8715573C71037</string>
-				<string>2776C78A885A9BC4762B82FD45B01546</string>
-				<string>CD191A883EEAB4254D13D7AFF3F98ADE</string>
-				<string>E702B36F45B2CF441A8264FBC4842368</string>
-				<string>E8402CBA6161C260A52D04FF4BC12F2D</string>
-				<string>3EE0C0DA86A6C72D131DD9D59521ABDF</string>
-				<string>A87F9446D634A657D41BB319071E885C</string>
-				<string>8B01E9011AF98ED876CFEC8C78C55799</string>
-				<string>C0B2B892CD740851572DFC5ADBE80F57</string>
-				<string>1F81E0438D299A35E0B247379EF7A1BA</string>
-				<string>9EEB8118CC70FBEFC9D68DD86F3B629E</string>
-				<string>8FDF38C679B0D914383497BA4B060CC5</string>
-				<string>BEBA21CF4DBDE8C171237E7D814980DB</string>
-				<string>F7474A95CEC58B34BDF87714D3DA7785</string>
-				<string>2745FC0D1FD4C706199F8FD988DDE349</string>
-				<string>88C6E12A90503FF2B4A576BAC434E258</string>
-				<string>1DA15FE08A423A8D485EF6A80B084F6E</string>
-				<string>CCF722D708036E03873DB5F63AE3FCB7</string>
-				<string>86084E474DDAEEE6BD45319760B0F9E6</string>
-				<string>333BE33319997835212A6141E6560131</string>
-				<string>E72653962DEA54DE4E5AF37BE56A9472</string>
-				<string>3A60B950821F39D3572192A0A8836B6F</string>
-				<string>D0311325D881D940250E1B35D42ECC1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3EE0C0DA86A6C72D131DD9D59521ABDF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D197106F5410FE405892DF6E6B37697E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>43D8D76B80A1757479424F6E1BFCC0F5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7E80AD6FB9E5087E9637E90263E78511</string>
-				<string>95132DEDA8D7EEE02307BCA4CD93B22C</string>
-				<string>1D30D21F93445E234471B98A9AEC3278</string>
-				<string>E71A24F194CA658ADFE75B6DDA2DC138</string>
-				<string>C970A3CBE762F186ACA11F922C20A046</string>
-				<string>387CE102E198EF4C06B0F7B0DA7E71C8</string>
-				<string>7D077258C246944C63629BE139D62063</string>
-				<string>DEE933740B14BA2A9A2CA53710630D78</string>
-				<string>45319D7530A5813BBC50488DB60612B1</string>
-				<string>C6C0FDC8AD7B549D5FDD479CDB9522CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-MortgageCalculator-Swift</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-MortgageCalculator-Swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>449FED8DAD233EDBB6E220E5F7F71FB3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>17DA1DE0276793853A169C612A8EBDDD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>44CDBB6D11DE06DB64D6268622BDC47E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGNING_REQUIRED</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string>NO_SIGNING/</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>45319D7530A5813BBC50488DB60612B1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46FB4DF56EC71D3C968040247DE4EC66</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>AF082F9BF6AF5C5525E60E82CF975468</string>
-			<key>remoteInfo</key>
-			<string>SnapKit</string>
-		</dict>
-		<key>504BB5D0B02F1CE8E13586DC5C6678E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2950251666A7D4A7C7BCE6CC0A79A856</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>50D11127369620EA3C736D22BA0A134E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintInsets.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintInsets.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54D9F39BA9DF5953B96C429889DCFAAF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TMMemoryCache.m</string>
-			<key>path</key>
-			<string>TMCache/TMMemoryCache.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56B5E09A148CE8AFB9B36B0799C3975F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3921083E772C539DA9251B87D57EA911</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>588702E2488CBE08206C93287845ACF2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C651E2A1A30A9E37541FA2A73B9A8259</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>61150FD950F85C5F0E25F89BE518D9D0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintDSL.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintDSL.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>62C985DD7FCFC012E86FCB5C8A02D9E0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintConstantTarget.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintConstantTarget.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64582395B362D90653CBD2D5D828E047</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>81350947F25175C160A4C96A4E9CB05D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A9EAE32E8E1725D5C58F39C2DD62CE0E</string>
-				<string>449FED8DAD233EDBB6E220E5F7F71FB3</string>
-				<string>6C9DCD7B9FECCB7528F89DB2145DBC2B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TMCache</string>
-			<key>productName</key>
-			<string>TMCache</string>
-			<key>productReference</key>
-			<string>9763E4A47DA88624941C1E0461F8B759</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>64B07BD931026C1D49172B92B06ABB5D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0BB43B7F35328A88F1E90E2215A0704B</string>
-				<string>69C787BBA3F9FE5BB84A0DCB0621A455</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64B1864095C32D14074498C6E104AC78</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>00D658DFAECDC5BBE944568260F657B3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>588702E2488CBE08206C93287845ACF2</string>
-				<string>E8C665E547FAC235F4FD7A09B3B0EB5C</string>
-				<string>DAD0DF847B2DD73983A05D8EDD6C90E9</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>9EC7B7D8DF6183F5914629A8CC40178A</string>
-				<string>7AFC71BD557D8F46D8ABCAA39956D159</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-MortgageCalculator-Swift</string>
-			<key>productName</key>
-			<string>Pods-MortgageCalculator-Swift</string>
-			<key>productReference</key>
-			<string>2A1A6BC3F636E806C6ECF52F932844B1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>65DC9BC80A7AD19FE2C8289DA5AFE7A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>61150FD950F85C5F0E25F89BE518D9D0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>69C787BBA3F9FE5BB84A0DCB0621A455</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FF21C1065D6FA600C9C0EE99973C845D</string>
-				<string>2950251666A7D4A7C7BCE6CC0A79A856</string>
-				<string>C033A25A9976656A514DEEB6DAA3CBAF</string>
-				<string>3CDF1336E9376C0C804E47E3C8328ED2</string>
-				<string>A7DC0740C818219816DFBA4BE89DA799</string>
-				<string>54D9F39BA9DF5953B96C429889DCFAAF</string>
-				<string>8982E6DCCC3BB475DBF589E710F94778</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TMCache</string>
-			<key>path</key>
-			<string>TMCache</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6AC473A33F18BE7513B11B4607385413</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F199373D2F7C28CD02891E44ACAAD74C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6C9DCD7B9FECCB7528F89DB2145DBC2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D855779AAC51A9C34CCBB4B921E7E818</string>
-				<string>990B2F7AC798981091571F070AB542CC</string>
-				<string>23AF5EDD532EE4593193A150C43F9270</string>
-				<string>73829B789BC6BBC394DAF8642F9271BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6D7D2C413C73389590308FA57CA47125</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintLayoutGuide.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintLayoutGuide.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>707517CF7B4D1638984E935B043509E7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TMCache-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73829B789BC6BBC394DAF8642F9271BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A7DC0740C818219816DFBA4BE89DA799</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>772D2BC3FD9C2CF0CA698C6DE4BE9560</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TMCache-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A41E4B77F74ECACF16723E24C782E3A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UILayoutGuide+Extensions.swift</string>
-			<key>path</key>
-			<string>Source/UILayoutGuide+Extensions.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7AFC71BD557D8F46D8ABCAA39956D159</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TMCache</string>
-			<key>target</key>
-			<string>64582395B362D90653CBD2D5D828E047</string>
-			<key>targetProxy</key>
-			<string>144FA068287FBD2AF1D79929BC943F0E</string>
-		</dict>
-		<key>7D077258C246944C63629BE139D62063</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>64B07BD931026C1D49172B92B06ABB5D</string>
-				<string>A5A78255AC67DD35CAED1AD7F3EE8633</string>
-				<string>9CE0A747B4A2FC30EC1208D772CFE706</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E4F6C119D416E9A69D4322B0BA2D575</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3CDF1336E9376C0C804E47E3C8328ED2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>7E80AD6FB9E5087E9637E90263E78511</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81350947F25175C160A4C96A4E9CB05D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E24EFC94A16CAABD06C3547B5C235E1C</string>
-				<string>015F52AA2CE1F1C015EB9F045B827069</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>86084E474DDAEEE6BD45319760B0F9E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C69371F3677561C35D3DB5E2B2905D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>88C6E12A90503FF2B4A576BAC434E258</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BD94F5708DEC450E0E0F1A8CC07F19E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8982E6DCCC3BB475DBF589E710F94778</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>004B401C1A6A1C6BA19339BB9471596B</string>
-				<string>8B3E0E57A527A8E3F36A0D3DD4EAB266</string>
-				<string>D3010E40DE95ACB8D3E037410AD87FE8</string>
-				<string>707517CF7B4D1638984E935B043509E7</string>
-				<string>772D2BC3FD9C2CF0CA698C6DE4BE9560</string>
-				<string>EAA38C2E6328F7B241394D9F5A001412</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/TMCache</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8B01E9011AF98ED876CFEC8C78C55799</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9787FEFA2CD13E16DDA8947237315891</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8B3E0E57A527A8E3F36A0D3DD4EAB266</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TMCache.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8FDF38C679B0D914383497BA4B060CC5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C72C5E4C2E49697C9B6A2E964872BDD9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>95132DEDA8D7EEE02307BCA4CD93B22C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9763E4A47DA88624941C1E0461F8B759</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>TMCache.framework</string>
-			<key>path</key>
-			<string>TMCache.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9787FEFA2CD13E16DDA8947237315891</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMakerFinalizable.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMakerFinalizable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>990B2F7AC798981091571F070AB542CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FF21C1065D6FA600C9C0EE99973C845D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>992CE96A48F0B716367888453092E0AC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>50D11127369620EA3C736D22BA0A134E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CE0A747B4A2FC30EC1208D772CFE706</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>43D8D76B80A1757479424F6E1BFCC0F5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EC7B7D8DF6183F5914629A8CC40178A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SnapKit</string>
-			<key>target</key>
-			<string>AF082F9BF6AF5C5525E60E82CF975468</string>
-			<key>targetProxy</key>
-			<string>46FB4DF56EC71D3C968040247DE4EC66</string>
-		</dict>
-		<key>9EEB8118CC70FBEFC9D68DD86F3B629E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1FA3CF78D6A93624E6354E38A47C85AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A10419D08E873595A7068ABF245B5988</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintLayoutGuideDSL.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintLayoutGuideDSL.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A12AD4C010994E0BF064322E3019B95F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1F59AA5AAB6CE7647F630CB78FB431D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A5A78255AC67DD35CAED1AD7F3EE8633</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2A1A6BC3F636E806C6ECF52F932844B1</string>
-				<string>1425B48C0A30DA9B503A68F05BDD54EF</string>
-				<string>9763E4A47DA88624941C1E0461F8B759</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A74EBA0808D6DE6F97847E1E50C4A8D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SnapKit-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A7DC0740C818219816DFBA4BE89DA799</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TMMemoryCache.h</string>
-			<key>path</key>
-			<string>TMCache/TMMemoryCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A87F9446D634A657D41BB319071E885C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF826AB105956B174E19396CCA9754FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9EAE32E8E1725D5C58F39C2DD62CE0E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F9B200B45FD35A4D60E3D732BC754291</string>
-				<string>504BB5D0B02F1CE8E13586DC5C6678E5</string>
-				<string>7E4F6C119D416E9A69D4322B0BA2D575</string>
-				<string>C403C4DF3036E4FA701324A034F6B8D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AC662113B5DDDD6D74BDD86AA4E3BCEE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SnapKit-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE05CF526B3BB1ADDFE24D7F35BD9EA3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C6C0FDC8AD7B549D5FDD479CDB9522CD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-MortgageCalculator-Swift/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_MortgageCalculator_Swift</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AF082F9BF6AF5C5525E60E82CF975468</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>08744D2519C9A867B0AB564596BACB38</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3E72351D7721FB16938EF9A19BD9F465</string>
-				<string>0694A59CA7B6AE49EB7B00CFE6064D5F</string>
-				<string>0E26FB872C5822242113A8AB8289C550</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SnapKit</string>
-			<key>productName</key>
-			<string>SnapKit</string>
-			<key>productReference</key>
-			<string>1425B48C0A30DA9B503A68F05BDD54EF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>AF826AB105956B174E19396CCA9754FB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMakerExtendable.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMakerExtendable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B19F1FC0FD165A5D93778B328161DEAB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2D607A4CBE57D0EAE6E3BDAE6A2BD696</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SnapKit/SnapKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SnapKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SnapKit/SnapKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>SnapKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BC0BCF55273825C260A5CB7D404731C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEBA21CF4DBDE8C171237E7D814980DB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FF854C8B82B3D22F6B058CF33C9BD505</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C033A25A9976656A514DEEB6DAA3CBAF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TMDiskCache.h</string>
-			<key>path</key>
-			<string>TMCache/TMDiskCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0B2B892CD740851572DFC5ADBE80F57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F525D334B284E3FED4DEBC8C8BB8D849</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C0E7409569FEFA976B52D20CB89F6A0F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Constraint.swift</string>
-			<key>path</key>
-			<string>Source/Constraint.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C403C4DF3036E4FA701324A034F6B8D0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54D9F39BA9DF5953B96C429889DCFAAF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C52FA1567369B4DAC83B41E9B6F306B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintRelatableTarget.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintRelatableTarget.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C651E2A1A30A9E37541FA2A73B9A8259</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C970A3CBE762F186ACA11F922C20A046</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C69371F3677561C35D3DB5E2B2905D67</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Debugging.swift</string>
-			<key>path</key>
-			<string>Source/Debugging.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C6C0FDC8AD7B549D5FDD479CDB9522CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C72C5E4C2E49697C9B6A2E964872BDD9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintOffsetTarget.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintOffsetTarget.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C8642A128EA598CEEAFD6B64248A51B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintLayoutSupport.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintLayoutSupport.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C970A3CBE762F186ACA11F922C20A046</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC187465DE92F89911980D1A618E7F0A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>62C985DD7FCFC012E86FCB5C8A02D9E0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CCF722D708036E03873DB5F63AE3FCB7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>311B6E101ECF70471CF8BD69787A8A37</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CD191A883EEAB4254D13D7AFF3F98ADE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C8642A128EA598CEEAFD6B64248A51B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CEBEAF9BC4FD63D65147307AFB41B7B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UILayoutSupport+Extensions.swift</string>
-			<key>path</key>
-			<string>Source/UILayoutSupport+Extensions.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>CF33A0CB63EAE9644668550399FFF42D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D0311325D881D940250E1B35D42ECC1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEBEAF9BC4FD63D65147307AFB41B7B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D197106F5410FE405892DF6E6B37697E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMakerEditable.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMakerEditable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D3010E40DE95ACB8D3E037410AD87FE8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>TMCache.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>A5A78255AC67DD35CAED1AD7F3EE8633</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>64B1864095C32D14074498C6E104AC78</string>
-				<string>AF082F9BF6AF5C5525E60E82CF975468</string>
-				<string>64582395B362D90653CBD2D5D828E047</string>
-			</array>
-		</dict>
-		<key>D855779AAC51A9C34CCBB4B921E7E818</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAA38C2E6328F7B241394D9F5A001412</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>DA8A60BDE797B7F98A636E318E6207C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SnapKit.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DAD0DF847B2DD73983A05D8EDD6C90E9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>16487AE22A42B4D511D03D2009FB8961</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DEE933740B14BA2A9A2CA53710630D78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E24EFC94A16CAABD06C3547B5C235E1C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D3010E40DE95ACB8D3E037410AD87FE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TMCache/TMCache-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/TMCache/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/TMCache/TMCache.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>TMCache</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E6F6FD9E3EBD3F92063CAD2DF38348ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E702B36F45B2CF441A8264FBC4842368</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EBDAED46EE6C014D724649207082D139</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E71A24F194CA658ADFE75B6DDA2DC138</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-MortgageCalculator-Swift-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E72653962DEA54DE4E5AF37BE56A9472</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A74EBA0808D6DE6F97847E1E50C4A8D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8402CBA6161C260A52D04FF4BC12F2D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F98D93D6F425C2AFC7A1862D094F4C93</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8C665E547FAC235F4FD7A09B3B0EB5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E6F6FD9E3EBD3F92063CAD2DF38348ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAA38C2E6328F7B241394D9F5A001412</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TMCache-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EBDAED46EE6C014D724649207082D139</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintLayoutSupportDSL.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintLayoutSupportDSL.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EC0537FC2514B52D48F8715573C71037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6D7D2C413C73389590308FA57CA47125</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ECC7CA91E5E619B2643E295A7A4BA63D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintItem.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintItem.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F199373D2F7C28CD02891E44ACAAD74C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintAttributes.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintAttributes.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F525D334B284E3FED4DEBC8C8BB8D849</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMakerPriortizable.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMakerPriortizable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5CF9AFA61ADFB8D8143764D88950795</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintView.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F7474A95CEC58B34BDF87714D3DA7785</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C52FA1567369B4DAC83B41E9B6F306B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F98D93D6F425C2AFC7A1862D094F4C93</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintMaker.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintMaker.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F9B200B45FD35A4D60E3D732BC754291</key>
-		<dict>
-			<key>fileRef</key>
-			<string>707517CF7B4D1638984E935B043509E7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FBC0EC9E8F22CC00DB310523BC23042D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1059C7103FFB35F67CDF593440047574</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FF21C1065D6FA600C9C0EE99973C845D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TMCache.h</string>
-			<key>path</key>
-			<string>TMCache/TMCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF854C8B82B3D22F6B058CF33C9BD505</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ConstraintPriorityTarget.swift</string>
-			<key>path</key>
-			<string>Source/ConstraintPriorityTarget.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05DA9091D71551EF30E7E7652F5E2353 /* TMCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C518129FB87231AEE823B714E121C50D /* TMCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6D2EA2FBCF293FE532DD1F4AAD1254 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7871EF270F6642B0F3D3860EBFD7B /* ConstraintMakerPriortizable.swift */; };
+		0CB35D33A08C0DC941C549310D9852B6 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275285B6A4CAB1B7B1C35B720A7F306 /* ConstraintRelatableTarget.swift */; };
+		0D27C334B7A1E86D89D73A03CDE624FD /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF181D67B4131ADC72549B9AB2038E37 /* ConstraintMakerEditable.swift */; };
+		11DFC901E46C8A726268588BCC274BBC /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75B9866BA5D355AE3925B07C14AF342 /* ConstraintView.swift */; };
+		173CA1DC7BCD0BE0975081ECFCC30240 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E25A6A83DE23C9879F426F28504047 /* ConstraintLayoutSupportDSL.swift */; };
+		1BBC59B4EC12463697B574C8B04A1CDA /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0AA09796B95AE9C6B75A0159CD103F /* ConstraintConstantTarget.swift */; };
+		265303615503B6CD7ED265DB4AEB51D9 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DD7DC835F0617E2CE9858B41BC7E /* Constraint.swift */; };
+		2BC8128684B31FB49732FE8FC09C7D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2C268AD447442C5CF7637109EF0F72CD /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B7D38F505C28A589A180C4193AE9E /* ConstraintRelation.swift */; };
+		38A8FAA84C40BC745A0B08F2E488BB44 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D330C464B68B7697C30540DC565011 /* LayoutConstraint.swift */; };
+		40ABD92739294149F3F453B105D36B73 /* TMDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B23483AB216BAC74EC61A184DFB2971 /* TMDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471FC3989BE7D9511EF870EF5355366A /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA351B894B82636045435EDF9B0220 /* ConstraintViewDSL.swift */; };
+		524054B487AEAE1BC40DC1BA72469426 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD6E0C15E0610F63C6CABB77AA5FAB /* TMDiskCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5626A280FBAC13BD3DFD297C258C8D4A /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7585FCC7A2B450D9553598CAAB2B2FF /* ConstraintMakerFinalizable.swift */; };
+		5B63FFBB4AAB7D9145FBAB136CDAE19D /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA2C1916303A1FE816C7F28E2F6D9B /* TMCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6053C64A74E04B34EE44B15522C17368 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE6BB44DC4C5FEE91E3B5FADEC16CA7 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61D148F87541101043A74AE46D650766 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D8FC1BCC8C8DA4905933C3DFDA22C0 /* ConstraintMultiplierTarget.swift */; };
+		624D97005293BA752806759518626861 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D117FCE7B72EAC939E6D0E876AD60DB /* ConstraintInsets.swift */; };
+		634B7FC6E7B7AA71A0AC0680888291AB /* TMCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 260024A1807F293DD30598291590CE00 /* TMCache-dummy.m */; };
+		6F85D2C689F8B174345993F3B4CC917B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		72B34B23A2C7CCF97BB5C513C6E1FF87 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4E0877E989B9A0D503F16F8983413 /* ConstraintDSL.swift */; };
+		7AC85889D58260B982E21DAA27CED240 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE2CDE68E6CDE5EA35FC4F9A464CF /* ConstraintItem.swift */; };
+		7B4A5DE9B29555461803C7BAA3CC173B /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BEFA9945C93408BFF3FBD26BBE317 /* UILayoutSupport+Extensions.swift */; };
+		7F756E2392AC6C6EB106D9A5B4C2BE5C /* UILayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4B3A7E2B89E121EB18E56894B3B70 /* UILayoutGuide+Extensions.swift */; };
+		7FE3C30516FF35C56E607648491C880A /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31E9E300C7122439061B2C9F3359E /* ConstraintLayoutGuideDSL.swift */; };
+		84E97E54385CB2216C3F1662DC78DA6D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561DCC7F2F12E366E33F7B44A4F3046 /* Debugging.swift */; };
+		896D1E127504E5A16BB06E2E1883D0B9 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 583F370A4669D4ECAAAE5B0CA66FAA6B /* SnapKit-dummy.m */; };
+		97B645ADEFF90858B57EB4C5A912CBCB /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C543F46F0E799DAE88893785585CCEA /* ConstraintLayoutGuide.swift */; };
+		9C80661A59EDCDF1F6CB66D2FDBF82A4 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CA1BD9B165EAD621F12B2AA153123A /* TMMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A112B5B0461C89F3A49B2E1E1C9CC9B0 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA4449D8002877F217DE42686BF65 /* ConstraintMakerExtendable.swift */; };
+		ACD8176729C9592DA28F96D3EB26CB56 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201238B65092359663B94C95CF977B0 /* ConstraintMaker.swift */; };
+		B35D2A345934384BA2AE5F7EDD10BA16 /* TMMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D4CDB9CC942C45DD4072B0D167FAE3 /* TMMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5F03F8FE5221E928B0D415EB0C59DAB /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537FD94841A58720608ED0AEA68A7515 /* ConstraintOffsetTarget.swift */; };
+		BAAD27355A7C7919321D51D33E9124D3 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D553FE5A443782A5C868191DF7A3 /* ConstraintInsetTarget.swift */; };
+		BF73B44DBB7C8F397F2A9C001472C54A /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF56D1B75B5685665771672B0AF21674 /* ConstraintConfig.swift */; };
+		C63866D762D35A2A72C0F03C8DD0C460 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF33A518D6450FC814A445B18F237F1 /* ConstraintMakerRelatable.swift */; };
+		CCB291E5C1118EAA1EFC469813256AF4 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED51527599A3555F98C67C779C644D /* ConstraintPriorityTarget.swift */; };
+		D59DC45848F99DC5F582CFEF182426F4 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BC3E6722C5660806859CB5DE1DAB5 /* ConstraintView+Extensions.swift */; };
+		D6D3DC492FDA3B9FA6A242D858AAD654 /* TMCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB776B6C9E7F666965ACCF5F05EC2 /* TMCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8F8A3169A5F79BD971D8FF1B4F5F5FD /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A910E65A0EABD25B96C2D637EB44C6 /* ConstraintDescription.swift */; };
+		E1874D258DF3A12D3B8372B67AC4524B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBA45E744AF46F8E7351A0D21C639A /* ConstraintLayoutSupport.swift */; };
+		ED8B0F119B10895C3712EE7A9B69A592 /* Pods-MortgageCalculator-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C970A3CBE762F186ACA11F922C20A046 /* Pods-MortgageCalculator-Swift-dummy.m */; };
+		F289A8350C5705E902C5FB712D632209 /* Pods-MortgageCalculator-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE933740B14BA2A9A2CA53710630D78 /* Pods-MortgageCalculator-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2960892C21DB56B845725F6821C98AE /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E04F13A5F8A13DBAC0108B314F3BE6 /* ConstraintAttributes.swift */; };
+		FCAAD5B0C928B91929962AAC4D21D59B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E23D3C42D5AB79F4592887C152404B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D199C2CECCFABF50D7BE0CB1D0D270A2;
+			remoteInfo = SnapKit;
+		};
+		9C1FA1014528F7085E3CD9ECB8BFA3C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D79C5C7BE12633D230E9E6C166604B50;
+			remoteInfo = TMCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0275285B6A4CAB1B7B1C35B720A7F306 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		0BF33A518D6450FC814A445B18F237F1 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		0CEA2C1916303A1FE816C7F28E2F6D9B /* TMCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMCache.m; path = TMCache/TMCache.m; sourceTree = "<group>"; };
+		0D7CB42DA6D4A3BCDEFC4082D18F69AF /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		11D330C464B68B7697C30540DC565011 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		1425B48C0A30DA9B503A68F05BDD54EF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187B7D38F505C28A589A180C4193AE9E /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		1D30D21F93445E234471B98A9AEC3278 /* Pods-MortgageCalculator-Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MortgageCalculator-Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1FC4B3A7E2B89E121EB18E56894B3B70 /* UILayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Extensions.swift"; path = "Source/UILayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		260024A1807F293DD30598291590CE00 /* TMCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TMCache-dummy.m"; sourceTree = "<group>"; };
+		26D8FC1BCC8C8DA4905933C3DFDA22C0 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		26E04F13A5F8A13DBAC0108B314F3BE6 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		28E25A6A83DE23C9879F426F28504047 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		2A1A6BC3F636E806C6ECF52F932844B1 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MortgageCalculator_Swift.framework; path = "Pods-MortgageCalculator-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7F3A1989431CA45F490FE028BAE57A /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		2BED51527599A3555F98C67C779C644D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		332F4E0393593532E18ECF8C8BB151F5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		387CE102E198EF4C06B0F7B0DA7E71C8 /* Pods-MortgageCalculator-Swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MortgageCalculator-Swift-frameworks.sh"; sourceTree = "<group>"; };
+		38CA351B894B82636045435EDF9B0220 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		4512F2E280EA7C7DF69B3403271718F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45319D7530A5813BBC50488DB60612B1 /* Pods-MortgageCalculator-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MortgageCalculator-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		4561DCC7F2F12E366E33F7B44A4F3046 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		537FD94841A58720608ED0AEA68A7515 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		53D9848CEB2F21F419D34F5F2C5C64CC /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		583F370A4669D4ECAAAE5B0CA66FAA6B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		5CF78ED18B4061F6EFCFBC85BFF23912 /* TMCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TMCache.modulemap; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C543F46F0E799DAE88893785585CCEA /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		73CA1BD9B165EAD621F12B2AA153123A /* TMMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMMemoryCache.m; path = TMCache/TMMemoryCache.m; sourceTree = "<group>"; };
+		7AE6BB44DC4C5FEE91E3B5FADEC16CA7 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		7B18C9BAE6F86F219730B211467C9278 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		7BD9000B7023F68633F33BFB40CC96D0 /* TMCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TMCache.xcconfig; sourceTree = "<group>"; };
+		7D077258C246944C63629BE139D62063 /* Pods-MortgageCalculator-Swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MortgageCalculator-Swift-resources.sh"; sourceTree = "<group>"; };
+		7E80AD6FB9E5087E9637E90263E78511 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FBBA45E744AF46F8E7351A0D21C639A /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		834A4CEB899B77335689D15C34C2DFC2 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		9105F6EA27E510FC69108875339EA3A2 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		9201238B65092359663B94C95CF977B0 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9452B6EA5740032D57037A5FF8BCFBD4 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		95132DEDA8D7EEE02307BCA4CD93B22C /* Pods-MortgageCalculator-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MortgageCalculator-Swift.modulemap"; sourceTree = "<group>"; };
+		9763E4A47DA88624941C1E0461F8B759 /* TMCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TMCache.framework; path = TMCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B23483AB216BAC74EC61A184DFB2971 /* TMDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMDiskCache.h; path = TMCache/TMDiskCache.h; sourceTree = "<group>"; };
+		9B8BA62C1CE895D34CA80BD7D2B22D9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D117FCE7B72EAC939E6D0E876AD60DB /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		9DC21EE75981A591FA65EC8035FDC281 /* TMCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TMCache-prefix.pch"; sourceTree = "<group>"; };
+		9E5859C8365CAEF9C409747A3E288435 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		A2D7DD7DC835F0617E2CE9858B41BC7E /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		A654861EC8E326A8EA732A7E036238E9 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		AAE4E0877E989B9A0D503F16F8983413 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		AE050A80919F957DB617AE61B5D68961 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		AF1BEFA9945C93408BFF3FBD26BBE317 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		C1A910E65A0EABD25B96C2D637EB44C6 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		C518129FB87231AEE823B714E121C50D /* TMCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMCache.h; path = TMCache/TMCache.h; sourceTree = "<group>"; };
+		C6C0FDC8AD7B549D5FDD479CDB9522CD /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		C6F7871EF270F6642B0F3D3860EBFD7B /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		C81BB776B6C9E7F666965ACCF5F05EC2 /* TMCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TMCache-umbrella.h"; sourceTree = "<group>"; };
+		C970A3CBE762F186ACA11F922C20A046 /* Pods-MortgageCalculator-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MortgageCalculator-Swift-dummy.m"; sourceTree = "<group>"; };
+		CEC31E9E300C7122439061B2C9F3359E /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		D2CD6E0C15E0610F63C6CABB77AA5FAB /* TMDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMDiskCache.m; path = TMCache/TMDiskCache.m; sourceTree = "<group>"; };
+		D2D4CDB9CC942C45DD4072B0D167FAE3 /* TMMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMMemoryCache.h; path = TMCache/TMMemoryCache.h; sourceTree = "<group>"; };
+		D7585FCC7A2B450D9553598CAAB2B2FF /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		D75B9866BA5D355AE3925B07C14AF342 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		DA02D553FE5A443782A5C868191DF7A3 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		DEE933740B14BA2A9A2CA53710630D78 /* Pods-MortgageCalculator-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MortgageCalculator-Swift-umbrella.h"; sourceTree = "<group>"; };
+		DF0AA09796B95AE9C6B75A0159CD103F /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E71A24F194CA658ADFE75B6DDA2DC138 /* Pods-MortgageCalculator-Swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MortgageCalculator-Swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB3EA4449D8002877F217DE42686BF65 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		ED152364BF84AE109F8290CEBED0C59F /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		EF181D67B4131ADC72549B9AB2038E37 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		EF56D1B75B5685665771672B0AF21674 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		F46BC3E6722C5660806859CB5DE1DAB5 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F5ECE2CDE68E6CDE5EA35FC4F9A464CF /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		F79D8EEBF75FD26704BB06E7A178A098 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		FDCB146BEC3FDBD6C9A4F07F93199905 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		082786E84285D4DC9E1FE3F61AE4A693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC8128684B31FB49732FE8FC09C7D81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A92A1AB0ACDA8C7ED9BAD79F995A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F85D2C689F8B174345993F3B4CC917B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD9474D18E4384246ADBC7B4743768A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAAD5B0C928B91929962AAC4D21D59B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FBB88DFF70AC7C40CEB2BB6A8C01B9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B8BA62C1CE895D34CA80BD7D2B22D9A /* Info.plist */,
+				F79D8EEBF75FD26704BB06E7A178A098 /* SnapKit.modulemap */,
+				9105F6EA27E510FC69108875339EA3A2 /* SnapKit.xcconfig */,
+				583F370A4669D4ECAAAE5B0CA66FAA6B /* SnapKit-dummy.m */,
+				FDCB146BEC3FDBD6C9A4F07F93199905 /* SnapKit-prefix.pch */,
+				7AE6BB44DC4C5FEE91E3B5FADEC16CA7 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		43D8D76B80A1757479424F6E1BFCC0F5 /* Pods-MortgageCalculator-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7E80AD6FB9E5087E9637E90263E78511 /* Info.plist */,
+				95132DEDA8D7EEE02307BCA4CD93B22C /* Pods-MortgageCalculator-Swift.modulemap */,
+				1D30D21F93445E234471B98A9AEC3278 /* Pods-MortgageCalculator-Swift-acknowledgements.markdown */,
+				E71A24F194CA658ADFE75B6DDA2DC138 /* Pods-MortgageCalculator-Swift-acknowledgements.plist */,
+				C970A3CBE762F186ACA11F922C20A046 /* Pods-MortgageCalculator-Swift-dummy.m */,
+				387CE102E198EF4C06B0F7B0DA7E71C8 /* Pods-MortgageCalculator-Swift-frameworks.sh */,
+				7D077258C246944C63629BE139D62063 /* Pods-MortgageCalculator-Swift-resources.sh */,
+				DEE933740B14BA2A9A2CA53710630D78 /* Pods-MortgageCalculator-Swift-umbrella.h */,
+				45319D7530A5813BBC50488DB60612B1 /* Pods-MortgageCalculator-Swift.debug.xcconfig */,
+				C6C0FDC8AD7B549D5FDD479CDB9522CD /* Pods-MortgageCalculator-Swift.release.xcconfig */,
+			);
+			name = "Pods-MortgageCalculator-Swift";
+			path = "Target Support Files/Pods-MortgageCalculator-Swift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DD015BAA07FACD920AABA5E55EF3A430 /* Pods */,
+				A5A78255AC67DD35CAED1AD7F3EE8633 /* Products */,
+				9CE0A747B4A2FC30EC1208D772CFE706 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9849136D621E07154D91B14EF42A802D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				332F4E0393593532E18ECF8C8BB151F5 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CE0A747B4A2FC30EC1208D772CFE706 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D8D76B80A1757479424F6E1BFCC0F5 /* Pods-MortgageCalculator-Swift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A5A78255AC67DD35CAED1AD7F3EE8633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A1A6BC3F636E806C6ECF52F932844B1 /* Pods_MortgageCalculator_Swift.framework */,
+				1425B48C0A30DA9B503A68F05BDD54EF /* SnapKit.framework */,
+				9763E4A47DA88624941C1E0461F8B759 /* TMCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B363F03AA771AC0D88DDA0BBC61B4776 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				53D9848CEB2F21F419D34F5F2C5C64CC /* ANSCompatibility.h */,
+				9452B6EA5740032D57037A5FF8BCFBD4 /* Answers.h */,
+				A654861EC8E326A8EA732A7E036238E9 /* CLSAttributes.h */,
+				2A7F3A1989431CA45F490FE028BAE57A /* CLSLogging.h */,
+				7B18C9BAE6F86F219730B211467C9278 /* CLSReport.h */,
+				AE050A80919F957DB617AE61B5D68961 /* CLSStackFrame.h */,
+				834A4CEB899B77335689D15C34C2DFC2 /* Crashlytics.h */,
+				F7CE335004F569E25CE4EB88B07289EE /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		B649EF034205F8FD23073C461AD7DE9F /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				ED152364BF84AE109F8290CEBED0C59F /* FABAttributes.h */,
+				9E5859C8365CAEF9C409747A3E288435 /* Fabric.h */,
+				9849136D621E07154D91B14EF42A802D /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D97408D4000A649F5D58DD00607424 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				A2D7DD7DC835F0617E2CE9858B41BC7E /* Constraint.swift */,
+				26E04F13A5F8A13DBAC0108B314F3BE6 /* ConstraintAttributes.swift */,
+				EF56D1B75B5685665771672B0AF21674 /* ConstraintConfig.swift */,
+				DF0AA09796B95AE9C6B75A0159CD103F /* ConstraintConstantTarget.swift */,
+				C1A910E65A0EABD25B96C2D637EB44C6 /* ConstraintDescription.swift */,
+				AAE4E0877E989B9A0D503F16F8983413 /* ConstraintDSL.swift */,
+				9D117FCE7B72EAC939E6D0E876AD60DB /* ConstraintInsets.swift */,
+				DA02D553FE5A443782A5C868191DF7A3 /* ConstraintInsetTarget.swift */,
+				F5ECE2CDE68E6CDE5EA35FC4F9A464CF /* ConstraintItem.swift */,
+				6C543F46F0E799DAE88893785585CCEA /* ConstraintLayoutGuide.swift */,
+				CEC31E9E300C7122439061B2C9F3359E /* ConstraintLayoutGuideDSL.swift */,
+				7FBBA45E744AF46F8E7351A0D21C639A /* ConstraintLayoutSupport.swift */,
+				28E25A6A83DE23C9879F426F28504047 /* ConstraintLayoutSupportDSL.swift */,
+				9201238B65092359663B94C95CF977B0 /* ConstraintMaker.swift */,
+				EF181D67B4131ADC72549B9AB2038E37 /* ConstraintMakerEditable.swift */,
+				EB3EA4449D8002877F217DE42686BF65 /* ConstraintMakerExtendable.swift */,
+				D7585FCC7A2B450D9553598CAAB2B2FF /* ConstraintMakerFinalizable.swift */,
+				C6F7871EF270F6642B0F3D3860EBFD7B /* ConstraintMakerPriortizable.swift */,
+				0BF33A518D6450FC814A445B18F237F1 /* ConstraintMakerRelatable.swift */,
+				26D8FC1BCC8C8DA4905933C3DFDA22C0 /* ConstraintMultiplierTarget.swift */,
+				537FD94841A58720608ED0AEA68A7515 /* ConstraintOffsetTarget.swift */,
+				2BED51527599A3555F98C67C779C644D /* ConstraintPriorityTarget.swift */,
+				0275285B6A4CAB1B7B1C35B720A7F306 /* ConstraintRelatableTarget.swift */,
+				187B7D38F505C28A589A180C4193AE9E /* ConstraintRelation.swift */,
+				D75B9866BA5D355AE3925B07C14AF342 /* ConstraintView.swift */,
+				F46BC3E6722C5660806859CB5DE1DAB5 /* ConstraintView+Extensions.swift */,
+				38CA351B894B82636045435EDF9B0220 /* ConstraintViewDSL.swift */,
+				4561DCC7F2F12E366E33F7B44A4F3046 /* Debugging.swift */,
+				11D330C464B68B7697C30540DC565011 /* LayoutConstraint.swift */,
+				1FC4B3A7E2B89E121EB18E56894B3B70 /* UILayoutGuide+Extensions.swift */,
+				AF1BEFA9945C93408BFF3FBD26BBE317 /* UILayoutSupport+Extensions.swift */,
+				1FBB88DFF70AC7C40CEB2BB6A8C01B9E /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DD015BAA07FACD920AABA5E55EF3A430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B363F03AA771AC0D88DDA0BBC61B4776 /* Crashlytics */,
+				B649EF034205F8FD23073C461AD7DE9F /* Fabric */,
+				C8D97408D4000A649F5D58DD00607424 /* SnapKit */,
+				F12BBA7CD2B13120E0D3DCB2C9F4A3E5 /* TMCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F12BBA7CD2B13120E0D3DCB2C9F4A3E5 /* TMCache */ = {
+			isa = PBXGroup;
+			children = (
+				C518129FB87231AEE823B714E121C50D /* TMCache.h */,
+				0CEA2C1916303A1FE816C7F28E2F6D9B /* TMCache.m */,
+				9B23483AB216BAC74EC61A184DFB2971 /* TMDiskCache.h */,
+				D2CD6E0C15E0610F63C6CABB77AA5FAB /* TMDiskCache.m */,
+				D2D4CDB9CC942C45DD4072B0D167FAE3 /* TMMemoryCache.h */,
+				73CA1BD9B165EAD621F12B2AA153123A /* TMMemoryCache.m */,
+				FE2B2E2EBD6DA4A215FBADEA7937B65E /* Support Files */,
+			);
+			name = TMCache;
+			path = TMCache;
+			sourceTree = "<group>";
+		};
+		F7CE335004F569E25CE4EB88B07289EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D7CB42DA6D4A3BCDEFC4082D18F69AF /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE2B2E2EBD6DA4A215FBADEA7937B65E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4512F2E280EA7C7DF69B3403271718F2 /* Info.plist */,
+				5CF78ED18B4061F6EFCFBC85BFF23912 /* TMCache.modulemap */,
+				7BD9000B7023F68633F33BFB40CC96D0 /* TMCache.xcconfig */,
+				260024A1807F293DD30598291590CE00 /* TMCache-dummy.m */,
+				9DC21EE75981A591FA65EC8035FDC281 /* TMCache-prefix.pch */,
+				C81BB776B6C9E7F666965ACCF5F05EC2 /* TMCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TMCache";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26041A1FE74A66762E5CA9E3ABB65536 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D3DC492FDA3B9FA6A242D858AAD654 /* TMCache-umbrella.h in Headers */,
+				05DA9091D71551EF30E7E7652F5E2353 /* TMCache.h in Headers */,
+				40ABD92739294149F3F453B105D36B73 /* TMDiskCache.h in Headers */,
+				B35D2A345934384BA2AE5F7EDD10BA16 /* TMMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B7ED0BD092E97AF11B1FCD42BE9DA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6053C64A74E04B34EE44B15522C17368 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA540E6BBEDC0F0221287D0C27F58D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F289A8350C5705E902C5FB712D632209 /* Pods-MortgageCalculator-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BCBA0B3FAE13EF59A12AF1802FD37DA3 /* Pods-MortgageCalculator-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B349EE7B38D2A8C605CFD8B76493095 /* Build configuration list for PBXNativeTarget "Pods-MortgageCalculator-Swift" */;
+			buildPhases = (
+				7A217A2A8D215130D597C107EA5D4C24 /* Sources */,
+				256A92A1AB0ACDA8C7ED9BAD79F995A0 /* Frameworks */,
+				6DA540E6BBEDC0F0221287D0C27F58D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D4DB7359667F91FC53964315863CB0 /* PBXTargetDependency */,
+				1B59D849502B28F26EB1FACBCD24D787 /* PBXTargetDependency */,
+			);
+			name = "Pods-MortgageCalculator-Swift";
+			productName = "Pods-MortgageCalculator-Swift";
+			productReference = 2A1A6BC3F636E806C6ECF52F932844B1 /* Pods_MortgageCalculator_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D199C2CECCFABF50D7BE0CB1D0D270A2 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA156B0657524996C1E421374B9327C /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				AFC31840812709758D39B3DFDCB53A55 /* Sources */,
+				DAD9474D18E4384246ADBC7B4743768A /* Frameworks */,
+				45B7ED0BD092E97AF11B1FCD42BE9DA9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 1425B48C0A30DA9B503A68F05BDD54EF /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D79C5C7BE12633D230E9E6C166604B50 /* TMCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B047866D3FC02D0D9C8745A3CBD4D8 /* Build configuration list for PBXNativeTarget "TMCache" */;
+			buildPhases = (
+				EF812094A0F35C5D796BE30D9F7AAED2 /* Sources */,
+				082786E84285D4DC9E1FE3F61AE4A693 /* Frameworks */,
+				26041A1FE74A66762E5CA9E3ABB65536 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMCache;
+			productName = TMCache;
+			productReference = 9763E4A47DA88624941C1E0461F8B759 /* TMCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A5A78255AC67DD35CAED1AD7F3EE8633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCBA0B3FAE13EF59A12AF1802FD37DA3 /* Pods-MortgageCalculator-Swift */,
+				D199C2CECCFABF50D7BE0CB1D0D270A2 /* SnapKit */,
+				D79C5C7BE12633D230E9E6C166604B50 /* TMCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A217A2A8D215130D597C107EA5D4C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8B0F119B10895C3712EE7A9B69A592 /* Pods-MortgageCalculator-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC31840812709758D39B3DFDCB53A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265303615503B6CD7ED265DB4AEB51D9 /* Constraint.swift in Sources */,
+				F2960892C21DB56B845725F6821C98AE /* ConstraintAttributes.swift in Sources */,
+				BF73B44DBB7C8F397F2A9C001472C54A /* ConstraintConfig.swift in Sources */,
+				1BBC59B4EC12463697B574C8B04A1CDA /* ConstraintConstantTarget.swift in Sources */,
+				D8F8A3169A5F79BD971D8FF1B4F5F5FD /* ConstraintDescription.swift in Sources */,
+				72B34B23A2C7CCF97BB5C513C6E1FF87 /* ConstraintDSL.swift in Sources */,
+				624D97005293BA752806759518626861 /* ConstraintInsets.swift in Sources */,
+				BAAD27355A7C7919321D51D33E9124D3 /* ConstraintInsetTarget.swift in Sources */,
+				7AC85889D58260B982E21DAA27CED240 /* ConstraintItem.swift in Sources */,
+				97B645ADEFF90858B57EB4C5A912CBCB /* ConstraintLayoutGuide.swift in Sources */,
+				7FE3C30516FF35C56E607648491C880A /* ConstraintLayoutGuideDSL.swift in Sources */,
+				E1874D258DF3A12D3B8372B67AC4524B /* ConstraintLayoutSupport.swift in Sources */,
+				173CA1DC7BCD0BE0975081ECFCC30240 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				ACD8176729C9592DA28F96D3EB26CB56 /* ConstraintMaker.swift in Sources */,
+				0D27C334B7A1E86D89D73A03CDE624FD /* ConstraintMakerEditable.swift in Sources */,
+				A112B5B0461C89F3A49B2E1E1C9CC9B0 /* ConstraintMakerExtendable.swift in Sources */,
+				5626A280FBAC13BD3DFD297C258C8D4A /* ConstraintMakerFinalizable.swift in Sources */,
+				0C6D2EA2FBCF293FE532DD1F4AAD1254 /* ConstraintMakerPriortizable.swift in Sources */,
+				C63866D762D35A2A72C0F03C8DD0C460 /* ConstraintMakerRelatable.swift in Sources */,
+				61D148F87541101043A74AE46D650766 /* ConstraintMultiplierTarget.swift in Sources */,
+				B5F03F8FE5221E928B0D415EB0C59DAB /* ConstraintOffsetTarget.swift in Sources */,
+				CCB291E5C1118EAA1EFC469813256AF4 /* ConstraintPriorityTarget.swift in Sources */,
+				0CB35D33A08C0DC941C549310D9852B6 /* ConstraintRelatableTarget.swift in Sources */,
+				2C268AD447442C5CF7637109EF0F72CD /* ConstraintRelation.swift in Sources */,
+				D59DC45848F99DC5F582CFEF182426F4 /* ConstraintView+Extensions.swift in Sources */,
+				11DFC901E46C8A726268588BCC274BBC /* ConstraintView.swift in Sources */,
+				471FC3989BE7D9511EF870EF5355366A /* ConstraintViewDSL.swift in Sources */,
+				84E97E54385CB2216C3F1662DC78DA6D /* Debugging.swift in Sources */,
+				38A8FAA84C40BC745A0B08F2E488BB44 /* LayoutConstraint.swift in Sources */,
+				896D1E127504E5A16BB06E2E1883D0B9 /* SnapKit-dummy.m in Sources */,
+				7F756E2392AC6C6EB106D9A5B4C2BE5C /* UILayoutGuide+Extensions.swift in Sources */,
+				7B4A5DE9B29555461803C7BAA3CC173B /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF812094A0F35C5D796BE30D9F7AAED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634B7FC6E7B7AA71A0AC0680888291AB /* TMCache-dummy.m in Sources */,
+				5B63FFBB4AAB7D9145FBAB136CDAE19D /* TMCache.m in Sources */,
+				524054B487AEAE1BC40DC1BA72469426 /* TMDiskCache.m in Sources */,
+				9C80661A59EDCDF1F6CB66D2FDBF82A4 /* TMMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B59D849502B28F26EB1FACBCD24D787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TMCache;
+			target = D79C5C7BE12633D230E9E6C166604B50 /* TMCache */;
+			targetProxy = 9C1FA1014528F7085E3CD9ECB8BFA3C0 /* PBXContainerItemProxy */;
+		};
+		F7D4DB7359667F91FC53964315863CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = D199C2CECCFABF50D7BE0CB1D0D270A2 /* SnapKit */;
+			targetProxy = 5E23D3C42D5AB79F4592887C152404B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		184E858581BEE78DEAAA547BE83255F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C0FDC8AD7B549D5FDD479CDB9522CD /* Pods-MortgageCalculator-Swift.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MortgageCalculator-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MortgageCalculator_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39FDAEF1442E235345AB329E2C48D38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD9000B7023F68633F33BFB40CC96D0 /* TMCache.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TMCache/TMCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TMCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TMCache/TMCache.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TMCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB280C10E2E7D4BF646DFD56FFDAAD67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9105F6EA27E510FC69108875339EA3A2 /* SnapKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABB5EA08AF8908159E270AAEA1A9AE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9105F6EA27E510FC69108875339EA3A2 /* SnapKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB961A6D47D38140F063C8846D26BF23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD9000B7023F68633F33BFB40CC96D0 /* TMCache.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TMCache/TMCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TMCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TMCache/TMCache.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TMCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7474A13A89514FB499926E346AE17BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45319D7530A5813BBC50488DB60612B1 /* Pods-MortgageCalculator-Swift.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MortgageCalculator-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MortgageCalculator_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B349EE7B38D2A8C605CFD8B76493095 /* Build configuration list for PBXNativeTarget "Pods-MortgageCalculator-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7474A13A89514FB499926E346AE17BF /* Debug */,
+				184E858581BEE78DEAAA547BE83255F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B047866D3FC02D0D9C8745A3CBD4D8 /* Build configuration list for PBXNativeTarget "TMCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB961A6D47D38140F063C8846D26BF23 /* Debug */,
+				39FDAEF1442E235345AB329E2C48D38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA156B0657524996C1E421374B9327C /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB280C10E2E7D4BF646DFD56FFDAAD67 /* Debug */,
+				ABB5EA08AF8908159E270AAEA1A9AE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
