@@ -76,6 +76,11 @@
 		5365B7FB1F5F9490001FFEA5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */; };
 		5365B7FD1F5F949C001FFEA5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FC1F5F949C001FFEA5 /* Photos.framework */; };
 		5367FD861F6A382E00449B5B /* lanyamao.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD851F6A382C00449B5B /* lanyamao.png */; };
+		5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5367FD8C1F6A6AE900449B5B /* JZNumberKeyboard.m */; };
+		5367FD931F6A6C7D00449B5B /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD901F6A6C6A00449B5B /* delete@2x.png */; };
+		5367FD941F6A6C7F00449B5B /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD8F1F6A6C6900449B5B /* delete@3x.png */; };
+		5367FD951F6A6C8100449B5B /* resign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD921F6A6C6A00449B5B /* resign@2x.png */; };
+		5367FD961F6A6C8400449B5B /* resign@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD911F6A6C6A00449B5B /* resign@3x.png */; };
 		537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */; };
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
@@ -188,6 +193,12 @@
 		5365B7FC1F5F949C001FFEA5 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		5365B7FF1F5F9569001FFEA5 /* MortgageCalculator-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5367FD851F6A382C00449B5B /* lanyamao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lanyamao.png; sourceTree = "<group>"; };
+		5367FD8B1F6A6AE900449B5B /* JZNumberKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZNumberKeyboard.h; sourceTree = "<group>"; };
+		5367FD8C1F6A6AE900449B5B /* JZNumberKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZNumberKeyboard.m; sourceTree = "<group>"; };
+		5367FD8F1F6A6C6900449B5B /* delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@3x.png"; sourceTree = "<group>"; };
+		5367FD901F6A6C6A00449B5B /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		5367FD911F6A6C6A00449B5B /* resign@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resign@3x.png"; sourceTree = "<group>"; };
+		5367FD921F6A6C6A00449B5B /* resign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resign@2x.png"; sourceTree = "<group>"; };
 		537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNumberKeyboard.swift; sourceTree = "<group>"; };
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -464,6 +475,19 @@
 			name = SDK;
 			sourceTree = "<group>";
 		};
+		5367FD891F6A6AE900449B5B /* JZNumberKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5367FD8B1F6A6AE900449B5B /* JZNumberKeyboard.h */,
+				5367FD8C1F6A6AE900449B5B /* JZNumberKeyboard.m */,
+				5367FD901F6A6C6A00449B5B /* delete@2x.png */,
+				5367FD8F1F6A6C6900449B5B /* delete@3x.png */,
+				5367FD921F6A6C6A00449B5B /* resign@2x.png */,
+				5367FD911F6A6C6A00449B5B /* resign@3x.png */,
+			);
+			path = JZNumberKeyboard;
+			sourceTree = "<group>";
+		};
 		53A4EF1B1F2ED46B00EF58EB = {
 			isa = PBXGroup;
 			children = (
@@ -561,6 +585,7 @@
 		53D777071F307EE60074B52C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				5367FD891F6A6AE900449B5B /* JZNumberKeyboard */,
 				5365B8AC1F5FCF55001FFEA5 /* SDK */,
 				5321DE3B1F31C3AB00184F9D /* Font */,
 				53D777081F307EE60074B52C /* Extension */,
@@ -675,6 +700,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5367FD951F6A6C8100449B5B /* resign@2x.png in Resources */,
 				530338371F591DE700848A6E /* selectbianji@3x.png in Resources */,
 				5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */,
 				5342E98A1F33261300AC3059 /* about_praise.png in Resources */,
@@ -690,6 +716,7 @@
 				53578F7E1F668DA5005B1E4D /* WeiboSDK.bundle in Resources */,
 				5367FD861F6A382E00449B5B /* lanyamao.png in Resources */,
 				53578F801F668DA5005B1E4D /* README.txt in Resources */,
+				5367FD931F6A6C7D00449B5B /* delete@2x.png in Resources */,
 				5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */,
 				5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */,
 				539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */,
@@ -702,11 +729,13 @@
 				5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */,
 				539807401F67DEC3004127CA /* tianqi.png in Resources */,
 				530338381F591DE700848A6E /* selectbianji@2x.png in Resources */,
+				5367FD941F6A6C7F00449B5B /* delete@3x.png in Resources */,
 				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
 				53351B9E1F66B3F000717C26 /* onePai.png in Resources */,
 				5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */,
 				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
+				5367FD961F6A6C8400449B5B /* resign@3x.png in Resources */,
 				53351B961F66ACC800717C26 /* longdai.png in Resources */,
 				53578F7C1F668DA5005B1E4D /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				53578F6C1F668DA5005B1E4D /* ShareSDKUI.bundle in Resources */,
@@ -790,6 +819,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */,
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,

@@ -72,6 +72,9 @@ class BaseTableViewCell: UITableViewCell {
             make.left.equalTo(self.bgTextFieldView!).offset(8);
         })
         
+        let keyboard = JZNumberKeyboard()
+        keyboard.setInputView(self.textField)
+        
         self.topSepView = UIImageView()
         self.topSepView?.backgroundColor = XZSwiftColor.xzGlay230
         self.contentView.addSubview(self.topSepView!)
