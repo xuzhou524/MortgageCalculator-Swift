@@ -75,6 +75,7 @@
 		5365B7F91F5F946F001FFEA5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */; };
 		5365B7FB1F5F9490001FFEA5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */; };
 		5365B7FD1F5F949C001FFEA5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FC1F5F949C001FFEA5 /* Photos.framework */; };
+		5367FD861F6A382E00449B5B /* lanyamao.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD851F6A382C00449B5B /* lanyamao.png */; };
 		537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */; };
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
@@ -186,6 +187,7 @@
 		5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5365B7FC1F5F949C001FFEA5 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		5365B7FF1F5F9569001FFEA5 /* MortgageCalculator-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		5367FD851F6A382C00449B5B /* lanyamao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lanyamao.png; sourceTree = "<group>"; };
 		537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNumberKeyboard.swift; sourceTree = "<group>"; };
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 		53A4EF6A1F2F075500EF58EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5367FD851F6A382C00449B5B /* lanyamao.png */,
 				539807411F67E0A6004127CA /* v2ex.png */,
 				53351B9D1F66B3EE00717C26 /* onePai.png */,
 				5398073F1F67DEC1004127CA /* tianqi.png */,
@@ -685,6 +688,7 @@
 				53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */,
 				5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */,
 				53578F7E1F668DA5005B1E4D /* WeiboSDK.bundle in Resources */,
+				5367FD861F6A382E00449B5B /* lanyamao.png in Resources */,
 				53578F801F668DA5005B1E4D /* README.txt in Resources */,
 				5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */,
 				5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */,
