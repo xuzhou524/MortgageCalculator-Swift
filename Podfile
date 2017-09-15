@@ -4,6 +4,9 @@ use_frameworks!
 
 def pods
    pod 'SnapKit'
+   pod 'ObjectMapper'
+   pod 'SwiftyJSON'
+   pod 'Moya/RxSwift'
    pod 'TMCache'
    pod 'Fabric'
    pod 'Crashlytics'
