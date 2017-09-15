@@ -186,8 +186,10 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         let dayNumber = gregorians.dateComponents([.month , .day , .hour], from:Date(), to:dayStrs!)
         if dayNumber.day == 0 {
             self.remindDayTitleView?.dayLabel?.text = "明天"
+            self.remindDayTitleView?.dayTitleLabel?.text = ""
         }else{
             self.remindDayTitleView?.dayLabel?.text = String(dayNumber.day!)
+            self.remindDayTitleView?.dayTitleLabel?.text = "天"
         }
     }
 

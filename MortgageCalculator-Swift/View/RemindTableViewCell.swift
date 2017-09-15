@@ -31,6 +31,7 @@ class RemindDayTitleView: UIView {
     
     var titleLabel : UILabel?
     var dayLabel : UILabel?
+    var dayTitleLabel : UILabel?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -107,12 +108,12 @@ class RemindDayTitleView: UIView {
             make.top.equalTo((self.titleLabel?.snp.bottom)!).offset(20)
         }
         
-        let unitLabel = UILabel()
-        unitLabel.text = "天"
-        unitLabel.textColor = XZSwiftColor.white
-        unitLabel.font = XZClient.XZFont(size: 14)
-        self.backgroundView?.addSubview(unitLabel)
-        unitLabel.snp.makeConstraints { (make) in
+        self.dayTitleLabel = UILabel()
+        self.dayTitleLabel?.text = "天"
+        self.dayTitleLabel?.textColor = XZSwiftColor.white
+        self.dayTitleLabel?.font = XZClient.XZFont(size: 14)
+        self.backgroundView?.addSubview(self.dayTitleLabel!)
+        self.dayTitleLabel?.snp.makeConstraints { (make) in
             make.left.equalTo((self.dayLabel?.snp.right)!).offset(6)
             make.bottom.equalTo(self.dayLabel!).offset(-6)
         }
