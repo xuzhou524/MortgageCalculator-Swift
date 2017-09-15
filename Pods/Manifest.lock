@@ -10,10 +10,32 @@ PODS:
     - Moya/Core
     - RxSwift (~> 3.0)
   - ObjectMapper (2.2.8)
+  - PINCache (3.0.1-beta.5):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
+    - PINCache/Core (= 3.0.1-beta.5)
+  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.5):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.11):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.11):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.11):
+    - PINCache (= 3.0.1-beta.5)
+    - PINRemoteImage/Core
   - Result (3.2.3)
   - RxSwift (3.6.1)
   - SnapKit (3.0.2)
   - SwiftyJSON (3.1.4)
+  - Texture (2.4):
+    - Texture/PINRemoteImage (= 2.4)
+  - Texture/Core (2.4)
+  - Texture/PINRemoteImage (2.4):
+    - PINRemoteImage/iOS (= 3.0.0-beta.11)
+    - PINRemoteImage/PINCache
+    - Texture/Core
   - TMCache (1.2.4)
 
 DEPENDENCIES:
@@ -23,6 +45,7 @@ DEPENDENCIES:
   - ObjectMapper
   - SnapKit
   - SwiftyJSON
+  - Texture
   - TMCache
 
 SPEC CHECKSUMS:
@@ -31,12 +54,16 @@ SPEC CHECKSUMS:
   Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: d71988f11914a050d6d4cf51efc4ad1de8c0a9d8
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Texture: a5526314780eab35f642d956627f09316b9514e8
   TMCache: a93984b045a5ee84bd8941bd5e0b54296059cc52
 
-PODFILE CHECKSUM: d4cd937132403c6257c14f81d7fe575d74ea0dc1
+PODFILE CHECKSUM: 4d9bb5febfcc563c457f3c7fb47b1a9c0f4ff674
 
 COCOAPODS: 1.3.1

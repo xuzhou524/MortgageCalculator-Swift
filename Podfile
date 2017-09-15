@@ -7,6 +7,7 @@ def pods
    pod 'ObjectMapper'
    pod 'SwiftyJSON'
    pod 'Moya/RxSwift'
+   pod 'Texture'
    pod 'TMCache'
    pod 'Fabric'
    pod 'Crashlytics'
