@@ -7,31 +7,42 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
-class HousingMarketListViewController: UIViewController {
+class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
 
+    convenience init(){
+        self.init(node: ASTableNode(style: .plain))
+    }
+    
+    override init(node: ASTableNode) {
+        super.init(node: node)
+        node.delegate = self
+        node.dataSource = self
+        node.view.separatorStyle = .none
+        node.backgroundColor = XZSwiftColor.white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "楼市"
-        self.view.backgroundColor = XZSwiftColor.white
+        self.title = "楼市"
+        //self.view.backgroundColor = XZSwiftColor.white
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
+        return HousMarketListTableViewCell(digItem: "dsds")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

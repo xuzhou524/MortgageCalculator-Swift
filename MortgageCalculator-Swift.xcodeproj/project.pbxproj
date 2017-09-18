@@ -85,6 +85,7 @@
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
 		5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */; };
+		538A4EFA1F6FBC1800801809 /* ChouTiTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A4EF91F6FBC1800801809 /* ChouTiTargetType.swift */; };
 		539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795271F3327D5009AFED4 /* Icon-60@2x.png */; };
 		5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795281F3327D5009AFED4 /* Icon-60@3x.png */; };
 		539807401F67DEC3004127CA /* tianqi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5398073F1F67DEC1004127CA /* tianqi.png */; };
@@ -115,6 +116,7 @@
 		53F052F41F6BD2390035EF5A /* tabbar_housing_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */; };
 		53F052F51F6BD23B0035EF5A /* tabbar_housing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */; };
 		53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */; };
+		53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */; };
 		5E7AF110415A12DA72166F19 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -209,6 +211,7 @@
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewController.swift; sourceTree = "<group>"; };
+		538A4EF91F6FBC1800801809 /* ChouTiTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChouTiTargetType.swift; sourceTree = "<group>"; };
 		539795271F3327D5009AFED4 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		539795281F3327D5009AFED4 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		5398073F1F67DEC1004127CA /* tianqi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tianqi.png; sourceTree = "<group>"; };
@@ -241,6 +244,7 @@
 		53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing_selected@3x.png"; sourceTree = "<group>"; };
 		53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@2x.png"; sourceTree = "<group>"; };
 		53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@3x.png"; sourceTree = "<group>"; };
+		53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousMarketListTableViewCell.swift; sourceTree = "<group>"; };
 		9A03C1CF6B798BED0E72F7DD /* Pods-MortgageCalculator-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -595,6 +599,7 @@
 				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 				5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */,
 				53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */,
+				53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -612,6 +617,7 @@
 				53D7770E1F307EE60074B52C /* XZSwiftColor.swift */,
 				53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */,
 				537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */,
+				538A4EF91F6FBC1800801809 /* ChouTiTargetType.swift */,
 				53F052EA1F6BC5050035EF5A /* Observable+Extension.swift */,
 			);
 			path = Libs;
@@ -871,6 +877,7 @@
 			files = (
 				5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */,
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
+				538A4EFA1F6FBC1800801809 /* ChouTiTargetType.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
 				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
@@ -898,6 +905,7 @@
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
 				537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */,
 				53F052EE1F6BC5C10035EF5A /* HousingMarketListViewController.swift in Sources */,
+				53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */,
 				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
 				53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */,
 				5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */,
