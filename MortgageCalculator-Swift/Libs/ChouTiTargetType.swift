@@ -1,19 +1,19 @@
 //
-//  ChouTiTargetType.swift
-//  ChouTi
+//  XZTargetType.swift
+//  MortgageCalculator-Swift
 //
-//  Created by huangfeng on 2017/5/17.
+//  Created by gozap on 2017/9/18.
 //  Copyright © 2017年 com.longdai. All rights reserved.
 //
 
 import UIKit
 import Moya
 
-protocol ChouTiTargetType: TargetType {}
+protocol XZTargetType: TargetType {}
 
-extension ChouTiTargetType {
+extension XZTargetType {
     var baseURL: URL {
-        return URL(string: "http://xw.qq.com/service/api/proxy")!
+        return URL(string: "http://xw.qq.com")!
     }
     
     var method: Moya.Method {
@@ -45,7 +45,7 @@ extension ChouTiTargetType {
     
     static func endpointClosure<T:TargetType>(_ target: T) -> Endpoint<T>{
         let defaultEndpoint = MoyaProvider<T>.defaultEndpointMapping(for: target)
-
+        
         //API请求 默认携带的参数
 //        var version = "0.0.0"
 //        if let infoDict = Bundle.main.infoDictionary {
@@ -60,9 +60,8 @@ extension ChouTiTargetType {
 //        if User.shared.isLogin {
 //            defaultParameters["access_token"] = APP_KEY_iPhone + User.shared.accessToken
 //        }
-
-        return defaultEndpoint
         
+        return defaultEndpoint
     }
  
     static var provider: RxMoyaProvider<Self> {

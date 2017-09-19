@@ -30,8 +30,16 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "楼市"
-        //self.view.backgroundColor = XZSwiftColor.white
-
+        
+        _ = HousingMarketApi.provider.request(.housingMarketList).filterResponseError().mapResponseToObj(HousingMarketModel.self)
+            .subscribe(onNext: { (response) in
+                
+                print(response)
+                
+            }, onError: { (error) in
+                print("=========" + error.rawString())
+            })
+        
     }
     
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
