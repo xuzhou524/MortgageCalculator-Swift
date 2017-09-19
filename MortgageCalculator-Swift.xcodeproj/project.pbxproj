@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26E14845761BB25F8E7D19F7 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */; };
 		530338371F591DE700848A6E /* selectbianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338351F591DE600848A6E /* selectbianji@3x.png */; };
 		530338381F591DE700848A6E /* selectbianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338361F591DE700848A6E /* selectbianji@2x.png */; };
 		5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338391F591E3B00848A6E /* bianji@3x.png */; };
@@ -124,7 +125,6 @@
 		53F052F51F6BD23B0035EF5A /* tabbar_housing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */; };
 		53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */; };
 		53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */; };
-		5E7AF110415A12DA72166F19 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +141,8 @@
 		531152AE1F70B97F00E2B70E /* Idlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idlist.swift; sourceTree = "<group>"; };
 		531152AF1F70B97F00E2B70E /* Newslist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newslist.swift; sourceTree = "<group>"; };
 		531152B31F70B98400E2B70E /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
+		531152B81F710EAA00E2B70E /* TMCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
@@ -296,8 +298,8 @@
 				53578F6D1F668DA5005B1E4D /* ShareSDKUI.framework in Frameworks */,
 				53578F6F1F668DA5005B1E4D /* FacebookConnector.framework in Frameworks */,
 				5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */,
-				5E7AF110415A12DA72166F19 /* Pods_MortgageCalculator_Swift.framework in Frameworks */,
 				53578F681F668DA5005B1E4D /* ShareSDK.framework in Frameworks */,
+				26E14845761BB25F8E7D19F7 /* Pods_MortgageCalculator_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +673,8 @@
 		820F151D5DAEB95076796356 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */,
+				531152B81F710EAA00E2B70E /* TMCache.framework */,
 				5365B7FC1F5F949C001FFEA5 /* Photos.framework */,
 				5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */,
 				5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */,
@@ -1080,7 +1084,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

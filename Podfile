@@ -1,5 +1,5 @@
-
-platform:ios,’8.0’
+platform:ios,'8.0'
+inhibit_all_warnings!
 use_frameworks!
 
 def pods
@@ -8,7 +8,7 @@ def pods
    pod 'SwiftyJSON'
    pod 'Moya/RxSwift'
    pod 'Texture'
-   pod 'TMCache'
+   pod 'TMCache',:git => 'https://github.com/tumblr/TMCache'
    pod 'Fabric'
    pod 'Crashlytics'
 end
