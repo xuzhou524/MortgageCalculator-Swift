@@ -14,6 +14,10 @@
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */; };
 		531152A41F6FCC4500E2B70E /* HousingMarketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */; };
+		531152B01F70B97F00E2B70E /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AD1F70B97E00E2B70E /* Id.swift */; };
+		531152B11F70B97F00E2B70E /* Idlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AE1F70B97F00E2B70E /* Idlist.swift */; };
+		531152B21F70B97F00E2B70E /* Newslist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AF1F70B97F00E2B70E /* Newslist.swift */; };
+		531152B41F70B98400E2B70E /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152B31F70B98400E2B70E /* RootClass.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
@@ -133,6 +137,10 @@
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
 		531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketManager.swift; sourceTree = "<group>"; };
 		531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketModel.swift; sourceTree = "<group>"; };
+		531152AD1F70B97E00E2B70E /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		531152AE1F70B97F00E2B70E /* Idlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idlist.swift; sourceTree = "<group>"; };
+		531152AF1F70B97F00E2B70E /* Newslist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newslist.swift; sourceTree = "<group>"; };
+		531152B31F70B98400E2B70E /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
@@ -351,6 +359,10 @@
 		534FB7191F39BB32006E3144 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				531152AD1F70B97E00E2B70E /* Id.swift */,
+				531152AE1F70B97F00E2B70E /* Idlist.swift */,
+				531152AF1F70B97F00E2B70E /* Newslist.swift */,
+				531152B31F70B98400E2B70E /* RootClass.swift */,
 				534FB71A1F39BB73006E3144 /* LoanModel.swift */,
 				5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */,
 				53CF32F41F6FC41100881801 /* HousingMarketApi.swift */,
@@ -888,10 +900,13 @@
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
+				531152B11F70B97F00E2B70E /* Idlist.swift in Sources */,
 				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
 				5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */,
 				53CF32F51F6FC41100881801 /* HousingMarketApi.swift in Sources */,
 				53F052EB1F6BC5050035EF5A /* Observable+Extension.swift in Sources */,
+				531152B41F70B98400E2B70E /* RootClass.swift in Sources */,
+				531152B01F70B97F00E2B70E /* Id.swift in Sources */,
 				5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */,
 				531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
@@ -920,6 +935,7 @@
 				53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */,
 				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
 				53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */,
+				531152B21F70B97F00E2B70E /* Newslist.swift in Sources */,
 				5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */,
 				5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */,
 				53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */,

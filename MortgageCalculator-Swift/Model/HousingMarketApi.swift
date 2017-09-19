@@ -20,11 +20,11 @@ enum HousingMarketApi {
 extension HousingMarketApi: XZTargetType {
     
     var path: String {
-       return "/service/api/proxy?key=Xw@2017Mmd&charset=utf-8&url=http://openapi.inews.qq.com/getQQNewsIndexAndItems?chlid=news_news_house&refer=mobilewwwqqcom&otype=json"
+       return "/service/api/proxy"
     }
     
     var method: Moya.Method {
-            return .post
+            return .get
         
     }
 
@@ -32,9 +32,7 @@ extension HousingMarketApi: XZTargetType {
         var params = [String:Any]()
         params["key"] = "Xw@2017Mmd"
         params["charset"] = "utf-8"
-        params["url"] = "http://openapi.inews.qq.com/getQQNewsIndexAndItems?chlid=news_news_house"
-        params["refer"] = "mobilewwwqqcom"
-        params["otype"] = "json"
-        return nil
+        params["url"] = "http://openapi.inews.qq.com/getQQNewsIndexAndItems?chlid=news_news_house&refer=mobilewwwqqcom&otype=json"
+        return params
     }
 }

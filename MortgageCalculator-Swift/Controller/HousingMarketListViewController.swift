@@ -31,10 +31,9 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         super.viewDidLoad()
         self.title = "楼市"
         
-        _ = HousingMarketApi.provider.request(.housingMarketList).filterResponseError().mapResponseToObj(HousingMarketModel.self)
+        _ = HousingMarketApi.provider.request(.housingMarketList).filterResponseError().mapResponseToObj(RootClass.self)
             .subscribe(onNext: { (response) in
-                
-                print(response)
+                print(response.idlist)
                 
             }, onError: { (error) in
                 print("=========" + error.rawString())
