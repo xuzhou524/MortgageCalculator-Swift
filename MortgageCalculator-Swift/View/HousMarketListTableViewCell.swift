@@ -14,33 +14,20 @@ class HousMarketListTableViewCell: ASCellNode {
     let imageView: ASNetworkImageNode = {
         let imageView = ASNetworkImageNode()
         imageView.style.preferredSize = CGSize(width: 100, height: 100)
-        imageView.backgroundColor = XZSwiftColor.orange
+        imageView.backgroundColor = XZSwiftColor.white
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
     let titleNode: ASTextNode = {
         let titleNode = ASTextNode()
-        let style = NSMutableParagraphStyle()
-        style.lineSpacing = 3
         titleNode.maximumNumberOfLines = 0
         titleNode.style.maxWidth = ASDimensionMake(XZClient.ScreenWidth() - 10 - 100 - 25)
-        let attrString = NSMutableAttributedString(string: "腾讯新闻腾讯新闻腾讯新闻腾讯新闻腾讯新闻腾讯新闻",
-                                                   attributes: [
-                                                    NSForegroundColorAttributeName: XZSwiftColor.white,
-                                                    NSParagraphStyleAttributeName: style,
-                                                    NSFontAttributeName:  XZClient.XZFont(size: 16)])
-        titleNode.attributedText = attrString
         return titleNode
     }()
     
     let sourceNode: ASTextNode = {
         let sourceNode = ASTextNode()
-        let attrString = NSMutableAttributedString(string: "来源：腾讯新闻",
-                                                   attributes: [
-                                                    NSForegroundColorAttributeName: XZSwiftColor.white,
-                                                    NSFontAttributeName:  XZClient.XZFont(size: 14)])
-        sourceNode.attributedText = attrString
         return sourceNode
     }()
     
@@ -54,7 +41,7 @@ class HousMarketListTableViewCell: ASCellNode {
         
         let imageLayout = ASStackLayoutSpec(direction: .horizontal,
                                             spacing: 15,
-                                            justifyContent: .start,
+                                            justifyContent: .spaceBetween,
                                             alignItems: .stretch,
                                             children: [titleLayout,imageView])
 
@@ -63,12 +50,39 @@ class HousMarketListTableViewCell: ASCellNode {
         return titleinsetLayout
     }
     
-    private var digItem:String
+    private var digItem:Newslist
     
-    init(digItem:String) {
+    init(digItem:Newslist) {
         self.digItem = digItem
         super.init()
         self.automaticallyManagesSubnodes = true
-        self.backgroundColor = UIColor.gray
+        self.backgroundColor = UIColor.white
+        
+        
+        if let titleStr = self.digItem.title {
+            let style = NSMutableParagraphStyle()
+            style.lineSpacing = 3
+            let attrString = NSMutableAttributedString(string: titleStr,
+                                                       attributes: [
+                                                        NSForegroundColorAttributeName: XZSwiftColor.xzGlay50,
+                                                        NSParagraphStyleAttributeName: style,
+                                                        NSFontAttributeName:  XZClient.XZFont(size: 16)])
+            titleNode.attributedText = attrString
+        }
+        
+        if let sourceStr = self.digItem.source {
+            let attrStrings = NSMutableAttributedString(string: "来源：" + sourceStr,
+                                                        attributes: [
+                                                            NSForegroundColorAttributeName: XZSwiftColor.xzGlay129,
+                                                            NSFontAttributeName:  XZClient.XZFont(size: 14)])
+            sourceNode.attributedText = attrStrings
+        }
+        
+        
+        if let image = self.digItem.thumbnails {
+            
+            self.imageView.url = URL(string: image[0])
+        }
+  
     }
 }

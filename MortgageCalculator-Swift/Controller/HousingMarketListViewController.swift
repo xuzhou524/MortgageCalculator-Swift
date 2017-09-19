@@ -10,7 +10,9 @@ import UIKit
 import AsyncDisplayKit
 
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
-
+    
+    var housingMarketListItem : RootClass?
+    
     convenience init(){
         self.init(node: ASTableNode(style: .plain))
     }
@@ -33,19 +35,24 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         
         _ = HousingMarketApi.provider.request(.housingMarketList).filterResponseError().mapResponseToObj(RootClass.self)
             .subscribe(onNext: { (response) in
-                print(response.idlist)
-                
+                self.housingMarketListItem = response
+                self.node.reloadData()
+   
             }, onError: { (error) in
-                print("=========" + error.rawString())
+                print(error.rawString())
             })
         
     }
     
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        let idListArray = self.housingMarketListItem?.idlist
+        let newListArray = idListArray?.first?.newslist
+        return (newListArray?.count)! > 0 ? (newListArray?.count)! : 0
     }
     func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
-        return HousMarketListTableViewCell(digItem: "dsds")
+        let idListArray = self.housingMarketListItem?.idlist
+        let newListArray = idListArray?.first?.newslist
+        return HousMarketListTableViewCell(digItem: newListArray![indexPath.row] )
     }
 
     override func didReceiveMemoryWarning() {
