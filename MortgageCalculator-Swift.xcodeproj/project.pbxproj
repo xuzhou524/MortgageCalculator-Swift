@@ -19,6 +19,7 @@
 		531152B11F70B97F00E2B70E /* Idlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AE1F70B97F00E2B70E /* Idlist.swift */; };
 		531152B21F70B97F00E2B70E /* Newslist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AF1F70B97F00E2B70E /* Newslist.swift */; };
 		531152B41F70B98400E2B70E /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152B31F70B98400E2B70E /* RootClass.swift */; };
+		531C8CAA1F73995D00BC7B5E /* HousingMarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CA91F73995D00BC7B5E /* HousingMarketDetailViewController.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
@@ -143,6 +144,7 @@
 		531152B31F70B98400E2B70E /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
 		531152B81F710EAA00E2B70E /* TMCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531C8CA91F73995D00BC7B5E /* HousingMarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketDetailViewController.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
@@ -666,6 +668,7 @@
 			isa = PBXGroup;
 			children = (
 				53F052ED1F6BC5C10035EF5A /* HousingMarketListViewController.swift */,
+				531C8CA91F73995D00BC7B5E /* HousingMarketDetailViewController.swift */,
 			);
 			name = HousingMarket;
 			sourceTree = "<group>";
@@ -929,6 +932,7 @@
 				5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */,
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
+				531C8CAA1F73995D00BC7B5E /* HousingMarketDetailViewController.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
 				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,
 				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,

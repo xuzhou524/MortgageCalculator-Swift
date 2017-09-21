@@ -47,12 +47,27 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
         let idListArray = self.housingMarketListItem?.idlist
         let newListArray = idListArray?.first?.newslist
-        return (newListArray?.count)! > 0 ? (newListArray?.count)! : 0
+        
+        if (newListArray != nil) {
+            return (newListArray?.count)!
+        }
+        return 0
     }
     func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
         let idListArray = self.housingMarketListItem?.idlist
         let newListArray = idListArray?.first?.newslist
         return HousMarketListTableViewCell(digItem: newListArray![indexPath.row] )
+    }
+    
+    func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
+        let idListArray = self.housingMarketListItem?.idlist
+        let newListArray = idListArray?.first?.newslist
+        let newListModel = newListArray![indexPath.row]
+        let housMarkVc = HousingMarketDetailViewController()
+        housMarkVc.housingMarketDetailUrl = newListModel.url
+        housMarkVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(housMarkVc, animated: true)
+        self.node.view.deselectRow(at: indexPath, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
