@@ -20,6 +20,7 @@
 		531152B21F70B97F00E2B70E /* Newslist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AF1F70B97F00E2B70E /* Newslist.swift */; };
 		531152B41F70B98400E2B70E /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152B31F70B98400E2B70E /* RootClass.swift */; };
 		531C8CAA1F73995D00BC7B5E /* HousingMarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CA91F73995D00BC7B5E /* HousingMarketDetailViewController.swift */; };
+		531C8CAC1F74B55000BC7B5E /* ZJRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
@@ -145,6 +146,7 @@
 		531152B81F710EAA00E2B70E /* TMCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531C8CA91F73995D00BC7B5E /* HousingMarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketDetailViewController.swift; sourceTree = "<group>"; };
+		531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshControl.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
@@ -644,6 +646,7 @@
 				537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */,
 				53F052EA1F6BC5050035EF5A /* Observable+Extension.swift */,
 				53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */,
+				531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -925,6 +928,7 @@
 				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
 				5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */,
+				531C8CAC1F74B55000BC7B5E /* ZJRefreshControl.swift in Sources */,
 				53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				53D777131F307EE60074B52C /* XZSetting.swift in Sources */,
 				53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */,

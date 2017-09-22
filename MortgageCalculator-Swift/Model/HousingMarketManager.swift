@@ -18,26 +18,6 @@ class HousingMarketManager: NSObject {
     }
     
     func syncAndSave(){
-        _ = HousingMarketApi.provider.request(.housingMarketList).filterResponseError().mapResponseToObj(HousingMarketModel.self)
-        .subscribe(onNext: { (response) in
-            
-                var arr = response
-                
-//                let hot = HousingMarketModel()
-//                hot.id = 0
-//                hot.isPrefix = false
-//                hot.name = "hot"
-//                hot.nameCn = "新热榜"
-//                hot.nameEn = "hot"
-//                hot.uri = "hot.json"
-//
-//                arr.insert(hot, at: 0)
-            
-                //将数据 保存在文件
-                //XZSetting.shared[.subjects] = arr
-                
-            }, onError: { (error) in
-                print( error.rawString() )
-            })
+        
     }
 }
