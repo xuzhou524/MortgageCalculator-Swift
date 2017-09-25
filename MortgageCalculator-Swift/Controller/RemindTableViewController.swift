@@ -37,8 +37,8 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if (TMCache.shared().object(forKey: kTMCacheLoanManage) != nil) {
-            self.loanCacheModel = TMCache.shared().object(forKey: kTMCacheLoanManage) as? LoanCacheManage
+        if (TMCache.shared().object(forKey: "kTMCacheLoanManage") != nil) {
+            self.loanCacheModel = TMCache.shared().object(forKey: "kTMCacheLoanManage") as? LoanCacheManage
             
             let dfmatter = DateFormatter()
             dfmatter.dateFormat="yyyyMMdd"

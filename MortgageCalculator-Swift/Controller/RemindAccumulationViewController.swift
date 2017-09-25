@@ -125,7 +125,7 @@ class RemindAccumulationViewController: UITableViewController {
         
         loanModel.loanTypeStr = "2"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
-        TMCache.shared().setObject(loanModel, forKey: kTMCacheLoanManage)
+        TMCache.shared().setObject(loanModel, forKey: "kTMCacheLoanManage")
         self.rootNavigationController?.popViewController(animated: true)
     }
     

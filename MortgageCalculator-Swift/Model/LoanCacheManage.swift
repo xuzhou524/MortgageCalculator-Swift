@@ -8,7 +8,6 @@
 
 import UIKit
 
-let kTMCacheLoanManage = "kTMCacheLoanManage"
 class LoanCacheManage: NSObject , NSCoding {
     
     var  businessPrincipalStr : String?               //商业贷款金额
