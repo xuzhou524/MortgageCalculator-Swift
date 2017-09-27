@@ -120,6 +120,9 @@ class RemindCommercialViewController: UITableViewController {
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
         loanModel.businessRateStr = self.loanRateTextFiled?.text
         loanModel.startPaymentStr = self.startPaymentTextFiled?.text
+        if loanModel.startPaymentStr?.Lenght != 8 {
+          return
+        }
     
         let str = (self.startPaymentTextFiled?.text)! as NSString
         let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期
