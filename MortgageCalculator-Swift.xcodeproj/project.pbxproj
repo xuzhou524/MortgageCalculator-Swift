@@ -55,18 +55,9 @@
 		53578F6C1F668DA5005B1E4D /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53578F401F668DA4005B1E4D /* ShareSDKUI.bundle */; };
 		53578F6D1F668DA5005B1E4D /* ShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F411F668DA4005B1E4D /* ShareSDKUI.framework */; };
 		53578F6E1F668DA5005B1E4D /* CopyConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F431F668DA4005B1E4D /* CopyConnector.framework */; };
-		53578F6F1F668DA5005B1E4D /* FacebookConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F441F668DA4005B1E4D /* FacebookConnector.framework */; };
-		53578F701F668DA5005B1E4D /* InstagramConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F451F668DA4005B1E4D /* InstagramConnector.framework */; };
-		53578F711F668DA5005B1E4D /* InstapaperConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F461F668DA4005B1E4D /* InstapaperConnector.framework */; };
-		53578F721F668DA5005B1E4D /* LineConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F471F668DA4005B1E4D /* LineConnector.framework */; };
 		53578F731F668DA5005B1E4D /* QQConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F481F668DA4005B1E4D /* QQConnector.framework */; };
 		53578F741F668DA5005B1E4D /* SinaWeiboConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F491F668DA4005B1E4D /* SinaWeiboConnector.framework */; };
-		53578F751F668DA5005B1E4D /* TwitterConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F4A1F668DA4005B1E4D /* TwitterConnector.framework */; };
 		53578F761F668DA5005B1E4D /* WechatConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F4B1F668DA4005B1E4D /* WechatConnector.framework */; };
-		53578F771F668DA5005B1E4D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F4E1F668DA4005B1E4D /* Bolts.framework */; };
-		53578F781F668DA5005B1E4D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F4F1F668DA4005B1E4D /* FBSDKCoreKit.framework */; };
-		53578F791F668DA5005B1E4D /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F501F668DA4005B1E4D /* FBSDKMessengerShareKit.framework */; };
-		53578F7A1F668DA5005B1E4D /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F521F668DA4005B1E4D /* LineSDK.framework */; };
 		53578F7B1F668DA5005B1E4D /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F541F668DA4005B1E4D /* TencentOpenAPI.framework */; };
 		53578F7C1F668DA5005B1E4D /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53578F551F668DA4005B1E4D /* TencentOpenApi_IOS_Bundle.bundle */; };
 		53578F7D1F668DA5005B1E4D /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53578F571F668DA4005B1E4D /* libWeiboSDK.a */; };
@@ -284,23 +275,14 @@
 				53578F741F668DA5005B1E4D /* SinaWeiboConnector.framework in Frameworks */,
 				5365B7F91F5F946F001FFEA5 /* libsqlite3.tbd in Frameworks */,
 				53578F7F1F668DA5005B1E4D /* libWeChatSDK.a in Frameworks */,
-				53578F751F668DA5005B1E4D /* TwitterConnector.framework in Frameworks */,
 				5365B7F71F5F9463001FFEA5 /* ImageIO.framework in Frameworks */,
 				53578F831F668DA5005B1E4D /* MOBFoundation.framework in Frameworks */,
 				53578F6B1F668DA5005B1E4D /* ShareSDKExtension.framework in Frameworks */,
-				53578F711F668DA5005B1E4D /* InstapaperConnector.framework in Frameworks */,
 				53578F731F668DA5005B1E4D /* QQConnector.framework in Frameworks */,
-				53578F791F668DA5005B1E4D /* FBSDKMessengerShareKit.framework in Frameworks */,
-				53578F721F668DA5005B1E4D /* LineConnector.framework in Frameworks */,
-				53578F781F668DA5005B1E4D /* FBSDKCoreKit.framework in Frameworks */,
-				53578F7A1F668DA5005B1E4D /* LineSDK.framework in Frameworks */,
 				5365B7F51F5F9459001FFEA5 /* JavaScriptCore.framework in Frameworks */,
 				5365B7F31F5F944F001FFEA5 /* libstdc++.tbd in Frameworks */,
-				53578F771F668DA5005B1E4D /* Bolts.framework in Frameworks */,
-				53578F701F668DA5005B1E4D /* InstagramConnector.framework in Frameworks */,
 				5365B7F11F5F9445001FFEA5 /* libz.tbd in Frameworks */,
 				53578F6D1F668DA5005B1E4D /* ShareSDKUI.framework in Frameworks */,
-				53578F6F1F668DA5005B1E4D /* FacebookConnector.framework in Frameworks */,
 				5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */,
 				53578F681F668DA5005B1E4D /* ShareSDK.framework in Frameworks */,
 				26E14845761BB25F8E7D19F7 /* Pods_MortgageCalculator_Swift.framework in Frameworks */,
@@ -1078,8 +1060,6 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/Required",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformConnector",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
-					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
-					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/LineSDK",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1127,8 +1107,6 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/Required",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformConnector",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
-					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
-					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/LineSDK",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
