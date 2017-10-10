@@ -13,7 +13,7 @@
 /**
  *  传入想改变键盘的输入框
  *
- *  @param TextFirld & TextView
+ *  @param view & TextView
  */
 - (void)setInputView:(UIView *)view;
 
