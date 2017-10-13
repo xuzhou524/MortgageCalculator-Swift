@@ -589,8 +589,8 @@
 		53A4EF841F2F350C00EF58EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				53F052EC1F6BC58B0035EF5A /* HousingMarket */,
 				5332A9801F4AB1E2001465E4 /* Calculator */,
+				53F052EC1F6BC58B0035EF5A /* HousingMarket */,
 				5332A9811F4AB1F3001465E4 /* Remind */,
 				5332A9821F4AB220001465E4 /* More */,
 			);

@@ -48,7 +48,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
             let result = gregorians.compare(Date(), to: dayStr!, toGranularity: .month)
             if result.rawValue == 1 {  //开始还款
                 let monthNumber = gregorians.dateComponents([.year, .month, .hour], from:dayStr!, to: Date())
-                self.loanCacheModel?.alsoNumberMonthStr = String(monthNumber.month! + 1)
+                self.loanCacheModel?.alsoNumberMonthStr = String(monthNumber.month! + 2)
             }else{
                 self.loanCacheModel?.alsoNumberMonthStr = "0"
             }

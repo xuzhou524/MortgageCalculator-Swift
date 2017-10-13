@@ -18,7 +18,7 @@ class HousingMarketDetailViewController: UIViewController,WKNavigationDelegate,W
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        progressView.setProgress(0.0, animated: false)
+        progressView.setProgress(0.3, animated: true)
         progressView.reloadInputViews()
     }
     override func viewDidLoad() {
@@ -61,7 +61,7 @@ class HousingMarketDetailViewController: UIViewController,WKNavigationDelegate,W
         }
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        progressView.setProgress(0.0, animated: false)
+        progressView.setProgress(0.3, animated: true)
         //self.navigationItem.title = webView.title
     }
     
