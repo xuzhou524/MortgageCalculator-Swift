@@ -23,7 +23,7 @@ class HousingMarketDetailViewController: UIViewController,WKNavigationDelegate,W
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "楼市详情"
+        self.title = "详情"
         
         webView.backgroundColor = XZSwiftColor.gray
         webView.navigationDelegate = self

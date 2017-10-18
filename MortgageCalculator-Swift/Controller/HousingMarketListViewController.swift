@@ -35,8 +35,13 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "楼市"
-        //node.leadingScreensForBatching = 5
+        self.title = "发现"
+        
+        let lifeHeadView = LifeHeadView.init(imageArray: ["taoBao","jingDong","meiTuan","baiDu"],
+                                             titleArray: ["淘宝","京东","美团","百度"])
+        lifeHeadView.backgroundColor = XZSwiftColor.white
+        node.view.tableHeaderView = lifeHeadView
+        
         self.page = 0
 
         self.asyncRequestData()

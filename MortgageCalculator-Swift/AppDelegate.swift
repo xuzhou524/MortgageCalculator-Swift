@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
         self.HousingMarketController = XZSwiftNavigationController(rootViewController: HousingMarketListViewController())
-        self.HousingMarketController?.tabBarItem = UITabBarItem(title: "楼市", image: UIImage(named: "tabbar_housing"), selectedImage: UIImage(named: "tabbar_housing_selected"))
+        self.HousingMarketController?.tabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "tabbar_housing"), selectedImage: UIImage(named: "tabbar_housing_selected"))
         
         self.remindNavigationController = XZSwiftNavigationController(rootViewController: RemindTableViewController())
         self.remindNavigationController?.tabBarItem = UITabBarItem(title: "提醒", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
