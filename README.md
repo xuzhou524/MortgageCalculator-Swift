@@ -13,7 +13,7 @@ This is a simple, concise, and fool the weather.All individual work is available
 ```
 $ git clone https://github.com/xuzhou524/MortgageCalculator-Swift.git
 ```
-2) Open the workspace in Xcode
+2) Add a third-party library
 ```
 $ pod install
 ```
