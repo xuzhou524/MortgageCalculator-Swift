@@ -13,11 +13,10 @@ import TMCache
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
     var source: [Newslist] = []
     var housingMarketListItem : RootClass?
-    var refreshControl:ZJRefreshControl!;
+    var refreshControl:ZJRefreshControl!
     
-    var tempPage : NSInteger!;
-    var page : NSInteger!;
-    
+    var tempPage : NSInteger!
+    var page : NSInteger!
     convenience init(){
         self.init(node: ASTableNode(style: .plain))
     }
@@ -37,7 +36,7 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "楼市"
-        
+        //node.leadingScreensForBatching = 5
         self.page = 0
 
         self.asyncRequestData()
@@ -48,12 +47,13 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
             self.dropViewDidBeginLoadmore();
         });
     }
-    
+    private var indexPathesToBeReloaded: [IndexPath] = []
     //下拉刷新调用的方法
     func asyncRequestData()->Void{
         self.tempPage = 1
         _ = HousingMarketApi.provider.request(.housingMarketList()).filterHttpError().mapResponseToObj(RootClass.self)
             .subscribe(onNext: { (response) in
+                
                 self.housingMarketListItem = response
                 
                 if let idsArray = response.idlist?.first?.ids {
@@ -62,8 +62,15 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
                 
                 let idListArray = response.idlist
                 self.source = (idListArray?.first?.newslist)!
+                
+//                for i in 0...19 {
+//                    let indexPath = IndexPath(row:i, section: 0)
+//                    self.indexPathesToBeReloaded.append(indexPath)
+//                }
+//                self.node.reloadRows(at: self.indexPathesToBeReloaded, with: .none)
                 self.node.reloadData()
                 self.refreshControl.endRefreshing();
+                
             }, onError: { (error) in
                 print(error.rawString())
                 self.refreshControl.endRefreshing();
@@ -108,7 +115,16 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
                 for i in 0 ..< length{
                     self.source.append(idListArray[i])
                 }
+//                let indexPathArray = NSMutableArray.init()
+//                for i in self.source.count - length...self.source.count - length  {
+//                    let indexPath = IndexPath(row:i, section: 0)
+//                    indexPathArray.add(indexPath)
+//                }
+//                self.node.performBatch(animated: false, updates: {
+//                    self.node.insertRows(at: indexPathArray as! [IndexPath], with: .none)
+//                }, completion: nil)
                 self.node.reloadData()
+         
                 self.refreshControl.endLoadingmore();
             }, onError: { (error) in
                 print(error.rawString())
@@ -122,10 +138,15 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         }
         return 0
     }
-    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
-        return HousMarketListTableViewCell(digItem: self.source[indexPath.row] )
-    }
     
+    func tableView(_ tableView: ASTableView, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
+        let cellNodeBlock = { () -> ASCellNode in
+            let cell = HousMarketListTableViewCell(digItem: self.source[indexPath.row])
+            return cell
+        }
+        return cellNodeBlock;
+    }
+
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         let newListModel = self.source[indexPath.row]
         let housMarkVc = HousingMarketDetailViewController()
