@@ -15,9 +15,13 @@ $ git clone https://github.com/xuzhou524/MortgageCalculator-Swift.git
 ```
 2) Open the workspace in Xcode
 ```
+$ pod install
+```
+3) Open the workspace in Xcode
+```
 $ open "MortgageCalculator-Swift.xcworkspace"
 ```
-3) Compile and run the app in your simulator or iOS device
+4) Compile and run the app in your simulator or iOS device
 
 ## Requirements
 * Xcode 8.0+
