@@ -1,5 +1,5 @@
 //
-//  HousingMarketDetailViewController.swift
+//  UIWebViewController.swift
 //  MortgageCalculator-Swift
 //
 //  Created by gozap on 2017/9/21.
@@ -9,9 +9,10 @@
 import UIKit
 import WebKit
 
-class HousingMarketDetailViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
+class UIWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
 
     var housingMarketDetailUrl : String?
+    var titleStr : String?
     
     private var webView = WKWebView()
     private var progressView = UIProgressView()
@@ -23,7 +24,11 @@ class HousingMarketDetailViewController: UIViewController,WKNavigationDelegate,W
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "详情"
+        if (titleStr != nil) {
+            self.title = titleStr
+        }
         
         webView.backgroundColor = XZSwiftColor.gray
         webView.navigationDelegate = self

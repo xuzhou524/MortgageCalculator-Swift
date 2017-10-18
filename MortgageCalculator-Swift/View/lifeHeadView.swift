@@ -60,6 +60,7 @@ class LifeHeadView: UIView {
             let lifeView = LifeView()
             lifeView.titleLabel.text = titleStr
             lifeView.iconImageView.image = UIImage.init(named: imageStr)
+            lifeView.tag = 100 + i
             self.addSubview(lifeView)
             
             lifeView.snp.makeConstraints({ (make) -> Void in

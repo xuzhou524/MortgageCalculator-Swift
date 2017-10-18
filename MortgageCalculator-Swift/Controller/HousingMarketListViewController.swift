@@ -11,6 +11,11 @@ import AsyncDisplayKit
 import TMCache
 
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
+    
+    let titleArray : NSMutableArray = ["淘宝","京东","美团","百度"]
+    let iamgeArray : NSMutableArray = ["taoBao","jingDong","meiTuan","baiDu"]
+    let tapUrlArray : NSMutableArray = ["https://m.taobao.com","https://m.jd.com","https://m.meituan.com","https://m.baidu.com"]
+    
     var source: [Newslist] = []
     var housingMarketListItem : RootClass?
     var refreshControl:ZJRefreshControl!
@@ -37,10 +42,15 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         super.viewDidLoad()
         self.title = "发现"
         
-        let lifeHeadView = LifeHeadView.init(imageArray: ["taoBao","jingDong","meiTuan","baiDu"],
-                                             titleArray: ["淘宝","京东","美团","百度"])
+        let lifeHeadView = LifeHeadView.init(imageArray: iamgeArray,
+                                             titleArray: titleArray)
         lifeHeadView.backgroundColor = XZSwiftColor.white
         node.view.tableHeaderView = lifeHeadView
+        
+        for i in 0 ..< lifeHeadView.headViewArray.count {
+            let headView : LifeView = lifeHeadView.headViewArray[i] as! LifeView
+            headView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imgPuls)))
+        }
         
         self.page = 0
 
@@ -52,6 +62,15 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
             self.dropViewDidBeginLoadmore();
         });
     }
+    
+    func imgPuls(sender:UITapGestureRecognizer) {
+        let webViewVC = UIWebViewController()
+        webViewVC.housingMarketDetailUrl = tapUrlArray[(sender.view?.tag)! - 100] as? String
+        webViewVC.titleStr = titleArray[(sender.view?.tag)! - 100] as? String
+        webViewVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(webViewVC, animated: true)
+    }
+    
     private var indexPathesToBeReloaded: [IndexPath] = []
     //下拉刷新调用的方法
     func asyncRequestData()->Void{
@@ -154,7 +173,7 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
 
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         let newListModel = self.source[indexPath.row]
-        let housMarkVc = HousingMarketDetailViewController()
+        let housMarkVc = UIWebViewController()
         housMarkVc.housingMarketDetailUrl = newListModel.url
         housMarkVc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(housMarkVc, animated: true)
