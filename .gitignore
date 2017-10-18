@@ -4,11 +4,12 @@
 #*.xcbkptlist
 #*.xcscheme
 #*.xcworkspacedata
-build/
-.DS_Store
 *.xcuserstate
+build/
+Pods/
+.DS_Store
 ._.*
-xcuserdata/
+xcuserdata
 DerivedData/
 .idea/
 iOSInjectionProject/
