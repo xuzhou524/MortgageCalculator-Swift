@@ -45,6 +45,8 @@ class LifeView: UIView {
 
 class LifeHeadView: UIView {
     
+    var headViewArray : NSMutableArray = []
+    
     init(imageArray:NSMutableArray,titleArray:NSMutableArray){
         
         let height = 80
@@ -66,6 +68,8 @@ class LifeHeadView: UIView {
                 make.left.equalTo( CGFloat(i % 4) * XZClient.ScreenWidth()/4.0)
                 make.width.equalTo(XZClient.ScreenWidth()/4.0)
             });
+            
+            headViewArray.add(lifeView)
             
         }
         
