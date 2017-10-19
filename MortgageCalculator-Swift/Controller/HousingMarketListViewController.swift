@@ -40,7 +40,7 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "发现"
+        self.title = "生活"
         
         let lifeHeadView = LifeHeadView.init(imageArray: iamgeArray,
                                              titleArray: titleArray)
