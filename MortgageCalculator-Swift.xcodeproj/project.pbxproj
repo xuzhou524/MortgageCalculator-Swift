@@ -148,7 +148,6 @@
 		531152AE1F70B97F00E2B70E /* Idlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idlist.swift; sourceTree = "<group>"; };
 		531152AF1F70B97F00E2B70E /* Newslist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newslist.swift; sourceTree = "<group>"; };
 		531152B31F70B98400E2B70E /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
-		531152B81F710EAA00E2B70E /* TMCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 		531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshControl.swift; sourceTree = "<group>"; };
@@ -187,18 +186,9 @@
 		53578F401F668DA4005B1E4D /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKUI.bundle; sourceTree = "<group>"; };
 		53578F411F668DA4005B1E4D /* ShareSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKUI.framework; sourceTree = "<group>"; };
 		53578F431F668DA4005B1E4D /* CopyConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CopyConnector.framework; sourceTree = "<group>"; };
-		53578F441F668DA4005B1E4D /* FacebookConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookConnector.framework; sourceTree = "<group>"; };
-		53578F451F668DA4005B1E4D /* InstagramConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InstagramConnector.framework; sourceTree = "<group>"; };
-		53578F461F668DA4005B1E4D /* InstapaperConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InstapaperConnector.framework; sourceTree = "<group>"; };
-		53578F471F668DA4005B1E4D /* LineConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineConnector.framework; sourceTree = "<group>"; };
 		53578F481F668DA4005B1E4D /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QQConnector.framework; sourceTree = "<group>"; };
 		53578F491F668DA4005B1E4D /* SinaWeiboConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SinaWeiboConnector.framework; sourceTree = "<group>"; };
-		53578F4A1F668DA4005B1E4D /* TwitterConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterConnector.framework; sourceTree = "<group>"; };
 		53578F4B1F668DA4005B1E4D /* WechatConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WechatConnector.framework; sourceTree = "<group>"; };
-		53578F4E1F668DA4005B1E4D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		53578F4F1F668DA4005B1E4D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		53578F501F668DA4005B1E4D /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		53578F521F668DA4005B1E4D /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
 		53578F541F668DA4005B1E4D /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		53578F551F668DA4005B1E4D /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		53578F571F668DA4005B1E4D /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -425,13 +415,8 @@
 			isa = PBXGroup;
 			children = (
 				53578F431F668DA4005B1E4D /* CopyConnector.framework */,
-				53578F441F668DA4005B1E4D /* FacebookConnector.framework */,
-				53578F451F668DA4005B1E4D /* InstagramConnector.framework */,
-				53578F461F668DA4005B1E4D /* InstapaperConnector.framework */,
-				53578F471F668DA4005B1E4D /* LineConnector.framework */,
 				53578F481F668DA4005B1E4D /* QQConnector.framework */,
 				53578F491F668DA4005B1E4D /* SinaWeiboConnector.framework */,
-				53578F4A1F668DA4005B1E4D /* TwitterConnector.framework */,
 				53578F4B1F668DA4005B1E4D /* WechatConnector.framework */,
 			);
 			path = PlatformConnector;
@@ -440,31 +425,11 @@
 		53578F4C1F668DA4005B1E4D /* PlatformSDK */ = {
 			isa = PBXGroup;
 			children = (
-				53578F4D1F668DA4005B1E4D /* FacebookMessengerSDK */,
-				53578F511F668DA4005B1E4D /* LineSDK */,
 				53578F531F668DA4005B1E4D /* QQSDK */,
 				53578F561F668DA4005B1E4D /* SinaWeiboSDK */,
 				53578F5D1F668DA4005B1E4D /* WeChatSDK */,
 			);
 			path = PlatformSDK;
-			sourceTree = "<group>";
-		};
-		53578F4D1F668DA4005B1E4D /* FacebookMessengerSDK */ = {
-			isa = PBXGroup;
-			children = (
-				53578F4E1F668DA4005B1E4D /* Bolts.framework */,
-				53578F4F1F668DA4005B1E4D /* FBSDKCoreKit.framework */,
-				53578F501F668DA4005B1E4D /* FBSDKMessengerShareKit.framework */,
-			);
-			path = FacebookMessengerSDK;
-			sourceTree = "<group>";
-		};
-		53578F511F668DA4005B1E4D /* LineSDK */ = {
-			isa = PBXGroup;
-			children = (
-				53578F521F668DA4005B1E4D /* LineSDK.framework */,
-			);
-			path = LineSDK;
 			sourceTree = "<group>";
 		};
 		53578F531F668DA4005B1E4D /* QQSDK */ = {
@@ -704,7 +669,6 @@
 			isa = PBXGroup;
 			children = (
 				531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */,
-				531152B81F710EAA00E2B70E /* TMCache.framework */,
 				5365B7FC1F5F949C001FFEA5 /* Photos.framework */,
 				5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */,
 				5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */,
