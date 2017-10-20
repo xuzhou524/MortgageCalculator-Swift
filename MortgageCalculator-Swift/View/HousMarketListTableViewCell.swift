@@ -12,7 +12,7 @@ import AsyncDisplayKit
 class HousMarketListTableViewCell: ASCellNode {
     let imageView: ASNetworkImageNode = {
         let imageView = ASNetworkImageNode()
-        imageView.style.preferredSize = CGSize(width: 110, height: 90)
+        imageView.style.preferredSize = CGSize(width: 115, height: 90)
         imageView.backgroundColor = XZSwiftColor.white
         imageView.contentMode = .scaleToFill
         return imageView
@@ -21,7 +21,7 @@ class HousMarketListTableViewCell: ASCellNode {
     let titleNode: ASTextNode = {
         let titleNode = ASTextNode()
         titleNode.maximumNumberOfLines = 0
-        titleNode.style.maxWidth = ASDimensionMake(XZClient.ScreenWidth() - 10 - 110 - 25)
+        titleNode.style.maxWidth = ASDimensionMake(XZClient.ScreenWidth() - 10 - 115 - 25)
         return titleNode
     }()
     
