@@ -19,7 +19,7 @@ class UIWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        progressView.setProgress(0.3, animated: true)
+        progressView.setProgress(0, animated: false)
         progressView.reloadInputViews()
     }
     override func viewDidLoad() {
@@ -67,7 +67,7 @@ class UIWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         progressView.setProgress(0.3, animated: true)
-        //self.navigationItem.title = webView.title
+        self.navigationItem.title = webView.title
     }
     
     deinit {
