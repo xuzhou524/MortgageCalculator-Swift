@@ -45,7 +45,6 @@ class UIWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         progressView.trackTintColor = UIColor.white
         progressView.progressTintColor = XZSwiftColor.xzGlay50
         self.navigationController?.navigationBar.addSubview(progressView)
-        
     }
     
 //    func backItemPressed() {
