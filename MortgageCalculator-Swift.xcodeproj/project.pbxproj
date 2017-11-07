@@ -116,6 +116,7 @@
 		53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF871F2F353100EF58EB /* RootViewController.swift */; };
 		53CF32F51F6FC41100881801 /* HousingMarketApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF32F41F6FC41100881801 /* HousingMarketApi.swift */; };
 		53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */; };
+		53D3BD541FB1463B00D6CB87 /* wangzhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D3BD531FB1463B00D6CB87 /* wangzhi.png */; };
 		53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */; };
 		53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */; };
 		53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777091F307EE60074B52C /* UITableView+Extension.swift */; };
@@ -258,6 +259,7 @@
 		53A4EF871F2F353100EF58EB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		53CF32F41F6FC41100881801 /* HousingMarketApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketApi.swift; sourceTree = "<group>"; };
 		53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChouTiTargetType.swift; sourceTree = "<group>"; };
+		53D3BD531FB1463B00D6CB87 /* wangzhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wangzhi.png; sourceTree = "<group>"; };
 		53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommercialLoansTableViewController.swift; sourceTree = "<group>"; };
 		53D777091F307EE60074B52C /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 		53A4EF6A1F2F075500EF58EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53D3BD531FB1463B00D6CB87 /* wangzhi.png */,
 				5375E0701F9849BD00964123 /* tupian.png */,
 				5375E0741F984AFF00964123 /* sina.png */,
 				5375E06E1F9849A900964123 /* video.png */,
@@ -789,6 +792,7 @@
 				53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */,
 				53F052F31F6BD2370035EF5A /* tabbar_housing_selected@2x.png in Resources */,
 				5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */,
+				53D3BD541FB1463B00D6CB87 /* wangzhi.png in Resources */,
 				5375E0711F9849C100964123 /* tupian.png in Resources */,
 				5375E0651F97178D00964123 /* taoBao2.png in Resources */,
 				539807401F67DEC3004127CA /* tianqi.png in Resources */,
