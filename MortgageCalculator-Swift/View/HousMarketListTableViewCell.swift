@@ -70,7 +70,7 @@ class HousMarketListTableViewCell: ASCellNode {
         }
         
         if let sourceStr = self.digItem.source {
-            let attrStrings = NSMutableAttributedString(string: "来源：" + sourceStr,
+            let attrStrings = NSMutableAttributedString(string: "来源：" + "腾讯新闻",
                                                         attributes: [
                                                             NSForegroundColorAttributeName: XZSwiftColor.xzGlay129,
                                                             NSFontAttributeName:  XZClient.XZFont(size: 14)])
