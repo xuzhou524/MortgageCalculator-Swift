@@ -12,9 +12,9 @@ import TMCache
 
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
     
-    let titleArray : NSMutableArray = ["淘宝","京东","美团","新浪新闻","百度","图片","网址导航","汽车之家"]
-    let iamgeArray : NSMutableArray = ["taoBao","jingDong","meiTuan","sina","baiDu","tupian","wangzhi","qiche"]
-    let tapUrlArray : NSMutableArray = ["https://m.taobao.com","https://m.jd.com","https://m.meituan.com","https://sina.cn","https://m.baidu.com","http://www.opgirl.cn","http://m.duba.com","http://m.autohome.com.cn"]
+    let titleArray : NSMutableArray = ["淘宝","京东","美团","网址导航","百度","秀场","图片","汽车之家"]
+    let iamgeArray : NSMutableArray = ["taoBao","jingDong","meiTuan","wangzhi","baiDu","video","tupian","qiche"]
+    let tapUrlArray : NSMutableArray = ["https://m.taobao.com","https://m.jd.com","https://m.meituan.com","http://m.duba.com","https://m.baidu.com","http://m.v.6.cn","http://www.opgirl.cn","http://m.autohome.com.cn"]
     
     var source: [Newslist] = []
     var housingMarketListItem : RootClass?
