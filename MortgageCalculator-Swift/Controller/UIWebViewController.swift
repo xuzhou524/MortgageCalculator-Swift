@@ -26,9 +26,6 @@ class UIWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         super.viewDidLoad()
         
         self.title = "详情"
-        if (titleStr != nil) {
-            self.title = titleStr
-        }
         
         webView.backgroundColor = XZSwiftColor.gray
         webView.navigationDelegate = self
@@ -67,7 +64,6 @@ class UIWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         progressView.setProgress(0.3, animated: true)
-        self.navigationItem.title = webView.title
     }
     
     deinit {
