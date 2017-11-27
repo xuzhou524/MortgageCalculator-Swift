@@ -69,7 +69,10 @@ class HousMarketListTableViewCell: ASCellNode {
             titleNode.attributedText = attrString
         }
         
-        if let sourceStr = self.digItem.source {
+        if var sourceStr = self.digItem.source {
+            if(sourceStr.components(separatedBy: "腾讯").count > 1){
+                sourceStr = sourceStr.replacingOccurrences(of:"腾讯", with: "")
+            }
             let attrStrings = NSMutableAttributedString(string: "来源：" + sourceStr,
                                                         attributes: [
                                                             NSForegroundColorAttributeName: XZSwiftColor.xzGlay129,
