@@ -41,6 +41,9 @@ class MoreViewController: UITableViewController {
         if (indexPath as NSIndexPath).row == 2{
             return 15
         }
+        if (indexPath as NSIndexPath).row == 5{
+            return 0
+        }
         return 50
     }
     
@@ -65,6 +68,7 @@ class MoreViewController: UITableViewController {
             return cell
         }
         let baseCell = getCell(tableView, cell: titleTableViewCell.self, indexPath: indexPath)
+        baseCell.clipsToBounds = true
         baseCell.selectionStyle = .none
         baseCell.iconImageView?.isHidden = false
         if (indexPath as NSIndexPath).row == 3 {
