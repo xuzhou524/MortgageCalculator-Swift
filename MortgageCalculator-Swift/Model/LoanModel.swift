@@ -39,6 +39,15 @@ class LoanModel: NSObject {
         let monthAmount = principal * monthRate / 100 / 12 * pow(1+monthRate / 100 / 12,totalMonths)/(pow(1+monthRate / 100 / 12,totalMonths)-1)
         return (totalMonths * monthAmount - principal)
     }
+    //剩余本金
+    class func averageCapitalPlusInterestRemainingPrincipalTotalInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat, numberMonth:CGFloat) -> CGFloat{
+        //总利息 = 贷款本金 - 已还本金
+        var amount = CGFloat(0)
+        for i in 1...NSInteger(numberMonth) {
+            amount = amount + self.averageCapitalPlusInterestMonthPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: CGFloat(i))
+        }
+        return (principal - amount)
+    }
     
     /*
      *  等额本金
@@ -74,5 +83,9 @@ class LoanModel: NSObject {
         //每月月供递减额 = 贷款本金 / 还款月数 × 月利率
         return principal / totalMonths * monthRate / 100 / 12
     }
-    
+    //剩余本金
+    class func equalPrincipalRemainingPrincipalTotalInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat, numberMonth:CGFloat) -> CGFloat{
+        //总利息 = 贷款本金 - 已还本金
+        return (principal - principal / totalMonths * numberMonth)
+    }
 }
