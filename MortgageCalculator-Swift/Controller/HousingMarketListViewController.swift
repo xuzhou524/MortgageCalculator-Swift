@@ -54,13 +54,12 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         
         self.page = 0
 
-        self.asyncRequestData()
-        
-        refreshControl = ZJRefreshControl(scrollView: node.view,refreshBlock: {
-            self.dropViewDidBeginRefreshing();
-        },loadmoreBlock: {
-            self.dropViewDidBeginLoadmore();
-        });
+//        self.asyncRequestData()
+//        refreshControl = ZJRefreshControl(scrollView: node.view,refreshBlock: {
+//            self.dropViewDidBeginRefreshing();
+//        },loadmoreBlock: {
+//            self.dropViewDidBeginLoadmore();
+//        });
     }
     
     func imgPuls(sender:UITapGestureRecognizer) {
