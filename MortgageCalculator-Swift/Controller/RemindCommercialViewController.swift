@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TMCache
 
 class RemindCommercialViewController: UITableViewController {
 
@@ -131,7 +130,8 @@ class RemindCommercialViewController: UITableViewController {
         loanModel.loanTypeStr = "1"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
         
-        TMCache.shared().setObject(loanModel, forKey: "kTMCacheLoanManage")
+        UserDefaults.standard.saveCustomObject(customObject: loanModel, key: "kTMCacheLoanManage")
+        
         self.rootNavigationController?.popViewController(animated: true)
         
     }

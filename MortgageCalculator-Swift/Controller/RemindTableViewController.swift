@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TMCache
 import UserNotifications
 
 class RemindTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
@@ -37,9 +36,9 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if (TMCache.shared().object(forKey: "kTMCacheLoanManage") != nil) {
-            self.loanCacheModel = TMCache.shared().object(forKey: "kTMCacheLoanManage") as? LoanCacheManage
-            
+        if UserDefaults.standard.getCustomObject(forKey: "kTMCacheLoanManage") as? LoanCacheManage != nil {
+            self.loanCacheModel = UserDefaults.standard.getCustomObject(forKey: "kTMCacheLoanManage") as? LoanCacheManage
+
             let dfmatter = DateFormatter()
             dfmatter.dateFormat="yyyyMMdd"
             //首次还款时间戳
