@@ -22,12 +22,9 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     
     var tempPage : NSInteger!
     var page : NSInteger!
-    convenience init(){
-        self.init(node: ASTableNode(style: .plain))
-    }
     
     override init(node: ASTableNode) {
-        super.init(node: node)
+        super.init(node: ASTableNode(style: .plain))
         node.delegate = self
         node.dataSource = self
         node.view.separatorStyle = .none
@@ -35,12 +32,17 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     }
     
     required init?(coder aDecoder: NSCoder) {
+        super.init(node: ASTableNode(style: .plain))
         fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "生活"
+        
+        self.node.view.separatorStyle = .none;
+        self.node.delegate = self
+        self.node.dataSource = self
         
         let lifeHeadView = LifeHeadView.init(imageArray: iamgeArray,
                                              titleArray: titleArray)
@@ -54,12 +56,12 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         
         self.page = 0
 
-//        self.asyncRequestData()
-//        refreshControl = ZJRefreshControl(scrollView: node.view,refreshBlock: {
-//            self.dropViewDidBeginRefreshing();
-//        },loadmoreBlock: {
-//            self.dropViewDidBeginLoadmore();
-//        });
+        self.asyncRequestData()
+        refreshControl = ZJRefreshControl(scrollView: node.view,refreshBlock: {
+            self.dropViewDidBeginRefreshing();
+        },loadmoreBlock: {
+            self.dropViewDidBeginLoadmore();
+        });
     }
     
     func imgPuls(sender:UITapGestureRecognizer) {

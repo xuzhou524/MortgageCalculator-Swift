@@ -697,7 +697,6 @@
 				53A4EF211F2ED46B00EF58EB /* Frameworks */,
 				53A4EF221F2ED46B00EF58EB /* Resources */,
 				E8C602C13CE6289C683505DA /* [CP] Embed Pods Frameworks */,
-				20DDC5D6180DAFB5B7117015 /* [CP] Copy Pods Resources */,
 				53E45E5B1F690C05009DE104 /* ShellScript */,
 			);
 			buildRules = (
@@ -821,21 +820,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20DDC5D6180DAFB5B7117015 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		53E45E5B1F690C05009DE104 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

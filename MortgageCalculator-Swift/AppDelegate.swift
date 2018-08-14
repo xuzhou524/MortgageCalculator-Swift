@@ -10,6 +10,7 @@ import UIKit
 import UserNotifications
 import Fabric
 import Crashlytics
+import AsyncDisplayKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.rootNavigationController = XZSwiftNavigationController(rootViewController: RootViewController())
         self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
-        self.HousingMarketController = XZSwiftNavigationController(rootViewController: HousingMarketListViewController())
+        self.HousingMarketController = XZSwiftNavigationController(rootViewController: HousingMarketListViewController.init(node: ASTableNode(style: .plain)))
         self.HousingMarketController?.tabBarItem = UITabBarItem(title: "生活", image: UIImage(named: "tabbar_housing"), selectedImage: UIImage(named: "tabbar_housing_selected"))
         
         self.remindNavigationController = XZSwiftNavigationController(rootViewController: RemindTableViewController())

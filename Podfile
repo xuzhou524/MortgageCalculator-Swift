@@ -4,7 +4,7 @@ use_frameworks!
 
 def pods
    pod 'SnapKit'
-   pod 'ObjectMapper'
+   pod 'ObjectMapper', '~> 3.3'
    pod 'SwiftyJSON'
    pod 'Moya/RxSwift'
    pod 'Texture'

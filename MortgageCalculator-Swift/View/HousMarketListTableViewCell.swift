@@ -73,7 +73,7 @@ class HousMarketListTableViewCell: ASCellNode {
             if(sourceStr.components(separatedBy: "腾讯").count > 1){
                 sourceStr = sourceStr.replacingOccurrences(of:"腾讯", with: "")
             }
-            let attrStrings = NSMutableAttributedString(string: "来源：" + sourceStr,
+            let attrStrings = NSMutableAttributedString(string: sourceStr,
                                                         attributes: [
                                                             NSForegroundColorAttributeName: XZSwiftColor.xzGlay129,
                                                             NSFontAttributeName:  XZClient.XZFont(size: 14)])
