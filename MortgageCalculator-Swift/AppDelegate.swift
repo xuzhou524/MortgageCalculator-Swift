@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, 0.0)
         // 设置图标选中时颜色
         UITabBar.appearance().tintColor = XZSwiftColor.xzGlay50
+        UITabBar.appearance().isTranslucent = false
         
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()

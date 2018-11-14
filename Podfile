@@ -17,3 +17,4 @@ end
 target 'MortgageCalculator-Swift' do
     pods
 end
+/Users/gozap/Documents/MyProject/MortgageCalculator-Swift/MortgageCalculator-Swift/Controller/RemindCombinationViewController.swift
