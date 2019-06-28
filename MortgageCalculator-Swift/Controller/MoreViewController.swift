@@ -84,7 +84,7 @@ class MoreViewController: UITableViewController {
             let infoDict = Bundle.main.infoDictionary
             if let info = infoDict {
                 // app版本
-                let appVersion = info["CFBundleShortVersionString"] as! String!
+                let appVersion = info["CFBundleShortVersionString"] as! String?
                 baseCell.detaileLabel?.text = "v" + appVersion!
                 baseCell.iconImageView?.isHidden = true
             }
@@ -107,7 +107,7 @@ class MoreViewController: UITableViewController {
         let shareParames = NSMutableDictionary()
         shareParames.ssdkSetupShareParams(byText: "想容易，就用易房贷 - 最专业的贷款计算神器" + "  http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",
                                           images : UIImage(named: "Icon-60"),
-                                          url : NSURL(string:"http://www.xzzai.com") as URL!,
+                                          url : NSURL(string:"http://www.xzzai.com") as URL?,
                                           title : "用易房贷",
                                           type : SSDKContentType.auto)
         
@@ -127,7 +127,7 @@ class MoreViewController: UITableViewController {
         }
     }
     
-    func zanImageViewTap(){
+    @objc func zanImageViewTap(){
         if #available(iOS 10.3, *) {
             #if DEBUG
             #else
@@ -141,7 +141,7 @@ class MoreViewController: UITableViewController {
             UIApplication.shared.openURL(url! as URL)
         }
     }
-    func tuImageView(){
+    @objc func tuImageView(){
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)
         } else {

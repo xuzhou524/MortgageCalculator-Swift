@@ -192,7 +192,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         }
     }
 
-    func rightTapPed(){
+    @objc func rightTapPed(){
         let editorVC = RemindEditorViewController()
         editorVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(editorVC, animated: true)
@@ -231,7 +231,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         if #available(iOS 10.0, *) {
             let content = UNMutableNotificationContent()
             content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：一月一度的还款日（明天）到了，请及时查询还款账号是否有money,以免影响你信誉！"]
-            content.sound = UNNotificationSound.default()
+            content.sound = UNNotificationSound.default
             let triggerDateComponents = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
             let request = UNNotificationRequest(identifier:"YongYiFangDai", content: content, trigger: triggerDateComponents)
             UNUserNotificationCenter.current().add(request) { error in

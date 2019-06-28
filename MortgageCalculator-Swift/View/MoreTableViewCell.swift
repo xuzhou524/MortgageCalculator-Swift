@@ -12,7 +12,7 @@ class MoreTableViewCell: UITableViewCell {
     var iconImageView: UIImageView?
     var titleLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }
@@ -55,7 +55,7 @@ class More_InterTableViewCell: UITableViewCell {
     var tuImageView: UIImageView?
     var tuLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }

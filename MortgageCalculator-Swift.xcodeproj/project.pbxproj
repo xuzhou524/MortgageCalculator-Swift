@@ -738,6 +738,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -831,7 +832,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a51bcb1d2c3bfc5e7b43c7a3a9cd6cffe7f0b8 eb38756f0e57b9048d3c1e112eb0d53f92817a9149c333ab5b6f3c59ff6bc9d7";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a51bcb1d2c3bfc5e7b43c7a3a9cd6cffe7f0b8 eb38756f0e57b9048d3c1e112eb0d53f92817a9149c333ab5b6f3c59ff6bc9d7\n";
 		};
 		A992B7AE5FD15890745D33E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1110,7 +1111,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/MortgageCalculator-Swift/MortgageCalculator-Swift-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -1158,7 +1159,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/MortgageCalculator-Swift/MortgageCalculator-Swift-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

@@ -14,11 +14,14 @@ import Moya
 
 enum HousingMarketApi {
     /// 全部楼市列表
-   case housingMarketList()
+   case housingMarketList
    case housingMarketListNext(ids: String)
 }
 
 extension HousingMarketApi: XZTargetType {
+    var headers: [String : String]? {
+        return nil
+    }
     
     var path: String {
        return "/service/api/proxy"
@@ -26,7 +29,7 @@ extension HousingMarketApi: XZTargetType {
     
     var method: Moya.Method {
         switch self {
-        case .housingMarketList():
+        case .housingMarketList:
             return .get
         case  .housingMarketListNext(_):
             return .get
@@ -36,7 +39,7 @@ extension HousingMarketApi: XZTargetType {
     var parameters: [String : Any]? {
         var params = [String:Any]()
         switch self {
-        case .housingMarketList():
+        case .housingMarketList:
             params["key"] = "Xw@2017Mmd"
             params["charset"] = "utf-8"
             params["url"] = "http://openapi.inews.qq.com/getQQNewsIndexAndItems?chlid=news_news_house&refer=mobilewwwqqcom&otype=json"

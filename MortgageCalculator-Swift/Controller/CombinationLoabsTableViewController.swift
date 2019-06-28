@@ -112,7 +112,7 @@ class CombinationLoabsTableViewController: UITableViewController {
         return cell
     }
     
-    func calculateClick(){
+    @objc func calculateClick(){
         
         self.backupgroupTap()
         let accumulationAmontStr = self.accumulationAmontTextFiled?.text

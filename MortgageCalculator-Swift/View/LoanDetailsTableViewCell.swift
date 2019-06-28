@@ -15,7 +15,7 @@ class LoanDetailsTableViewCell: UITableViewCell {
     var principalLabel: UILabel?
     var interestLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }
@@ -209,7 +209,7 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
     var titleLabel: UILabel?
     var amountLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }
@@ -294,7 +294,7 @@ class LoanNextMouth_TitleTableViewCell: UITableViewCell {
     var amountLabel: UILabel?
     var principalAmountLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }
@@ -399,7 +399,7 @@ class LoanDetails_DescribeTableViewCell: UITableViewCell {
     var periodTitleLabel: UILabel?
     var periodLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }
@@ -495,7 +495,7 @@ class LoanDetails_DescribesTableViewCell: UITableViewCell {
     var businessPeriodTitleLabel: UILabel?
     var businessPeriodLabel: UILabel?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }
@@ -634,7 +634,7 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
     var totalAmountLabel: UILabel?
     var interestRateLabel: UILabel?
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier:reuseIdentifier)
         self.sebView()
     }

@@ -43,7 +43,7 @@ class ZJRefreshControl: UIControl {
     
     //下拉刷新旋转的样式
     internal var refreshActivity:UIActivityIndicatorView!;
-    internal var activityIndicatorViewStyle:UIActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray;
+    internal var activityIndicatorViewStyle:UIActivityIndicatorView.Style = UIActivityIndicatorView.Style.gray;
     
     fileprivate var refreshing = false;
     fileprivate var scrollView:UIScrollView!;
@@ -93,7 +93,7 @@ class ZJRefreshControl: UIControl {
         self.originalContentInset = scrollView.contentInset;
         
         //旋转图标
-        self.refreshActivity = UIActivityIndicatorView(activityIndicatorStyle: self.activityIndicatorViewStyle);
+        self.refreshActivity = UIActivityIndicatorView(style: self.activityIndicatorViewStyle);
         self.addSubview(refreshActivity);
 
         shapeTintColor = UIColor(red: 155.0 / 255.0, green: 162.0 / 255.0, blue: 172.0 / 255.0, alpha: 1.0)
@@ -176,7 +176,7 @@ class ZJRefreshControl: UIControl {
     
     //加载更多视图的添加
     fileprivate func loadmoreViewAdd() -> Void{
-        self.loadmoreActivity = UIActivityIndicatorView(activityIndicatorStyle: self.activityIndicatorViewStyle);
+        self.loadmoreActivity = UIActivityIndicatorView(style: self.activityIndicatorViewStyle);
         self.loadmoreActivity.frame =  CGRect(x: 0, y: self.scrollView.frame.size.height + 20, width: 36, height: 36);
         self.loadmoreActivity.alpha = 0;
         self.loadmoreActivity.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1);
@@ -184,7 +184,7 @@ class ZJRefreshControl: UIControl {
         self.loadmoreActivity.layer.masksToBounds = true;
         self.loadmoreActivity.layer.transform = CATransform3DMakeScale(0, 0, 1);
         self.scrollView.addSubview(self.loadmoreActivity);
-        self.scrollView.sendSubview(toBack: self.loadmoreActivity);
+        self.scrollView.sendSubviewToBack(self.loadmoreActivity);
         //给加载更多View留位置
         scrollView.contentInset.bottom += 40;
     }
@@ -266,13 +266,13 @@ class ZJRefreshControl: UIControl {
         toPath.closeSubpath();
         pathMorph.toValue = toPath;
         pathMorph.duration = 0.2;
-        pathMorph.fillMode = kCAFillModeForwards;
+        pathMorph.fillMode = CAMediaTimingFillMode.forwards;
         pathMorph.isRemovedOnCompletion = false;
         refreshShapeLayer.add(pathMorph, forKey: nil);
         
         let shadowPathMorph = CABasicAnimation(keyPath: "shadowPath");
         shadowPathMorph.duration = 0.2;
-        shadowPathMorph.fillMode = kCAFillModeForwards;
+        shadowPathMorph.fillMode = CAMediaTimingFillMode.forwards;
         shadowPathMorph.isRemovedOnCompletion = false;
         shadowPathMorph.toValue = toPath;
         refreshShapeLayer.add(shadowPathMorph, forKey: nil);
@@ -280,7 +280,7 @@ class ZJRefreshControl: UIControl {
         let alphaAnimation = CABasicAnimation(keyPath: "opacity");
         alphaAnimation.duration = 0.3;
         alphaAnimation.toValue = NSNumber(value: 0 as Float);
-        alphaAnimation.fillMode = kCAFillModeForwards;
+        alphaAnimation.fillMode = CAMediaTimingFillMode.forwards;
         alphaAnimation.isRemovedOnCompletion = false;
         refreshArrowLayer.add(alphaAnimation, forKey: nil);
         refreshHighlightLayer.add(alphaAnimation, forKey: nil);
@@ -309,7 +309,7 @@ class ZJRefreshControl: UIControl {
         CATransaction.commit();
         
         UIView.animate(withDuration: 0.2, delay: 0.25,
-            options: UIViewAnimationOptions.curveLinear,
+                       options: UIView.AnimationOptions.curveLinear,
             animations: {
                 self.refreshActivity.alpha = 1;
                 self.refreshActivity.layer.transform = CATransform3DMakeScale(1, 1, 1);
@@ -326,7 +326,7 @@ class ZJRefreshControl: UIControl {
     //刷新旋转消失
     fileprivate func refreshActivityHide()->Void{
         UIView.animate(withDuration: 0.1, delay: 0.15,
-            options: UIViewAnimationOptions.curveLinear,
+                       options: UIView.AnimationOptions.curveLinear,
             animations: {
                 self.refreshActivity.alpha = 0;
                 self.refreshActivity.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
@@ -459,7 +459,7 @@ class ZJRefreshControl: UIControl {
                 if (offset < 0) {
                     if (offset >= -showViewHeight) {
                         //如果在刷新时上拉，调整scrollview的扩展显示区域
-                        self.scrollView.contentInset = UIEdgeInsetsMake(self.originalContentInset.top - offset, self.originalContentInset.left, self.originalContentInset.bottom, self.originalContentInset.right);
+                        self.scrollView.contentInset = UIEdgeInsets(top: self.originalContentInset.top - offset, left: self.originalContentInset.left, bottom: self.originalContentInset.bottom, right: self.originalContentInset.right);
                         self.refreshActivity.center = CGPoint(x: floor(self.frame.size.width / 2), y: totalViewHeight - showViewHeight/2 );
                     }
                 }
@@ -547,14 +547,14 @@ class ZJRefreshControl: UIControl {
             arrowPath.addArc(center: topOrigin, radius: arrowSmallRadius, startAngle: CGFloat(3 * Double.pi / 2), endAngle: 0, clockwise: true, transform: transform);
             arrowPath.closeSubpath();
             refreshArrowLayer.path = arrowPath;
-            refreshArrowLayer.fillRule = kCAFillRuleEvenOdd;
+            refreshArrowLayer.fillRule = CAShapeLayerFillRule.evenOdd;
             
             let highlightPath = CGMutablePath();
             highlightPath.addArc(center: topOrigin, radius: currentTopRadius, startAngle: 0, endAngle: CGFloat(Double.pi), clockwise: true, transform: transform);
             highlightPath.addArc(center: CGPoint(x:topOrigin.x,y:topOrigin.y + 1.25), radius: currentTopRadius, startAngle: CGFloat(Double.pi), endAngle: 0, clockwise: false, transform: transform);
             
             refreshHighlightLayer.path = highlightPath;
-            refreshHighlightLayer.fillRule = kCAFillRuleNonZero;
+            refreshHighlightLayer.fillRule = CAShapeLayerFillRule.nonZero;
         } else {
             //如果没刷新，就进行刷新
             if(!isAnimating()){

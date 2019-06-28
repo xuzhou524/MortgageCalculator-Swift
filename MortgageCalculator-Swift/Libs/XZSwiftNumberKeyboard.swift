@@ -118,7 +118,7 @@ class XZSwiftNumberKeyboard: UIView {
         }
     }
     
-    func keyBoardAction(button:UIButton) ->Void{
+    @objc func keyBoardAction(button:UIButton) ->Void{
         let btn = button
         let number = btn.tag
         if number <= 9 && number >= 0{

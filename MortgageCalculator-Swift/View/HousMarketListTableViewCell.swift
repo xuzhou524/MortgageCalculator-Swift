@@ -44,7 +44,7 @@ class HousMarketListTableViewCell: ASCellNode {
                                             alignItems: .stretch,
                                             children: [titleLayout,imageView])
 
-        let titleinsetLayout = ASInsetLayoutSpec(insets: UIEdgeInsetsMake(8, 10, 8, 10), child: imageLayout)
+        let titleinsetLayout = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10), child: imageLayout)
 
         return titleinsetLayout
     }
@@ -63,9 +63,9 @@ class HousMarketListTableViewCell: ASCellNode {
             style.lineSpacing = 3
             let attrString = NSMutableAttributedString(string: titleStr,
                                                        attributes: [
-                                                        NSForegroundColorAttributeName: XZSwiftColor.xzGlay50,
-                                                        NSParagraphStyleAttributeName: style,
-                                                        NSFontAttributeName:  XZClient.XZFont(size: 16)])
+                                                        NSAttributedString.Key.foregroundColor: XZSwiftColor.xzGlay50,
+                                                        NSAttributedString.Key.paragraphStyle: style,
+                                                        NSAttributedString.Key.font:  XZClient.XZFont(size: 16)])
             titleNode.attributedText = attrString
         }
         
@@ -75,8 +75,8 @@ class HousMarketListTableViewCell: ASCellNode {
             }
             let attrStrings = NSMutableAttributedString(string: sourceStr,
                                                         attributes: [
-                                                            NSForegroundColorAttributeName: XZSwiftColor.xzGlay129,
-                                                            NSFontAttributeName:  XZClient.XZFont(size: 14)])
+                                                            NSAttributedString.Key.foregroundColor: XZSwiftColor.xzGlay129,
+                                                            NSAttributedString.Key.font:  XZClient.XZFont(size: 14)])
             sourceNode.attributedText = attrStrings
         }
         

@@ -15,8 +15,6 @@ import Moya
 public enum ApiError : Swift.Error {
     case Error(info: String)
     case AccountBanned(info: String)
-    
-    
 }
 
 extension Swift.Error {
@@ -42,6 +40,7 @@ extension Observable where Element: Moya.Response {
             if (200...209) ~= response.statusCode {
                 return true
             }
+            print("网络错误")
             throw ApiError.Error(info: "网络错误")
         }
     }
@@ -50,7 +49,7 @@ extension Observable where Element: Moya.Response {
     func filterResponseError() -> Observable<Element> {
         return filterHttpError().filter{ response in
             
-            let json = JSON(data: response.data)
+            let json = try JSON(data: response.data)
             var code = 200
             var msg = ""
             if let codeStr = json["code"].rawString(), let c = Int(codeStr)  {
@@ -68,24 +67,21 @@ extension Observable where Element: Moya.Response {
                 
             default: throw ApiError.Error(info: msg)
             }
-            
         }
     }
-    
     
     /// 将Response 转换成 JSON Model
     ///
     /// - Parameters:
     ///   - typeName: 要转换的Model Class
     ///   - dataPath: 从哪个节点开始转换，例如 ["data","links"]
-    /// - Returns: <#return value description#>
     func mapResponseToObj<T: Mappable>(_ typeName: T.Type , dataPath:[String] = [] ) -> Observable<T> {
         return filterResponseError().map{ response in
-            var rootJson = JSON(data: response.data);
+            var rootJson = try? JSON(data: response.data);
             if dataPath.count > 0{
-                rootJson = rootJson[dataPath]
+                rootJson = rootJson?[dataPath]
             }
-            if let model: T = self.resultFromJSON(json: rootJson)  {
+            if let model: T = self.resultFromJSON(json: rootJson!)  {
                 return model
             }
             else{
@@ -97,7 +93,7 @@ extension Observable where Element: Moya.Response {
     /// 将Response 转换成 JSON Model Array
     func mapResponseToObjArray<T: Mappable>(_ type: T.Type, dataPath:[String] = [] ) -> Observable<[T]> {
         return filterResponseError().map{ response in
-            var rootJson = JSON(data: response.data);
+            var rootJson = try! JSON(data: response.data);
             if dataPath.count > 0{
                 rootJson = rootJson[dataPath]
             }
@@ -129,4 +125,3 @@ extension Observable where Element: Moya.Response {
         return nil
     }
 }
-

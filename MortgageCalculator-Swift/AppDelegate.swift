@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var homeTabBarController: UITabBarController?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow()
         self.window?.frame = UIScreen.main.bounds
@@ -46,9 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.homeTabBarController?.viewControllers = [self.rootNavigationController!,self.HousingMarketController!,self.remindNavigationController!, self.moreNavigationController!]
         
         // 设置字体大小
-        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 11.0)], for: UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11.0)], for: UIControl.State.normal)
         // 设置字体偏移
-        UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, 0.0)
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 0.0)
         // 设置图标选中时颜色
         UITabBar.appearance().tintColor = XZSwiftColor.xzGlay50
         UITabBar.appearance().isTranslucent = false

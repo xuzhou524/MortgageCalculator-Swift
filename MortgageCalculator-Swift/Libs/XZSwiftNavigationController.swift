@@ -31,8 +31,8 @@ class XZSwiftNavigationController: UINavigationController {
         super.viewDidLoad()
         
         self.navigationBar.titleTextAttributes = [
-            NSFontAttributeName : XZClient.XZFont(size: 18),
-            NSForegroundColorAttributeName : XZSwiftColor.xzGlay50
+            NSAttributedString.Key.font : XZClient.XZFont(size: 18),
+            NSAttributedString.Key.foregroundColor : XZSwiftColor.xzGlay50
         ]
         self.navigationBar.setBackgroundImage(createImageWithColor(XZSwiftColor.navignationColor), for: .default)
         self.navigationBar.barStyle = .default;

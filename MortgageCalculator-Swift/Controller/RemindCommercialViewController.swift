@@ -106,7 +106,7 @@ class RemindCommercialViewController: UITableViewController {
         return cell
     }
     
-    func saveClick(){
+    @objc func saveClick(){
         
         if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0) {
             return

@@ -8,6 +8,11 @@
 
 import UIKit
 import Moya
+import Result
+import RxSwift
+
+//保存全局Providers
+fileprivate var retainProviders:[String: Any] = [:]
 
 protocol XZTargetType: TargetType {}
 
@@ -29,21 +34,29 @@ extension XZTargetType {
     }
     
     var task: Task {
-        return .request
+        return requestTaskWithParameters
+    }
+
+    var requestTaskWithParameters : Task {
+        get {
+            let defaultParameters: [String : Any] = ["version":"100"]
+            return Task.requestParameters(parameters: defaultParameters, encoding: URLEncoding.default)
+        }
     }
     
     static var networkActivityPlugin: PluginType {
-        return NetworkActivityPlugin(networkActivityClosure: {(change: NetworkActivityChangeType) in
+        return NetworkActivityPlugin { (change, type) in
             switch change {
             case .began:
                 UIApplication.shared.isNetworkActivityIndicatorVisible = true
+                
             case .ended:
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
-        })
+        }
     }
     
-    static func endpointClosure<T:TargetType>(_ target: T) -> Endpoint<T>{
+    static func endpointClosure<T:TargetType>(_ target: T) -> Endpoint{
         let defaultEndpoint = MoyaProvider<T>.defaultEndpointMapping(for: target)
         
         //API请求 默认携带的参数
@@ -63,8 +76,23 @@ extension XZTargetType {
         
         return defaultEndpoint
     }
- 
-    static var provider: RxMoyaProvider<Self> {
-        return RxMoyaProvider<Self>(endpointClosure: endpointClosure , plugins: [networkActivityPlugin])
+    
+    /// 实现此协议的类，将自动获得用该类实例化的 provider 对象
+    static var provider: RxSwift.Reactive< MoyaProvider<Self> > {
+        let key = "\(Self.self)"
+        if let provider = retainProviders[key] as? RxSwift.Reactive< MoyaProvider<Self> > {
+            return provider
+        }
+        let provider = Self.sprovider
+        retainProviders[key] = provider
+        return provider
+    }
+    
+    /// 实现此协议的类，将自动获得用该类实例化的 provider 对象
+    static var sprovider: RxSwift.Reactive< MoyaProvider<Self> > {
+        let plugins:[PluginType] = [networkActivityPlugin]
+        let provider = MoyaProvider<Self>(plugins:plugins)
+        return provider.rx
+        
     }
 }

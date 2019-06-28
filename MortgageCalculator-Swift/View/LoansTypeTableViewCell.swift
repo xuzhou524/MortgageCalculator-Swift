@@ -14,7 +14,7 @@ class LoansTypeTableViewCell: UITableViewCell {
     var typeSegmented : UISegmentedControl?
     var bottomSepView : UIImageView?
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.sebView()
     }
@@ -38,7 +38,7 @@ class LoansTypeTableViewCell: UITableViewCell {
         self.typeSegmented = UISegmentedControl(items: ["等额本息","等额本金"])
         self.typeSegmented?.tintColor = XZSwiftColor.xzGlay50
         self.typeSegmented?.selectedSegmentIndex = 0
-        self.typeSegmented?.setTitleTextAttributes([NSFontAttributeName:XZClient.XZFont2(size: 14)], for: .normal)
+        self.typeSegmented?.setTitleTextAttributes([NSAttributedString.Key.font:XZClient.XZFont2(size: 14)], for: .normal)
         self.contentView.addSubview(self.typeSegmented!)
         self.typeSegmented?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)

@@ -9,6 +9,10 @@
 import UIKit
 import AsyncDisplayKit
 import TMCache
+import SwiftyJSON
+import Moya
+import Result
+import RxSwift
 
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
     
@@ -64,7 +68,7 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         });
     }
     
-    func imgPuls(sender:UITapGestureRecognizer) {
+    @objc func imgPuls(sender:UITapGestureRecognizer) {
         let webViewVC = UIWebViewController()
         webViewVC.housingMarketDetailUrl = tapUrlArray[(sender.view?.tag)! - 100] as? String
         webViewVC.titleStr = titleArray[(sender.view?.tag)! - 100] as? String
@@ -76,7 +80,7 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     //下拉刷新调用的方法
     func asyncRequestData()->Void{
         self.tempPage = 1
-        _ = HousingMarketApi.provider.request(.housingMarketList()).filterHttpError().mapResponseToObj(RootClass.self)
+        _ = HousingMarketApi.provider.request(.housingMarketList).mapResponseToObj(RootClass.self)
             .subscribe(onNext: { (response) in
                 
                 self.housingMarketListItem = response
@@ -132,29 +136,63 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
                 ids = idsModel.id!
             }
         }
-        _ = HousingMarketApi.provider.request(.housingMarketListNext(ids: ids)).filterHttpError().mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
+
+        _ = HousingMarketApi.provider.request(.housingMarketListNext(ids: ids))
+            .mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
             .subscribe(onNext: { (response) in
-                self.tempPage =  self.tempPage + 1
-                let idListArray = response
-                let length = idListArray.count
-                for i in 0 ..< length{
-                    self.source.append(idListArray[i])
-                }
-//                let indexPathArray = NSMutableArray.init()
-//                for i in self.source.count - length...self.source.count - length  {
-//                    let indexPath = IndexPath(row:i, section: 0)
-//                    indexPathArray.add(indexPath)
-//                }
-//                self.node.performBatch(animated: false, updates: {
-//                    self.node.insertRows(at: indexPathArray as! [IndexPath], with: .none)
-//                }, completion: nil)
-                self.node.reloadData()
-         
-                self.refreshControl.endLoadingmore();
+
             }, onError: { (error) in
-                print(error.rawString())
-                self.refreshControl.endLoadingmore();
+
             })
+        
+//        _ = HousingMarketApi.provider.requestWithProgress(.housingMarketListNext(ids: ids)).mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
+//            .subscribe(onNext: { (response) in
+//                self.tempPage =  self.tempPage + 1
+//                let idListArray = response
+//                let length = idListArray.count
+//                for i in 0 ..< length{
+//                    self.source.append(idListArray[i])
+//                }
+//                //                let indexPathArray = NSMutableArray.init()
+//                //                for i in self.source.count - length...self.source.count - length  {
+//                //                    let indexPath = IndexPath(row:i, section: 0)
+//                //                    indexPathArray.add(indexPath)
+//                //                }
+//                //                self.node.performBatch(animated: false, updates: {
+//                //                    self.node.insertRows(at: indexPathArray as! [IndexPath], with: .none)
+//                //                }, completion: nil)
+//                self.node.reloadData()
+//
+//                self.refreshControl.endLoadingmore();
+//        }, onError: { (error) in
+//            print(error.rawString())
+//            self.refreshControl.endLoadingmore();
+//        })
+        
+//
+//        _ = HousingMarketApi.provider.request(.housingMarketListNext(ids: ids)).filterHttpError().mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
+//            .subscribe(onNext: { (response) in
+//                self.tempPage =  self.tempPage + 1
+//                let idListArray = response
+//                let length = idListArray.count
+//                for i in 0 ..< length{
+//                    self.source.append(idListArray[i])
+//                }
+////                let indexPathArray = NSMutableArray.init()
+////                for i in self.source.count - length...self.source.count - length  {
+////                    let indexPath = IndexPath(row:i, section: 0)
+////                    indexPathArray.add(indexPath)
+////                }
+////                self.node.performBatch(animated: false, updates: {
+////                    self.node.insertRows(at: indexPathArray as! [IndexPath], with: .none)
+////                }, completion: nil)
+//                self.node.reloadData()
+//
+//                self.refreshControl.endLoadingmore();
+//            }, onError: { (error) in
+//                print(error.rawString())
+//                self.refreshControl.endLoadingmore();
+//            })
     }
     
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {

@@ -34,7 +34,7 @@ class CommercialLoansTableViewController: UITableViewController {
         tapGestureRecognizer.cancelsTouchesInView = false
     }
     
-    func backupgroupTap(){
+    @objc func backupgroupTap(){
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 
@@ -95,7 +95,7 @@ class CommercialLoansTableViewController: UITableViewController {
         return cell
     }
     
-    func calculateClick(){
+    @objc func calculateClick(){
         
         self.backupgroupTap()
         

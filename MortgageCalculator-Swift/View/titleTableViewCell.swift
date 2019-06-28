@@ -13,7 +13,7 @@ class titleTableViewCell: UITableViewCell {
     var detaileLabel: UILabel?
     var iconImageView: UIImageView?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.sebView()
     }

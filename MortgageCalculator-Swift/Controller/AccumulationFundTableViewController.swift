@@ -92,7 +92,7 @@ class AccumulationFundTableViewController: UITableViewController {
         return cell
     }
     
-    func calculateClick(){
+    @objc func calculateClick(){
         
         self.backupgroupTap()
         
