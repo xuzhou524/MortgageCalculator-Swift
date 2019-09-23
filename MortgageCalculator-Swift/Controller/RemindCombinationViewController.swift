@@ -29,13 +29,13 @@ class RemindCombinationViewController: UITableViewController {
         regClass(self.tableView, cell: LoansTypeTableViewCell.self)
         regClass(self.tableView, cell: BottonTableViewCell.self)
         
-        let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(CommercialLoansTableViewController.backupgroupTap))
+        let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(RemindCombinationViewController.backupgroupTap))
         tapGestureRecognizer.numberOfTapsRequired = 1
         self.view.addGestureRecognizer(tapGestureRecognizer)
         tapGestureRecognizer.cancelsTouchesInView = false
     }
     
-    func backupgroupTap(){
+    @objc func backupgroupTap(){
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     

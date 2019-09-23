@@ -89,7 +89,6 @@
 		5375E0651F97178D00964123 /* taoBao2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05B1F97174800964123 /* taoBao2.png */; };
 		5375E0661F97178F00964123 /* tengXunNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0591F97174800964123 /* tengXunNew.png */; };
 		5375E0671F97179200964123 /* wuMi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05D1F97174900964123 /* wuMi.png */; };
-		5375E0691F97227200964123 /* longdailogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0681F97226700964123 /* longdailogo.png */; };
 		5375E06B1F9734E900964123 /* taoBao.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E06A1F9734E700964123 /* taoBao.png */; };
 		5375E06D1F98499000964123 /* qiche.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E06C1F98498D00964123 /* qiche.png */; };
 		5375E0711F9849C100964123 /* tupian.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0701F9849BD00964123 /* tupian.png */; };
@@ -804,7 +803,6 @@
 				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
 				53351B9E1F66B3F000717C26 /* onePai.png in Resources */,
-				5375E0691F97227200964123 /* longdailogo.png in Resources */,
 				5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */,
 				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
 				53F052F41F6BD2390035EF5A /* tabbar_housing_selected@3x.png in Resources */,
