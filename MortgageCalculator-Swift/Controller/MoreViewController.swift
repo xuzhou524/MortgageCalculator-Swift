@@ -13,6 +13,7 @@ import GoogleMobileAds
 class MoreViewController: UITableViewController {
     
     var bannerView: GADBannerView!
+    var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +23,18 @@ class MoreViewController: UITableViewController {
         
         bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
         bannerView.backgroundColor = UIColor.orange
+        bannerView.adSize = kGADAdSizeBanner
+        bannerView.center.x = self.view.center.x
+        
         self.tableView.addSubview(bannerView)
         bannerView.adUnitID = "ca-app-pub-9353975206269682/4586207572"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
+        
+        interstitial = GADInterstitial.init(adUnitID: "ca-app-pub-9353975206269682/6166898460")
+        let request = GADRequest()
+        interstitial.load(request)
+        interstitial.present(fromRootViewController: self)
         
         regClass(self.tableView, cell: MoreTableViewCell.self)
         regClass(self.tableView, cell: More_InterTableViewCell.self)

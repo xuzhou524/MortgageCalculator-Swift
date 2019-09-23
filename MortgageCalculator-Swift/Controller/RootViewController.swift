@@ -25,6 +25,8 @@ class RootViewController: UIViewController {
         
         bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
         bannerView.backgroundColor = UIColor.orange
+        bannerView.adSize = kGADAdSizeBanner
+        bannerView.center.x = self.view.center.x
         self.view.addSubview(bannerView)
         self.view.bringSubviewToFront(bannerView)
         bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
