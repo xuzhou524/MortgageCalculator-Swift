@@ -17,7 +17,7 @@ import RxSwift
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
     
     let titleArray : NSMutableArray = ["淘宝","京东","美团","网址导航","百度","秀场","图片","汽车之家"]
-    let iamgeArray : NSMutableArray = ["taoBao","jingDong","meiTuan","wangzhi","baiDu","video","tupian","qiche"]
+    let iamgeArray : NSMutableArray = ["taoBao","jingDong","meiTuan","wangzhi","baiDu","video","tupian","che"]
     let tapUrlArray : NSMutableArray = ["https://m.taobao.com","https://m.jd.com","https://m.meituan.com","http://m.duba.com","https://m.baidu.com","http://m.v.6.cn","http://www.opgirl.cn","http://m.autohome.com.cn"]
     
     var source: [Newslist] = []
