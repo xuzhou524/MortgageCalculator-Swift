@@ -8,7 +8,6 @@
 
 import UIKit
 import Crashlytics
-import GoogleMobileAds
 
 class CommercialLoansTableViewController: UITableViewController {
     
@@ -19,7 +18,6 @@ class CommercialLoansTableViewController: UITableViewController {
     var loanRateTextFiled:UITextField?
     
     var typeSegmented : UISegmentedControl?
-    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,16 +31,7 @@ class CommercialLoansTableViewController: UITableViewController {
         tapGestureRecognizer.numberOfTapsRequired = 1
         self.view.addGestureRecognizer(tapGestureRecognizer)
         tapGestureRecognizer.cancelsTouchesInView = false
-        
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 300, width: XZClient.ScreenWidth(), height: 50))
-        bannerView.backgroundColor = UIColor.orange
-        self.tableView.addSubview(bannerView)
-        self.tableView.bringSubviewToFront(bannerView)
-        
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/4586207572"
-//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+
     }
     
     @objc func backupgroupTap(){
