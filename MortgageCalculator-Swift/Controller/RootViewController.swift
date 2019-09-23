@@ -40,6 +40,7 @@ class RootViewController: UIViewController {
         self.rootSegmentedVC?.addTarget(self, action: #selector(RootViewController.segmentDidchange), for: .valueChanged)
         
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
+    
     }
     
     @objc func segmentDidchange(segmented:UISegmentedControl){

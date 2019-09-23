@@ -11,6 +11,7 @@ import UserNotifications
 import Fabric
 import Crashlytics
 import AsyncDisplayKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var homeTabBarController: UITabBarController?
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         self.window = UIWindow()
         self.window?.frame = UIScreen.main.bounds
