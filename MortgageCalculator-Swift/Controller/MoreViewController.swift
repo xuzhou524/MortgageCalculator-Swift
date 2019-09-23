@@ -23,7 +23,7 @@ class MoreViewController: UITableViewController {
         bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
         bannerView.backgroundColor = UIColor.orange
         self.tableView.addSubview(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
+        bannerView.adUnitID = "ca-app-pub-9353975206269682/4586207572"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
