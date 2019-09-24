@@ -20,7 +20,10 @@ class MoreViewController: UITableViewController {
         self.tableView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.tableView.separatorStyle = .none
         
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
+        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
+        if (XZClient.XZiPhoneX()) {
+            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
+        }
         bannerView.adSize = kGADAdSizeBanner
         bannerView.center.x = self.view.center.x
         

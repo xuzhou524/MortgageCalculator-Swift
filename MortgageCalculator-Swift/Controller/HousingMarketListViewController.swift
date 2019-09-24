@@ -46,7 +46,10 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         super.viewDidLoad()
         self.title = "生活"
         
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
+        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
+        if (XZClient.XZiPhoneX()) {
+            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
+        }
         bannerView.adSize = kGADAdSizeBanner
         bannerView.center.x = self.view.center.x
         self.view.addSubview(bannerView)

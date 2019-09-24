@@ -26,4 +26,7 @@ class XZClient: NSObject{
         return  UIFont.init(name: "NotoSansHans-DemiLight", size: size)!
     }
     
+    class func XZiPhoneX() -> Bool {
+        return UIApplication.shared.statusBarFrame.height == 44 ? true : false
+    }
 }
