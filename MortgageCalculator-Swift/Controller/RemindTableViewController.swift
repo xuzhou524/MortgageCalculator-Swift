@@ -64,7 +64,6 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor;
         
         bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
-        bannerView.backgroundColor = UIColor.orange
         bannerView.adSize = kGADAdSizeBanner
         bannerView.center.x = self.view.center.x
         self.view.addSubview(bannerView)
