@@ -16,21 +16,21 @@ class RootViewController: UIViewController {
     var commerciaiLoansVC : CommercialLoansTableViewController?
     var accumulationLoansVC : AccumulationFundTableViewController?
     var combinationLoansVC : CombinationLoabsTableViewController?
-//    var bannerView: GADBannerView!
+    var bannerView: GADBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Thread.sleep(forTimeInterval: 1.0)
         
-//        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
-//        bannerView.adSize = kGADAdSizeBanner
-//        bannerView.center.x = self.view.center.x
-//        self.view.addSubview(bannerView)
-//        self.view.bringSubviewToFront(bannerView)
-//        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
-//        bannerView.rootViewController = self
-//        bannerView.load(GADRequest())
+        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50))
+        bannerView.adSize = kGADAdSizeBanner
+        bannerView.center.x = self.view.center.x
+        self.view.addSubview(bannerView)
+        self.view.bringSubviewToFront(bannerView)
+        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
         self.navigationItem.title = "房贷计算器"
         self.view.backgroundColor = UIColor.white;
@@ -80,7 +80,7 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
-//            self.view.bringSubviewToFront(bannerView)
+            self.view.bringSubviewToFront(bannerView)
         }else if  segmented.selectedSegmentIndex == 1 {
             if ((self.accumulationLoansVC) == nil) {
                 self.accumulationLoansVC = AccumulationFundTableViewController()
@@ -92,7 +92,7 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.accumulationLoansVC?.view)!)
-//            self.view.bringSubviewToFront(bannerView)
+            self.view.bringSubviewToFront(bannerView)
         }else{
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = CombinationLoabsTableViewController()
@@ -104,7 +104,7 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.combinationLoansVC?.view)!)
-//            self.view.bringSubviewToFront(bannerView)
+            self.view.bringSubviewToFront(bannerView)
         }
     }
     
