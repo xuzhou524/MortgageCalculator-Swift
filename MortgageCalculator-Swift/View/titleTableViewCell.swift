@@ -26,7 +26,7 @@ class titleTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         
         self.titleLabel = UILabel()
-        self.titleLabel?.text = "用易房贷";
+        self.titleLabel?.text = "用易房贷计算器";
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
         self.contentView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) in

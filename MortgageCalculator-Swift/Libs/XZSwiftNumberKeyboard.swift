@@ -214,14 +214,14 @@ class XZSwiftNumberKeyboard: UIView {
     
     func finishKeyBoard() ->Void{
         if (self.textField != nil) {
-            self.textField?.resignFirstResponder
+            self.textField?.resignFirstResponder()
         }
     }
     
     override func reloadInputViews() ->Void{
         if (self.textField != nil) {
             self.textField?.inputView = nil;
-            self.textField?.resignFirstResponder
+            self.textField?.resignFirstResponder()
         }
     }
 }

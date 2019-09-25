@@ -50,7 +50,7 @@ class LifeHeadView: UIView {
     init(imageArray:NSMutableArray,titleArray:NSMutableArray){
         
         let height = 80
-        super.init(frame: CGRect(x: 0, y: 0, width: Int(XZClient.ScreenWidth()), height: ((titleArray.count % 4 == 0 ? titleArray.count / 4 : titleArray.count / 4 + 1)) * height + 25))
+        super.init(frame: CGRect(x: 0, y: 0, width: Int(XZClient.ScreenWidth()), height: ((titleArray.count % 4 == 0 ? titleArray.count / 4 : titleArray.count / 4 + 1)) * height + 50))
         
         for i in 0 ..< titleArray.count{
             
@@ -73,15 +73,6 @@ class LifeHeadView: UIView {
             headViewArray.add(lifeView)
             
         }
-        
-        let sepView = UIView()
-        sepView.backgroundColor = XZSwiftColor.xzGlay230
-        self.addSubview(sepView)
-        sepView.snp.makeConstraints({ (make) -> Void in
-            make.left.right.bottom.equalTo(self)
-            make.height.equalTo(10)
-        });
-    
     }
     
     required init?(coder aDecoder: NSCoder) {

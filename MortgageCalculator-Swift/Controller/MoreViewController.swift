@@ -120,10 +120,10 @@ class MoreViewController: UITableViewController {
     func share()  {
         // 1.创建分享参数
         let shareParames = NSMutableDictionary()
-        shareParames.ssdkSetupShareParams(byText: "想容易，就用易房贷 - 最专业的贷款计算神器" + "  http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",
+        shareParames.ssdkSetupShareParams(byText: "想容易，就用易房贷计算器 - 最专业的贷款计算神器" + "  http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",
                                           images : UIImage(named: "Icon-60"),
                                           url : NSURL(string:"http://www.xzzai.com") as URL?,
-                                          title : "用易房贷",
+                                          title : "用易房贷计算器",
                                           type : SSDKContentType.auto)
         
         SSUIShareActionSheetStyle.setShareActionSheetStyle(.simple)
