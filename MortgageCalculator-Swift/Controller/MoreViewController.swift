@@ -28,7 +28,7 @@ class MoreViewController: UITableViewController {
         bannerView.center.x = self.view.center.x
         
         self.tableView.addSubview(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
+        bannerView.adUnitID = "ca-app-pub-9353975206269682/7480953903"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

@@ -70,7 +70,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         bannerView.adSize = kGADAdSizeBanner
         bannerView.center.x = self.view.center.x
         self.view.addSubview(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
+        bannerView.adUnitID = "ca-app-pub-9353975206269682/2400496540"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

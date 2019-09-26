@@ -54,7 +54,7 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
         bannerView.center.x = self.view.center.x
         self.view.addSubview(bannerView)
         self.view.bringSubviewToFront(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
+        bannerView.adUnitID = "ca-app-pub-9353975206269682/9586859605"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
