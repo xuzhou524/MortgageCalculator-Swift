@@ -1110,7 +1110,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1161,7 +1161,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

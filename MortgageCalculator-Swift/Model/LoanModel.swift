@@ -43,6 +43,9 @@ class LoanModel: NSObject {
     class func averageCapitalPlusInterestRemainingPrincipalTotalInterest(principal:CGFloat , monthRate:CGFloat , totalMonths:CGFloat, numberMonth:CGFloat) -> CGFloat{
         //总利息 = 贷款本金 - 已还本金
         var amount = CGFloat(0)
+        if numberMonth <= 0 {
+            return 0;
+        }
         for i in 1...NSInteger(numberMonth) {
             amount = amount + self.averageCapitalPlusInterestMonthPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: CGFloat(i))
         }

@@ -32,12 +32,12 @@ class RemindEditorViewController: UIViewController {
         })
         
         self.rootSegmentedVC?.selectedSegmentIndex = 0;
-        self.rootSegmentedVC?.addTarget(self, action: #selector(RootViewController.segmentDidchange), for: .valueChanged)
+        self.rootSegmentedVC?.addTarget(self, action: #selector(RemindEditorViewController.segmentDidchange), for: .valueChanged)
         
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
     }
     
-    func segmentDidchange(segmented:UISegmentedControl){
+    @objc func segmentDidchange(segmented:UISegmentedControl){
         if segmented.selectedSegmentIndex == 0 {
             if ((self.commerciaiLoansVC) == nil) {
                 self.commerciaiLoansVC = RemindCommercialViewController()
