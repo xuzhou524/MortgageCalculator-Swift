@@ -66,9 +66,7 @@ class RootViewController: UIViewController {
     }
     
     @objc func rightTapPed(){
-//        let editorVC = InterestTableViewController()
-//        editorVC.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
+  self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
     }
     
     @objc func segmentDidchange(segmented:UISegmentedControl){
