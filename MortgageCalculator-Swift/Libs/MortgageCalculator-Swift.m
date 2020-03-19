@@ -13,7 +13,7 @@
 
 @interface MortgageCalculator_Swift()<GADInterstitialDelegate>{
     
-    UIViewController *AdViewController;
+    UIViewController * _adViewController;
 }
 
 @property (nonatomic, strong) UIWindow* window;
@@ -62,8 +62,6 @@
     return self;
 }
 
-
-
 -(void)CheakAd{//这一部分的逻辑大家根据自身需求定制
     //谷歌插屏广告
 //    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"adshow"] intValue]!=0) {//后台控制是否显示广告
@@ -88,8 +86,8 @@
 - (void)show{
     ///初始化一个Window， 做到对业务视图无干扰。
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    AdViewController = [UIViewController new];
-    window.rootViewController = AdViewController;
+    _adViewController = [UIViewController new];
+    window.rootViewController = _adViewController;
     window.rootViewController.view.backgroundColor = [UIColor clearColor];
     window.rootViewController.view.userInteractionEnabled = NO;
 
@@ -133,7 +131,7 @@
 
 #pragma mark -GADInterstitialDelegate
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{//接收到插屏广告
-    [self.interstitial presentFromRootViewController:AdViewController];
+    [self.interstitial presentFromRootViewController:_adViewController];
 }
 
 - (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{//插屏广告请求失败
