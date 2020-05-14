@@ -83,7 +83,7 @@ class RemindAccumulationViewController: UITableViewController {
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 2 {
-            cell.titleLabel?.text = "贷款利率（%）"
+            cell.titleLabel?.text = "贷款利率/LPR（%）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false

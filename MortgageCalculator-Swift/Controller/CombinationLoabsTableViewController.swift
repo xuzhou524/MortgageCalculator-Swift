@@ -93,7 +93,7 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.businessAmontTextFiled = cell.textField
         }else if indexPath.row == 3 {
-            cell.titleLabel?.text = "商业贷款利率（%）"
+            cell.titleLabel?.text = "商业贷款利率/LPR（%）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
