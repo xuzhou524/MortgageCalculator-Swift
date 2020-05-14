@@ -103,6 +103,8 @@
 		<string>NotoSansHans-Light.otf</string>
 		<string>NotoSansHans-DemiLight.otf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchImage</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
