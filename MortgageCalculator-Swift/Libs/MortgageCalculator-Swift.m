@@ -64,23 +64,10 @@
 
 -(void)CheakAd{//这一部分的逻辑大家根据自身需求定制
     //谷歌插屏广告
-//    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"adshow"] intValue]!=0) {//后台控制是否显示广告
-//        if([[NSUserDefaults standardUserDefaults] objectForKey:@"admob_pid_chaping"]!=nil){//是否从后台获取到pid
-//            if(![[NSUserDefaults standardUserDefaults] boolForKey:@"VIPUser"]){//是否是工作人员，工作人员免广告
-//                NSArray *chapingArr=[[NSUserDefaults standardUserDefaults] objectForKey:@"admob_pid_chaping"];
-                self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"];
-                self.interstitial.delegate=self;
-                GADRequest *request = [GADRequest request];
-                [self.interstitial loadRequest:request];
-//            }else{
-//                [self hide];
-//            }
-//        }else{
-//            [self hide];
-//        }
-//    }else{
-//        [self hide];
-//    }
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"];
+    self.interstitial.delegate=self;
+    GADRequest *request = [GADRequest request];
+    [self.interstitial loadRequest:request];
 }
 
 - (void)show{
@@ -92,7 +79,7 @@
     window.rootViewController.view.userInteractionEnabled = NO;
 
     ///广告布局
-    [self setupSubviews:window];
+//    [self setupSubviews:window];
     
     ///设置为最顶层，防止 AlertView 等弹窗的覆盖
     window.windowLevel = UIWindowLevelStatusBar + 1;

@@ -26,8 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var homeTabBarController: UITabBarController?
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        #if DEBUG
+        #else
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        #endif
         
         self.window = UIWindow()
         self.window?.frame = UIScreen.main.bounds

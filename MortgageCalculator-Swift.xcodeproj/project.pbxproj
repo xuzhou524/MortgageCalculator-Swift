@@ -137,6 +137,7 @@
 		53F052F51F6BD23B0035EF5A /* tabbar_housing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */; };
 		53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */; };
 		53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */; };
+		53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FC5936247272B70023CC46 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,6 +286,7 @@
 		53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@2x.png"; sourceTree = "<group>"; };
 		53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@3x.png"; sourceTree = "<group>"; };
 		53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousMarketListTableViewCell.swift; sourceTree = "<group>"; };
+		53FC5936247272B70023CC46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A03C1CF6B798BED0E72F7DD /* Pods-MortgageCalculator-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -542,6 +544,7 @@
 				5365B7FF1F5F9569001FFEA5 /* MortgageCalculator-Swift-Bridging-Header.h */,
 				534C9C391F5D134800511672 /* MortgageCalculator-Swift.entitlements */,
 				53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */,
+				53FC5936247272B70023CC46 /* LaunchScreen.storyboard */,
 				53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */,
 				53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */,
 				53A4EF331F2ED46B00EF58EB /* Info.plist */,
@@ -792,6 +795,7 @@
 				5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */,
 				53578F7E1F668DA5005B1E4D /* WeiboSDK.bundle in Resources */,
 				5375E0661F97178F00964123 /* tengXunNew.png in Resources */,
+				53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */,
 				5367FD861F6A382E00449B5B /* lanyamao.png in Resources */,
 				5375E0631F97178800964123 /* meiTuan.png in Resources */,
 				53578F801F668DA5005B1E4D /* README.txt in Resources */,

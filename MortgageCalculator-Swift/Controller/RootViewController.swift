@@ -20,9 +20,9 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        Thread.sleep(forTimeInterval: 1.0)
-        
+
+        #if DEBUG
+        #else
         bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
         if (XZClient.XZiPhoneX()) {
             bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
@@ -34,6 +34,7 @@ class RootViewController: UIViewController {
         bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
+        #endif
         
         self.navigationItem.title = "房贷计算器"
         self.view.backgroundColor = UIColor.white;
@@ -81,7 +82,11 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
+            #if DEBUG
+            #else
             self.view.bringSubviewToFront(bannerView)
+            #endif
+            
         }else if  segmented.selectedSegmentIndex == 1 {
             if ((self.accumulationLoansVC) == nil) {
                 self.accumulationLoansVC = AccumulationFundTableViewController()
@@ -93,7 +98,10 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.accumulationLoansVC?.view)!)
+            #if DEBUG
+            #else
             self.view.bringSubviewToFront(bannerView)
+            #endif
         }else{
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = CombinationLoabsTableViewController()
@@ -105,7 +113,10 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.combinationLoansVC?.view)!)
+            #if DEBUG
+            #else
             self.view.bringSubviewToFront(bannerView)
+            #endif
         }
     }
     

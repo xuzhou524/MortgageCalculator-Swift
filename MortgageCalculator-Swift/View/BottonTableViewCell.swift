@@ -35,7 +35,7 @@ class BottonTableViewCell: UITableViewCell {
             make.centerY.equalTo(self.contentView)
             make.left.equalTo(self.contentView).offset(15)
             make.right.equalTo(self.contentView).offset(-15)
-            make.height.equalTo(40)
+            make.height.equalTo(48)
         })
         
     }
