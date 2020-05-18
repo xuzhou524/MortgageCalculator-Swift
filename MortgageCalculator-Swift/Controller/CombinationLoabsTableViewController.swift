@@ -20,6 +20,7 @@ class CombinationLoabsTableViewController: UITableViewController {
     
     var loanPeriodTextFiled:UITextField?
     
+    var rateTypeSegmented : UISegmentedControl?
     var typeSegmented : UISegmentedControl?
     
     override func viewDidLoad() {
@@ -45,26 +46,32 @@ class CombinationLoabsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 8
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 6 {
+        if indexPath.row == 7 {
             return 90
         }
         return 50
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 6 {
-            let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
-            cell.calculateButton?.addTarget(self, action: #selector(CombinationLoabsTableViewController.calculateClick), for: .touchUpInside)
+        if indexPath.row == 4 {
+            let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
+            self.rateTypeSegmented = cell.typeSegmented
+            cell.titleLabel?.text = "利率方式";
+            self.rateTypeSegmented?.setTitle("LPR", forSegmentAt: 0)
+            self.rateTypeSegmented?.setTitle("基准利率", forSegmentAt: 1)
+            self.rateTypeSegmented?.addTarget(self, action: #selector(segmentedControlChanged), for: UIControl.Event.valueChanged)
             return cell
-        }
-        
-        if indexPath.row == 5 {
+        }else if indexPath.row == 6 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             self.typeSegmented = cell.typeSegmented
+            return cell
+        }else if indexPath.row == 7 {
+            let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
+            cell.calculateButton?.addTarget(self, action: #selector(CombinationLoabsTableViewController.calculateClick), for: .touchUpInside)
             return cell
         }
 
@@ -93,22 +100,26 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.businessAmontTextFiled = cell.textField
         }else if indexPath.row == 3 {
-            cell.titleLabel?.text = "商业贷款利率/LPR（%）"
-            cell.topSepView?.isHidden = true
-            cell.bottomSepView?.isHidden = true
-            cell.bottomShortSepView?.isHidden = false
-            cell.textField?.text = "4.9"
-            cell.textField?.keyboardType = .numbersAndPunctuation
-            self.businessRateTextFiled = cell.textField
-        }else if indexPath.row == 4 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
+        }else if indexPath.row == 5 {
+            if self.rateTypeSegmented?.selectedSegmentIndex == 1 {
+                cell.titleLabel?.text = "贷款利率（%）"
+                cell.textField?.text = "4.9"
+            }else{
+                cell.titleLabel?.text = "LPR - 基点（%）"
+                cell.textField?.text = "4.75"
+            }
+            cell.topSepView?.isHidden = true
+            cell.bottomSepView?.isHidden = true
+            cell.bottomShortSepView?.isHidden = false
+            cell.textField?.keyboardType = .numbersAndPunctuation
+            self.businessRateTextFiled = cell.textField
         }
-        
         return cell
     }
     
@@ -137,6 +148,10 @@ class CombinationLoabsTableViewController: UITableViewController {
             loanDetailsVC.loanTypeInt = self.typeSegmented?.selectedSegmentIndex
             self.rootNavigationController?.pushViewController(loanDetailsVC, animated: true)
         }
+    }
+    
+    @objc func segmentedControlChanged(){
+        self.tableView.reloadRows(at: [IndexPath(row:5, section: 0)], with: .none)
     }
     
     override func didReceiveMemoryWarning() {
