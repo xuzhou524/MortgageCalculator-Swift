@@ -8,13 +8,11 @@
 
 import UIKit
 import UserNotifications
-import GoogleMobileAds
 
 class RemindTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var remindDayTitleView : RemindDayTitleView?
     var loanCacheModel : LoanCacheManage?
-    var bannerView: GADBannerView!
     
     fileprivate var _tableView: UITableView!
     fileprivate var tableView: UITableView{
@@ -63,17 +61,6 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         self.navigationItem.title = "提醒"
         self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor;
         
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
-        if (XZClient.XZiPhoneX()) {
-            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
-        }
-        bannerView.adSize = kGADAdSizeBanner
-        bannerView.center.x = self.view.center.x
-        self.view.addSubview(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/2400496540"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        
         let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:28, height:28))
         rightButton.setImage(UIImage(named: "selectbianji"), for: .normal)
         rightButton.setImage(UIImage(named: "bianji"), for: .highlighted)
@@ -93,8 +80,6 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
             make.left.right.bottom.equalTo(self.view)
             make.top.equalTo((self.remindDayTitleView?.snp.bottom)!).offset(10)
         }
-        self.view.bringSubviewToFront(bannerView)
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

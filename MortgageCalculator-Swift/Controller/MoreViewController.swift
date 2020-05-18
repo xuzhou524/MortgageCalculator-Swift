@@ -8,29 +8,14 @@
 
 import UIKit
 import StoreKit
-import GoogleMobileAds
 
 class MoreViewController: UITableViewController {
-    
-    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "更多"
         self.tableView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.tableView.separatorStyle = .none
-        
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
-        if (XZClient.XZiPhoneX()) {
-            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
-        }
-        bannerView.adSize = kGADAdSizeBanner
-        bannerView.center.x = self.view.center.x
-        
-        self.tableView.addSubview(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/7480953903"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
         
         regClass(self.tableView, cell: MoreTableViewCell.self)
         regClass(self.tableView, cell: More_InterTableViewCell.self)

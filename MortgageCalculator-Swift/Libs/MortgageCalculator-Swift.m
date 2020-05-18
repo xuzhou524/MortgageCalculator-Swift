@@ -41,25 +41,34 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
+        #ifdef DEBUG
+        #else
+        [self views];
+        #endif
         
-        ///如果是没啥经验的开发，请不要在初始化的代码里面做别的事，防止对主线程的卡顿，和 其他情况
-        ///应用启动, 首次开屏广告
-        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-            ///要等DidFinished方法结束后才能初始化UIWindow，不然会检测是否有rootViewController
-            [self show];
-            [self CheakAd];
-        }];
-        ///进入后台
-        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-            
-        }];
-        ///后台启动,二次开屏广告
-        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-            [self show];
-            [self CheakAd];
-        }];
     }
     return self;
+}
+
+-(void)views{
+ 
+    ///如果是没啥经验的开发，请不要在初始化的代码里面做别的事，防止对主线程的卡顿，和 其他情况
+    ///应用启动, 首次开屏广告
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        ///要等DidFinished方法结束后才能初始化UIWindow，不然会检测是否有rootViewController
+        [self show];
+        [self CheakAd];
+    }];
+    ///进入后台
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        
+    }];
+    ///后台启动,二次开屏广告
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [self show];
+        [self CheakAd];
+    }];
+    
 }
 
 -(void)CheakAd{//这一部分的逻辑大家根据自身需求定制

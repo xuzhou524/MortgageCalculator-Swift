@@ -13,7 +13,6 @@ import SwiftyJSON
 import Moya
 import Result
 import RxSwift
-import GoogleMobileAds
 
 class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
     
@@ -27,7 +26,6 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     
     var tempPage : NSInteger!
     var page : NSInteger!
-    var bannerView: GADBannerView!
     
     override init(node: ASTableNode) {
         super.init(node: ASTableNode(style: .plain))
@@ -45,18 +43,6 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "生活"
-        
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
-        if (XZClient.XZiPhoneX()) {
-            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
-        }
-        bannerView.adSize = kGADAdSizeBanner
-        bannerView.center.x = self.view.center.x
-        self.view.addSubview(bannerView)
-        self.view.bringSubviewToFront(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/9586859605"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
         
         self.node.view.separatorStyle = .none;
         self.node.delegate = self
