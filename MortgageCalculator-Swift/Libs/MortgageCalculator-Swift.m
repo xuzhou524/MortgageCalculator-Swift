@@ -56,7 +56,7 @@
     ///应用启动, 首次开屏广告
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         ///要等DidFinished方法结束后才能初始化UIWindow，不然会检测是否有rootViewController
-        [self show];
+//        [self show];
         [self CheakAd];
     }];
     ///进入后台
@@ -65,7 +65,7 @@
     }];
     ///后台启动,二次开屏广告
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        [self show];
+//        [self show];
         [self CheakAd];
     }];
     
@@ -114,19 +114,20 @@
     }];
 }
 
-///初始化显示的视图， 可以挪到具
-- (void)setupSubviews:(UIWindow*)window{
-    ///随便写写
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:window.bounds];
-    //和启动图一样，给用户造成错觉
-    imageView.image = [UIImage imageNamed:@"ADImage.png"];
-    imageView.contentMode=UIViewContentModeScaleAspectFill;
-    
-    [window addSubview:imageView];
-}
+/////初始化显示的视图， 可以挪到具
+//- (void)setupSubviews:(UIWindow*)window{
+//    ///随便写写
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:window.bounds];
+//    //和启动图一样，给用户造成错觉
+//    imageView.image = [UIImage imageNamed:@"ADImage.png"];
+//    imageView.contentMode=UIViewContentModeScaleAspectFill;
+//
+//    [window addSubview:imageView];
+//}
 
 #pragma mark -GADInterstitialDelegate
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad{//接收到插屏广告
+    [self show];
     [self.interstitial presentFromRootViewController:_adViewController];
 }
 
