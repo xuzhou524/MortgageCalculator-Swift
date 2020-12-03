@@ -14,7 +14,7 @@ import Moya
 import Result
 import RxSwift
 
-class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
+class HousingMarketListViewController: ASDKViewController<ASTableNode> , ASTableDataSource, ASTableDelegate{
     
     let titleArray : NSMutableArray = ["淘宝","京东","美团","网址导航","百度","秀场","图片","汽车之家"]
     let iamgeArray : NSMutableArray = ["taoBao","jingDong","meiTuan","wangzhi","baiDu","video","tupian","che"]
@@ -79,31 +79,31 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     private var indexPathesToBeReloaded: [IndexPath] = []
     //下拉刷新调用的方法
     func asyncRequestData()->Void{
-        self.tempPage = 1
-        _ = HousingMarketApi.provider.request(.housingMarketList).mapResponseToObj(RootClass.self)
-            .subscribe(onNext: { (response) in
-                
-                self.housingMarketListItem = response
-                
-                if let idsArray = response.idlist?.first?.ids {
-                    TMCache.shared().setObject(idsArray as NSCoding, forKey: "liebiao")
-                }
-                
-                let idListArray = response.idlist
-                self.source = (idListArray?.first?.newslist)!
-                
-//                for i in 0...19 {
-//                    let indexPath = IndexPath(row:i, section: 0)
-//                    self.indexPathesToBeReloaded.append(indexPath)
+//        self.tempPage = 1
+//        _ = HousingMarketApi.provider.request(.housingMarketList).mapResponseToObj(RootClass.self)
+//            .subscribe(onNext: { (response) in
+//
+//                self.housingMarketListItem = response
+//
+//                if let idsArray = response.idlist?.first?.ids {
+//                    TMCache.shared().setObject(idsArray as NSCoding, forKey: "liebiao")
 //                }
-//                self.node.reloadRows(at: self.indexPathesToBeReloaded, with: .none)
-                self.node.reloadData()
-                self.refreshControl.endRefreshing();
-                
-            }, onError: { (error) in
-                print(error.rawString())
-                self.refreshControl.endRefreshing();
-            })
+//
+//                let idListArray = response.idlist
+//                self.source = (idListArray?.first?.newslist)!
+//
+////                for i in 0...19 {
+////                    let indexPath = IndexPath(row:i, section: 0)
+////                    self.indexPathesToBeReloaded.append(indexPath)
+////                }
+////                self.node.reloadRows(at: self.indexPathesToBeReloaded, with: .none)
+//                self.node.reloadData()
+//                self.refreshControl.endRefreshing();
+//
+//            }, onError: { (error) in
+//                print(error.rawString())
+//                self.refreshControl.endRefreshing();
+//            })
     }
     
     //下拉刷新调用的方法
@@ -113,37 +113,37 @@ class HousingMarketListViewController: ASViewController<ASTableNode> , ASTableDa
     
     //上拉加载更多调用的方法
     func dropViewDidBeginLoadmore()->Void{
-        let idsArray = TMCache.shared().object(forKey: "liebiao") as! NSArray
-        
-        self.page = self.tempPage
-        
-        var ids = ""
-        let length = idsArray.count
-        
-        var maxIndex = 0
-        
-        if (self.page * 20 + 19) > length{
-            maxIndex = length
-        }else{
-            maxIndex = self.page * 20 + 19
-        }
-        
-        for i in self.page * 20 ..< maxIndex{
-            let idsModel = idsArray[i] as! Id
-            if ids.Lenght > 1{
-               ids = ids + "," + idsModel.id!
-            }else{
-                ids = idsModel.id!
-            }
-        }
-
-        _ = HousingMarketApi.provider.request(.housingMarketListNext(ids: ids))
-            .mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
-            .subscribe(onNext: { (response) in
-
-            }, onError: { (error) in
-
-            })
+//        let idsArray = TMCache.shared().object(forKey: "liebiao") as! NSArray
+//
+//        self.page = self.tempPage
+//
+//        var ids = ""
+//        let length = idsArray.count
+//
+//        var maxIndex = 0
+//
+//        if (self.page * 20 + 19) > length{
+//            maxIndex = length
+//        }else{
+//            maxIndex = self.page * 20 + 19
+//        }
+//
+//        for i in self.page * 20 ..< maxIndex{
+//            let idsModel = idsArray[i] as! Id
+//            if ids.Lenght > 1{
+//               ids = ids + "," + idsModel.id!
+//            }else{
+//                ids = idsModel.id!
+//            }
+//        }
+//
+//        _ = HousingMarketApi.provider.request(.housingMarketListNext(ids: ids))
+//            .mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
+//            .subscribe(onNext: { (response) in
+//
+//            }, onError: { (error) in
+//
+//            })
         
 //        _ = HousingMarketApi.provider.requestWithProgress(.housingMarketListNext(ids: ids)).mapResponseToObjArray(Newslist.self, dataPath: ["newslist"])
 //            .subscribe(onNext: { (response) in

@@ -1,8 +1,5 @@
 PODS:
   - Alamofire (4.8.2)
-  - Crashlytics (3.13.2):
-    - Fabric (~> 1.10.2)
-  - Fabric (1.10.2)
   - Google-Mobile-Ads-SDK (7.50.0):
     - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.1.1):
@@ -39,63 +36,74 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - ObjectMapper (3.5.1)
-  - PINCache (3.0.1-beta.6):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
-    - PINCache/Core (= 3.0.1-beta.6)
-  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.6):
-    - PINOperation (~> 1.1.0)
-  - PINOperation (1.1.2)
-  - PINRemoteImage/Core (3.0.0-beta.13):
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage/Core (3.0.3):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.13):
+  - PINRemoteImage/iOS (3.0.3):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.13):
-    - PINCache (= 3.0.1-beta.6)
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
   - Result (4.1.0)
   - RxSwift (4.5.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (5.0.0)
-  - Texture (2.6):
-    - Texture/PINRemoteImage (= 2.6)
-  - Texture/Core (2.6)
-  - Texture/PINRemoteImage (2.6):
-    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
     - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
     - Texture/Core
   - TMCache (2.1.0)
 
 DEPENDENCIES:
-  - Crashlytics
-  - Fabric
   - Google-Mobile-Ads-SDK
   - Moya/RxSwift
   - ObjectMapper (~> 3.3)
+  - PINCache
   - SnapKit
   - SwiftyJSON
   - Texture
   - TMCache (from `https://github.com/tumblr/TMCache`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Crashlytics
-    - Fabric
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - Moya
     - nanopb
     - ObjectMapper
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
     - Result
     - RxSwift
     - SnapKit
     - SwiftyJSON
+  trunk:
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
     - Texture
 
 EXTERNAL SOURCES:
@@ -109,24 +117,22 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Crashlytics: 611738c7847f8291a1a51084e35987b86ba6b3ee
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Google-Mobile-Ads-SDK: d48dbaf5bae1ab7a94a9786f493c26c454bc6f16
   GoogleAppMeasurement: 86a82f0e1f20b8eedf8e20326530138fd71409de
   GoogleUtilities: 9c2c544202301110b29f7974a82e77fdcf12bf51
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
 
-PODFILE CHECKSUM: f2a22ee1df2e7e58229fd9bf21db3e87937f4c8d
+PODFILE CHECKSUM: 6141f757ca1743c060a002e7383b70279d531aa8
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.10.0
