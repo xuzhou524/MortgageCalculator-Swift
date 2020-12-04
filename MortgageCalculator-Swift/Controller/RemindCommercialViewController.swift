@@ -16,6 +16,7 @@ class RemindCommercialViewController: UITableViewController {
     var loanRateTextFiled : UITextField?
     var startPaymentTextFiled : UITextField?
 
+    var rateTypeSegmented : UISegmentedControl?
     var typeSegmented : UISegmentedControl?
     
     override func viewDidLoad() {
@@ -40,29 +41,35 @@ class RemindCommercialViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 5 {
+        if indexPath.row == 6 {
             return 90
         }
         return 50
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 5 {
+        if indexPath.row == 2 {
+            let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
+            self.rateTypeSegmented = cell.typeSegmented
+            cell.titleLabel?.text = "利率方式";
+            self.rateTypeSegmented?.setTitle("LPR", forSegmentAt: 0)
+            self.rateTypeSegmented?.setTitle("基准利率", forSegmentAt: 1)
+            self.rateTypeSegmented?.addTarget(self, action: #selector(segmentedControlChanged), for: UIControl.Event.valueChanged)
+            return cell
+        }else if indexPath.row == 5 {
+            let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
+            self.typeSegmented = cell.typeSegmented
+            return cell
+        }else if indexPath.row == 6 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
             cell.calculateButton?.addTarget(self, action: #selector(RemindCommercialViewController.saveClick), for: .touchUpInside)
             cell.calculateButton?.setTitle("保存", for: .normal)
-            return cell
-        }
-        
-        if indexPath.row == 4 {
-            let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
-            self.typeSegmented = cell.typeSegmented
             return cell
         }
         
@@ -73,7 +80,6 @@ class RemindCommercialViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = true
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
@@ -81,19 +87,22 @@ class RemindCommercialViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = true
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
-        }else if indexPath.row == 2 {
-            cell.titleLabel?.text = "贷款利率/LPR（%）"
+        }else if indexPath.row == 3 {
+            if self.rateTypeSegmented?.selectedSegmentIndex == 1 {
+                cell.titleLabel?.text = "贷款利率（%）"
+                cell.textField?.text = "4.9"
+            }else{
+                cell.titleLabel?.text = "LPR - 基点（%）"
+                cell.textField?.text = "4.75"
+            }
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.summeryLabel?.isHidden = true
-            cell.textField?.text = "4.9"
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
-        }else if indexPath.row == 3 {
+        }else if indexPath.row == 4 {
             cell.titleLabel?.text = "首次还款日"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
@@ -107,7 +116,7 @@ class RemindCommercialViewController: UITableViewController {
     }
     
     @objc func saveClick(){
-        
+
         if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0) {
             return
         }
@@ -134,6 +143,10 @@ class RemindCommercialViewController: UITableViewController {
         
         self.rootNavigationController?.popViewController(animated: true)
         
+    }
+    
+    @objc func segmentedControlChanged(){
+        self.tableView.reloadRows(at: [IndexPath(row:3, section: 0)], with: .none)
     }
     
     override func didReceiveMemoryWarning() {
