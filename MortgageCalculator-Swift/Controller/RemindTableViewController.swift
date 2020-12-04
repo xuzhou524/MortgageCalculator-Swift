@@ -221,15 +221,15 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         //        // 添加通知到系统队列中，系统会在指定的时间触发
         //        UIApplication.shared.scheduleLocalNotification(localNoti)
         
-        //每周三，13点触发
         var components:DateComponents = DateComponents()
-        //components.weekday = 2;//周-
+//        components.weekday = 6;//周-
         components.day = Int((self.loanCacheModel?.repaymentDateStr)!)! - 1;
-        components.hour = 10;//10点
-        //components.minute = 14
+        components.hour = 9;//9点
+        components.minute = 30
         let content = UNMutableNotificationContent()
-        content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：一月一度的还款日（明天）到了，请及时查询还款账号是否有money,以免影响你信誉！"]
+        content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：明天是您的还款日，请及时查询还款账号是否有money,以免影响您征信哦！"]
         content.sound = UNNotificationSound.default
+        content.body = "贷友：明天是您的还款日，请及时查询还款账号是否有money,以免影响您征信哦！"
         let triggerDateComponents = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
         let request = UNNotificationRequest(identifier:"YongYiFangDai", content: content, trigger: triggerDateComponents)
         UNUserNotificationCenter.current().add(request) { error in
