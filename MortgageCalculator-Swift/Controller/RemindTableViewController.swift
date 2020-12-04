@@ -227,19 +227,15 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         components.day = Int((self.loanCacheModel?.repaymentDateStr)!)! - 1;
         components.hour = 10;//10点
         //components.minute = 14
-        if #available(iOS 10.0, *) {
-            let content = UNMutableNotificationContent()
-            content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：一月一度的还款日（明天）到了，请及时查询还款账号是否有money,以免影响你信誉！"]
-            content.sound = UNNotificationSound.default
-            let triggerDateComponents = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
-            let request = UNNotificationRequest(identifier:"YongYiFangDai", content: content, trigger: triggerDateComponents)
-            UNUserNotificationCenter.current().add(request) { error in
-                if error == nil {
-                    //print("Time Interval Notification scheduled: \(requestIdentifier)")
-                }
+        let content = UNMutableNotificationContent()
+        content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：一月一度的还款日（明天）到了，请及时查询还款账号是否有money,以免影响你信誉！"]
+        content.sound = UNNotificationSound.default
+        let triggerDateComponents = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+        let request = UNNotificationRequest(identifier:"YongYiFangDai", content: content, trigger: triggerDateComponents)
+        UNUserNotificationCenter.current().add(request) { error in
+            if error == nil {
+                //print("Time Interval Notification scheduled: \(requestIdentifier)")
             }
-        } else {
-            
         }
     }
     

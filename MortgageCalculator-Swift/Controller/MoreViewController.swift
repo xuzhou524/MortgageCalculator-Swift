@@ -133,22 +133,12 @@ class MoreViewController: UITableViewController {
             #else
                 SKStoreReviewController.requestReview()
             #endif
-        }else if #available(iOS 10.0, *) {
+        }else {
             UIApplication.shared.open(URL(string:"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8")!, options: [:], completionHandler: nil)
-        } else {
-            let urlString = "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"
-            let url = NSURL(string: urlString)
-            UIApplication.shared.openURL(url! as URL)
         }
     }
     @objc func tuImageView(){
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)
-        } else {
-            let urlString = "mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web"
-            let url = NSURL(string: urlString)
-            UIApplication.shared.openURL(url! as URL)
-        }
+        UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

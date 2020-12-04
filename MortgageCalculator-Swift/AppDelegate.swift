@@ -110,21 +110,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func pushRegisterNotifcation() {
-        if #available(iOS 10.0, *) {
-            let center = UNUserNotificationCenter.current()
-            center.delegate = self as? UNUserNotificationCenterDelegate
-            center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, error) in
-                if granted {
-                    center.getNotificationSettings(completionHandler: { (settings) in
-                        print(settings)
-                    })
-                } else {
-                    print("失败")
-                }
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self as? UNUserNotificationCenterDelegate
+        center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, error) in
+            if granted {
+                center.getNotificationSettings(completionHandler: { (settings) in
+                    print(settings)
+                })
+            } else {
+                print("失败")
             }
-        } else {
-            let seetings = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
-            UIApplication.shared.registerUserNotificationSettings(seetings)
         }
     }
 

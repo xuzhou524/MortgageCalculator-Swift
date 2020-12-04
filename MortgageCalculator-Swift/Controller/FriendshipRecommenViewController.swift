@@ -49,13 +49,7 @@ class FriendshipRecommenViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(URL(string:self.appUrlArray[indexPath.row])!, options: [:], completionHandler: nil)
-        } else {
-            let urlString = self.appUrlArray[indexPath.row]
-            let url = NSURL(string: urlString)
-            UIApplication.shared.openURL(url! as URL)
-        }
+        UIApplication.shared.open(URL(string:self.appUrlArray[indexPath.row])!, options: [:], completionHandler: nil)
     }
     
 }
