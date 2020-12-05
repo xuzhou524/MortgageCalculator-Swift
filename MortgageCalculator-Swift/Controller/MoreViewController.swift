@@ -21,6 +21,17 @@ class MoreViewController: UITableViewController {
         regClass(self.tableView, cell: More_InterTableViewCell.self)
         regClass(self.tableView, cell: titleTableViewCell.self)
         
+        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:42, height:42))
+        rightButton.setTitle("设置", for: .normal)
+        rightButton.setTitleColor(XZSwiftColor.xzGlay50, for: .normal)
+        rightButton.addTarget(self,action:#selector(rightTapPed),for:.touchUpInside)
+        let rightBarButton = UIBarButtonItem(customView: rightButton)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+        
+    }
+    
+    @objc func rightTapPed() {
+        self.navigationController?.pushViewController(SettingViewController(), animated: true)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
