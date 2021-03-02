@@ -85,7 +85,6 @@ DEPENDENCIES:
   - Google-Mobile-Ads-SDK
   - Moya/RxSwift
   - ObjectMapper (~> 3.3)
-  - PINCache
   - SnapKit
   - SwiftyJSON
   - Texture
@@ -94,9 +93,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
-    - GoogleUtilities
     - Moya
     - ObjectMapper
     - Result
@@ -104,17 +100,16 @@ SPEC REPOS:
     - SnapKit
     - SwiftyJSON
   trunk:
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
-    - Texture
-  trunk:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
     - PromisesObjC
+    - Texture
 
 EXTERNAL SOURCES:
   TMCache:
@@ -134,17 +129,17 @@ SPEC CHECKSUMS:
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
 
-PODFILE CHECKSUM: b79e66cfba1c505501134851b6265a362d887ce8
+PODFILE CHECKSUM: 3843357932299222e928de0a97a1d191d03d9627
 
 COCOAPODS: 1.10.1

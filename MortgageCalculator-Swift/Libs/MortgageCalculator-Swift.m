@@ -8,17 +8,16 @@
 
 #import "MortgageCalculator-Swift.h"
 
-#import <GoogleMobileAds/GADInterstitialDelegate.h>
 @import GoogleMobileAds;
 
-@interface MortgageCalculator_Swift()<GADInterstitialDelegate>{
+@interface MortgageCalculator_Swift()<GADFullScreenContentDelegate>{
     
     UIViewController * _adViewController;
 }
 
 @property (nonatomic, strong) UIWindow* window;
 
-@property(nonatomic, strong) GADInterstitial *interstitial;
+@property(nonatomic, strong) GADInterstitialAd *interstitial;
 
 @end
 
@@ -42,6 +41,7 @@
     self = [super init];
     if (self) {
         #ifdef DEBUG
+        [self views];
         #else
         NSString * i = [[NSUserDefaults standardUserDefaults] objectForKey:@"com.xuzhou.advertising"];
         if ([i intValue] == 0) {
@@ -75,10 +75,24 @@
 
 -(void)CheakAd{//这一部分的逻辑大家根据自身需求定制
     //谷歌插屏广告
-    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"];
-    self.interstitial.delegate=self;
+    
     GADRequest *request = [GADRequest request];
-    [self.interstitial loadRequest:request];
+      [GADInterstitialAd loadWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"
+                                      request:request
+                            completionHandler:^(GADInterstitialAd *ad, NSError *error) {
+          if (error) {
+             NSLog(@"Failed to load interstitial ad with error: %@", [error localizedDescription]);
+             return;
+          }
+          self.interstitial = ad;
+          self.interstitial.fullScreenContentDelegate = self;
+          [self show];
+          [self.interstitial presentFromRootViewController:_adViewController];
+      }];
+//    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"];
+//    self.interstitial.delegate=self;
+//    GADRequest *request = [GADRequest request];
+//    [self.interstitial loadRequest:request];
 }
 
 - (void)show{
@@ -129,44 +143,22 @@
 //}
 
 #pragma mark -GADInterstitialDelegate
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad{//接收到插屏广告
-    [self show];
-    [self.interstitial presentFromRootViewController:_adViewController];
+
+- (void)ad:(nonnull id<GADFullScreenPresentingAd>)ad
+didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
+    NSLog(@"Ad did fail to present full screen content.");
 }
 
-- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{//插屏广告请求失败
-    [self hide];
-}
-
-/**********************/
-- (void)interstitialWillPresentScreen:(GADInterstitial *)ad{
-    //插屏广告即将开始
-    NSLog(@"插屏广告即将开始");
+- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
     [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(Timered:) userInfo:nil repeats:YES];
+}
+
+- (void)adDidDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
+    [self hide];
 }
 
 - (void)Timered:(NSTimer*)timer {
     [self hide];
-}
-
-- (void)interstitialDidFailToPresentScreen:(GADInterstitial *)ad{
-    //插屏广告失败
-    NSLog(@"插屏广告失败");
-}
-
-- (void)interstitialWillDismissScreen:(GADInterstitial *)ad{
-    //插屏广告即将消失
-    NSLog(@"插屏广告即将消失");
-}
-
-- (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
-    //插屏广告已经消失
-    NSLog(@"插屏广告已经消失");
-}
-
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad{
-    //插屏广告即将离开APP
-    NSLog(@"插屏广告即将离开APP");
 }
 
 @end
