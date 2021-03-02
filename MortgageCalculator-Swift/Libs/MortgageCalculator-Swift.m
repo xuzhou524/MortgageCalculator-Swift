@@ -41,7 +41,6 @@
     self = [super init];
     if (self) {
         #ifdef DEBUG
-        [self views];
         #else
         NSString * i = [[NSUserDefaults standardUserDefaults] objectForKey:@"com.xuzhou.advertising"];
         if ([i intValue] == 0) {
