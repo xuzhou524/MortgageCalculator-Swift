@@ -97,8 +97,6 @@
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
 		5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */; };
-		539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795271F3327D5009AFED4 /* Icon-60@2x.png */; };
-		5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539795281F3327D5009AFED4 /* Icon-60@3x.png */; };
 		539807401F67DEC3004127CA /* tianqi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5398073F1F67DEC1004127CA /* tianqi.png */; };
 		539807421F67E0A8004127CA /* v2ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 539807411F67E0A6004127CA /* v2ex.png */; };
 		53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */; };
@@ -138,6 +136,7 @@
 		53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */; };
 		53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */; };
 		53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FC5936247272B70023CC46 /* LaunchScreen.storyboard */; };
+		C55623FE257B8D0100AA352F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55623FD257B8D0100AA352F /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,8 +242,6 @@
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewController.swift; sourceTree = "<group>"; };
-		539795271F3327D5009AFED4 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		539795281F3327D5009AFED4 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		5398073F1F67DEC1004127CA /* tianqi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tianqi.png; sourceTree = "<group>"; };
 		539807411F67E0A6004127CA /* v2ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = v2ex.png; sourceTree = "<group>"; };
 		53A089092422FD4900BC1192 /* MortgageCalculator-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift.h"; sourceTree = "<group>"; };
@@ -288,6 +285,7 @@
 		53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousMarketListTableViewCell.swift; sourceTree = "<group>"; };
 		53FC5936247272B70023CC46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A03C1CF6B798BED0E72F7DD /* Pods-MortgageCalculator-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		C55623FD257B8D0100AA352F /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +368,7 @@
 		5332A9821F4AB220001465E4 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				C55623FD257B8D0100AA352F /* SettingViewController.swift */,
 				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
 				53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */,
 			);
@@ -589,8 +588,6 @@
 				530338391F591E3B00848A6E /* bianji@3x.png */,
 				530338361F591DE700848A6E /* selectbianji@2x.png */,
 				530338351F591DE600848A6E /* selectbianji@3x.png */,
-				539795271F3327D5009AFED4 /* Icon-60@2x.png */,
-				539795281F3327D5009AFED4 /* Icon-60@3x.png */,
 				5342E9871F33261300AC3059 /* about_criticism.png */,
 				5342E9881F33261300AC3059 /* about_praise.png */,
 				5342E9831F33258900AC3059 /* arrow_right@2x.png */,
@@ -803,7 +800,6 @@
 				5367FD931F6A6C7D00449B5B /* delete@2x.png in Resources */,
 				5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */,
 				5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */,
-				539795291F3327D5009AFED4 /* Icon-60@2x.png in Resources */,
 				53578F811F668DA5005B1E4D /* ShareSDK.bundle in Resources */,
 				53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */,
 				53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */,
@@ -824,7 +820,6 @@
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
 				53A3752F2338501000B62378 /* che.png in Resources */,
 				53351B9E1F66B3F000717C26 /* onePai.png in Resources */,
-				5397952A1F3327D5009AFED4 /* Icon-60@3x.png in Resources */,
 				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
 				53F052F41F6BD2390035EF5A /* tabbar_housing_selected@3x.png in Resources */,
 				5375E0751F984B0100964123 /* sina.png in Resources */,
@@ -852,7 +847,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a51bcb1d2c3bfc5e7b43c7a3a9cd6cffe7f0b8 eb38756f0e57b9048d3c1e112eb0d53f92817a9149c333ab5b6f3c59ff6bc9d7\n";
+			shellScript = "
+";
 		};
 		A992B7AE5FD15890745D33E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -972,6 +968,7 @@
 				531152B21F70B97F00E2B70E /* Newslist.swift in Sources */,
 				5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */,
 				5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */,
+				C55623FE257B8D0100AA352F /* SettingViewController.swift in Sources */,
 				53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1103,7 +1100,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MortgageCalculator-Swift/MortgageCalculator-Swift.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1118,7 +1115,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1153,7 +1150,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MortgageCalculator-Swift/MortgageCalculator-Swift.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1168,7 +1165,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

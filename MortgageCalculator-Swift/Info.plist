@@ -57,20 +57,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>e5a51bcb1d2c3bfc5e7b43c7a3a9cd6cffe7f0b8</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-		</array>
-	</dict>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9353975206269682~9101550542</string>
 	<key>LSApplicationQueriesSchemes</key>

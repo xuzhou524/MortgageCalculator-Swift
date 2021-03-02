@@ -109,3 +109,50 @@ class BaseTableViewCell: UITableViewCell {
     }
 
 }
+
+
+class TitleSwitchTableViewCell: UITableViewCell {
+
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = XZClient.XZFont2(size: 16)
+        return label
+    }()
+    
+    var sevenSwitch:UISwitch = {
+        let switchs = UISwitch()
+        
+        switchs.onTintColor = XZSwiftColor.topicListDateColor
+        switchs.tintColor = XZSwiftColor.topicListDateColor
+        switchs.thumbTintColor = XZSwiftColor.linksColor
+        
+        return switchs
+    }()
+   
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier);
+        self.setup();
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    func setup()->Void{
+        self.backgroundColor = UIColor.white
+        self.selectionStyle = .none
+
+        self.contentView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints{ (make) -> Void in
+            make.left.equalToSuperview().offset(15)
+            make.centerY.equalToSuperview()
+        }
+        
+        self.contentView.addSubview(sevenSwitch)
+        sevenSwitch.snp.makeConstraints{ (make) -> Void in
+            make.right.equalToSuperview().offset(-15)
+            make.centerY.equalToSuperview()
+            make.width.equalTo(50);
+            make.height.equalTo(30);
+        }
+        
+    }
+}

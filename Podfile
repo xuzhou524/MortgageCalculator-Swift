@@ -1,4 +1,4 @@
-platform:ios,'10.0'
+platform:ios,'12.0'
 inhibit_all_warnings!
 use_frameworks!
 
@@ -8,6 +8,8 @@ def pods
    pod 'SwiftyJSON'
    pod 'Moya/RxSwift'
    pod 'Texture'
+#   pod 'PINRemoteImage'
+   pod 'PINCache'
    pod 'TMCache',:git => 'https://github.com/tumblr/TMCache'
    pod 'Google-Mobile-Ads-SDK'
 end

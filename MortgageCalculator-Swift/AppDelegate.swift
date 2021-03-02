@@ -8,8 +8,6 @@
 
 import UIKit
 import UserNotifications
-import Fabric
-import Crashlytics
 import AsyncDisplayKit
 import GoogleMobileAds
 
@@ -31,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         #endif
         
+        self.pushRegisterNotifcation()
+        
         self.window = UIWindow()
         self.window?.frame = UIScreen.main.bounds
         self.window?.backgroundColor = UIColor.white
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.rootNavigationController = XZSwiftNavigationController(rootViewController: RootViewController())
         self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
-        self.HousingMarketController = XZSwiftNavigationController(rootViewController: HousingMarketListViewController.init(node: ASTableNode(style: .plain)))
+        self.HousingMarketController = XZSwiftNavigationController(rootViewController: (HousingMarketListViewController.init(node: ASTableNode(style: .plain))))
         self.HousingMarketController?.tabBarItem = UITabBarItem(title: "生活", image: UIImage(named: "tabbar_housing"), selectedImage: UIImage(named: "tabbar_housing_selected"))
         
         self.remindNavigationController = XZSwiftNavigationController(rootViewController: RemindTableViewController())
@@ -62,12 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
     
         self.share()
-        
-        #if DEBUG
-        #else
-            Fabric.with([Crashlytics.self])
-        #endif
-        
+
         return true
     }
     
@@ -117,21 +112,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func pushRegisterNotifcation() {
-        if #available(iOS 10.0, *) {
-            let center = UNUserNotificationCenter.current()
-            center.delegate = self as? UNUserNotificationCenterDelegate
-            center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, error) in
-                if granted {
-                    center.getNotificationSettings(completionHandler: { (settings) in
-                        print(settings)
-                    })
-                } else {
-                    print("失败")
-                }
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self as? UNUserNotificationCenterDelegate
+        center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, error) in
+            if granted {
+                center.getNotificationSettings(completionHandler: { (settings) in
+                    print(settings)
+                })
+            } else {
+                print("失败")
             }
-        } else {
-            let seetings = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
-            UIApplication.shared.registerUserNotificationSettings(seetings)
         }
     }
 
@@ -139,11 +129,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         let aler = UIAlertView.init(title: notification.userInfo?[AnyHashable("title")] as? String, message: notification.userInfo?[AnyHashable("body")] as? String, delegate: self, cancelButtonTitle: "我知道了")
         aler.show()
-    }
-
-    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        self.pushRegisterNotifcation()
-        return true
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

@@ -63,4 +63,16 @@ class XZSwiftColor: UIColor{
             return colorWith255RGB(50, g: 50, b: 50);
         }
     }
+    
+    static var topicListDateColor : UIColor{
+        get{
+            return colorWith255RGB(173, g: 173, b: 173);
+        }
+    }
+    
+    static var linksColor : UIColor {
+        get {
+            return colorWith255RGB(119, g: 128, b: 135)
+        }
+    }
 }
