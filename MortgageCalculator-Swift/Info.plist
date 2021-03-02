@@ -98,6 +98,10 @@
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 	</dict>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<string>cstr6suwn9.skadnetwork</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NotoSansHans-Light.otf</string>

@@ -9,8 +9,6 @@ def pods
    pod 'Moya/RxSwift'
    pod 'Texture'
    pod 'TMCache',:git => 'https://github.com/tumblr/TMCache'
-   pod 'Fabric'
-   pod 'Crashlytics'
    pod 'Google-Mobile-Ads-SDK'
 end
 
