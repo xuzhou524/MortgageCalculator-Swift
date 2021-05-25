@@ -114,39 +114,13 @@ class MoreViewController: UITableViewController {
     }
     
     func share()  {
-        // 1.创建分享参数
-        let shareParames = NSMutableDictionary()
-        shareParames.ssdkSetupShareParams(byText: "想容易，就用易房贷计算器 - 最专业的贷款计算神器" + "  http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",
-                                          images : UIImage(named: "Icon-60"),
-                                          url : NSURL(string:"http://www.xzzai.com") as URL?,
-                                          title : "用易房贷计算器",
-                                          type : SSDKContentType.auto)
-        
-        SSUIShareActionSheetStyle.setShareActionSheetStyle(.simple)
-        //2.进行分享
-        _ = ShareSDK.showShareActionSheet(nil, items: nil, shareParams: shareParames) { (state : SSDKResponseState, platformType : SSDKPlatformType, userdata : [AnyHashable : Any]?, contentEnity : SSDKContentEntity?, error : Error?, end) in
-            
-            switch state{
-                
-            case SSDKResponseState.success: print("分享成功")
-            case SSDKResponseState.fail:    print("分享失败,错误描述:\(String(describing: error))")
-            case SSDKResponseState.cancel:  print("分享取消")
-                
-            default:
-                break
-            }
-        }
+        let activityController = UIActivityViewController(activityItems: ["https://apps.apple.com/cn/app/id1272033544" + " (分享来自@房贷计算器) " ], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityController, animated: true, completion: nil)
     }
     
     @objc func zanImageViewTap(){
-        if #available(iOS 10.3, *) {
-            #if DEBUG
-            #else
-                SKStoreReviewController.requestReview()
-            #endif
-        }else {
-            UIApplication.shared.open(URL(string:"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1272033544&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8")!, options: [:], completionHandler: nil)
-        }
+        let  urlString = "itms-apps://itunes.apple.com/app/id1272033544?action=write-review"
+        UIApplication.shared.open(URL.init(string: urlString)!, options: [:], completionHandler: nil)
     }
     @objc func tuImageView(){
         UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)

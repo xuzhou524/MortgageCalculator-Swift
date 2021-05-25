@@ -60,57 +60,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = self.homeTabBarController
         self.window?.makeKeyAndVisible()
-    
-        self.share()
 
         return true
     }
-    
-    func share (){
-        ShareSDK.registerActivePlatforms(
-            [
-                SSDKPlatformType.typeSinaWeibo.rawValue,
-                SSDKPlatformType.typeWechat.rawValue,
-                SSDKPlatformType.typeQQ.rawValue
-            ],
-            onImport: {(platform : SSDKPlatformType) -> Void in
-                switch platform
-                {
-                case SSDKPlatformType.typeSinaWeibo:
-                    ShareSDKConnector.connectWeibo(WeiboSDK.classForCoder())
-                case SSDKPlatformType.typeWechat:
-                    ShareSDKConnector.connectWeChat(WXApi.classForCoder())
-                case SSDKPlatformType.typeQQ:
-                    ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
-                default:
-                    break
-                }
-        },
-            onConfiguration: {(platform : SSDKPlatformType , appInfo : NSMutableDictionary?) -> Void in
-                switch platform
-                {
-                case SSDKPlatformType.typeSinaWeibo:
-                    //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
-                    appInfo?.ssdkSetupSinaWeibo(byAppKey: "3112753426",
-                                                appSecret: "8d827d8c5849b1d763f2d077d20e109e",
-                                                redirectUri: "http://www.sharesdk.cn",
-                                                authType: SSDKAuthTypeBoth)
-                    
-                case SSDKPlatformType.typeWechat:
-                    //设置微信应用信息
-                    appInfo?.ssdkSetupWeChat(byAppId: "wx2953898b22ac41ac",
-                                             appSecret: "13cbbcc3af24d269bb36683a487d6a83")
-                case SSDKPlatformType.typeQQ:
-                    //设置QQ应用信息
-                    appInfo?.ssdkSetupQQ(byAppId: "1106322229",
-                                         appKey: "8VdCCqTx3ZaVovun",
-                                         authType: SSDKAuthTypeBoth)
-                default:
-                    break
-                }
-        })
-    }
-    
+
     func pushRegisterNotifcation() {
         let center = UNUserNotificationCenter.current()
         center.delegate = self as? UNUserNotificationCenterDelegate
@@ -139,27 +92,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         UIApplication.shared.applicationIconBadgeNumber = 0
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-         
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        //UIApplication.shared.applicationIconBadgeNumber = 0
-        //let aler = UIAlertView.init(title: "本地通知", message: "消息内容", delegate:self, cancelButtonTitle: "取消")
-        //aler.show()
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
 
 }
 
