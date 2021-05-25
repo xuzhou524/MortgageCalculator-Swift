@@ -41,6 +41,7 @@
     self = [super init];
     if (self) {
         #ifdef DEBUG
+        [self views];
         #else
         NSString * i = [[NSUserDefaults standardUserDefaults] objectForKey:@"com.xuzhou.advertising"];
         if ([i intValue] == 0) {
@@ -74,7 +75,6 @@
 
 -(void)CheakAd{//这一部分的逻辑大家根据自身需求定制
     //谷歌插屏广告
-    
     GADRequest *request = [GADRequest request];
       [GADInterstitialAd loadWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"
                                       request:request
@@ -119,6 +119,7 @@
 - (void)hide{
     ///来个渐显动画
     [_adViewController dismissViewControllerAnimated:YES completion:nil];
+    _interstitial = nil;
     [UIView animateWithDuration:0.3 animations:^{
         self.window.alpha = 0;
     } completion:^(BOOL finished) {
