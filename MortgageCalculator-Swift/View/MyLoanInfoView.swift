@@ -133,5 +133,74 @@ class MyLoanInfoView: UIView {
         }
 
     }
-
+    func bind(model:LoanCacheManage?){
+        if model != nil{
+            //计算剩余天
+            var dayStr = String()
+            var monthStr = "01"
+            let calendar: Calendar = Calendar(identifier: .gregorian)
+            var comps: DateComponents = DateComponents()
+            comps = calendar.dateComponents([.year,.month,.day, .weekday, .hour, .minute,.second], from: Date())
+    
+            if (comps.month == 12) {
+                monthStr = "01"
+                dayStr = String(comps.year! + 1) + "01" + (model?.repaymentDateStr)!
+            }else if (comps.month! < 9) {
+                monthStr = String(comps.month! + 1)
+                dayStr = String(comps.year!) + "0" + String(comps.month! + 1) + (model?.repaymentDateStr)!
+            }else{
+                monthStr = String(comps.month! + 1)
+                dayStr = String(comps.year!) + String(comps.month! + 1) + (model?.repaymentDateStr)!
+            }
+            let dfmatter = DateFormatter()
+            dfmatter.dateFormat="yyyyMMdd"
+            //首次还款时间戳
+            let dayStrs = dfmatter.date(from:dayStr)
+            let gregorians = Calendar.init(identifier: .gregorian)
+            let dayNumber = gregorians.dateComponents([.month , .day , .hour], from:Date(), to:dayStrs!)
+            if dayNumber.day == 0 {
+                self.dayLabel.text = "明天"
+                self.dayTLabel.text = ""
+            }else{
+                self.dayLabel.text = String(dayNumber.day!)
+                self.dayTLabel.text = "天后"
+            }
+            
+            //下次还款日期
+            self.timeLabel.text = "\(comps.year ?? 0000)年\(monthStr)月\(model?.repaymentDateStr ?? "00")日"
+            
+            //金额
+            let loanType = NSInteger(model?.loanTypeStr ?? "1")
+            if loanType == 1 || loanType == 2 {
+                let reimbursementType = NSInteger(model?.reimbursementTypeStr ?? "0")
+                let loanAmountStr = model?.businessPrincipalStr ?? "0"
+                let loanRateStr = model?.businessRateStr ?? "0"
+                let loanNumberStr = model?.numberYearStr ?? "0"
+                if reimbursementType == 0 {
+                    self.amountLabel.text = String.init(format: "%.2f", LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12))
+                }else{
+                    let numberMonth = model?.alsoNumberMonthStr ?? "0"
+                    self.amountLabel.text = String.init(format: "%.2f", LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(loanAmountStr)!) * 10000.0, monthRate: CGFloat(Double(loanRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12, numberMonth: 1.0 + CGFloat(Double(numberMonth)!)))
+                }
+            }else if loanType == 3 {
+                
+                let reimbursementType = NSInteger(model?.reimbursementTypeStr ?? "0")
+                
+                let accumulationAmontStr = model?.accumulationPrincipalStr ?? "0"
+                let accumulationRateStr = model?.accumulationRateStr ?? "0"
+                let loanNumberStr = model?.numberYearStr ?? "0"
+                let businessAmontStr = model?.businessPrincipalStr ?? "0"
+                let businessRateStr = model?.businessRateStr ?? "0"
+                
+                if reimbursementType == 0 {
+                    let monthAlso = LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12) + LoanModel.averageCapitalPlusInterestMonthAmount(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12)
+                    self.amountLabel.text = String.init(format: "%.2f", monthAlso)
+                }else{
+                    let numberMonth = model?.alsoNumberMonthStr ?? "0"
+                    let monthAlso = LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(accumulationAmontStr)!) * 10000.0, monthRate: CGFloat(Double(accumulationRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth: 1.0 + CGFloat(Double(numberMonth)!)) + LoanModel.equalPrincipalMonthAmount(principal: CGFloat(Double(businessAmontStr)!) * 10000.0, monthRate: CGFloat(Double(businessRateStr)!), totalMonths: CGFloat(Double(loanNumberStr)!) * 12 , numberMonth: 1.0 + CGFloat(Double(numberMonth)!))
+                    self.amountLabel.text = String.init(format: "%.2f", monthAlso)
+                }
+            }
+        }
+    }
 }

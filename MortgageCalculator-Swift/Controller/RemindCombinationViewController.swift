@@ -70,7 +70,7 @@ class RemindCombinationViewController: UITableViewController {
             return cell
         }else if indexPath.row == 8 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
-            cell.calculateButton?.addTarget(self, action: #selector(CombinationLoabsTableViewController.calculateClick), for: .touchUpInside)
+            cell.calculateButton?.addTarget(self, action: #selector(saveClick), for: .touchUpInside)
             return cell
         }
 
@@ -155,6 +155,7 @@ class RemindCombinationViewController: UITableViewController {
         
         loanModel.loanTypeStr = "3"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
+        
         UserDefaults.standard.saveCustomObject(customObject: loanModel, key: "kTMCacheLoanManage")
         self.rootNavigationController?.popViewController(animated: true)
     }

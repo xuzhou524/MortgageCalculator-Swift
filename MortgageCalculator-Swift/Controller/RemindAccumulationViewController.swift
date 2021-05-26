@@ -124,7 +124,8 @@ class RemindAccumulationViewController: UITableViewController {
         
         loanModel.loanTypeStr = "2"
         loanModel.reimbursementTypeStr = String(format:"%d",(self.typeSegmented?.selectedSegmentIndex)!)
-UserDefaults.standard.saveCustomObject(customObject: loanModel, key: "kTMCacheLoanManage")
+        
+        UserDefaults.standard.saveCustomObject(customObject: loanModel, key: "kTMCacheLoanManage")
         self.rootNavigationController?.popViewController(animated: true)
     }
     

@@ -18,6 +18,8 @@ class RootViewController: UIViewController {
     var combinationLoansVC : CombinationLoabsTableViewController?
     var bannerView: GADBannerView!
     
+    var loanCacheModel : LoanCacheManage?
+    
     let titleLabel:UILabel = {
         let label = UILabel()
         label.text = "房贷计算器"
@@ -36,6 +38,27 @@ class RootViewController: UIViewController {
         let view = MyLoanInfoView()
         return view
     }()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if UserDefaults.standard.getCustomObject(forKey: "kTMCacheLoanManage") as? LoanCacheManage != nil {
+            self.loanCacheModel = UserDefaults.standard.getCustomObject(forKey: "kTMCacheLoanManage") as? LoanCacheManage
+
+            let dfmatter = DateFormatter()
+            dfmatter.dateFormat="yyyyMMdd"
+            //首次还款时间戳
+            let dayStr = dfmatter.date(from:(self.loanCacheModel?.startPaymentStr)!)
+            let gregorians = Calendar.init(identifier: .gregorian)
+            let result = gregorians.compare(Date(), to: dayStr!, toGranularity: .month)
+            if result.rawValue == 1 {  //开始还款
+                let monthNumbers = gregorians.dateComponents([.year, .month, .hour], from: dayStr!, to: Date())
+                self.loanCacheModel?.alsoNumberMonthStr = String(monthNumbers.month! + 12 * monthNumbers.year! + 1 )
+            }else{
+                self.loanCacheModel?.alsoNumberMonthStr = "0"
+            }
+            myLoanInfoView.bind(model: self.loanCacheModel)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,12 +82,17 @@ class RootViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
         self.view.backgroundColor = UIColor.white;
         self.navigationController?.navigationBar.isTranslucent = false;
+        rightBtn.addTarget(self,action:#selector(right),for:.touchUpInside)
         
         self.view.addSubview(myLoanInfoView)
         self.myLoanInfoView.snp.makeConstraints({ (make) in
             make.top.left.right.equalTo(self.view)
             make.height.equalTo(150)
         })
+        myLoanInfoView.bind(model: self.loanCacheModel)
+        let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(addMyLoanInfoViewTap))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        myLoanInfoView.addGestureRecognizer(tapGestureRecognizer)
 
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
         self.rootSegmentedVC?.tintColor = XZSwiftColor.xzGlay50
@@ -81,14 +109,6 @@ class RootViewController: UIViewController {
         self.rootSegmentedVC?.addTarget(self, action: #selector(RootViewController.segmentDidchange), for: .valueChanged)
         
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
-        
-//        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:44, height:28))
-//        rightButton.setTitle("基准", for: .normal)
-//        rightButton.titleLabel?.font = XZClient.XZFont(size: 16)
-//        rightButton.setTitleColor(XZSwiftColor.xzGlay50, for: .normal)
-//        rightButton.addTarget(self,action:#selector(RootViewController.rightTapPed),for:.touchUpInside)
-//        let rightBarButton = UIBarButtonItem(customView: rightButton)
-//        self.navigationItem.rightBarButtonItem = rightBarButton
     
     }
     
@@ -151,4 +171,20 @@ class RootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension RootViewController {
+    
+    @objc func right() {
+        let editorVC = RemindEditorViewController()
+        editorVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(editorVC, animated: true)
+    }
+    
+    @objc func addMyLoanInfoViewTap() {
+        let editorVC = RemindTableViewController()
+        editorVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(editorVC, animated: true)
+    }
+    
 }

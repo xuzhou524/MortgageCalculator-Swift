@@ -61,13 +61,6 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         self.navigationItem.title = "提醒"
         self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor;
         
-        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:28, height:28))
-        rightButton.setImage(UIImage(named: "selectbianji"), for: .normal)
-        rightButton.setImage(UIImage(named: "bianji"), for: .highlighted)
-        rightButton.addTarget(self,action:#selector(RemindTableViewController.rightTapPed),for:.touchUpInside)
-        let rightBarButton = UIBarButtonItem(customView: rightButton)
-        self.navigationItem.rightBarButtonItem = rightBarButton
-        
         self.remindDayTitleView = RemindDayTitleView()
         self.view.addSubview(self.remindDayTitleView!)
         self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
@@ -128,9 +121,19 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
                           numberMonth: NSInteger(i2)!)
                 }
             }else if self.loanCacheModel?.loanTypeStr == "2"{ //公积金贷款
-                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanRateStr: (self.loanCacheModel?.accumulationRateStr)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!, numberMonth: NSInteger((self.loanCacheModel?.alsoNumberMonthStr)!)!)
+                cell.bind(loanAmountStr: (self.loanCacheModel?.accumulationPrincipalStr)!,
+                          loanNumberStr: (self.loanCacheModel?.numberYearStr!)!,
+                          loanRateStr: (self.loanCacheModel?.accumulationRateStr)!,
+                          loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!,
+                          numberMonth: NSInteger((self.loanCacheModel?.alsoNumberMonthStr)!)!)
             }else if self.loanCacheModel?.loanTypeStr == "3" { //组合贷款
-                cell.binds(accumulationAmontStr: (self.loanCacheModel?.accumulationPrincipalStr)!, accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!, businessAmontStr: (self.loanCacheModel?.businessPrincipalStr!)!, businessRateStr: (self.loanCacheModel?.businessRateStr!)!, loanNumberStr: (self.loanCacheModel?.numberYearStr!)!, loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!, numberMonth: NSInteger((self.loanCacheModel?.alsoNumberMonthStr)!)!)
+                cell.binds(accumulationAmontStr: (self.loanCacheModel?.accumulationPrincipalStr)!,
+                           accumulationRateStr: (self.loanCacheModel?.accumulationRateStr!)!,
+                           businessAmontStr: (self.loanCacheModel?.businessPrincipalStr!)!,
+                           businessRateStr: (self.loanCacheModel?.businessRateStr!)!,
+                           loanNumberStr: (self.loanCacheModel?.numberYearStr!)!,
+                           loanTypeInt: NSInteger((self.loanCacheModel?.reimbursementTypeStr)!)!,
+                           numberMonth: NSInteger((self.loanCacheModel?.alsoNumberMonthStr)!)!)
             }
             return cell
         case 1:
@@ -189,12 +192,6 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
             self.remindDayTitleView?.dayLabel?.text = String(dayNumber.day!)
             self.remindDayTitleView?.dayTitleLabel?.text = "天"
         }
-    }
-
-    @objc func rightTapPed(){
-        let editorVC = RemindEditorViewController()
-        editorVC.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(editorVC, animated: true)
     }
     
     func pushMessage() {
