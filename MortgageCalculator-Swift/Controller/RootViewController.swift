@@ -198,9 +198,9 @@ extension RootViewController:YBPopupMenuDelegate {
     
     func ybPopupMenuDidSelected(at index: Int, ybPopupMenu: YBPopupMenu!) {
         if index == 0 {
-            let editorVC = RemindEditorViewController()
-            editorVC.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(editorVC, animated: true)
+            self.navigationController?.pushViewController(RemindEditorViewController(), animated: true)
+        }else if index == 1 {
+            self.navigationController?.pushViewController(MoreViewController(), animated: true)
         }
     }
     
