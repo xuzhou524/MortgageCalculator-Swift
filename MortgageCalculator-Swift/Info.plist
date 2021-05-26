@@ -59,16 +59,6 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9353975206269682~9101550542</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>weixin</string>
-		<string>mqqopensdkapiV2</string>
-		<string>weibosdk</string>
-		<string>sinaweibohdsso</string>
-		<string>mqq</string>
-		<string>wechat</string>
-		<string>mqqapi</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
