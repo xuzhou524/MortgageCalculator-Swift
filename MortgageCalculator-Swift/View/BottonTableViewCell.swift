@@ -28,8 +28,9 @@ class BottonTableViewCell: UITableViewCell {
         self.calculateButton?.setTitle("计算", for: .normal)
         self.calculateButton?.setTitleColor(UIColor.white, for: .normal)
         self.calculateButton?.titleLabel?.font = XZClient.XZFont(size: 17)
-        self.calculateButton?.backgroundColor = XZSwiftColor.xzGlay50
-        self.calculateButton?.layer.cornerRadius = 5;
+        self.calculateButton?.setBackgroundImage(UIImage.init(named: "ic_MyLoanBg"), for: .normal)
+        self.calculateButton?.layer.cornerRadius = 10;
+        self.calculateButton?.layer.masksToBounds = true
         self.contentView.addSubview(self.calculateButton!)
         self.calculateButton?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.contentView)

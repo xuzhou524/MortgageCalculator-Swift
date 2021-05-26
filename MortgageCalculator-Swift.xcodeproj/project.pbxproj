@@ -13,6 +13,7 @@
 		5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338391F591E3B00848A6E /* bianji@3x.png */; };
 		5303383C1F591E3B00848A6E /* bianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5303383A1F591E3B00848A6E /* bianji@2x.png */; };
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
+		530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */; };
 		531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */; };
 		531152A41F6FCC4500E2B70E /* HousingMarketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */; };
 		531152B01F70B97F00E2B70E /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AD1F70B97E00E2B70E /* Id.swift */; };
@@ -128,6 +129,7 @@
 		530338391F591E3B00848A6E /* bianji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@3x.png"; sourceTree = "<group>"; };
 		5303383A1F591E3B00848A6E /* bianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@2x.png"; sourceTree = "<group>"; };
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
+		530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanInfoView.swift; sourceTree = "<group>"; };
 		531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketManager.swift; sourceTree = "<group>"; };
 		531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketModel.swift; sourceTree = "<group>"; };
 		531152AD1F70B97E00E2B70E /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 		53A4EF851F2F350C00EF58EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */,
 				53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */,
 				53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */,
 				5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */,
@@ -773,6 +776,7 @@
 				5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */,
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
+				530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */,
 				531C8CAA1F73995D00BC7B5E /* UIWebViewController.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
 				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,

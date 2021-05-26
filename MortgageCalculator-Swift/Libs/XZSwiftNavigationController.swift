@@ -37,6 +37,8 @@ class XZSwiftNavigationController: UINavigationController {
         self.navigationBar.setBackgroundImage(createImageWithColor(XZSwiftColor.navignationColor), for: .default)
         self.navigationBar.barStyle = .default;
         self.navigationBar.tintColor = XZSwiftColor.xzGlay50
+        self.navigationBar.shadowImage = UIImage.init()
+
     }
 
     override func didReceiveMemoryWarning() {

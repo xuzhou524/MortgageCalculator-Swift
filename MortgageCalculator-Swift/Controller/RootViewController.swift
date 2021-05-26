@@ -17,6 +17,19 @@ class RootViewController: UIViewController {
     var accumulationLoansVC : AccumulationFundTableViewController?
     var combinationLoansVC : CombinationLoabsTableViewController?
     var bannerView: GADBannerView!
+    
+    let titleLabel:UILabel = {
+        let label = UILabel()
+        label.text = "房贷计算器"
+        label.font = XZClient.XZFont3(size: 20)
+        label.textColor = XZSwiftColor.xzGlay50
+        return label
+    }()
+    
+    let myLoanInfoView:MyLoanInfoView = {
+        let view = MyLoanInfoView()
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,20 +48,26 @@ class RootViewController: UIViewController {
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         #endif
-        
-        self.navigationItem.title = "房贷计算器"
+
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
         self.view.backgroundColor = UIColor.white;
         self.navigationController?.navigationBar.isTranslucent = false;
+        
+        self.view.addSubview(myLoanInfoView)
+        self.myLoanInfoView.snp.makeConstraints({ (make) in
+            make.top.left.right.equalTo(self.view)
+            make.height.equalTo(150)
+        })
 
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
         self.rootSegmentedVC?.tintColor = XZSwiftColor.xzGlay50
         self.rootSegmentedVC?.setTitleTextAttributes([NSAttributedString.Key.font:XZClient.XZFont2(size: 15)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints({ (make) in
-            make.top.equalTo(self.view).offset(15)
+            make.top.equalTo(self.view).offset(155)
             make.left.equalTo(self.view).offset(15)
             make.right.equalTo(self.view).offset(-15)
-            make.height.equalTo(35)
+            make.height.equalTo(40)
         })
         
         self.rootSegmentedVC?.selectedSegmentIndex = 0;

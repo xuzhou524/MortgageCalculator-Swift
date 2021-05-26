@@ -18,12 +18,16 @@ class XZClient: NSObject{
         return UIScreen.main.bounds.height
     }
     
+    class func XZFont(size:CGFloat) -> UIFont{
+        return  UIFont.init(name: "NotoSansHans-DemiLight", size: size)!
+    }
+    
     class func XZFont2(size:CGFloat) -> UIFont{
         return  UIFont.init(name: "NotoSansHans-Light", size: size)!
     }
     
-    class func XZFont(size:CGFloat) -> UIFont{
-        return  UIFont.init(name: "NotoSansHans-DemiLight", size: size)!
+    class func XZFont3(size:CGFloat) -> UIFont{
+        return  UIFont.init(name: "Helvetica-Bold", size: size)!
     }
     
     class func XZiPhoneX() -> Bool {

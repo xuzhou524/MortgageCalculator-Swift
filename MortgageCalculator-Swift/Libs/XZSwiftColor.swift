@@ -75,4 +75,5 @@ class XZSwiftColor: UIColor{
             return colorWith255RGB(119, g: 128, b: 135)
         }
     }
+
 }
