@@ -22,8 +22,14 @@ class RootViewController: UIViewController {
         let label = UILabel()
         label.text = "房贷计算器"
         label.font = XZClient.XZFont3(size: 20)
-        label.textColor = XZSwiftColor.xzGlay50
+        label.textColor = UIColor.init(named: "ic_theme")
         return label
+    }()
+    
+    let rightBtn:UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage.init(named: "ic_More"), for: .normal)
+        return btn
     }()
     
     let myLoanInfoView:MyLoanInfoView = {
@@ -50,6 +56,7 @@ class RootViewController: UIViewController {
         #endif
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
         self.view.backgroundColor = UIColor.white;
         self.navigationController?.navigationBar.isTranslucent = false;
         
@@ -75,13 +82,13 @@ class RootViewController: UIViewController {
         
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
         
-        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:44, height:28))
-        rightButton.setTitle("基准", for: .normal)
-        rightButton.titleLabel?.font = XZClient.XZFont(size: 16)
-        rightButton.setTitleColor(XZSwiftColor.xzGlay50, for: .normal)
-        rightButton.addTarget(self,action:#selector(RootViewController.rightTapPed),for:.touchUpInside)
-        let rightBarButton = UIBarButtonItem(customView: rightButton)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+//        let rightButton = UIButton.init(frame:CGRect(x:0, y:0, width:44, height:28))
+//        rightButton.setTitle("基准", for: .normal)
+//        rightButton.titleLabel?.font = XZClient.XZFont(size: 16)
+//        rightButton.setTitleColor(XZSwiftColor.xzGlay50, for: .normal)
+//        rightButton.addTarget(self,action:#selector(RootViewController.rightTapPed),for:.touchUpInside)
+//        let rightBarButton = UIBarButtonItem(customView: rightButton)
+//        self.navigationItem.rightBarButtonItem = rightBarButton
     
     }
     

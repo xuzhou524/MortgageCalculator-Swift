@@ -36,19 +36,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         
         self.rootNavigationController = XZSwiftNavigationController(rootViewController: RootViewController())
-        self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
+//        self.rootNavigationController?.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
 
 //        self.HousingMarketController = XZSwiftNavigationController(rootViewController: (HousingMarketListViewController.init(node: ASTableNode(style: .plain))))
 //        self.HousingMarketController?.tabBarItem = UITabBarItem(title: "生活", image: UIImage(named: "tabbar_housing"), selectedImage: UIImage(named: "tabbar_housing_selected"))
         
-        self.remindNavigationController = XZSwiftNavigationController(rootViewController: RemindTableViewController())
-        self.remindNavigationController?.tabBarItem = UITabBarItem(title: "提醒", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
+//        self.remindNavigationController = XZSwiftNavigationController(rootViewController: RemindTableViewController())
+//        self.remindNavigationController?.tabBarItem = UITabBarItem(title: "提醒", image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
         
         self.moreNavigationController = XZSwiftNavigationController(rootViewController: MoreViewController())
         self.moreNavigationController?.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "icon_tabbar_onsite"), selectedImage: UIImage(named: "icon_tabbar_onsite_selected"))
 
         self.homeTabBarController = UITabBarController()
-        self.homeTabBarController?.viewControllers = [self.rootNavigationController!,self.remindNavigationController!, self.moreNavigationController!]
+        self.homeTabBarController?.viewControllers = [self.rootNavigationController!, self.moreNavigationController!]
         
         // 设置字体大小
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11.0)], for: UIControl.State.normal)
@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.init(named: "ic_theme")
         UITabBar.appearance().isTranslucent = false
         
-        self.window?.rootViewController = self.homeTabBarController
+        self.window?.rootViewController = XZSwiftNavigationController(rootViewController: RootViewController())
         self.window?.makeKeyAndVisible()
 
         return true
