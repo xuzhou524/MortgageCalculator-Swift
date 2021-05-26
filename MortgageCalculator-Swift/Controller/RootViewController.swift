@@ -112,10 +112,6 @@ class RootViewController: UIViewController {
     
     }
     
-    @objc func rightTapPed(){
-  self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
-    }
-    
     @objc func segmentDidchange(segmented:UISegmentedControl){
         if segmented.selectedSegmentIndex == 0 {
             if ((self.commerciaiLoansVC) == nil) {
@@ -176,15 +172,36 @@ class RootViewController: UIViewController {
 extension RootViewController {
     
     @objc func right() {
-        let editorVC = RemindEditorViewController()
-        editorVC.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(editorVC, animated: true)
+        let p = CGPoint(x: XZClient.ScreenWidth() - 32, y: 82)
+        YBPopupMenu.show(at: p, titles: ["添加","更多"], icons: ["ic_AddInfo","ic_MoreInfo"], menuWidth: 130) { popupMenu in
+            popupMenu?.priorityDirection = .top
+            popupMenu?.dismissOnSelected = true;
+            popupMenu?.delegate = self;
+            popupMenu?.type = .dark;
+            
+            popupMenu?.fontSize = 17
+            popupMenu?.textColor = UIColor.white
+            popupMenu?.itemHeight = 66
+        }
+
     }
     
     @objc func addMyLoanInfoViewTap() {
         let editorVC = RemindTableViewController()
         editorVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(editorVC, animated: true)
+    }
+    
+}
+
+extension RootViewController:YBPopupMenuDelegate {
+    
+    func ybPopupMenuDidSelected(at index: Int, ybPopupMenu: YBPopupMenu!) {
+        if index == 0 {
+            let editorVC = RemindEditorViewController()
+            editorVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(editorVC, animated: true)
+        }
     }
     
 }
