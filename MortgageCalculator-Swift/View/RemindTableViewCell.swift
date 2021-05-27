@@ -27,7 +27,7 @@ class RemindDayTitleView: UIView {
     
     var leftLinSepView : UIView?
     var rightLinSepView : UIView?
-    var backgroundView : UIView?
+    var backgroundView : UIImageView?
     
     var titleLabel : UILabel?
     var dayLabel : UILabel?
@@ -45,53 +45,24 @@ class RemindDayTitleView: UIView {
     
     func sebView(){
         self.backgroundColor = XZSwiftColor.convenientBackgroundColor
-
-        self.leftLinSepView = UIView()
-        self.leftLinSepView?.backgroundColor = XZSwiftColor.xzGlay129
-        self.addSubview(self.leftLinSepView!)
-        self.leftLinSepView?.snp.makeConstraints({ (make) -> Void in
-            make.centerX.equalTo(self).offset(-100)
-            make.width.equalTo(2)
-            make.top.equalTo(self)
-            make.height.equalTo(70)
-        });
-        self.leftLinSepView?.layer.shadowOpacity = 1
-        self.leftLinSepView?.layer.shadowColor = XZSwiftColor.xzGlay129.cgColor
-        self.leftLinSepView?.layer.shadowOffset = CGSize(width: 0.1, height: 0.1)
         
-        self.rightLinSepView = UIView()
-        self.rightLinSepView?.backgroundColor = XZSwiftColor.xzGlay129
-        self.addSubview(self.rightLinSepView!)
-        self.rightLinSepView?.snp.makeConstraints({ (make) -> Void in
-            make.centerX.equalTo(self).offset(100)
-            make.width.equalTo(2)
-            make.top.equalTo(self)
-            make.height.equalTo(80)
-        });
-        self.rightLinSepView?.layer.shadowOpacity = 1
-        self.rightLinSepView?.layer.shadowColor = XZSwiftColor.xzGlay129.cgColor
-        self.rightLinSepView?.layer.shadowOffset = CGSize(width: 0.1, height: 0.1)
-        
-        self.backgroundView = UIView()
-        self.backgroundView?.backgroundColor = XZSwiftColor.xzGlay129
+        self.backgroundView = UIImageView()
+        self.backgroundView?.image = UIImage.init(named: "ic_MyLoanBg")
         self.addSubview(self.backgroundView!)
         self.backgroundView?.snp.makeConstraints({ (make) -> Void in
-            make.top.equalTo((self.leftLinSepView?.snp.bottom)!)
+            make.top.equalToSuperview().offset(15)
             make.height.equalTo(170)
-            make.left.equalTo(self).offset(30)
-            make.right.equalTo(self).offset(-30)
+            make.left.equalTo(self).offset(15)
+            make.right.equalTo(self).offset(-15)
         });
-        //self.backgroundView?.layer.masksToBounds = true
-        self.backgroundView?.layer.cornerRadius = 3
-        self.backgroundView?.layer.shadowOpacity = 0.8
-        self.backgroundView?.layer.shadowColor = XZSwiftColor.xzGlay129.cgColor
-        self.backgroundView?.layer.shadowOffset = CGSize(width: 0, height: 0)
-        self.backgroundView?.layer.shadowRadius = 5
+
+        self.backgroundView?.layer.cornerRadius = 10
+        self.backgroundView?.layer.masksToBounds = true
         
         self.titleLabel = UILabel()
         self.titleLabel?.text = "距离还款日还有"
         self.titleLabel?.textColor = XZSwiftColor.white
-        self.titleLabel?.font = XZClient.XZFont(size: 18)
+        self.titleLabel?.font = XZClient.XZFont(size: 16)
         self.backgroundView?.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.backgroundView!)
@@ -101,7 +72,7 @@ class RemindDayTitleView: UIView {
         self.dayLabel = UILabel()
         self.dayLabel?.text = "暂无"
         self.dayLabel?.textColor = XZSwiftColor.white
-        self.dayLabel?.font = XZClient.XZFont(size: 55)
+        self.dayLabel?.font = XZClient.XZFont(size: 50)
         self.backgroundView?.addSubview(self.dayLabel!)
         self.dayLabel?.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.backgroundView!).offset(-5)
@@ -119,13 +90,13 @@ class RemindDayTitleView: UIView {
         }
         
         let summeryLabel = UILabel()
-        summeryLabel.text = "*注: 距离还款日还有1天时有提醒"
+        summeryLabel.text = "*注: 还款日前1天会提醒，防止逾期影响您的征信。"
         summeryLabel.textColor = XZSwiftColor.white
-        summeryLabel.font = XZClient.XZFont(size: 14)
+        summeryLabel.font = XZClient.XZFont(size: 12)
         self.backgroundView?.addSubview(summeryLabel)
         summeryLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.backgroundView!).offset(15)
-            make.bottom.equalTo(self.backgroundView!).offset(-15)
+            make.bottom.equalTo(self.backgroundView!).offset(-20)
         }
     }
 }

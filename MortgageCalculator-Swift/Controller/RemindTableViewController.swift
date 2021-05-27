@@ -65,7 +65,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         self.view.addSubview(self.remindDayTitleView!)
         self.remindDayTitleView?.snp.makeConstraints({ (make) -> Void in
             make.top.left.top.right.equalTo(self.view)
-            make.height.equalTo(260)
+            make.height.equalTo(190)
         });
         
         self.view.addSubview(self.tableView)
