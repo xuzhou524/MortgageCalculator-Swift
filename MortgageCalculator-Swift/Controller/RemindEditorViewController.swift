@@ -28,7 +28,7 @@ class RemindEditorViewController: UIViewController {
             make.top.equalTo(self.view).offset(15)
             make.left.equalTo(self.view).offset(15)
             make.right.equalTo(self.view).offset(-15)
-            make.height.equalTo(35)
+            make.height.equalTo(40)
         })
         
         self.rootSegmentedVC?.selectedSegmentIndex = 0;
