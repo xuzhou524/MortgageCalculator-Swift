@@ -18,9 +18,23 @@ class MyLoanInfoView: UIView {
         return imageView
     }()
     
+    let promptTLabel:UILabel = {
+        let label = UILabel()
+        label.font = XZClient.XZFont2(size: 15)
+        label.textColor = XZSwiftColor.convenientBackgroundColor
+        label.text = "您还没添加贷款信息"
+        return label
+    }()
+    let circlerImageView:UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "ic_helpCircler")?.withRenderingMode(.alwaysTemplate)
+        imageView.tintColor = XZSwiftColor.convenientBackgroundColor
+        return imageView
+    }()
+    
     let amountTLabel:UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 13)
+        label.font = XZClient.XZFont2(size: 12)
         label.textColor = XZSwiftColor.convenientBackgroundColor
         label.text = "下次月供"
         return label
@@ -36,13 +50,13 @@ class MyLoanInfoView: UIView {
         let label = UILabel()
         label.font = XZClient.XZFont2(size: 26)
         label.textColor = XZSwiftColor.convenientBackgroundColor
-        label.text = "3528.43"
+        label.text = "0"
         return label
     }()
     
     let dayTLabel:UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 13)
+        label.font = XZClient.XZFont2(size: 12)
         label.textColor = XZSwiftColor.convenientBackgroundColor
         label.text = "天后"
         return label
@@ -51,23 +65,23 @@ class MyLoanInfoView: UIView {
         let label = UILabel()
         label.font = XZClient.XZFont2(size: 38)
         label.textColor = XZSwiftColor.convenientBackgroundColor
-        label.text = "23"
+        label.text = "1"
         return label
     }()
     
     let timeLabel:UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 13)
+        label.font = XZClient.XZFont2(size: 12)
         label.textColor = XZSwiftColor.convenientBackgroundColor
-        label.text = "2021年06月15日"
+        label.text = "2019年10月29日"
         return label
     }()
     
     let summeryLabel:UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 13)
+        label.font = XZClient.XZFont2(size: 12)
         label.textColor = XZSwiftColor.convenientBackgroundColor
-        label.text = "*注: 还款日前1天有提醒"
+        label.text = "*注: 还款日前1天会提醒，防止逾期影响您的征信。"
         return label
     }()
     
@@ -92,9 +106,11 @@ class MyLoanInfoView: UIView {
         bgImageView.addSubview(dayLabel)
         bgImageView.addSubview(timeLabel)
         bgImageView.addSubview(summeryLabel)
+        bgImageView.addSubview(circlerImageView)
+        bgImageView.addSubview(promptTLabel)
 
         bgImageView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(10)
+            make.top.equalToSuperview().offset(5)
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.bottom.equalToSuperview().offset(-10)
@@ -131,10 +147,30 @@ class MyLoanInfoView: UIView {
             make.left.equalTo(amountTLabel)
             make.bottom.equalToSuperview().offset(-20)
         }
+        
+        circlerImageView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(-1)
+            make.right.equalToSuperview().offset(-15)
+            make.height.width.equalTo(40)
+        }
+        promptTLabel.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().offset(-15)
+        }
+        
 
     }
     func bind(model:LoanCacheManage?){
-        if model != nil{
+        if model != nil {
+            amountLabel.isHidden = false
+            conformTLabel.isHidden = false
+            amountTLabel.isHidden = false
+            dayTLabel.isHidden = false
+            dayLabel.isHidden = false
+            timeLabel.isHidden = false
+            circlerImageView.isHidden = true
+            promptTLabel.isHidden = true
+            
             //计算剩余天
             var dayStr = String()
             var monthStr = "01"
@@ -201,6 +237,16 @@ class MyLoanInfoView: UIView {
                     self.amountLabel.text = String.init(format: "%.2f", monthAlso)
                 }
             }
+        }else{
+            amountLabel.isHidden = true
+            conformTLabel.isHidden = true
+            amountTLabel.isHidden = true
+            dayTLabel.isHidden = true
+            dayLabel.isHidden = true
+            timeLabel.isHidden = true
+            circlerImageView.isHidden = false
+            promptTLabel.isHidden = false
+
         }
     }
 }

@@ -87,7 +87,7 @@ class RootViewController: UIViewController {
         self.view.addSubview(myLoanInfoView)
         self.myLoanInfoView.snp.makeConstraints({ (make) in
             make.top.left.right.equalTo(self.view)
-            make.height.equalTo(150)
+            make.height.equalTo(145)
         })
         myLoanInfoView.bind(model: self.loanCacheModel)
         let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(addMyLoanInfoViewTap))
@@ -99,7 +99,7 @@ class RootViewController: UIViewController {
         self.rootSegmentedVC?.setTitleTextAttributes([NSAttributedString.Key.font:XZClient.XZFont2(size: 15)], for: .normal)
         self.view.addSubview(self.rootSegmentedVC!)
         self.rootSegmentedVC?.snp.makeConstraints({ (make) in
-            make.top.equalTo(self.view).offset(155)
+            make.top.equalTo(self.view).offset(150)
             make.left.equalTo(self.view).offset(15)
             make.right.equalTo(self.view).offset(-15)
             make.height.equalTo(40)
@@ -187,9 +187,13 @@ extension RootViewController {
     }
     
     @objc func addMyLoanInfoViewTap() {
-        let editorVC = RemindTableViewController()
-        editorVC.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(editorVC, animated: true)
+        if self.loanCacheModel != nil {
+            let editorVC = RemindTableViewController()
+            editorVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(editorVC, animated: true)
+        }else{
+            self.navigationController?.pushViewController(RemindEditorViewController(), animated: true)
+        }
     }
     
 }

@@ -16,7 +16,7 @@ class RemindEditorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "提醒信息"
+        self.navigationItem.title = "添加"
         self.view.backgroundColor = UIColor.white;
         self.navigationController?.navigationBar.isTranslucent = false;
         
