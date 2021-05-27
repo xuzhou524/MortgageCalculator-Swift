@@ -56,7 +56,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let bgView = UIView()
-        bgView.backgroundColor = UIColor(named: "color_theme")
+        bgView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         return bgView
     }
     
@@ -69,9 +69,9 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
             cell.isHiddenRightImage(hidden: false)
             cell.summeryLabel.isHidden = true
             if (indexPath.row == 0){
-                cell.panel.addRoundedCorners(corners: [.topLeft,.topRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
+                cell.panel.addRoundedCorners(corners: [.topLeft,.topRight], radii: CGSize(width: 10, height: 10), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
             }else if (indexPath.row == 1){
-                cell.panel.addRoundedCorners(corners: [.bottomLeft,.bottomRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
+                cell.panel.addRoundedCorners(corners: [.bottomLeft,.bottomRight], radii: CGSize(width: 10, height: 10), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
             }else{
                 cell.panel.layer.mask = nil
             }
@@ -82,9 +82,9 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
             let names = ["ic_givePraise","ic_help","ic_privacy","ic_settings_input_svideo"]
             cell.nodeImageView.image = UIImage(named: names[indexPath.row])?.withRenderingMode(.alwaysTemplate)
             if indexPath.row == 0 {
-                cell.panel.addRoundedCorners(corners: [.topLeft,.topRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
+                cell.panel.addRoundedCorners(corners: [.topLeft,.topRight], radii: CGSize(width: 10, height: 10), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
             }else if (indexPath.row == 3){
-                cell.panel.addRoundedCorners(corners: [.bottomLeft,.bottomRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
+                cell.panel.addRoundedCorners(corners: [.bottomLeft,.bottomRight], radii: CGSize(width: 10, height: 10), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 64))
             }else{
                 cell.panel.layer.mask = nil
             }
@@ -106,7 +106,23 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                self.navigationController?.pushViewController(SettingViewController(), animated: true)
+            }else if indexPath.row == 1 {
+                let activityController = UIActivityViewController(activityItems: ["https://apps.apple.com/cn/app/id1272033544" + " (分享来自@房贷计算器) " ], applicationActivities: nil)
+                UIApplication.shared.windows.first?.rootViewController?.present(activityController, animated: true, completion: nil)
+            }
+        }else{
+            if indexPath.row == 2 {
+                let  urlString = "itms-apps://itunes.apple.com/app/id1272033544?action=write-review"
+                UIApplication.shared.open(URL.init(string: urlString)!, options: [:], completionHandler: nil)
+            }else if indexPath.row == 2 {
+                UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)
+            }else if indexPath.row == 3 {
 
+            }
+        }
     }
     
 }

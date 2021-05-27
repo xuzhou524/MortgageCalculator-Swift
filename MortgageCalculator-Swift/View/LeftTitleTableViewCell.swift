@@ -14,13 +14,13 @@ class LeftTitleTableViewCell: UITableViewCell {
     var nodeNameLabel: UILabel = {
         let label =  UILabel()
         label.font = XZClient.XZFont2(size: 15)
-        label.textColor = UIColor(named: "color_black")
+        label.textColor = XZSwiftColor.xzGlay50
         return label
     }()
     var summeryLabel: UILabel = {
         let label =  UILabel()
         label.font = XZClient.XZFont2(size: 15)
-        label.textColor = UIColor(named: "color_black")
+        label.textColor = XZSwiftColor.xzGlay50
         return label
     }()
     
@@ -53,7 +53,7 @@ class LeftTitleTableViewCell: UITableViewCell {
             make.right.equalTo(self.contentView).offset(-15)
             make.bottom.top.equalTo(self.contentView)
         }
-        self.nodeImageView.tintColor = UIColor(named: "color_black")
+        self.nodeImageView.tintColor = XZSwiftColor.xzGlay50
         self.nodeImageView.snp.makeConstraints{ (make) -> Void in
             make.centerY.equalTo(panel)
             make.left.equalTo(panel).offset(15)
@@ -65,7 +65,7 @@ class LeftTitleTableViewCell: UITableViewCell {
             make.centerY.equalTo(self.nodeImageView)
         }
         self.rightImageView.image = UIImage(named: "circleright")
-        self.rightImageView.tintColor = UIColor(named: "color_black")
+        self.rightImageView.tintColor = XZSwiftColor.xzGlay50
         self.rightImageView.snp.makeConstraints{ (make) -> Void in
             make.centerY.equalTo(panel)
             make.right.equalTo(panel).offset(-15)
