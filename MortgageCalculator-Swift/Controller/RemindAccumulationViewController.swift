@@ -20,6 +20,8 @@ class RemindAccumulationViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
+        self.tableView.backgroundColor = XZSwiftColor.convenientBackgroundColor
+        
         regClass(self.tableView, cell: BaseTableViewCell.self)
         regClass(self.tableView, cell: LoansTypeTableViewCell.self)
         regClass(self.tableView, cell: BottonTableViewCell.self)

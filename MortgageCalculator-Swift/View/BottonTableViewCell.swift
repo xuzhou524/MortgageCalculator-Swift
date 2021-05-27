@@ -24,6 +24,8 @@ class BottonTableViewCell: UITableViewCell {
     
     func sebView() ->Void{
         self.selectionStyle = .none
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
+        
         self.calculateButton = UIButton()
         self.calculateButton?.setTitle("计算", for: .normal)
         self.calculateButton?.setTitleColor(UIColor.white, for: .normal)

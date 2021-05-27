@@ -13,7 +13,7 @@ class XZSwiftNavigationController: UINavigationController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.navigationBar.setBackgroundImage(createImageWithColor(XZSwiftColor.navignationColor), for: .default)
+        self.navigationBar.setBackgroundImage(createImageWithColor(XZSwiftColor.convenientBackgroundColor), for: .default)
         self.navigationBar.shadowImage = UIImage()
         self.navigationBar.tintColor = XZSwiftColor.xzGlay50
         self.navigationBar.titleTextAttributes = [
@@ -27,7 +27,7 @@ class XZSwiftNavigationController: UINavigationController {
         let bar = UINavigationBar.appearance(whenContainedInInstancesOf: [XZSwiftNavigationController.self])
         bar.backIndicatorImage = UIImage(named: "ic_back")
         bar.backIndicatorTransitionMaskImage = UIImage(named: "ic_back")
-        bar.tintColor = UIColor(named: "color_title_black")
+        bar.tintColor = XZSwiftColor.xzGlay50
         let barButton = UIBarButtonItem.appearance(whenContainedInInstancesOf: [XZSwiftNavigationController.self])
         barButton.setTitleTextAttributes([NSAttributedString.Key.font: XZClient.XZFont(size: 0)], for: .normal)
         barButton.setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000, vertical: 0), for: .default)

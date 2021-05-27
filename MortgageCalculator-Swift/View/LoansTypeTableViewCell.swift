@@ -26,6 +26,8 @@ class LoansTypeTableViewCell: UITableViewCell {
     
     func sebView() ->Void{
         self.selectionStyle = .none
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
+        
         self.titleLabel = UILabel()
         self.titleLabel?.text = "还款方式";
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
@@ -47,13 +49,13 @@ class LoansTypeTableViewCell: UITableViewCell {
             make.height.equalTo(32);
         })
         
-        self.bottomSepView = UIImageView()
-        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
-        self.contentView.addSubview(self.bottomSepView!)
-        self.bottomSepView?.snp.makeConstraints({ (make) in
-            make.left.right.bottom.equalTo(self.contentView)
-            make.height.equalTo(0.5)
-        })
+//        self.bottomSepView = UIImageView()
+//        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
+//        self.contentView.addSubview(self.bottomSepView!)
+//        self.bottomSepView?.snp.makeConstraints({ (make) in
+//            make.left.right.bottom.equalTo(self.contentView)
+//            make.height.equalTo(0.5)
+//        })
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

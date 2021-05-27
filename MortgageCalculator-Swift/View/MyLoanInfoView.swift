@@ -92,6 +92,7 @@ class MyLoanInfoView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
+        self.backgroundColor = XZSwiftColor.convenientBackgroundColor
         sebViews()
     }
     

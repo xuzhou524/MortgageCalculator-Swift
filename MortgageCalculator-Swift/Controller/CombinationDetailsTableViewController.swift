@@ -24,7 +24,7 @@ class CombinationDetailsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "结算结果"
-        self.tableView.backgroundColor = XZSwiftColor.white
+        self.tableView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.tableView.separatorStyle = .none
         
         regClass(self.tableView, cell: LoanDetails_TitleTableViewCell.self)

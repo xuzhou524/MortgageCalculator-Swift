@@ -17,7 +17,7 @@ class RemindEditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "添加"
-        self.view.backgroundColor = UIColor.white;
+        self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.navigationController?.navigationBar.isTranslucent = false;
         
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])

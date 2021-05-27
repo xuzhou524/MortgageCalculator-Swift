@@ -31,6 +31,8 @@ class BaseTableViewCell: UITableViewCell {
     }
     func sebView() ->Void{
         self.selectionStyle = .none
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
+        
         self.titleLabel = UILabel()
         self.titleLabel?.text = "贷款金额（万元）";
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
@@ -75,30 +77,30 @@ class BaseTableViewCell: UITableViewCell {
         let keyboard = JZNumberKeyboard()
         keyboard.setInputView(self.textField)
         
-        self.topSepView = UIImageView()
-        self.topSepView?.backgroundColor = XZSwiftColor.xzGlay230
-        self.contentView.addSubview(self.topSepView!)
-        self.topSepView?.snp.makeConstraints({ (make) in
-            make.left.right.top.equalTo(self.contentView)
-            make.height.equalTo(0.5)
-        })
+//        self.topSepView = UIImageView()
+//        self.topSepView?.backgroundColor = XZSwiftColor.xzGlay230
+//        self.contentView.addSubview(self.topSepView!)
+//        self.topSepView?.snp.makeConstraints({ (make) in
+//            make.left.right.top.equalTo(self.contentView)
+//            make.height.equalTo(0.5)
+//        })
         
-        self.bottomSepView = UIImageView()
-        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
-        self.contentView.addSubview(self.bottomSepView!)
-        self.bottomSepView?.snp.makeConstraints({ (make) in
-            make.left.right.bottom.equalTo(self.contentView)
-            make.height.equalTo(0.5)
-        })
+//        self.bottomSepView = UIImageView()
+//        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
+//        self.contentView.addSubview(self.bottomSepView!)
+//        self.bottomSepView?.snp.makeConstraints({ (make) in
+//            make.left.right.bottom.equalTo(self.contentView)
+//            make.height.equalTo(0.5)
+//        })
         
-        self.bottomShortSepView = UIImageView()
-        self.bottomShortSepView?.backgroundColor = XZSwiftColor.xzGlay230
-        self.contentView.addSubview(self.bottomShortSepView!)
-        self.bottomShortSepView?.snp.makeConstraints({ (make) in
-            make.right.bottom.equalTo(self.contentView)
-            make.left.equalTo(self.contentView).offset(15)
-            make.height.equalTo(0.5)
-        })
+//        self.bottomShortSepView = UIImageView()
+//        self.bottomShortSepView?.backgroundColor = XZSwiftColor.xzGlay230
+//        self.contentView.addSubview(self.bottomShortSepView!)
+//        self.bottomShortSepView?.snp.makeConstraints({ (make) in
+//            make.right.bottom.equalTo(self.contentView)
+//            make.left.equalTo(self.contentView).offset(15)
+//            make.height.equalTo(0.5)
+//        })
         
     }
     

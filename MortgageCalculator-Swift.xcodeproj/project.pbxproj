@@ -20,6 +20,8 @@
 		531152B11F70B97F00E2B70E /* Idlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AE1F70B97F00E2B70E /* Idlist.swift */; };
 		531152B21F70B97F00E2B70E /* Newslist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AF1F70B97F00E2B70E /* Newslist.swift */; };
 		531152B41F70B98400E2B70E /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152B31F70B98400E2B70E /* RootClass.swift */; };
+		531B1585265F5021005D5DBD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1584265F5020005D5DBD /* UserViewController.swift */; };
+		531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */; };
 		531C8CAA1F73995D00BC7B5E /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */; };
 		531C8CAC1F74B55000BC7B5E /* ZJRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
@@ -140,6 +142,8 @@
 		531152AF1F70B97F00E2B70E /* Newslist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newslist.swift; sourceTree = "<group>"; };
 		531152B31F70B98400E2B70E /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531B1584265F5020005D5DBD /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTitleTableViewCell.swift; sourceTree = "<group>"; };
 		531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 		531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshControl.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
@@ -324,6 +328,7 @@
 				C55623FD257B8D0100AA352F /* SettingViewController.swift */,
 				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
 				53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */,
+				531B1584265F5020005D5DBD /* UserViewController.swift */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */,
+				531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */,
 				53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */,
 				53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */,
 				5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */,
@@ -768,6 +774,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5375E0571F96EFAC00964123 /* lifeHeadView.swift in Sources */,
+				531B1585265F5021005D5DBD /* UserViewController.swift in Sources */,
 				53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */,
 				5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */,
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
@@ -810,6 +817,7 @@
 				537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */,
 				53F052EE1F6BC5C10035EF5A /* HousingMarketListViewController.swift in Sources */,
 				53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */,
+				531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */,
 				53FFBB6B265E3AE7003DD85F /* YBPopupMenu.m in Sources */,
 				53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */,
 				53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */,

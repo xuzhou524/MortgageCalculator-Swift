@@ -34,3 +34,31 @@ class XZClient: NSObject{
         return UIApplication.shared.statusBarFrame.height == 44 ? true : false
     }
 }
+
+extension UIView {
+    /// 设置阴影
+    /// - Parameters:
+    ///   - color: 阴影颜色
+    ///   - offset: 阴影偏移量
+    ///   - opacity: 阴影透明度
+    ///   - radius: 阴影半径
+    func addShadow(color: UIColor, offset:CGSize, opacity:Float, radius:CGFloat) {
+//        self.layer.masksToBounds = true
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = offset
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowRadius = radius
+        
+        let shadowRect: CGRect? = CGRect.init(x: -radius, y: -radius, width: bounds.size.width + 2 * radius, height: bounds.size.height + 2 * radius)
+
+        self.layer.shadowPath = UIBezierPath.init(rect: shadowRect!).cgPath
+    
+    }
+    
+    func addRoundedCorners(corners:UIRectCorner,radii:CGSize,rect:CGRect) {
+        let rounded = UIBezierPath.init(roundedRect: rect, byRoundingCorners: corners, cornerRadii: radii)
+        let shape = CAShapeLayer()
+        shape.path = rounded.cgPath
+        self.layer.mask = shape
+    }
+}

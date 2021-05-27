@@ -13,7 +13,7 @@ class InterestTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "基准利率表"
-        self.view.backgroundColor = XZSwiftColor.white;
+        self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor
         
         let label = UILabel()
         label.text = "中国人民银行2015年10月24日基准利率表"

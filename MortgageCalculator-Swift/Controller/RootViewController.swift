@@ -80,7 +80,7 @@ class RootViewController: UIViewController {
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
-        self.view.backgroundColor = UIColor.white;
+        self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.navigationController?.navigationBar.isTranslucent = false;
         rightBtn.addTarget(self,action:#selector(right),for:.touchUpInside)
         
@@ -173,15 +173,15 @@ extension RootViewController {
     
     @objc func right() {
         let p = CGPoint(x: XZClient.ScreenWidth() - 32, y: 82)
-        YBPopupMenu.show(at: p, titles: ["添加","更多"], icons: ["ic_AddInfo","ic_MoreInfo"], menuWidth: 130) { popupMenu in
+        YBPopupMenu.show(at: p, titles: ["添加","利率","更多"], icons: ["ic_AddInfo","ic_lilv","ic_MoreInfo"], menuWidth: 120) { popupMenu in
             popupMenu?.priorityDirection = .top
             popupMenu?.dismissOnSelected = true;
             popupMenu?.delegate = self;
             popupMenu?.type = .dark;
             
-            popupMenu?.fontSize = 17
+            popupMenu?.fontSize = 16
             popupMenu?.textColor = UIColor.white
-            popupMenu?.itemHeight = 66
+            popupMenu?.itemHeight = 60
         }
 
     }
@@ -204,7 +204,9 @@ extension RootViewController:YBPopupMenuDelegate {
         if index == 0 {
             self.navigationController?.pushViewController(RemindEditorViewController(), animated: true)
         }else if index == 1 {
-            self.navigationController?.pushViewController(MoreViewController(), animated: true)
+            self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
+        }else if index == 2 {
+            self.navigationController?.pushViewController(UserViewController(), animated: true)
         }
     }
     

@@ -42,7 +42,7 @@ class XZSwiftColor: UIColor{
 
     static var convenientBackgroundColor : UIColor{
         get{
-            return colorWith255RGB(245, g: 245, b: 245);
+            return colorWith255RGB(249, g: 249, b: 249);
         }
     }
     
