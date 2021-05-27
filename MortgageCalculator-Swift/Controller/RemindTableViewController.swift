@@ -58,7 +58,7 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "提醒"
+        self.navigationItem.title = "我的信息"
         self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor;
         
         self.remindDayTitleView = RemindDayTitleView()

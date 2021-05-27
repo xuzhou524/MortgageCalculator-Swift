@@ -44,8 +44,8 @@ class RemindDayTitleView: UIView {
     }
     
     func sebView(){
-        self.backgroundColor = XZSwiftColor.white;
-        
+        self.backgroundColor = XZSwiftColor.convenientBackgroundColor
+
         self.leftLinSepView = UIView()
         self.leftLinSepView?.backgroundColor = XZSwiftColor.xzGlay129
         self.addSubview(self.leftLinSepView!)

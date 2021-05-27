@@ -1,8 +1,9 @@
 //
 //  UserViewController.swift
-//  QiuQiu
+//  MortgageCalculator-Swift
 //
-//  Created by xuzhou on 2021/4/12.
+//  Created by gozap on 2017/8/21.
+//  Copyright © 2017年 xuzhou. All rights reserved.
 //
 
 import UIKit
@@ -120,7 +121,8 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
             }else if indexPath.row == 1 {
                 UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)
             }else if indexPath.row == 2 {
-
+                let webViewVC = BPYWebViewController.init(url: "https://www.gezhipu.com/fangdaijisuanqi.pdf", titleStr: "隐私协议")
+                self.navigationController?.pushViewController(webViewVC, animated: true)
             }
         }
     }

@@ -27,7 +27,7 @@ class LoanDetailsTableViewCell: UITableViewCell {
     
     func sebView(){
         self.selectionStyle = .none
-        self.contentView.backgroundColor = XZSwiftColor.white
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.periodLabel = UILabel()
         self.periodLabel?.text = "第一期"
         self.periodLabel?.font = XZClient.XZFont2(size: 14)
@@ -221,7 +221,7 @@ class LoanDetails_TitleTableViewCell: UITableViewCell {
     
     func sebView(){
         self.selectionStyle = .none
-        self.contentView.backgroundColor = XZSwiftColor.white
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         
         self.titleLabel = UILabel()
         self.titleLabel?.text = "每月月供"
@@ -306,7 +306,7 @@ class LoanNextMouth_TitleTableViewCell: UITableViewCell {
     
     func sebView(){
         self.selectionStyle = .none
-        self.contentView.backgroundColor = XZSwiftColor.white
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         
         self.titleLabel = UILabel()
         self.titleLabel?.text = "下次月供"
@@ -411,7 +411,7 @@ class LoanDetails_DescribeTableViewCell: UITableViewCell {
     
     func sebView(){
         self.selectionStyle = .none
-        self.contentView.backgroundColor = XZSwiftColor.white
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         
         self.totalAmountTitleLabel = UILabel()
         self.totalAmountTitleLabel?.text = "贷款总额"
@@ -507,7 +507,7 @@ class LoanDetails_DescribesTableViewCell: UITableViewCell {
     
     func sebView(){
         self.selectionStyle = .none
-        self.contentView.backgroundColor = XZSwiftColor.white
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         
         self.accumulationAmountTitleLabel = UILabel()
         self.accumulationAmountTitleLabel?.text = "公积金贷款总额"
@@ -645,7 +645,7 @@ class LoanDetails_CumulativeTableViewCell: UITableViewCell {
     }
     
     func sebView(){
-        self.contentView.backgroundColor = XZSwiftColor.white
+        self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.selectionStyle = .none
         
         let linView = UIView()
