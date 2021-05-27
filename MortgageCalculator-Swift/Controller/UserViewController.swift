@@ -114,12 +114,12 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 UIApplication.shared.windows.first?.rootViewController?.present(activityController, animated: true, completion: nil)
             }
         }else{
-            if indexPath.row == 2 {
+            if indexPath.row == 0 {
                 let  urlString = "itms-apps://itunes.apple.com/app/id1272033544?action=write-review"
                 UIApplication.shared.open(URL.init(string: urlString)!, options: [:], completionHandler: nil)
-            }else if indexPath.row == 2 {
+            }else if indexPath.row == 1 {
                 UIApplication.shared.open(URL(string:"mqq://im/chat?chat_type=wpa&uin=1043037904&version=1&src_type=web")!, options: [:], completionHandler: nil)
-            }else if indexPath.row == 3 {
+            }else if indexPath.row == 2 {
 
             }
         }
