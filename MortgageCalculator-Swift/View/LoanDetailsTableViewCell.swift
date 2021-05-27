@@ -149,6 +149,7 @@ class LoanDetailsTitleTableView: UIView {
     }
     
     func sebView(){
+        self.backgroundColor = XZSwiftColor.xzGlay230
 
         self.periodLabel = UILabel()
         self.periodLabel?.text = "期数"
