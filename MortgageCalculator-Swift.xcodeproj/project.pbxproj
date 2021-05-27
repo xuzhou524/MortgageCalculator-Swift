@@ -78,7 +78,6 @@
 		5375E0711F9849C100964123 /* tupian.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0701F9849BD00964123 /* tupian.png */; };
 		5375E0731F9849C500964123 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E06E1F9849A900964123 /* video.png */; };
 		5375E0751F984B0100964123 /* sina.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0741F984AFF00964123 /* sina.png */; };
-		537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */; };
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
 		5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */; };
@@ -204,7 +203,6 @@
 		5375E06E1F9849A900964123 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
 		5375E0701F9849BD00964123 /* tupian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tupian.png; sourceTree = "<group>"; };
 		5375E0741F984AFF00964123 /* sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sina.png; sourceTree = "<group>"; };
-		537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNumberKeyboard.swift; sourceTree = "<group>"; };
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -494,7 +492,6 @@
 				53D7770E1F307EE60074B52C /* XZSwiftColor.swift */,
 				53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */,
 				531B1588265F7D14005D5DBD /* BPYWebViewController.swift */,
-				537F92681F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift */,
 				53F052EA1F6BC5050035EF5A /* Observable+Extension.swift */,
 				53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */,
 				531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */,
@@ -818,7 +815,6 @@
 				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,
 				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
-				537F92691F43073300ABAFC8 /* XZSwiftNumberKeyboard.swift in Sources */,
 				53F052EE1F6BC5C10035EF5A /* HousingMarketListViewController.swift in Sources */,
 				53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */,
 				531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */,

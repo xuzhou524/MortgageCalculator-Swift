@@ -51,7 +51,7 @@ static CGFloat const marginvalue = 0.5;
                     btn.titleLabel.font = [UIFont systemFontOfSize: 20.0];
                     [btn setTitle:titleStr forState:UIControlStateNormal];
                     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-                    [btn setBackgroundImage:[self imageWithColor:[UIColor blackColor]] forState:UIControlStateNormal];
+                    [btn setBackgroundImage:[UIImage imageNamed:@"ic_MyLoanBg"] forState:UIControlStateNormal];
                     [btn addTarget:self action:@selector(finishBtnAction) forControlEvents:UIControlEventTouchUpInside];
                     break;
                 case 12:{
