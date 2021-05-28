@@ -87,10 +87,6 @@
           [self show];
           [self.interstitial presentFromRootViewController:_adViewController];
       }];
-//    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"];
-//    self.interstitial.delegate=self;
-//    GADRequest *request = [GADRequest request];
-//    [self.interstitial loadRequest:request];
 }
 
 - (void)show{
@@ -100,9 +96,6 @@
     window.rootViewController = _adViewController;
     window.rootViewController.view.backgroundColor = [UIColor clearColor];
     window.rootViewController.view.userInteractionEnabled = NO;
-
-    ///广告布局
-//    [self setupSubviews:window];
     
     ///设置为最顶层，防止 AlertView 等弹窗的覆盖
     window.windowLevel = UIWindowLevelStatusBar + 1;
@@ -129,17 +122,6 @@
         self.window = nil;
     }];
 }
-
-/////初始化显示的视图， 可以挪到具
-//- (void)setupSubviews:(UIWindow*)window{
-//    ///随便写写
-//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:window.bounds];
-//    //和启动图一样，给用户造成错觉
-//    imageView.image = [UIImage imageNamed:@"ADImage.png"];
-//    imageView.contentMode=UIViewContentModeScaleAspectFill;
-//
-//    [window addSubview:imageView];
-//}
 
 #pragma mark -GADInterstitialDelegate
 
