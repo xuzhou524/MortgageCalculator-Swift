@@ -57,6 +57,7 @@ class RootViewController: UIViewController {
                 self.loanCacheModel?.alsoNumberMonthStr = "0"
             }
             myLoanInfoView.bind(model: self.loanCacheModel)
+            pushMessage()
         }
     }
 
@@ -207,6 +208,29 @@ extension RootViewController:YBPopupMenuDelegate {
             self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
         }else if index == 2 {
             self.navigationController?.pushViewController(UserViewController(), animated: true)
+        }
+    }
+    
+}
+
+extension RootViewController {
+    
+    func pushMessage() {
+        UIApplication.shared.cancelAllLocalNotifications()
+        var components:DateComponents = DateComponents()
+//        components.weekday = 2;//周-
+        components.day = Int((self.loanCacheModel?.repaymentDateStr)!)! - 1;
+        components.hour = 9;//9点
+        components.minute = 30
+        let content = UNMutableNotificationContent()
+        content.userInfo = ["id": "1",  "title": "房贷还款提醒" ,"body" : "贷友：明天是您的还款日，请及时查询还款账号是否有money,以免影响您征信哦！"]
+        content.sound = UNNotificationSound.default
+        content.body = "贷友：明天是您的还款日，请及时查询还款账号是否有money,以免影响您征信哦！"
+        let triggerDateComponents = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+        let request = UNNotificationRequest(identifier:"YongYiFangDai", content: content, trigger: triggerDateComponents)
+        UNUserNotificationCenter.current().add(request) { error in
+            if error == nil {
+            }
         }
     }
     
