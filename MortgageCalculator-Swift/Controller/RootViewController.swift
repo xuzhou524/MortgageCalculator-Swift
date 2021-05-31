@@ -171,9 +171,9 @@ class RootViewController: UIViewController {
 }
 
 extension RootViewController {
-    
+
     @objc func right() {
-        let p = CGPoint(x: XZClient.ScreenWidth() - 32, y: 82)
+        let p = CGPoint(x: XZClient.ScreenWidth() - 32, y: (XZClient.XZiPhoneX() ? 82 : 60))
         YBPopupMenu.show(at: p, titles: ["添加","利率","更多"], icons: ["ic_AddInfo","ic_lilv","ic_MoreInfo"], menuWidth: 120) { popupMenu in
             popupMenu?.priorityDirection = .top
             popupMenu?.dismissOnSelected = true;
