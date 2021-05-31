@@ -66,9 +66,9 @@ class RootViewController: UIViewController {
 
         #if DEBUG
         #else
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 180, width: XZClient.ScreenWidth(), height: 50))
+        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 100, width: XZClient.ScreenWidth(), height: 50))
         if (XZClient.XZiPhoneX()) {
-            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 230, width: XZClient.ScreenWidth(), height: 50)
+            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 150, width: XZClient.ScreenWidth(), height: 50)
         }
         bannerView.adSize = kGADAdSizeBanner
         bannerView.center.x = self.view.center.x
