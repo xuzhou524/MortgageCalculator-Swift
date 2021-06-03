@@ -39,46 +39,11 @@ PODS:
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
   - ObjectMapper (3.5.1)
-  - PINCache (3.0.3):
-    - PINCache/Arc-exception-safe (= 3.0.3)
-    - PINCache/Core (= 3.0.3)
-  - PINCache/Arc-exception-safe (3.0.3):
-    - PINCache/Core
-  - PINCache/Core (3.0.3):
-    - PINOperation (~> 1.2.1)
-  - PINOperation (1.2.1)
-  - PINRemoteImage/Core (3.0.3):
-    - PINOperation
-  - PINRemoteImage/iOS (3.0.3):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.3):
-    - PINCache (~> 3.0.3)
-    - PINRemoteImage/Core
   - PromisesObjC (1.2.12)
   - Result (4.1.0)
   - RxSwift (4.5.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (5.0.0)
-  - Texture (3.0.0):
-    - Texture/AssetsLibrary (= 3.0.0)
-    - Texture/Core (= 3.0.0)
-    - Texture/MapKit (= 3.0.0)
-    - Texture/Photos (= 3.0.0)
-    - Texture/PINRemoteImage (= 3.0.0)
-    - Texture/Video (= 3.0.0)
-  - Texture/AssetsLibrary (3.0.0):
-    - Texture/Core
-  - Texture/Core (3.0.0)
-  - Texture/MapKit (3.0.0):
-    - Texture/Core
-  - Texture/Photos (3.0.0):
-    - Texture/Core
-  - Texture/PINRemoteImage (3.0.0):
-    - PINRemoteImage/iOS (~> 3.0.0)
-    - PINRemoteImage/PINCache
-    - Texture/Core
-  - Texture/Video (3.0.0):
-    - Texture/Core
   - TMCache (2.1.0)
 
 DEPENDENCIES:
@@ -87,7 +52,6 @@ DEPENDENCIES:
   - ObjectMapper (~> 3.3)
   - SnapKit
   - SwiftyJSON
-  - Texture
   - TMCache (from `https://github.com/tumblr/TMCache`)
 
 SPEC REPOS:
@@ -105,11 +69,7 @@ SPEC REPOS:
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
     - PromisesObjC
-    - Texture
 
 EXTERNAL SOURCES:
   TMCache:
@@ -129,17 +89,13 @@ SPEC CHECKSUMS:
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
-  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
-  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
 
-PODFILE CHECKSUM: 3843357932299222e928de0a97a1d191d03d9627
+PODFILE CHECKSUM: d901997a2384e1e73cfdc9aaec116a4ff86d4f3f
 
 COCOAPODS: 1.10.1

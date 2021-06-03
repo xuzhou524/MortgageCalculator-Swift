@@ -113,12 +113,10 @@
 		53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */; };
 		53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */; };
 		53F052EB1F6BC5050035EF5A /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052EA1F6BC5050035EF5A /* Observable+Extension.swift */; };
-		53F052EE1F6BC5C10035EF5A /* HousingMarketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052ED1F6BC5C10035EF5A /* HousingMarketListViewController.swift */; };
 		53F052F31F6BD2370035EF5A /* tabbar_housing_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052EF1F6BD1F30035EF5A /* tabbar_housing_selected@2x.png */; };
 		53F052F41F6BD2390035EF5A /* tabbar_housing_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */; };
 		53F052F51F6BD23B0035EF5A /* tabbar_housing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */; };
 		53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */; };
-		53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */; };
 		53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FC5936247272B70023CC46 /* LaunchScreen.storyboard */; };
 		53FFBB69265E3AE7003DD85F /* YBRectConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB64265E3AE7003DD85F /* YBRectConst.m */; };
 		53FFBB6A265E3AE7003DD85F /* YBPopupMenuPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB65265E3AE7003DD85F /* YBPopupMenuPath.m */; };
@@ -241,12 +239,10 @@
 		53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoansTypeTableViewCell.swift; sourceTree = "<group>"; };
 		53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationLoabsTableViewController.swift; sourceTree = "<group>"; };
 		53F052EA1F6BC5050035EF5A /* Observable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
-		53F052ED1F6BC5C10035EF5A /* HousingMarketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketListViewController.swift; sourceTree = "<group>"; };
 		53F052EF1F6BD1F30035EF5A /* tabbar_housing_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing_selected@2x.png"; sourceTree = "<group>"; };
 		53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing_selected@3x.png"; sourceTree = "<group>"; };
 		53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@2x.png"; sourceTree = "<group>"; };
 		53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@3x.png"; sourceTree = "<group>"; };
-		53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousMarketListTableViewCell.swift; sourceTree = "<group>"; };
 		53FC5936247272B70023CC46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53FFBB63265E3AE7003DD85F /* YBPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPopupMenu.h; sourceTree = "<group>"; };
 		53FFBB64265E3AE7003DD85F /* YBRectConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRectConst.m; sourceTree = "<group>"; };
@@ -473,7 +469,6 @@
 				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 				5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */,
 				53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */,
-				53F052F71F6BDD980035EF5A /* HousMarketListTableViewCell.swift */,
 				5375E0561F96EFAC00964123 /* lifeHeadView.swift */,
 			);
 			path = View;
@@ -521,7 +516,6 @@
 		53F052EC1F6BC58B0035EF5A /* HousingMarket */ = {
 			isa = PBXGroup;
 			children = (
-				53F052ED1F6BC5C10035EF5A /* HousingMarketListViewController.swift */,
 				531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */,
 			);
 			name = HousingMarket;
@@ -731,16 +725,12 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
-				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
-				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework",
-				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -749,16 +739,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TMCache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -815,11 +801,9 @@
 				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,
 				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
-				53F052EE1F6BC5C10035EF5A /* HousingMarketListViewController.swift in Sources */,
 				53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */,
 				531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */,
 				53FFBB6B265E3AE7003DD85F /* YBPopupMenu.m in Sources */,
-				53F052F81F6BDD980035EF5A /* HousMarketListTableViewCell.swift in Sources */,
 				53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */,
 				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
 				53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */,
