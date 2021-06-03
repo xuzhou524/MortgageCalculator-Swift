@@ -43,14 +43,12 @@ PODS:
   - Result (4.1.0)
   - RxSwift (4.5.0)
   - SnapKit (4.2.0)
-  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
   - Moya/RxSwift
   - ObjectMapper (~> 3.3)
   - SnapKit
-  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -60,7 +58,6 @@ SPEC REPOS:
     - Result
     - RxSwift
     - SnapKit
-    - SwiftyJSON
   trunk:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -82,8 +79,7 @@ SPEC CHECKSUMS:
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 16daf4d0f5ce92aa3eb1197295f8a46417ef7993
+PODFILE CHECKSUM: 0a305497641e5a2a971b9d5c6ddbe9dc9d8e3b0f
 
 COCOAPODS: 1.10.1
