@@ -14,12 +14,9 @@
 		5303383C1F591E3B00848A6E /* bianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5303383A1F591E3B00848A6E /* bianji@2x.png */; };
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */; };
-		531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */; };
 		531B1585265F5021005D5DBD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1584265F5020005D5DBD /* UserViewController.swift */; };
 		531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */; };
 		531B1589265F7D14005D5DBD /* BPYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1588265F7D14005D5DBD /* BPYWebViewController.swift */; };
-		531C8CAA1F73995D00BC7B5E /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */; };
-		531C8CAC1F74B55000BC7B5E /* ZJRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */; };
 		5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE391F31BDF200184F9D /* XZClient.swift */; };
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
@@ -61,7 +58,6 @@
 		5367FD941F6A6C7F00449B5B /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD8F1F6A6C6900449B5B /* delete@3x.png */; };
 		5367FD951F6A6C8100449B5B /* resign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD921F6A6C6A00449B5B /* resign@2x.png */; };
 		5367FD961F6A6C8400449B5B /* resign@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD911F6A6C6A00449B5B /* resign@3x.png */; };
-		5375E0571F96EFAC00964123 /* lifeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375E0561F96EFAC00964123 /* lifeHeadView.swift */; };
 		5375E0601F97177E00964123 /* baiDu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0581F97174800964123 /* baiDu.png */; };
 		5375E0611F97178400964123 /* chouTi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05F1F97174900964123 /* chouTi.png */; };
 		5375E0621F97178600964123 /* jingDong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05A1F97174800964123 /* jingDong.png */; };
@@ -93,15 +89,11 @@
 		53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6E1F2F075500EF58EB /* tabbar_home@3x.png */; };
 		53A4EF751F2F075500EF58EB /* tabbar_home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6F1F2F075500EF58EB /* tabbar_home_selected@2x.png */; };
 		53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF701F2F075500EF58EB /* tabbar_home_selected@3x.png */; };
-		53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF861F2F353100EF58EB /* MoreViewController.swift */; };
 		53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF871F2F353100EF58EB /* RootViewController.swift */; };
-		53CF32F51F6FC41100881801 /* HousingMarketApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF32F41F6FC41100881801 /* HousingMarketApi.swift */; };
-		53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */; };
 		53D3BD541FB1463B00D6CB87 /* wangzhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D3BD531FB1463B00D6CB87 /* wangzhi.png */; };
 		53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */; };
 		53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */; };
 		53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777091F307EE60074B52C /* UITableView+Extension.swift */; };
-		53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770B1F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift */; };
 		53D777131F307EE60074B52C /* XZSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770D1F307EE60074B52C /* XZSetting.swift */; };
 		53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770E1F307EE60074B52C /* XZSwiftColor.swift */; };
 		53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */; };
@@ -127,13 +119,10 @@
 		5303383A1F591E3B00848A6E /* bianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@2x.png"; sourceTree = "<group>"; };
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
 		530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanInfoView.swift; sourceTree = "<group>"; };
-		531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketManager.swift; sourceTree = "<group>"; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B1584265F5020005D5DBD /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTitleTableViewCell.swift; sourceTree = "<group>"; };
 		531B1588265F7D14005D5DBD /* BPYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPYWebViewController.swift; sourceTree = "<group>"; };
-		531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
-		531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshControl.swift; sourceTree = "<group>"; };
 		5321DE391F31BDF200184F9D /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
@@ -178,7 +167,6 @@
 		5367FD901F6A6C6A00449B5B /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
 		5367FD911F6A6C6A00449B5B /* resign@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resign@3x.png"; sourceTree = "<group>"; };
 		5367FD921F6A6C6A00449B5B /* resign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resign@2x.png"; sourceTree = "<group>"; };
-		5375E0561F96EFAC00964123 /* lifeHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifeHeadView.swift; sourceTree = "<group>"; };
 		5375E0581F97174800964123 /* baiDu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baiDu.png; sourceTree = "<group>"; };
 		5375E0591F97174800964123 /* tengXunNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tengXunNew.png; sourceTree = "<group>"; };
 		5375E05A1F97174800964123 /* jingDong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jingDong.png; sourceTree = "<group>"; };
@@ -213,15 +201,11 @@
 		53A4EF6E1F2F075500EF58EB /* tabbar_home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@3x.png"; sourceTree = "<group>"; };
 		53A4EF6F1F2F075500EF58EB /* tabbar_home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home_selected@2x.png"; sourceTree = "<group>"; };
 		53A4EF701F2F075500EF58EB /* tabbar_home_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home_selected@3x.png"; sourceTree = "<group>"; };
-		53A4EF861F2F353100EF58EB /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		53A4EF871F2F353100EF58EB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		53CF32F41F6FC41100881801 /* HousingMarketApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketApi.swift; sourceTree = "<group>"; };
-		53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChouTiTargetType.swift; sourceTree = "<group>"; };
 		53D3BD531FB1463B00D6CB87 /* wangzhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wangzhi.png; sourceTree = "<group>"; };
 		53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommercialLoansTableViewController.swift; sourceTree = "<group>"; };
 		53D777091F307EE60074B52C /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		53D7770B1F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+FINAutomaticHeightCell.swift"; sourceTree = "<group>"; };
 		53D7770D1F307EE60074B52C /* XZSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSetting.swift; sourceTree = "<group>"; };
 		53D7770E1F307EE60074B52C /* XZSwiftColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftColor.swift; sourceTree = "<group>"; };
 		53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNavigationController.swift; sourceTree = "<group>"; };
@@ -310,9 +294,9 @@
 			isa = PBXGroup;
 			children = (
 				C55623FD257B8D0100AA352F /* SettingViewController.swift */,
-				53A4EF861F2F353100EF58EB /* MoreViewController.swift */,
-				53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */,
 				531B1584265F5020005D5DBD /* UserViewController.swift */,
+				53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */,
+				531B1588265F7D14005D5DBD /* BPYWebViewController.swift */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -322,8 +306,6 @@
 			children = (
 				534FB71A1F39BB73006E3144 /* LoanModel.swift */,
 				5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */,
-				53CF32F41F6FC41100881801 /* HousingMarketApi.swift */,
-				531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -432,7 +414,6 @@
 			isa = PBXGroup;
 			children = (
 				5332A9801F4AB1E2001465E4 /* Calculator */,
-				53F052EC1F6BC58B0035EF5A /* HousingMarket */,
 				5332A9811F4AB1F3001465E4 /* Remind */,
 				5332A9821F4AB220001465E4 /* More */,
 			);
@@ -452,7 +433,6 @@
 				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 				5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */,
 				53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */,
-				5375E0561F96EFAC00964123 /* lifeHeadView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,14 +444,10 @@
 				5367FD891F6A6AE900449B5B /* JZNumberKeyboard */,
 				5321DE3B1F31C3AB00184F9D /* Font */,
 				53D777081F307EE60074B52C /* Extension */,
-				53D7770A1F307EE60074B52C /* UITableView+FINAutomaticHeightCell */,
 				5321DE391F31BDF200184F9D /* XZClient.swift */,
 				53D7770D1F307EE60074B52C /* XZSetting.swift */,
 				53D7770E1F307EE60074B52C /* XZSwiftColor.swift */,
 				53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */,
-				531B1588265F7D14005D5DBD /* BPYWebViewController.swift */,
-				53CF32F61F6FC53D00881801 /* ChouTiTargetType.swift */,
-				531C8CAB1F74B54F00BC7B5E /* ZJRefreshControl.swift */,
 				53A089092422FD4900BC1192 /* MortgageCalculator-Swift.h */,
 				53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */,
 				53A0890C2422FFE500BC1192 /* ADImage.png */,
@@ -485,22 +461,6 @@
 				53D777091F307EE60074B52C /* UITableView+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		53D7770A1F307EE60074B52C /* UITableView+FINAutomaticHeightCell */ = {
-			isa = PBXGroup;
-			children = (
-				53D7770B1F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift */,
-			);
-			path = "UITableView+FINAutomaticHeightCell";
-			sourceTree = "<group>";
-		};
-		53F052EC1F6BC58B0035EF5A /* HousingMarket */ = {
-			isa = PBXGroup;
-			children = (
-				531C8CA91F73995D00BC7B5E /* UIWebViewController.swift */,
-			);
-			name = HousingMarket;
 			sourceTree = "<group>";
 		};
 		53FFBB62265E3AE7003DD85F /* YBPopupMenu */ = {
@@ -675,7 +635,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n";
+			shellScript = "
+";
 		};
 		A992B7AE5FD15890745D33E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -734,7 +695,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5375E0571F96EFAC00964123 /* lifeHeadView.swift in Sources */,
 				531B1585265F5021005D5DBD /* UserViewController.swift in Sources */,
 				53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */,
 				5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */,
@@ -743,10 +703,8 @@
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
 				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
 				5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */,
-				53CF32F51F6FC41100881801 /* HousingMarketApi.swift in Sources */,
 				53FFBB69265E3AE7003DD85F /* YBRectConst.m in Sources */,
 				5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */,
-				531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				53FFBB6A265E3AE7003DD85F /* YBPopupMenuPath.m in Sources */,
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,
@@ -756,8 +714,6 @@
 				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
 				5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */,
-				531C8CAC1F74B55000BC7B5E /* ZJRefreshControl.swift in Sources */,
-				53D777111F307EE60074B52C /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				53D777131F307EE60074B52C /* XZSetting.swift in Sources */,
 				53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */,
 				53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */,
@@ -765,16 +721,13 @@
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */,
-				531C8CAA1F73995D00BC7B5E /* UIWebViewController.swift in Sources */,
 				531B1589265F7D14005D5DBD /* BPYWebViewController.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
 				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,
-				53A4EF881F2F353100EF58EB /* MoreViewController.swift in Sources */,
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
 				53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */,
 				531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */,
 				53FFBB6B265E3AE7003DD85F /* YBPopupMenu.m in Sources */,
-				53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */,
 				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
 				53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */,
 				5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */,

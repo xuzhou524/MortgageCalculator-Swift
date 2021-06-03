@@ -56,39 +56,5 @@ class XZSwiftNavigationController: UINavigationController {
         }
         super.setViewControllers(viewControllers, animated: animated)
     }
-    
-//    var frostedView:UIToolbar?
-//    var shadowImage:UIImage?
-//    var navigationBarAlpha:CGFloat{
-//        get{
-//            return self.frostedView!.alpha
-//        }set{
-//            var value = newValue
-//            if newValue > 1 {
-//                value = 1
-//            }else if value < 0 {
-//                value = 0
-//            }
-//            self.frostedView!.alpha = newValue
-//            self.navigationBar.layer.shadowOpacity = Float(value * 0.5);
-//        }
-//    }
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        self.navigationBar.titleTextAttributes = [
-//            NSAttributedString.Key.font : XZClient.XZFont(size: 18),
-//            NSAttributedString.Key.foregroundColor : XZSwiftColor.xzGlay50
-//        ]
-//        self.navigationBar.setBackgroundImage(createImageWithColor(XZSwiftColor.navignationColor), for: .default)
-//        self.navigationBar.barStyle = .default;
-//        self.navigationBar.tintColor = XZSwiftColor.xzGlay50
-//        self.navigationBar.shadowImage = UIImage.init()
-//
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+
 }
