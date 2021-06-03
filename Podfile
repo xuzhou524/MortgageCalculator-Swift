@@ -4,7 +4,6 @@ use_frameworks!
 
 def pods
    pod 'SnapKit'
-   pod 'ObjectMapper', '~> 3.3'
    pod 'Moya/RxSwift'
    pod 'Google-Mobile-Ads-SDK'
 end

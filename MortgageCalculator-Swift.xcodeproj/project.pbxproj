@@ -15,11 +15,6 @@
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */; };
 		531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */; };
-		531152A41F6FCC4500E2B70E /* HousingMarketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */; };
-		531152B01F70B97F00E2B70E /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AD1F70B97E00E2B70E /* Id.swift */; };
-		531152B11F70B97F00E2B70E /* Idlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AE1F70B97F00E2B70E /* Idlist.swift */; };
-		531152B21F70B97F00E2B70E /* Newslist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152AF1F70B97F00E2B70E /* Newslist.swift */; };
-		531152B41F70B98400E2B70E /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531152B31F70B98400E2B70E /* RootClass.swift */; };
 		531B1585265F5021005D5DBD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1584265F5020005D5DBD /* UserViewController.swift */; };
 		531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */; };
 		531B1589265F7D14005D5DBD /* BPYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1588265F7D14005D5DBD /* BPYWebViewController.swift */; };
@@ -133,11 +128,6 @@
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
 		530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanInfoView.swift; sourceTree = "<group>"; };
 		531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketManager.swift; sourceTree = "<group>"; };
-		531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingMarketModel.swift; sourceTree = "<group>"; };
-		531152AD1F70B97E00E2B70E /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
-		531152AE1F70B97F00E2B70E /* Idlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idlist.swift; sourceTree = "<group>"; };
-		531152AF1F70B97F00E2B70E /* Newslist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newslist.swift; sourceTree = "<group>"; };
-		531152B31F70B98400E2B70E /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B1584265F5020005D5DBD /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		531B1586265F50B5005D5DBD /* LeftTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTitleTableViewCell.swift; sourceTree = "<group>"; };
@@ -330,15 +320,10 @@
 		534FB7191F39BB32006E3144 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				531152AD1F70B97E00E2B70E /* Id.swift */,
-				531152AE1F70B97F00E2B70E /* Idlist.swift */,
-				531152AF1F70B97F00E2B70E /* Newslist.swift */,
-				531152B31F70B98400E2B70E /* RootClass.swift */,
 				534FB71A1F39BB73006E3144 /* LoanModel.swift */,
 				5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */,
 				53CF32F41F6FC41100881801 /* HousingMarketApi.swift */,
 				531152A11F6FC8B600E2B70E /* HousingMarketManager.swift */,
-				531152A31F6FCC4500E2B70E /* HousingMarketModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -720,7 +705,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -732,7 +716,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -758,13 +741,10 @@
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
-				531152B11F70B97F00E2B70E /* Idlist.swift in Sources */,
 				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
 				5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */,
 				53CF32F51F6FC41100881801 /* HousingMarketApi.swift in Sources */,
 				53FFBB69265E3AE7003DD85F /* YBRectConst.m in Sources */,
-				531152B41F70B98400E2B70E /* RootClass.swift in Sources */,
-				531152B01F70B97F00E2B70E /* Id.swift in Sources */,
 				5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */,
 				531152A21F6FC8B600E2B70E /* HousingMarketManager.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
@@ -772,7 +752,6 @@
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,
 				5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */,
 				5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */,
-				531152A41F6FCC4500E2B70E /* HousingMarketModel.swift in Sources */,
 				53351B8C1F669C0200717C26 /* FriendshipRecommenViewController.swift in Sources */,
 				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
@@ -798,7 +777,6 @@
 				53CF32F71F6FC53E00881801 /* ChouTiTargetType.swift in Sources */,
 				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
 				53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */,
-				531152B21F70B97F00E2B70E /* Newslist.swift in Sources */,
 				5321DE3A1F31BDF200184F9D /* XZClient.swift in Sources */,
 				5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */,
 				C55623FE257B8D0100AA352F /* SettingViewController.swift in Sources */,

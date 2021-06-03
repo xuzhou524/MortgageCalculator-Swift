@@ -38,7 +38,6 @@ PODS:
     - nanopb/encode (= 2.30907.0)
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
-  - ObjectMapper (3.5.1)
   - PromisesObjC (1.2.12)
   - Result (4.1.0)
   - RxSwift (4.5.0)
@@ -47,14 +46,12 @@ PODS:
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
   - Moya/RxSwift
-  - ObjectMapper (~> 3.3)
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Moya
-    - ObjectMapper
     - Result
     - RxSwift
     - SnapKit
@@ -74,12 +71,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 0a305497641e5a2a971b9d5c6ddbe9dc9d8e3b0f
+PODFILE CHECKSUM: 5ca45b6735401df1633b2478c8426817a2d537a2
 
 COCOAPODS: 1.10.1
