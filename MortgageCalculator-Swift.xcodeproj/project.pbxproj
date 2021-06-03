@@ -730,7 +730,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -744,7 +743,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TMCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -970,8 +968,6 @@
 					"$(inherited)",
 					"-framework",
 					"\"SnapKit\"",
-					"-framework",
-					"\"TMCache\"",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.MortgageCalculator-Swift";
@@ -1019,8 +1015,6 @@
 					"$(inherited)",
 					"-framework",
 					"\"SnapKit\"",
-					"-framework",
-					"\"TMCache\"",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.MortgageCalculator-Swift";
