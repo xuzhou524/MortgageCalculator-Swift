@@ -48,14 +48,7 @@ class LoansTypeTableViewCell: UITableViewCell {
             make.left.equalTo(self.contentView.snp.centerX).offset(20);
             make.height.equalTo(32);
         })
-        
-//        self.bottomSepView = UIImageView()
-//        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
-//        self.contentView.addSubview(self.bottomSepView!)
-//        self.bottomSepView?.snp.makeConstraints({ (make) in
-//            make.left.right.bottom.equalTo(self.contentView)
-//            make.height.equalTo(0.5)
-//        })
+
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

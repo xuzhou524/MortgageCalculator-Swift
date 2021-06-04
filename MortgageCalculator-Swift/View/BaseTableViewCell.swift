@@ -74,33 +74,11 @@ class BaseTableViewCell: UITableViewCell {
             make.left.equalTo(self.bgTextFieldView!).offset(8);
         })
         
-        let keyboard = JZNumberKeyboard()
-        keyboard.setInputView(self.textField)
+        let keyboard = XZNumberKeyBoard()
+        keyboard.setInputView(self.textField!)
         
-//        self.topSepView = UIImageView()
-//        self.topSepView?.backgroundColor = XZSwiftColor.xzGlay230
-//        self.contentView.addSubview(self.topSepView!)
-//        self.topSepView?.snp.makeConstraints({ (make) in
-//            make.left.right.top.equalTo(self.contentView)
-//            make.height.equalTo(0.5)
-//        })
-        
-//        self.bottomSepView = UIImageView()
-//        self.bottomSepView?.backgroundColor = XZSwiftColor.xzGlay230
-//        self.contentView.addSubview(self.bottomSepView!)
-//        self.bottomSepView?.snp.makeConstraints({ (make) in
-//            make.left.right.bottom.equalTo(self.contentView)
-//            make.height.equalTo(0.5)
-//        })
-        
-//        self.bottomShortSepView = UIImageView()
-//        self.bottomShortSepView?.backgroundColor = XZSwiftColor.xzGlay230
-//        self.contentView.addSubview(self.bottomShortSepView!)
-//        self.bottomShortSepView?.snp.makeConstraints({ (make) in
-//            make.right.bottom.equalTo(self.contentView)
-//            make.left.equalTo(self.contentView).offset(15)
-//            make.height.equalTo(0.5)
-//        })
+//        let keyboard = JZNumberKeyboard()
+//        keyboard.setInputView(self.textField)
         
     }
     
