@@ -115,7 +115,7 @@ class CommercialLoansTableViewController: UITableViewController {
         let loanPeriodStr = self.loanPeriodTextFiled?.text
         let loanRateStr = self.loanRateTextFiled?.text
         
-        if  ((loanAmontStr?.Lenght)! > 0 && (loanPeriodStr?.Lenght)! > 0) {
+        if  ((loanAmontStr?.Lenght)! > 0 && (loanPeriodStr?.Lenght)! > 0 && (loanRateStr?.Lenght)! > 0) {
             let loanDetailsVC = LoanDetailsTableViewController()
             loanDetailsVC.loanAmountStr = loanAmontStr
             loanDetailsVC.loanNumberStr = loanPeriodStr

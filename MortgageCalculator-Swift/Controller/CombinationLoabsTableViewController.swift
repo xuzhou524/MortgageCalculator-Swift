@@ -136,7 +136,11 @@ class CombinationLoabsTableViewController: UITableViewController {
         
         let loanPeriodStr = self.loanPeriodTextFiled?.text
         
-        if  ((businessAmontStr?.Lenght)! > 0 && (accumulationAmontStr?.Lenght)! > 0 && (loanPeriodStr?.Lenght)! > 0) {
+        if  ((businessAmontStr?.Lenght)! > 0 &&
+                (accumulationAmontStr?.Lenght)! > 0 &&
+                (loanPeriodStr?.Lenght)! > 0 &&
+                (accumulationRateStr?.Lenght)! > 0 &&
+                (businessRateStr?.Lenght)! > 0) {
             let loanDetailsVC = CombinationDetailsTableViewController()
             
             loanDetailsVC.accumulationAmontStr = accumulationAmontStr
