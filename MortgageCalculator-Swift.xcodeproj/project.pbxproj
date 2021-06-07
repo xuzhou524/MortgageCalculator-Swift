@@ -26,8 +26,6 @@
 		5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */; };
 		53351B8C1F669C0200717C26 /* FriendshipRecommenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */; };
 		53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */; };
-		5342E9891F33261300AC3059 /* about_criticism.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9871F33261300AC3059 /* about_criticism.png */; };
-		5342E98A1F33261300AC3059 /* about_praise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9881F33261300AC3059 /* about_praise.png */; };
 		534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FB71A1F39BB73006E3144 /* LoanModel.swift */; };
 		5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */; };
 		5365B7F11F5F9445001FFEA5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F01F5F9444001FFEA5 /* libz.tbd */; };
@@ -89,8 +87,6 @@
 		5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanCacheManage.swift; sourceTree = "<group>"; };
 		53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipRecommenViewController.swift; sourceTree = "<group>"; };
 		53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipTableViewCell.swift; sourceTree = "<group>"; };
-		5342E9871F33261300AC3059 /* about_criticism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_criticism.png; sourceTree = "<group>"; };
-		5342E9881F33261300AC3059 /* about_praise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_praise.png; sourceTree = "<group>"; };
 		534C9C391F5D134800511672 /* MortgageCalculator-Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MortgageCalculator-Swift.entitlements"; sourceTree = "<group>"; };
 		534FB71A1F39BB73006E3144 /* LoanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
 		5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -269,18 +265,8 @@
 				53A4EF841F2F350C00EF58EB /* Controller */,
 				534FB7191F39BB32006E3144 /* Model */,
 				53D777071F307EE60074B52C /* Libs */,
-				53A4EF6A1F2F075500EF58EB /* Resources */,
 			);
 			path = "MortgageCalculator-Swift";
-			sourceTree = "<group>";
-		};
-		53A4EF6A1F2F075500EF58EB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5342E9871F33261300AC3059 /* about_criticism.png */,
-				5342E9881F33261300AC3059 /* about_praise.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		53A4EF841F2F350C00EF58EB /* Controller */ = {
@@ -438,8 +424,6 @@
 			files = (
 				53A0890D2422FFE500BC1192 /* ADImage.png in Resources */,
 				5367FD951F6A6C8100449B5B /* resign@2x.png in Resources */,
-				5342E98A1F33261300AC3059 /* about_praise.png in Resources */,
-				5342E9891F33261300AC3059 /* about_criticism.png in Resources */,
 				5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */,
 				5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */,
 				53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */,
