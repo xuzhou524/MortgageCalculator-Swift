@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		26E14845761BB25F8E7D19F7 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */; };
-		530338371F591DE700848A6E /* selectbianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338351F591DE600848A6E /* selectbianji@3x.png */; };
-		530338381F591DE700848A6E /* selectbianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338361F591DE700848A6E /* selectbianji@2x.png */; };
-		5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530338391F591E3B00848A6E /* bianji@3x.png */; };
-		5303383C1F591E3B00848A6E /* bianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5303383A1F591E3B00848A6E /* bianji@2x.png */; };
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */; };
 		531B1585265F5021005D5DBD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B1584265F5020005D5DBD /* UserViewController.swift */; };
@@ -21,10 +17,6 @@
 		5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */; };
 		5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */; };
 		5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */; };
-		5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE481F31E2A900184F9D /* tabbar_profile_selected@2x.png */; };
-		5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE491F31E2A900184F9D /* tabbar_profile_selected@3x.png */; };
-		5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */; };
-		5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */; };
 		5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */; };
 		5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */; };
 		5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */; };
@@ -34,15 +26,8 @@
 		5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */; };
 		53351B8C1F669C0200717C26 /* FriendshipRecommenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */; };
 		53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */; };
-		53351B921F66A79700717C26 /* fangdai.png in Resources */ = {isa = PBXBuildFile; fileRef = 53351B911F66A79500717C26 /* fangdai.png */; };
-		53351B961F66ACC800717C26 /* longdai.png in Resources */ = {isa = PBXBuildFile; fileRef = 53351B951F66ACC600717C26 /* longdai.png */; };
-		53351B9E1F66B3F000717C26 /* onePai.png in Resources */ = {isa = PBXBuildFile; fileRef = 53351B9D1F66B3EE00717C26 /* onePai.png */; };
-		5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E9811F3323E000AC3059 /* titleTableViewCell.swift */; };
-		5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9831F33258900AC3059 /* arrow_right@2x.png */; };
-		5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9841F33258900AC3059 /* arrow_right@3x.png */; };
 		5342E9891F33261300AC3059 /* about_criticism.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9871F33261300AC3059 /* about_criticism.png */; };
 		5342E98A1F33261300AC3059 /* about_praise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5342E9881F33261300AC3059 /* about_praise.png */; };
-		5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */; };
 		534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FB71A1F39BB73006E3144 /* LoanModel.swift */; };
 		5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */; };
 		5365B7F11F5F9445001FFEA5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F01F5F9444001FFEA5 /* libz.tbd */; };
@@ -52,46 +37,21 @@
 		5365B7F91F5F946F001FFEA5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F81F5F946F001FFEA5 /* libsqlite3.tbd */; };
 		5365B7FB1F5F9490001FFEA5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */; };
 		5365B7FD1F5F949C001FFEA5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7FC1F5F949C001FFEA5 /* Photos.framework */; };
-		5367FD861F6A382E00449B5B /* lanyamao.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD851F6A382C00449B5B /* lanyamao.png */; };
-		5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5367FD8C1F6A6AE900449B5B /* JZNumberKeyboard.m */; };
 		5367FD931F6A6C7D00449B5B /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD901F6A6C6A00449B5B /* delete@2x.png */; };
 		5367FD941F6A6C7F00449B5B /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD8F1F6A6C6900449B5B /* delete@3x.png */; };
 		5367FD951F6A6C8100449B5B /* resign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD921F6A6C6A00449B5B /* resign@2x.png */; };
 		5367FD961F6A6C8400449B5B /* resign@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5367FD911F6A6C6A00449B5B /* resign@3x.png */; };
-		5375E0601F97177E00964123 /* baiDu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0581F97174800964123 /* baiDu.png */; };
-		5375E0611F97178400964123 /* chouTi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05F1F97174900964123 /* chouTi.png */; };
-		5375E0621F97178600964123 /* jingDong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05A1F97174800964123 /* jingDong.png */; };
-		5375E0631F97178800964123 /* meiTuan.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05C1F97174900964123 /* meiTuan.png */; };
-		5375E0651F97178D00964123 /* taoBao2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05B1F97174800964123 /* taoBao2.png */; };
-		5375E0661F97178F00964123 /* tengXunNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0591F97174800964123 /* tengXunNew.png */; };
-		5375E0671F97179200964123 /* wuMi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E05D1F97174900964123 /* wuMi.png */; };
-		5375E06B1F9734E900964123 /* taoBao.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E06A1F9734E700964123 /* taoBao.png */; };
-		5375E0711F9849C100964123 /* tupian.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0701F9849BD00964123 /* tupian.png */; };
-		5375E0731F9849C500964123 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E06E1F9849A900964123 /* video.png */; };
-		5375E0751F984B0100964123 /* sina.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375E0741F984AFF00964123 /* sina.png */; };
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
 		5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */; };
-		539807401F67DEC3004127CA /* tianqi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5398073F1F67DEC1004127CA /* tianqi.png */; };
-		539807421F67E0A8004127CA /* v2ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 539807411F67E0A6004127CA /* v2ex.png */; };
 		53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */; };
 		53A0890D2422FFE500BC1192 /* ADImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A0890C2422FFE500BC1192 /* ADImage.png */; };
-		53A3752F2338501000B62378 /* che.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A3752E2338500F00B62378 /* che.png */; };
 		53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A375302339ADE600B62378 /* InterestTableViewController.swift */; };
-		53A375342339BD5000B62378 /* gongjijin.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A375322339BD5000B62378 /* gongjijin.png */; };
-		53A375352339BD5000B62378 /* shangye.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A375332339BD5000B62378 /* shangye.png */; };
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
 		53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2B1F2ED46B00EF58EB /* Main.storyboard */; };
 		53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */; };
-		53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */; };
-		53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */; };
-		53A4EF731F2F075500EF58EB /* tabbar_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6D1F2F075500EF58EB /* tabbar_home@2x.png */; };
-		53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6E1F2F075500EF58EB /* tabbar_home@3x.png */; };
-		53A4EF751F2F075500EF58EB /* tabbar_home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF6F1F2F075500EF58EB /* tabbar_home_selected@2x.png */; };
-		53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A4EF701F2F075500EF58EB /* tabbar_home_selected@3x.png */; };
 		53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF871F2F353100EF58EB /* RootViewController.swift */; };
 		53C144352669C92900ABF437 /* XZNumberKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C144342669C92900ABF437 /* XZNumberKeyBoard.m */; };
-		53D3BD541FB1463B00D6CB87 /* wangzhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D3BD531FB1463B00D6CB87 /* wangzhi.png */; };
 		53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */; };
 		53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */; };
 		53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777091F307EE60074B52C /* UITableView+Extension.swift */; };
@@ -100,10 +60,6 @@
 		53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */; };
 		53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */; };
 		53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */; };
-		53F052F31F6BD2370035EF5A /* tabbar_housing_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052EF1F6BD1F30035EF5A /* tabbar_housing_selected@2x.png */; };
-		53F052F41F6BD2390035EF5A /* tabbar_housing_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */; };
-		53F052F51F6BD23B0035EF5A /* tabbar_housing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */; };
-		53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */; };
 		53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FC5936247272B70023CC46 /* LaunchScreen.storyboard */; };
 		53FFBB69265E3AE7003DD85F /* YBRectConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB64265E3AE7003DD85F /* YBRectConst.m */; };
 		53FFBB6A265E3AE7003DD85F /* YBPopupMenuPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB65265E3AE7003DD85F /* YBPopupMenuPath.m */; };
@@ -114,10 +70,6 @@
 /* Begin PBXFileReference section */
 		27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		530338351F591DE600848A6E /* selectbianji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectbianji@3x.png"; sourceTree = "<group>"; };
-		530338361F591DE700848A6E /* selectbianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectbianji@2x.png"; sourceTree = "<group>"; };
-		530338391F591E3B00848A6E /* bianji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@3x.png"; sourceTree = "<group>"; };
-		5303383A1F591E3B00848A6E /* bianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@2x.png"; sourceTree = "<group>"; };
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
 		530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanInfoView.swift; sourceTree = "<group>"; };
 		531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,10 +80,6 @@
 		5321DE3C1F31C3AB00184F9D /* NotoSansHans-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-DemiLight.otf"; sourceTree = "<group>"; };
 		5321DE3D1F31C3AB00184F9D /* NotoSansHans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHans-Light.otf"; sourceTree = "<group>"; };
 		5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottonTableViewCell.swift; sourceTree = "<group>"; };
-		5321DE481F31E2A900184F9D /* tabbar_profile_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected@2x.png"; sourceTree = "<group>"; };
-		5321DE491F31E2A900184F9D /* tabbar_profile_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected@3x.png"; sourceTree = "<group>"; };
-		5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@2x.png"; sourceTree = "<group>"; };
-		5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@3x.png"; sourceTree = "<group>"; };
 		5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindTableViewCell.swift; sourceTree = "<group>"; };
 		5332A9831F4AB27D001465E4 /* RemindEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindEditorViewController.swift; sourceTree = "<group>"; };
 		5332A9851F4AB768001465E4 /* RemindCommercialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindCommercialViewController.swift; sourceTree = "<group>"; };
@@ -141,15 +89,8 @@
 		5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanCacheManage.swift; sourceTree = "<group>"; };
 		53351B8B1F669C0200717C26 /* FriendshipRecommenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipRecommenViewController.swift; sourceTree = "<group>"; };
 		53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipTableViewCell.swift; sourceTree = "<group>"; };
-		53351B911F66A79500717C26 /* fangdai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fangdai.png; sourceTree = "<group>"; };
-		53351B951F66ACC600717C26 /* longdai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longdai.png; sourceTree = "<group>"; };
-		53351B9D1F66B3EE00717C26 /* onePai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onePai.png; sourceTree = "<group>"; };
-		5342E9811F3323E000AC3059 /* titleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
-		5342E9831F33258900AC3059 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
-		5342E9841F33258900AC3059 /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
 		5342E9871F33261300AC3059 /* about_criticism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_criticism.png; sourceTree = "<group>"; };
 		5342E9881F33261300AC3059 /* about_praise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_praise.png; sourceTree = "<group>"; };
-		5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		534C9C391F5D134800511672 /* MortgageCalculator-Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MortgageCalculator-Swift.entitlements"; sourceTree = "<group>"; };
 		534FB71A1F39BB73006E3144 /* LoanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
 		5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -161,51 +102,25 @@
 		5365B7FA1F5F9490001FFEA5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5365B7FC1F5F949C001FFEA5 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		5365B7FF1F5F9569001FFEA5 /* MortgageCalculator-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		5367FD851F6A382C00449B5B /* lanyamao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lanyamao.png; sourceTree = "<group>"; };
-		5367FD8B1F6A6AE900449B5B /* JZNumberKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZNumberKeyboard.h; sourceTree = "<group>"; };
-		5367FD8C1F6A6AE900449B5B /* JZNumberKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZNumberKeyboard.m; sourceTree = "<group>"; };
 		5367FD8F1F6A6C6900449B5B /* delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@3x.png"; sourceTree = "<group>"; };
 		5367FD901F6A6C6A00449B5B /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
 		5367FD911F6A6C6A00449B5B /* resign@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resign@3x.png"; sourceTree = "<group>"; };
 		5367FD921F6A6C6A00449B5B /* resign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resign@2x.png"; sourceTree = "<group>"; };
-		5375E0581F97174800964123 /* baiDu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baiDu.png; sourceTree = "<group>"; };
-		5375E0591F97174800964123 /* tengXunNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tengXunNew.png; sourceTree = "<group>"; };
-		5375E05A1F97174800964123 /* jingDong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jingDong.png; sourceTree = "<group>"; };
-		5375E05B1F97174800964123 /* taoBao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taoBao2.png; sourceTree = "<group>"; };
-		5375E05C1F97174900964123 /* meiTuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meiTuan.png; sourceTree = "<group>"; };
-		5375E05D1F97174900964123 /* wuMi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wuMi.png; sourceTree = "<group>"; };
-		5375E05F1F97174900964123 /* chouTi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chouTi.png; sourceTree = "<group>"; };
-		5375E06A1F9734E700964123 /* taoBao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taoBao.png; sourceTree = "<group>"; };
-		5375E06E1F9849A900964123 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
-		5375E0701F9849BD00964123 /* tupian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tupian.png; sourceTree = "<group>"; };
-		5375E0741F984AFF00964123 /* sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sina.png; sourceTree = "<group>"; };
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewController.swift; sourceTree = "<group>"; };
-		5398073F1F67DEC1004127CA /* tianqi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tianqi.png; sourceTree = "<group>"; };
-		539807411F67E0A6004127CA /* v2ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = v2ex.png; sourceTree = "<group>"; };
 		53A089092422FD4900BC1192 /* MortgageCalculator-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift.h"; sourceTree = "<group>"; };
 		53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MortgageCalculator-Swift.m"; sourceTree = "<group>"; };
 		53A0890C2422FFE500BC1192 /* ADImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADImage.png; sourceTree = "<group>"; };
-		53A3752E2338500F00B62378 /* che.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = che.png; sourceTree = "<group>"; };
 		53A375302339ADE600B62378 /* InterestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewController.swift; sourceTree = "<group>"; };
-		53A375322339BD5000B62378 /* gongjijin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gongjijin.png; sourceTree = "<group>"; };
-		53A375332339BD5000B62378 /* shangye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shangye.png; sourceTree = "<group>"; };
 		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A4EF2C1F2ED46B00EF58EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53A4EF2E1F2ED46B00EF58EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53A4EF331F2ED46B00EF58EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_onsite@2x.png"; sourceTree = "<group>"; };
-		53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_onsite_selected@2x.png"; sourceTree = "<group>"; };
-		53A4EF6D1F2F075500EF58EB /* tabbar_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@2x.png"; sourceTree = "<group>"; };
-		53A4EF6E1F2F075500EF58EB /* tabbar_home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@3x.png"; sourceTree = "<group>"; };
-		53A4EF6F1F2F075500EF58EB /* tabbar_home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home_selected@2x.png"; sourceTree = "<group>"; };
-		53A4EF701F2F075500EF58EB /* tabbar_home_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home_selected@3x.png"; sourceTree = "<group>"; };
 		53A4EF871F2F353100EF58EB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		53C144332669C92800ABF437 /* XZNumberKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZNumberKeyBoard.h; sourceTree = "<group>"; };
 		53C144342669C92900ABF437 /* XZNumberKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZNumberKeyBoard.m; sourceTree = "<group>"; };
-		53D3BD531FB1463B00D6CB87 /* wangzhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wangzhi.png; sourceTree = "<group>"; };
 		53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		53D777051F306CEC0074B52C /* CommercialLoansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommercialLoansTableViewController.swift; sourceTree = "<group>"; };
 		53D777091F307EE60074B52C /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
@@ -214,10 +129,6 @@
 		53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftNavigationController.swift; sourceTree = "<group>"; };
 		53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoansTypeTableViewCell.swift; sourceTree = "<group>"; };
 		53D7771A1F308A600074B52C /* CombinationLoabsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationLoabsTableViewController.swift; sourceTree = "<group>"; };
-		53F052EF1F6BD1F30035EF5A /* tabbar_housing_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing_selected@2x.png"; sourceTree = "<group>"; };
-		53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing_selected@3x.png"; sourceTree = "<group>"; };
-		53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@2x.png"; sourceTree = "<group>"; };
-		53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_housing@3x.png"; sourceTree = "<group>"; };
 		53FC5936247272B70023CC46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53FFBB63265E3AE7003DD85F /* YBPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPopupMenu.h; sourceTree = "<group>"; };
 		53FFBB64265E3AE7003DD85F /* YBRectConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRectConst.m; sourceTree = "<group>"; };
@@ -313,19 +224,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5367FD891F6A6AE900449B5B /* JZNumberKeyboard */ = {
+		5367FD891F6A6AE900449B5B /* XZNumberKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
 				53C144332669C92800ABF437 /* XZNumberKeyBoard.h */,
 				53C144342669C92900ABF437 /* XZNumberKeyBoard.m */,
-				5367FD8B1F6A6AE900449B5B /* JZNumberKeyboard.h */,
-				5367FD8C1F6A6AE900449B5B /* JZNumberKeyboard.m */,
 				5367FD901F6A6C6A00449B5B /* delete@2x.png */,
 				5367FD8F1F6A6C6900449B5B /* delete@3x.png */,
 				5367FD921F6A6C6A00449B5B /* resign@2x.png */,
 				5367FD911F6A6C6A00449B5B /* resign@3x.png */,
 			);
-			path = JZNumberKeyboard;
+			path = XZNumberKeyBoard;
 			sourceTree = "<group>";
 		};
 		53A4EF1B1F2ED46B00EF58EB = {
@@ -368,49 +277,8 @@
 		53A4EF6A1F2F075500EF58EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				53A375322339BD5000B62378 /* gongjijin.png */,
-				53A375332339BD5000B62378 /* shangye.png */,
-				53D3BD531FB1463B00D6CB87 /* wangzhi.png */,
-				5375E0701F9849BD00964123 /* tupian.png */,
-				5375E0741F984AFF00964123 /* sina.png */,
-				5375E06E1F9849A900964123 /* video.png */,
-				53A3752E2338500F00B62378 /* che.png */,
-				5375E0581F97174800964123 /* baiDu.png */,
-				5375E05F1F97174900964123 /* chouTi.png */,
-				5375E05A1F97174800964123 /* jingDong.png */,
-				5375E05C1F97174900964123 /* meiTuan.png */,
-				5375E06A1F9734E700964123 /* taoBao.png */,
-				5375E05B1F97174800964123 /* taoBao2.png */,
-				5375E0591F97174800964123 /* tengXunNew.png */,
-				5375E05D1F97174900964123 /* wuMi.png */,
-				53F052EF1F6BD1F30035EF5A /* tabbar_housing_selected@2x.png */,
-				53F052F01F6BD1F30035EF5A /* tabbar_housing_selected@3x.png */,
-				53F052F11F6BD1F30035EF5A /* tabbar_housing@2x.png */,
-				53F052F21F6BD1F40035EF5A /* tabbar_housing@3x.png */,
-				5367FD851F6A382C00449B5B /* lanyamao.png */,
-				539807411F67E0A6004127CA /* v2ex.png */,
-				53351B9D1F66B3EE00717C26 /* onePai.png */,
-				5398073F1F67DEC1004127CA /* tianqi.png */,
-				53351B951F66ACC600717C26 /* longdai.png */,
-				53351B911F66A79500717C26 /* fangdai.png */,
-				5303383A1F591E3B00848A6E /* bianji@2x.png */,
-				530338391F591E3B00848A6E /* bianji@3x.png */,
-				530338361F591DE700848A6E /* selectbianji@2x.png */,
-				530338351F591DE600848A6E /* selectbianji@3x.png */,
 				5342E9871F33261300AC3059 /* about_criticism.png */,
 				5342E9881F33261300AC3059 /* about_praise.png */,
-				5342E9831F33258900AC3059 /* arrow_right@2x.png */,
-				5342E9841F33258900AC3059 /* arrow_right@3x.png */,
-				53A4EF6B1F2F075500EF58EB /* icon_tabbar_onsite@2x.png */,
-				53A4EF6C1F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png */,
-				5321DE4A1F31E2A900184F9D /* tabbar_profile@2x.png */,
-				5321DE4B1F31E2A900184F9D /* tabbar_profile@3x.png */,
-				5321DE481F31E2A900184F9D /* tabbar_profile_selected@2x.png */,
-				5321DE491F31E2A900184F9D /* tabbar_profile_selected@3x.png */,
-				53A4EF6D1F2F075500EF58EB /* tabbar_home@2x.png */,
-				53A4EF6E1F2F075500EF58EB /* tabbar_home@3x.png */,
-				53A4EF6F1F2F075500EF58EB /* tabbar_home_selected@2x.png */,
-				53A4EF701F2F075500EF58EB /* tabbar_home_selected@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -433,9 +301,7 @@
 				53D776FF1F30591A0074B52C /* BaseTableViewCell.swift */,
 				53D777161F30869E0074B52C /* LoansTypeTableViewCell.swift */,
 				5321DE441F31D05C00184F9D /* BottonTableViewCell.swift */,
-				5342E9811F3323E000AC3059 /* titleTableViewCell.swift */,
 				538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */,
-				5342E98B1F33270F00AC3059 /* MoreTableViewCell.swift */,
 				5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */,
 				53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */,
 			);
@@ -446,7 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				53FFBB62265E3AE7003DD85F /* YBPopupMenu */,
-				5367FD891F6A6AE900449B5B /* JZNumberKeyboard */,
+				5367FD891F6A6AE900449B5B /* XZNumberKeyBoard */,
 				5321DE3B1F31C3AB00184F9D /* Font */,
 				53D777081F307EE60074B52C /* Extension */,
 				5321DE391F31BDF200184F9D /* XZClient.swift */,
@@ -570,59 +436,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5375E0601F97177E00964123 /* baiDu.png in Resources */,
-				5375E0611F97178400964123 /* chouTi.png in Resources */,
 				53A0890D2422FFE500BC1192 /* ADImage.png in Resources */,
 				5367FD951F6A6C8100449B5B /* resign@2x.png in Resources */,
-				530338371F591DE700848A6E /* selectbianji@3x.png in Resources */,
-				5321DE4D1F31E2A900184F9D /* tabbar_profile_selected@3x.png in Resources */,
-				5375E06B1F9734E900964123 /* taoBao.png in Resources */,
 				5342E98A1F33261300AC3059 /* about_praise.png in Resources */,
-				5342E9861F33258900AC3059 /* arrow_right@3x.png in Resources */,
 				5342E9891F33261300AC3059 /* about_criticism.png in Resources */,
-				53A4EF731F2F075500EF58EB /* tabbar_home@2x.png in Resources */,
-				539807421F67E0A8004127CA /* v2ex.png in Resources */,
-				53A375352339BD5000B62378 /* shangye.png in Resources */,
 				5321DE411F31C3AB00184F9D /* NotoSansHans-Light.otf in Resources */,
 				5321DE401F31C3AB00184F9D /* NotoSansHans-DemiLight.otf in Resources */,
-				5375E0731F9849C500964123 /* video.png in Resources */,
-				53A4EF761F2F075500EF58EB /* tabbar_home_selected@3x.png in Resources */,
-				5321DE4E1F31E2A900184F9D /* tabbar_profile@2x.png in Resources */,
-				5375E0661F97178F00964123 /* tengXunNew.png in Resources */,
 				53FC5937247272B70023CC46 /* LaunchScreen.storyboard in Resources */,
-				5367FD861F6A382E00449B5B /* lanyamao.png in Resources */,
-				5375E0631F97178800964123 /* meiTuan.png in Resources */,
-				53F052F51F6BD23B0035EF5A /* tabbar_housing@2x.png in Resources */,
 				5367FD931F6A6C7D00449B5B /* delete@2x.png in Resources */,
-				5303383B1F591E3B00848A6E /* bianji@3x.png in Resources */,
-				5342E9851F33258900AC3059 /* arrow_right@2x.png in Resources */,
-				53A4EF721F2F075500EF58EB /* icon_tabbar_onsite_selected@2x.png in Resources */,
-				53A4EF741F2F075500EF58EB /* tabbar_home@3x.png in Resources */,
-				5375E0671F97179200964123 /* wuMi.png in Resources */,
-				53351B921F66A79700717C26 /* fangdai.png in Resources */,
-				5303383C1F591E3B00848A6E /* bianji@2x.png in Resources */,
-				53A4EF751F2F075500EF58EB /* tabbar_home_selected@2x.png in Resources */,
-				53F052F61F6BD23E0035EF5A /* tabbar_housing@3x.png in Resources */,
-				53F052F31F6BD2370035EF5A /* tabbar_housing_selected@2x.png in Resources */,
-				5321DE4C1F31E2A900184F9D /* tabbar_profile_selected@2x.png in Resources */,
-				53D3BD541FB1463B00D6CB87 /* wangzhi.png in Resources */,
-				5375E0711F9849C100964123 /* tupian.png in Resources */,
-				5375E0651F97178D00964123 /* taoBao2.png in Resources */,
-				539807401F67DEC3004127CA /* tianqi.png in Resources */,
-				530338381F591DE700848A6E /* selectbianji@2x.png in Resources */,
 				5367FD941F6A6C7F00449B5B /* delete@3x.png in Resources */,
 				53A4EF2F1F2ED46B00EF58EB /* Assets.xcassets in Resources */,
 				53A4EF2D1F2ED46B00EF58EB /* Main.storyboard in Resources */,
-				53A3752F2338501000B62378 /* che.png in Resources */,
-				53351B9E1F66B3F000717C26 /* onePai.png in Resources */,
-				53A4EF711F2F075500EF58EB /* icon_tabbar_onsite@2x.png in Resources */,
-				53F052F41F6BD2390035EF5A /* tabbar_housing_selected@3x.png in Resources */,
-				5375E0751F984B0100964123 /* sina.png in Resources */,
 				5367FD961F6A6C8400449B5B /* resign@3x.png in Resources */,
-				53351B961F66ACC800717C26 /* longdai.png in Resources */,
-				5375E0621F97178600964123 /* jingDong.png in Resources */,
-				53A375342339BD5000B62378 /* gongjijin.png in Resources */,
-				5321DE4F1F31E2A900184F9D /* tabbar_profile@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +527,6 @@
 			files = (
 				531B1585265F5021005D5DBD /* UserViewController.swift in Sources */,
 				53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */,
-				5367FD8E1F6A6C1900449B5B /* JZNumberKeyboard.m in Sources */,
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
@@ -716,13 +540,11 @@
 				5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */,
 				5332A97B1F4A8C30001465E4 /* RemindTableViewCell.swift in Sources */,
 				53351B8C1F669C0200717C26 /* FriendshipRecommenViewController.swift in Sources */,
-				5342E98C1F33270F00AC3059 /* MoreTableViewCell.swift in Sources */,
 				53D777171F30869E0074B52C /* LoansTypeTableViewCell.swift in Sources */,
 				5332A9841F4AB27D001465E4 /* RemindEditorViewController.swift in Sources */,
 				53D777131F307EE60074B52C /* XZSetting.swift in Sources */,
 				53D777141F307EE60074B52C /* XZSwiftColor.swift in Sources */,
 				53D777061F306CEC0074B52C /* CommercialLoansTableViewController.swift in Sources */,
-				5342E9821F3323E000AC3059 /* titleTableViewCell.swift in Sources */,
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */,
@@ -892,7 +714,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.0.1;
+				MARKETING_VERSION = 3.0.2;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -940,7 +762,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.0.1;
+				MARKETING_VERSION = 3.0.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

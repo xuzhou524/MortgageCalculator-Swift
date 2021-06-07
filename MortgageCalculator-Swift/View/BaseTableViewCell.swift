@@ -76,10 +76,7 @@ class BaseTableViewCell: UITableViewCell {
         
         let keyboard = XZNumberKeyBoard()
         keyboard.setInputView(self.textField!)
-        
-//        let keyboard = JZNumberKeyboard()
-//        keyboard.setInputView(self.textField)
-        
+
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
