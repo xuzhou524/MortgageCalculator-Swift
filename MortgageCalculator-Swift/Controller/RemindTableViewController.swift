@@ -3,7 +3,7 @@
 //  MortgageCalculator-Swift
 //
 //  Created by gozap on 2017/8/2.
-//  Copyright © 2017年 com.longdai. All rights reserved.
+//  Copyright © 2017年 xuzhou. All rights reserved.
 //
 
 import UIKit
