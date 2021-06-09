@@ -108,7 +108,7 @@ class RemindAccumulationViewController: UITableViewController {
     
     @objc func saveClick(){
         
-        if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0 || (self.loanRateTextFiled?.text?.Lenght)! <= 0 || (self.startPaymentTextFiled?.text?.Lenght)! <= 0) {
+        if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0 || (self.loanRateTextFiled?.text?.Lenght)! <= 0) {
             return
         }
         
@@ -119,6 +119,9 @@ class RemindAccumulationViewController: UITableViewController {
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
         loanModel.accumulationRateStr = self.loanRateTextFiled?.text
         loanModel.startPaymentStr = self.startPaymentTextFiled?.text
+        if loanModel.startPaymentStr?.Lenght != 8 {
+          return
+        }
         
         let str = (self.startPaymentTextFiled?.text)! as NSString
         let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期

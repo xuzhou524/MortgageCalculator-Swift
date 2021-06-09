@@ -135,7 +135,7 @@ class RemindCombinationViewController: UITableViewController {
     
     @objc func saveClick(){
         
-        if  ((self.businessAmontTextFiled?.text?.Lenght)! <= 0 || (self.businessRateTextFiled?.text?.Lenght)! <= 0 || (self.accumulationAmontTextFiled?.text?.Lenght)! <= 0 || (self.accumulationRateTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0 || (self.startPaymentTextFiled?.text?.Lenght)! <= 0) {
+        if  ((self.businessAmontTextFiled?.text?.Lenght)! <= 0 || (self.businessRateTextFiled?.text?.Lenght)! <= 0 || (self.accumulationAmontTextFiled?.text?.Lenght)! <= 0 || (self.accumulationRateTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0) {
             return
         }
         
@@ -150,6 +150,9 @@ class RemindCombinationViewController: UITableViewController {
         loanModel.numberYearStr = self.loanPeriodTextFiled?.text
         
         loanModel.startPaymentStr = self.startPaymentTextFiled?.text
+        if loanModel.startPaymentStr?.Lenght != 8 {
+          return
+        }
         
         let str = (self.startPaymentTextFiled?.text)! as NSString
         let repaymentDate = str.substring(with: NSMakeRange(str.length - 2, 2)) //还款日期

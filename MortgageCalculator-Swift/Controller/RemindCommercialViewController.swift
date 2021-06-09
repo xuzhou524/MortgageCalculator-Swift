@@ -118,7 +118,7 @@ class RemindCommercialViewController: UITableViewController {
     
     @objc func saveClick(){
 
-        if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0 || (self.loanRateTextFiled?.text?.Lenght)! <= 0 || (self.startPaymentTextFiled?.text?.Lenght)! <= 0) {
+        if  ((self.loanAmontTextFiled?.text?.Lenght)! <= 0 || (self.loanPeriodTextFiled?.text?.Lenght)! <= 0 || (self.loanRateTextFiled?.text?.Lenght)! <= 0 || (self.startPaymentTextFiled?.text?.Lenght)! < 8) {
             return
         }
     
