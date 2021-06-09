@@ -43,21 +43,22 @@ class RootViewController: UIViewController {
         super.viewWillAppear(animated)
         if UserDefaults.standard.getCustomObject(forKey: "kTMCacheLoanManage") as? LoanCacheManage != nil {
             self.loanCacheModel = UserDefaults.standard.getCustomObject(forKey: "kTMCacheLoanManage") as? LoanCacheManage
-
-            let dfmatter = DateFormatter()
-            dfmatter.dateFormat="yyyyMMdd"
-            //首次还款时间戳
-            let dayStr = dfmatter.date(from:(self.loanCacheModel?.startPaymentStr)!)
-            let gregorians = Calendar.init(identifier: .gregorian)
-            let result = gregorians.compare(Date(), to: dayStr!, toGranularity: .month)
-            if result.rawValue == 1 {  //开始还款
-                let monthNumbers = gregorians.dateComponents([.year, .month, .hour], from: dayStr!, to: Date())
-                self.loanCacheModel?.alsoNumberMonthStr = String(monthNumbers.month! + 12 * monthNumbers.year! + 1 )
-            }else{
-                self.loanCacheModel?.alsoNumberMonthStr = "0"
+            if self.loanCacheModel?.startPaymentStr?.Lenght == 8 {
+                let dfmatter = DateFormatter()
+                dfmatter.dateFormat="yyyyMMdd"
+                //首次还款时间戳
+                let dayStr = dfmatter.date(from:(self.loanCacheModel?.startPaymentStr)!)
+                let gregorians = Calendar.init(identifier: .gregorian)
+                let result = gregorians.compare(Date(), to: dayStr!, toGranularity: .month)
+                if result.rawValue == 1 {  //开始还款
+                    let monthNumbers = gregorians.dateComponents([.year, .month, .hour], from: dayStr!, to: Date())
+                    self.loanCacheModel?.alsoNumberMonthStr = String(monthNumbers.month! + 12 * monthNumbers.year! + 1 )
+                }else{
+                    self.loanCacheModel?.alsoNumberMonthStr = "0"
+                }
+                myLoanInfoView.bind(model: self.loanCacheModel)
+                pushMessage()
             }
-            myLoanInfoView.bind(model: self.loanCacheModel)
-            pushMessage()
         }
     }
 
