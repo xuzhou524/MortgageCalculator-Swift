@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        #if DEBUG
-        #else
+//        #if DEBUG
+//        #else
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        #endif
+//        #endif
         
         self.pushRegisterNotifcation()
         

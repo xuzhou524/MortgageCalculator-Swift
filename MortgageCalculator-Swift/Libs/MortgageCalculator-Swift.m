@@ -10,6 +10,8 @@
 
 @import GoogleMobileAds;
 
+@import AdColonyAdapter;
+
 @interface MortgageCalculator_Swift()<GADFullScreenContentDelegate>{
     
     UIViewController * _adViewController;
@@ -40,13 +42,13 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
-        #ifdef DEBUG
-        #else
+//        #ifdef DEBUG
+//        #else
         NSString * i = [[NSUserDefaults standardUserDefaults] objectForKey:@"com.xuzhou.advertising"];
         if ([i intValue] == 0) {
             [self views];
         }
-        #endif
+//        #endif
     }
     return self;
 }
@@ -75,6 +77,8 @@
 -(void)CheakAd{//这一部分的逻辑大家根据自身需求定制
     //谷歌插屏广告
     GADRequest *request = [GADRequest request];
+    GADMAdapterAdColonyExtras *extras = [[GADMAdapterAdColonyExtras alloc] init];
+    [request registerAdNetworkExtras:extras];
       [GADInterstitialAd loadWithAdUnitID:@"ca-app-pub-9353975206269682/2521277821"
                                       request:request
                             completionHandler:^(GADInterstitialAd *ad, NSError *error) {

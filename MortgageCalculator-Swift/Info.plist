@@ -72,11 +72,26 @@
 	</dict>
 	<key>SKAdNetworkItems</key>
 	<array>
-		<string>ydx93a7ass.skadnetwork</string>
-		<string>2fnua5tdw4.skadnetwork</string>
-		<string>e5fvkxwrpn.skadnetwork</string>
-		<string>4fzdc2evr5.skadnetwork</string>
-		<string>cstr6suwn9.skadnetwork</string>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>4pfyvq9l8r.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>6g9af3uyq4.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>2fnua5tdw4.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>4fzdc2evr5.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
 	</array>
 	<key>UIAppFonts</key>
 	<array>
