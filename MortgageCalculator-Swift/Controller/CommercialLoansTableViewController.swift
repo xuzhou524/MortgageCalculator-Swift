@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommercialLoansTableViewController: UITableViewController {
+class CommercialLoansTableViewController: UITableViewController,CalculateDelegate {
     
     var rootNavigationController: XZSwiftNavigationController?
     
@@ -18,6 +18,8 @@ class CommercialLoansTableViewController: UITableViewController {
     
     var rateTypeSegmented : UISegmentedControl?
     var typeSegmented : UISegmentedControl?
+    
+    var calculateView : CalculateView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +83,10 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.tapImageView.isHidden = false
+            let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(tapView))
+            tapGestureRecognizer.numberOfTapsRequired = 1
+            cell.tapImageView.addGestureRecognizer(tapGestureRecognizer)
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanAmontTextFiled = cell.textField
         }else if indexPath.row == 1 {
@@ -88,6 +94,7 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.tapImageView.isHidden = true
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 3 {
@@ -101,6 +108,7 @@ class CommercialLoansTableViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.tapImageView.isHidden = true
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
         }
@@ -128,6 +136,17 @@ class CommercialLoansTableViewController: UITableViewController {
     
     @objc func segmentedControlChanged(){
         self.tableView.reloadRows(at: [IndexPath(row:3, section: 0)], with: .none)
+    }
+    
+    @objc func tapView(){
+        calculateView = CalculateView()
+        calculateView?.delegate = self
+        calculateView?.show()
+    }
+    
+    func clickTheButton(view: CalculateView, loanAmount: CGFloat) {
+        view.hide()
+        self.loanAmontTextFiled?.text = "\(loanAmount)"
     }
     
     override func didReceiveMemoryWarning() {

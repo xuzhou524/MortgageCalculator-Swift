@@ -10,6 +10,19 @@ import UIKit
 
 class XZClient: NSObject{
     
+    static let shared = XZClient()
+    private override init() {
+        super.init()
+    }
+    
+    var mainWindow:UIWindow {
+        get {
+            let array = UIApplication.shared.windows
+            let windowScene = array.first
+            return windowScene ?? UIWindow()
+        }
+    }
+    
     class func ScreenWidth() -> CGFloat{
         return UIScreen.main.bounds.width
     }

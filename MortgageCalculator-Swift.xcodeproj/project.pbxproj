@@ -26,6 +26,7 @@
 		5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332A98D1F4ACE40001465E4 /* LoanCacheManage.swift */; };
 		53351B8E1F669D1B00717C26 /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */; };
 		534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FB71A1F39BB73006E3144 /* LoanModel.swift */; };
+		5365A5792682C7BC00F1DEF1 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5365A5782682C7BC00F1DEF1 /* CalculateView.swift */; };
 		5365B7EF1F5F943A001FFEA5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */; };
 		5365B7F11F5F9445001FFEA5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F01F5F9444001FFEA5 /* libz.tbd */; };
 		5365B7F31F5F944F001FFEA5 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365B7F21F5F944F001FFEA5 /* libstdc++.tbd */; };
@@ -87,6 +88,7 @@
 		53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipTableViewCell.swift; sourceTree = "<group>"; };
 		534C9C391F5D134800511672 /* MortgageCalculator-Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MortgageCalculator-Swift.entitlements"; sourceTree = "<group>"; };
 		534FB71A1F39BB73006E3144 /* LoanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
+		5365A5782682C7BC00F1DEF1 /* CalculateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
 		5365B7EE1F5F943A001FFEA5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		5365B7F01F5F9444001FFEA5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5365B7F21F5F944F001FFEA5 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -287,6 +289,7 @@
 				538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */,
 				5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */,
 				53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */,
+				5365A5782682C7BC00F1DEF1 /* CalculateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				5332A98A1F4AB8D8001465E4 /* RemindCombinationViewController.swift in Sources */,
 				53FFBB69265E3AE7003DD85F /* YBRectConst.m in Sources */,
 				5332A9881F4AB7EE001465E4 /* RemindAccumulationViewController.swift in Sources */,
+				5365A5792682C7BC00F1DEF1 /* CalculateView.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				53FFBB6A265E3AE7003DD85F /* YBPopupMenuPath.m in Sources */,
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,

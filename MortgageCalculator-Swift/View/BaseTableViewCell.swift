@@ -20,6 +20,12 @@ class BaseTableViewCell: UITableViewCell {
     var bottomSepView : UIImageView?
     var bottomShortSepView : UIImageView?
     
+    var tapImageView:UIImageView = {
+        let imageView =  UIImageView()
+        imageView.image = UIImage(named: "ic_amount")
+        imageView.isUserInteractionEnabled = true
+        return imageView
+    }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.sebView()
@@ -41,6 +47,14 @@ class BaseTableViewCell: UITableViewCell {
             make.centerY.equalTo(self.contentView)
             make.left.equalTo(self.contentView).offset(15)
         })
+        
+        self.contentView.addSubview(self.tapImageView)
+        self.tapImageView.snp.makeConstraints({ (make) in
+            make.centerY.equalTo(self.contentView)
+            make.left.equalTo(self.titleLabel!.snp.right)
+            make.width.height.equalTo(24)
+        })
+        self.tapImageView.isHidden = true
         
         self.bgTextFieldView = UIView()
         self.bgTextFieldView?.layer.borderWidth = 0.5

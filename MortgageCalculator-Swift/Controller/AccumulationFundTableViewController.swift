@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccumulationFundTableViewController: UITableViewController {
+class AccumulationFundTableViewController: UITableViewController,CalculateDelegate {
     
     var rootNavigationController: XZSwiftNavigationController?
     
@@ -17,6 +17,8 @@ class AccumulationFundTableViewController: UITableViewController {
     var loanRateTextFiled:UITextField?
     
     var typeSegmented : UISegmentedControl?
+    
+    var calculateView : CalculateView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,13 +75,18 @@ class AccumulationFundTableViewController: UITableViewController {
             cell.topSepView?.isHidden = false
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.tapImageView.isHidden = false
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanAmontTextFiled = cell.textField
+            let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(tapView))
+            tapGestureRecognizer.numberOfTapsRequired = 1
+            cell.tapImageView.addGestureRecognizer(tapGestureRecognizer)
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.tapImageView.isHidden = true
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
         }else if indexPath.row == 2 {
@@ -87,6 +94,7 @@ class AccumulationFundTableViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
+            cell.tapImageView.isHidden = true
             cell.textField?.text = "3.25"
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
@@ -110,6 +118,17 @@ class AccumulationFundTableViewController: UITableViewController {
             loanDetailsVC.loanTypeInt = self.typeSegmented?.selectedSegmentIndex
             self.rootNavigationController?.pushViewController(loanDetailsVC, animated: true)
         }
+    }
+    
+    @objc func tapView(){
+        calculateView = CalculateView()
+        calculateView?.delegate = self
+        calculateView?.show()
+    }
+    
+    func clickTheButton(view: CalculateView, loanAmount: CGFloat) {
+        view.hide()
+        self.loanAmontTextFiled?.text = "\(loanAmount)"
     }
     
     override func didReceiveMemoryWarning() {
