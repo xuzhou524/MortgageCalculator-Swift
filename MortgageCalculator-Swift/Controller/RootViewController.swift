@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import GoogleMobileAds
+import StoreKit
 
 class RootViewController: UIViewController {
     
@@ -111,6 +112,8 @@ class RootViewController: UIViewController {
         self.rootSegmentedVC?.addTarget(self, action: #selector(RootViewController.segmentDidchange), for: .valueChanged)
         
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
+        
+        SKStoreReviewController.requestReview()
     
     }
     

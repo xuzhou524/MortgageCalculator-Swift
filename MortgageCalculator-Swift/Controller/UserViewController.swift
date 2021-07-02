@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class UserViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
@@ -34,6 +35,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
             make.top.right.bottom.left.equalTo(self.view);
         }
         
+        SKStoreReviewController.requestReview()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
