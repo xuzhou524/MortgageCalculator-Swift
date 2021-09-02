@@ -135,9 +135,9 @@ typedef void (^ButtonActionBlock)(UIButton *thisButton);
     bottomBtn.layer.masksToBounds = YES;
     bottomBtn.layer.cornerRadius = 24.0;
     bottomBtn.titleLabel.font = [UIFont systemFontOfSize:18];
-    bottomBtn.backgroundColor = [UIColor orangeColor];
+    [bottomBtn setBackgroundImage:[UIImage imageNamed:@"ic_MyLoanBg"] forState:UIControlStateNormal];
+//    bottomBtn.backgroundColor = [UIColor orangeColor];
     [bottomBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [bottomBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     [bottomBtn addTargetActionBlock:^(UIButton * _Nonnull aButton) {
         [weakSelf hide];
         if (completion)
