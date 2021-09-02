@@ -9,6 +9,8 @@
 import UIKit
 import UserNotifications
 
+import AdKleinSDK
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window?.rootViewController = XZSwiftNavigationController(rootViewController: RootViewController())
         self.window?.makeKeyAndVisible()
+        
+        self.createPlaceholder()
+        self.initSDK()
 
         return true
     }
@@ -57,5 +62,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
+}
+
+//接入三方广告平台
+extension AppDelegate {
+
+    func createPlaceholder() {
+        
+//        let lsname = Bundle.main.infoDictionary?["UILaunchStoryboardName"]
+//
+//
+//        let vc = UIStoryboard.init(name: lsname as! String, bundle: nil).instantiateViewController(withIdentifier: lsname)
+//        vc.v
+//
+//
+//
+//
+//        NSString *lsname = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"UILaunchStoryboardName"];
+//        UIViewController *vc = [[UIStoryboard storyboardWithName:lsname bundle:nil] instantiateInitialViewController];
+//        vc.view.frame = self.window.bounds;
+//        [self.window addSubview:vc.view];
+//        self.placeholderView = vc.view;
+    }
+    
+    func initSDK() {
+        
+    }
+    
+    
 }
 
