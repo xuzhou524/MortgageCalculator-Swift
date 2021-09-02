@@ -7,6 +7,5 @@
 //
 
 #import "XZNumberKeyBoard.h"
-#import "MortgageCalculator-Swift.h"
 #import "YBPopupMenu.h"
 

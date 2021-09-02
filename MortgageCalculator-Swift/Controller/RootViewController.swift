@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-import GoogleMobileAds
 import StoreKit
 
 class RootViewController: UIViewController {
@@ -17,7 +16,6 @@ class RootViewController: UIViewController {
     var commerciaiLoansVC : CommercialLoansTableViewController?
     var accumulationLoansVC : AccumulationFundTableViewController?
     var combinationLoansVC : CombinationLoabsTableViewController?
-    var bannerView: GADBannerView!
     
     var loanCacheModel : LoanCacheManage?
     
@@ -65,21 +63,6 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        #if DEBUG
-        #else
-        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 100, width: XZClient.ScreenWidth(), height: 50))
-        if (XZClient.XZiPhoneX()) {
-            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 150, width: XZClient.ScreenWidth(), height: 50)
-        }
-        bannerView.adSize = kGADAdSizeBanner
-        bannerView.center.x = self.view.center.x
-        self.view.addSubview(bannerView)
-        self.view.bringSubviewToFront(bannerView)
-        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        #endif
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)

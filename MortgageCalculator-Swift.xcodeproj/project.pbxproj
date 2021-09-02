@@ -42,7 +42,6 @@
 		537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */; };
 		538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */; };
 		5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */; };
-		53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */; };
 		53A0890D2422FFE500BC1192 /* ADImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A0890C2422FFE500BC1192 /* ADImage.png */; };
 		53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A375302339ADE600B62378 /* InterestTableViewController.swift */; };
 		53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4EF271F2ED46B00EF58EB /* AppDelegate.swift */; };
@@ -105,8 +104,6 @@
 		537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationDetailsTableViewController.swift; sourceTree = "<group>"; };
 		538330481F3C644B004AAB2B /* LoanDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDetailsTableViewController.swift; sourceTree = "<group>"; };
-		53A089092422FD4900BC1192 /* MortgageCalculator-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift.h"; sourceTree = "<group>"; };
-		53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MortgageCalculator-Swift.m"; sourceTree = "<group>"; };
 		53A0890C2422FFE500BC1192 /* ADImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADImage.png; sourceTree = "<group>"; };
 		53A375302339ADE600B62378 /* InterestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewController.swift; sourceTree = "<group>"; };
 		53A4EF241F2ED46B00EF58EB /* MortgageCalculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MortgageCalculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,8 +302,6 @@
 				53D7770D1F307EE60074B52C /* XZSetting.swift */,
 				53D7770E1F307EE60074B52C /* XZSwiftColor.swift */,
 				53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */,
-				53A089092422FD4900BC1192 /* MortgageCalculator-Swift.h */,
-				53A0890A2422FD4900BC1192 /* MortgageCalculator-Swift.m */,
 				53A0890C2422FFE500BC1192 /* ADImage.png */,
 			);
 			path = Libs;
@@ -477,17 +472,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,7 +491,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				531B1585265F5021005D5DBD /* UserViewController.swift in Sources */,
-				53A0890B2422FD4900BC1192 /* MortgageCalculator-Swift.m in Sources */,
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,

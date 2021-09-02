@@ -4,8 +4,6 @@ use_frameworks!
 
 def pods
    pod 'SnapKit'
-   pod 'Google-Mobile-Ads-SDK'
-   pod 'GoogleMobileAdsMediationAdColony'
 end
 
 
