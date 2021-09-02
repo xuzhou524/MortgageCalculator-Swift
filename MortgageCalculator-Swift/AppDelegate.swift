@@ -94,11 +94,9 @@ extension AppDelegate:AdKleinSDKSplashAdDelegate {
     }
     
     func loadSplashAd() {
-        
         self.splashAd = AdKleinSDKSplashAd.init(placementId: CONST_SPLASH_ID, window: self.window!)
         self.splashAd?.delegate = self
         self.splashAd?.load()
-        
     }
     
     func showPrivacyAlert() {
