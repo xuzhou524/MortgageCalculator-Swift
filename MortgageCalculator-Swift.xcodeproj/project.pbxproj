@@ -358,6 +358,7 @@
 				53A4EF221F2ED46B00EF58EB /* Resources */,
 				E8C602C13CE6289C683505DA /* [CP] Embed Pods Frameworks */,
 				53E45E5B1F690C05009DE104 /* ShellScript */,
+				9E695AD7F0FAA7637AD8264C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,8 +445,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\n";
+		};
+		9E695AD7F0FAA7637AD8264C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-resources.sh",
+				"${PODS_ROOT}/AdKleinSDK/Frameworks/mobius/AdMobiusSDKBundle.bundle",
+				"${PODS_ROOT}/Ads-CN/PangleSDK/LICENSE",
+				"${PODS_ROOT}/Ads-CN/PangleSDK/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AdMobiusSDKBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		A992B7AE5FD15890745D33E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

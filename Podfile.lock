@@ -1,16 +1,51 @@
 PODS:
+  - AdKleinSDK/AdKleinSDKFoundation (3.2.0)
+  - AdKleinSDK/AdKleinSDKPlatforms/CSJ (3.2.0):
+    - AdKleinSDK/core
+    - Ads-CN (~> 3.8.1.0)
+  - AdKleinSDK/AdKleinSDKPlatforms/GDT (3.2.0):
+    - AdKleinSDK/core
+    - GDTMobSDK (~> 4.13.01)
+  - AdKleinSDK/AdKleinSDKPlatforms/Mobius (3.2.0):
+    - AdKleinSDK/AdMobiusSDK
+    - AdKleinSDK/core
+  - AdKleinSDK/AdMobiusSDK (3.2.0)
+  - AdKleinSDK/core (3.2.0):
+    - AdKleinSDK/AdKleinSDKFoundation
+    - AdKleinSDK/NxPerfSDK
+  - AdKleinSDK/NxPerfSDK (3.2.0)
+  - Ads-CN (3.8.1.0):
+    - Ads-CN/BUAdSDK (= 3.8.1.0)
+  - Ads-CN/BUAdSDK (3.8.1.0):
+    - Ads-CN/BUFoundation
+    - Ads-CN/Domestic
+  - Ads-CN/BUFoundation (3.8.1.0)
+  - Ads-CN/Domestic (3.8.1.0)
+  - GDTMobSDK (4.13.02):
+    - GDTMobSDK/GDTMobSDK (= 4.13.02)
+  - GDTMobSDK/GDTMobSDK (4.13.02)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - AdKleinSDK/AdKleinSDKPlatforms/CSJ
+  - AdKleinSDK/AdKleinSDKPlatforms/GDT
+  - AdKleinSDK/AdKleinSDKPlatforms/Mobius
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - SnapKit
+  trunk:
+    - AdKleinSDK
+    - Ads-CN
+    - GDTMobSDK
 
 SPEC CHECKSUMS:
+  AdKleinSDK: fefde3bb69cbe4b1a916f652553abe7f63073e54
+  Ads-CN: 49af96ac9f7b1a43ef4cfb37b6a74863421d4ee1
+  GDTMobSDK: c614fccaf8267a6fd6eeecb0501d7cd804326003
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: ff7c4803a62b8f680b2e1ea11043f36c54e7a8db
+PODFILE CHECKSUM: 4f1e57e94bfbee2e424753cfe13ceab255063a6b
 
 COCOAPODS: 1.10.1
