@@ -130,6 +130,7 @@ class TitleSwitchTableViewCell: UITableViewCell {
     func setup()->Void{
         self.backgroundColor = UIColor.white
         self.selectionStyle = .none
+        self.clipsToBounds = true
 
         self.contentView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints{ (make) -> Void in
