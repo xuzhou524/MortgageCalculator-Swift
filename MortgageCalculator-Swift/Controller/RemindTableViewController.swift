@@ -195,7 +195,8 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
     }
     
     func pushMessage() {
-        UIApplication.shared.cancelAllLocalNotifications()
+        
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         //        // 初始化一个通知
         //        let localNoti = UILocalNotification()
         //

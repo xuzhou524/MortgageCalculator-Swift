@@ -30,9 +30,12 @@ class XZSetting: NSObject {
 
 extension UserDefaults { //1
     func saveCustomObject(customObject object: NSCoding, key: String) { //2
-        let encodedObject = NSKeyedArchiver.archivedData(withRootObject: object)
-        self.set(encodedObject, forKey: key)
-        self.synchronize()
+        do{
+            let data = try NSKeyedArchiver.archivedData(withRootObject: object, requiringSecureCoding: false)
+            self.set(data, forKey: "people")
+        }catch{
+            print(error)
+        }
     }
     
     func getCustomObject(forKey key: String) -> AnyObject? { //3

@@ -12,7 +12,7 @@ import AppTrackingTransparency
 import AdKleinSDK
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
     
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func pushRegisterNotifcation() {
         let center = UNUserNotificationCenter.current()
-        center.delegate = self as? UNUserNotificationCenterDelegate
+        center.delegate = self
         center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, error) in
             if granted {
                 center.getNotificationSettings(completionHandler: { (settings) in
@@ -51,6 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     /** 接收本地通知  运行*/
+//    - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenterDelegate willPresentNotification:withCompletionHandler:] or -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]"
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//
+//    }
+    
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         let aler = UIAlertView.init(title: notification.userInfo?[AnyHashable("title")] as? String, message: notification.userInfo?[AnyHashable("body")] as? String, delegate: self, cancelButtonTitle: "我知道了")
         aler.show()

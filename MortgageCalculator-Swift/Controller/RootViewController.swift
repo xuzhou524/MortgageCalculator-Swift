@@ -101,7 +101,7 @@ class RootViewController: UIViewController {
         
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
         
-//        SKStoreReviewController.requestReview()
+        SKStoreReviewController.requestReview()
     
     }
     
