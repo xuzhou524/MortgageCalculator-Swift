@@ -7,17 +7,19 @@
 //
 
 
-#if DEBUG
-
-#define CONST_MEDIA_ID @"194254620"
-#define CONST_SPLASH_ID @"141846962557" //开屏
-
-#else
+//#if DEBUG
+//
+//#define CONST_MEDIA_ID @"194254620"
+//#define CONST_SPLASH_ID @"141846962557" //开屏
+//#define CONST_BANNER_ID @"106467382054" //横幅广告ios
+//
+//#else
 
 #define CONST_MEDIA_ID @"162037215"
 #define CONST_SPLASH_ID @"139294856223" //开屏
+#define CONST_BANNER_ID @"137668415637" //横幅广告ios
 
-#endif
+//#endif
 
 
 #import "XZNumberKeyBoard.h"

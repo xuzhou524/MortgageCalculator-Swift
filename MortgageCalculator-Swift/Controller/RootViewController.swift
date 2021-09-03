@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import StoreKit
+import AdKleinSDK
 
 class RootViewController: UIViewController {
     
@@ -18,6 +19,8 @@ class RootViewController: UIViewController {
     var combinationLoansVC : CombinationLoabsTableViewController?
     
     var loanCacheModel : LoanCacheManage?
+    
+    var bannerView:AdKleinSDKBannerAdView?
     
     let titleLabel:UILabel = {
         let label = UILabel()
@@ -97,6 +100,12 @@ class RootViewController: UIViewController {
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
         
 //        SKStoreReviewController.requestReview()
+        
+        #if DEBUG
+        showBannerView()
+        #else
+        showBannerView()
+        #endif
     
     }
     
@@ -203,7 +212,7 @@ extension RootViewController:YBPopupMenuDelegate {
 extension RootViewController {
     
     func pushMessage() {
-        UIApplication.shared.cancelAllLocalNotifications()
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         var components:DateComponents = DateComponents()
 //        components.weekday = 2;//周-
         components.day = Int((self.loanCacheModel?.repaymentDateStr)!)! - 1;
@@ -219,6 +228,19 @@ extension RootViewController {
             if error == nil {
             }
         }
+    }
+    
+}
+
+extension RootViewController:AdKleinSDKBannerAdViewDelegate {
+    func showBannerView() {
+        self.bannerView = AdKleinSDKBannerAdView.init(placementId: CONST_BANNER_ID, viewController: self)
+        let h = (XZClient.ScreenWidth() - 20) / 6.4 + 10
+        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - 100, width: XZClient.ScreenWidth() - 20, height: h)
+        self.bannerView?.animated = true
+        self.bannerView?.autoSwitchInterval = 60
+        self.view.addSubview(self.bannerView!)
+        self.bannerView?.load()
     }
     
 }
