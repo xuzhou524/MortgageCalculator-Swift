@@ -66,6 +66,8 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //展示广告
+        showBannerView()
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
@@ -100,12 +102,6 @@ class RootViewController: UIViewController {
         self.segmentDidchange(segmented: self.rootSegmentedVC!)
         
 //        SKStoreReviewController.requestReview()
-        
-        #if DEBUG
-        showBannerView()
-        #else
-        showBannerView()
-        #endif
     
     }
     
@@ -121,10 +117,7 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
-            #if DEBUG
-            #else
-            self.view.bringSubviewToFront(bannerView)
-            #endif
+            self.view.bringSubviewToFront(bannerView!)
             
         }else if  segmented.selectedSegmentIndex == 1 {
             if ((self.accumulationLoansVC) == nil) {
@@ -137,25 +130,20 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.accumulationLoansVC?.view)!)
-            #if DEBUG
-            #else
-            self.view.bringSubviewToFront(bannerView)
-            #endif
+            self.view.bringSubviewToFront(bannerView!)
         }else{
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = CombinationLoabsTableViewController()
                 self.combinationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.view.addSubview((self.combinationLoansVC?.view)!)
                 self.combinationLoansVC?.view.snp.makeConstraints({ (make) in
-                    make.left.right.bottom.equalTo(self.view)
+                    make.left.right.equalTo(self.view)
                     make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
+                    make.bottom.equalTo(self.view).offset(-64)
                 })
             }
             self.view.addSubview((self.combinationLoansVC?.view)!)
-            #if DEBUG
-            #else
-            self.view.bringSubviewToFront(bannerView)
-            #endif
+            self.view.bringSubviewToFront(bannerView!)
         }
     }
     
@@ -236,7 +224,7 @@ extension RootViewController:AdKleinSDKBannerAdViewDelegate {
     func showBannerView() {
         self.bannerView = AdKleinSDKBannerAdView.init(placementId: CONST_BANNER_ID, viewController: self)
         let h = (XZClient.ScreenWidth() - 20) / 6.4 + 10
-        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - 100, width: XZClient.ScreenWidth() - 20, height: h)
+        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
         self.bannerView?.animated = true
         self.bannerView?.autoSwitchInterval = 60
         self.view.addSubview(self.bannerView!)
