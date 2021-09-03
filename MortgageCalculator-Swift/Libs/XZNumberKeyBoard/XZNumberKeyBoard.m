@@ -157,7 +157,6 @@ static CGFloat const marginvalue = 10;
                 return;
             }
             if ([single  isEqual: @"0"]) {
-                _isFirstZero = YES;
                 [inputView insertText:single];
                 return;
             }
@@ -166,7 +165,6 @@ static CGFloat const marginvalue = 10;
         if ([single isEqual: @"."]) {
             if(!_isHaveDian){
                 //text中还没有小数点
-                _isHaveDian=YES;
                 [inputView insertText:single];
             }else{
                 return;
