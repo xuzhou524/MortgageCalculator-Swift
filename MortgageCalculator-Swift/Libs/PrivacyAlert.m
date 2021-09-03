@@ -76,7 +76,7 @@ typedef void (^ButtonActionBlock)(UIButton *thisButton);
     
     self.hidden = NO;
         
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    UIWindow *keyWindow = [UIApplication sharedApplication].windows.firstObject;
     [keyWindow  addSubview:self];
     
     self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);

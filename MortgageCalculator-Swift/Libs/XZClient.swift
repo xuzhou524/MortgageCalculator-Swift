@@ -44,7 +44,10 @@ class XZClient: NSObject{
     }
     
     class func XZiPhoneX() -> Bool {
-        return UIApplication.shared.statusBarFrame.height == 44 ? true : false
+        
+        let statusBarManager:UIStatusBarManager = UIApplication.shared.windows.first!.windowScene!.statusBarManager!
+        let statusBarHeight = Double(Int(statusBarManager.statusBarFrame.size.height));
+        return statusBarHeight == 44 ? true : false
     }
 }
 
