@@ -107,7 +107,7 @@ typedef void (^ButtonActionBlock)(UIButton *thisButton);
     textView.scrollEnabled = YES;
 //    textView.selectable = NO;
     
-    NSMutableAttributedString *messageText = [[NSMutableAttributedString alloc] initWithString:@"感谢您使用【AdKleinSDKDemo】，为了让您更加放心地使用本产品，请您务必仔细阅读，充分理解政策中的条款内容后再点击同意,以便您能够更好地行使个人权利和保护个人信息。\n请您注意，如果您不同意其中任何条款约定，您可以点击不同意，暂停使用本产品。如果您点击同意即表示您已阅读和同意《隐私政策》。"];
+    NSMutableAttributedString *messageText = [[NSMutableAttributedString alloc] initWithString:@"感谢您使用【房贷计算器】，为了让您更加放心地使用本产品，请您务必仔细阅读，充分理解政策中的条款内容后再点击同意,以便您能够更好地行使个人权利和保护个人信息。\n请您注意，如果您不同意其中任何条款约定，您可以点击不同意，暂停使用本产品。如果您点击同意即表示您已阅读和同意《隐私政策》。"];
     
     [messageText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:NSMakeRange(0, [messageText length])];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -188,10 +188,10 @@ typedef void (^ButtonActionBlock)(UIButton *thisButton);
 
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {
     if ([[URL scheme] isEqualToString:@"userAgreement"]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.iusmob.com/doc/ua.html"] options: @{} completionHandler: nil];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.gezhipu.com/fangdaijisuanqi.pdf"] options: @{} completionHandler: nil];
         return NO;
     } else if ([[URL scheme] isEqualToString:@"privacyAgreement"]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.iusmob.com/doc/privacy.html"] options: @{} completionHandler: nil];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.gezhipu.com/fangdaijisuanqi.pdf"] options: @{} completionHandler: nil];
         return NO;
     }
     return YES;
