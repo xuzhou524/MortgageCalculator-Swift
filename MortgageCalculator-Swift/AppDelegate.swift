@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         self.window?.makeKeyAndVisible()
         
         self.createPlaceholder()
-        self.initAdKleinSDK()
+        self.initSDK()
         
         return true
     }
@@ -93,7 +93,7 @@ extension AppDelegate:AdKleinSDKSplashAdDelegate {
     }
     
     func initAdKleinSDK() {
-        AdKleinSDKConfig.debugMode()
+//        AdKleinSDKConfig.debugMode()
         AdKleinSDKConfig.initMediaId(CONST_MEDIA_ID)
         self.loadSplashAd()
     }
