@@ -685,7 +685,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MortgageCalculator-Swift/MortgageCalculator-Swift.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -708,7 +708,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -734,7 +734,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MortgageCalculator-Swift/MortgageCalculator-Swift.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -757,7 +757,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.1.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
