@@ -26,6 +26,13 @@ class BaseTableViewCell: UITableViewCell {
         imageView.isUserInteractionEnabled = true
         return imageView
     }()
+    
+    var bgView:UIView = {
+        let view = UIView()
+        view.backgroundColor = XZSwiftColor.white
+        return view
+    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.sebView()
@@ -39,18 +46,25 @@ class BaseTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         self.contentView.backgroundColor = XZSwiftColor.convenientBackgroundColor
         
+        self.contentView.addSubview(self.bgView)
+        self.bgView.snp.makeConstraints({ (make) in
+            make.top.bottom.equalToSuperview()
+            make.left.equalTo(self.contentView).offset(15)
+            make.right.equalTo(self.contentView).offset(-15)
+        })
+        
         self.titleLabel = UILabel()
         self.titleLabel?.text = "贷款金额（万元）";
         self.titleLabel?.font = XZClient.XZFont2(size: 15)
-        self.contentView.addSubview(self.titleLabel!)
+        self.bgView.addSubview(self.titleLabel!)
         self.titleLabel?.snp.makeConstraints({ (make) in
-            make.centerY.equalTo(self.contentView)
-            make.left.equalTo(self.contentView).offset(15)
+            make.centerY.equalTo(self.bgView)
+            make.left.equalTo(self.bgView).offset(15)
         })
         
-        self.contentView.addSubview(self.tapImageView)
+        self.bgView.addSubview(self.tapImageView)
         self.tapImageView.snp.makeConstraints({ (make) in
-            make.centerY.equalTo(self.contentView)
+            make.centerY.equalTo(self.bgView)
             make.left.equalTo(self.titleLabel!.snp.right)
             make.width.height.equalTo(24)
         })
@@ -60,11 +74,11 @@ class BaseTableViewCell: UITableViewCell {
         self.bgTextFieldView?.layer.borderWidth = 0.5
         self.bgTextFieldView?.layer.borderColor = XZSwiftColor.xzGlay50.cgColor
         self.bgTextFieldView?.layer.cornerRadius = 5
-        self.contentView.addSubview(self.bgTextFieldView!)
+        self.bgView.addSubview(self.bgTextFieldView!)
         self.bgTextFieldView?.snp.makeConstraints({ (make) in
-            make.centerY.equalTo(self.contentView)
-            make.right.equalTo(self.contentView).offset(-15)
-            make.left.equalTo(self.contentView.snp.centerX).offset(20);
+            make.centerY.equalTo(self.bgView)
+            make.right.equalTo(self.bgView).offset(-15)
+            make.left.equalTo(self.bgView.snp.centerX).offset(40);
             make.height.equalTo(32);
         })
         

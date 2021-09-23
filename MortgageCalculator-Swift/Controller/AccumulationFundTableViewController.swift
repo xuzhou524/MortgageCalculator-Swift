@@ -65,6 +65,7 @@ class AccumulationFundTableViewController: UITableViewController,CalculateDelega
         if indexPath.row == 3 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             self.typeSegmented = cell.typeSegmented
+            cell.bgView.addRoundedCorners(corners: [.bottomLeft,.bottomRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 50))
             return cell
         }
         
@@ -81,6 +82,7 @@ class AccumulationFundTableViewController: UITableViewController,CalculateDelega
             let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(tapView))
             tapGestureRecognizer.numberOfTapsRequired = 1
             cell.tapImageView.addGestureRecognizer(tapGestureRecognizer)
+            cell.bgView.addRoundedCorners(corners: [.topLeft,.topRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 50))
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
@@ -89,6 +91,7 @@ class AccumulationFundTableViewController: UITableViewController,CalculateDelega
             cell.tapImageView.isHidden = true
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
+            cell.bgView.layer.mask = nil
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "贷款利率（%）"
             cell.topSepView?.isHidden = true
@@ -98,6 +101,7 @@ class AccumulationFundTableViewController: UITableViewController,CalculateDelega
             cell.textField?.text = "3.25"
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
+            cell.bgView.layer.mask = nil
         }
         return cell
     }

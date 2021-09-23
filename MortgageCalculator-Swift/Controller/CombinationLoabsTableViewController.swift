@@ -66,10 +66,12 @@ class CombinationLoabsTableViewController: UITableViewController {
             self.rateTypeSegmented?.setTitle("LPR", forSegmentAt: 0)
             self.rateTypeSegmented?.setTitle("基准利率", forSegmentAt: 1)
             self.rateTypeSegmented?.addTarget(self, action: #selector(segmentedControlChanged), for: UIControl.Event.valueChanged)
+            cell.bgView.layer.mask = nil
             return cell
         }else if indexPath.row == 6 {
             let cell = getCell(tableView, cell: LoansTypeTableViewCell.self, indexPath: indexPath)
             self.typeSegmented = cell.typeSegmented
+            cell.bgView.addRoundedCorners(corners: [.bottomLeft,.bottomRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 50))
             return cell
         }else if indexPath.row == 7 {
             let cell = getCell(tableView, cell: BottonTableViewCell.self, indexPath: indexPath)
@@ -86,6 +88,7 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.accumulationAmontTextFiled = cell.textField
+            cell.bgView.addRoundedCorners(corners: [.topLeft,.topRight], radii: CGSize(width: 8, height: 8), rect: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth() - 30, height: 50))
         }else if indexPath.row == 1 {
             cell.titleLabel?.text = "公积金贷款利率（%）"
             cell.topSepView?.isHidden = true
@@ -94,6 +97,7 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.textField?.text = "3.25"
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.accumulationRateTextFiled = cell.textField
+            cell.bgView.layer.mask = nil
         }else if indexPath.row == 2 {
             cell.titleLabel?.text = "商业贷款金额（万元）"
             cell.topSepView?.isHidden = true
@@ -101,6 +105,7 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.businessAmontTextFiled = cell.textField
+            cell.bgView.layer.mask = nil
         }else if indexPath.row == 3 {
             cell.titleLabel?.text = "贷款年限（年）"
             cell.topSepView?.isHidden = true
@@ -108,6 +113,7 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.textField?.keyboardType = .numberPad
             self.loanPeriodTextFiled = cell.textField
+            cell.bgView.layer.mask = nil
         }else if indexPath.row == 5 {
             if self.rateTypeSegmented?.selectedSegmentIndex == 1 {
                 cell.titleLabel?.text = "贷款利率（%）"
@@ -121,6 +127,7 @@ class CombinationLoabsTableViewController: UITableViewController {
             cell.bottomShortSepView?.isHidden = false
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.businessRateTextFiled = cell.textField
+            cell.bgView.layer.mask = nil
         }
         return cell
     }
