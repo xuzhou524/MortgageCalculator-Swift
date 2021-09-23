@@ -189,9 +189,9 @@ extension RootViewController:YBPopupMenuDelegate {
         if index == 0 {
             self.navigationController?.pushViewController(RemindEditorViewController(), animated: true)
         }else if index == 1 {
-            self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
-        }else if index == 2 {
             self.navigationController?.pushViewController(RateTableViewController(), animated: true)
+        }else if index == 2 {
+            self.navigationController?.pushViewController(UserViewController(), animated: true)
         }
     }
     

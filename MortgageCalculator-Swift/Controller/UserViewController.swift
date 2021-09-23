@@ -35,6 +35,10 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
             make.top.right.bottom.left.equalTo(self.view);
         }
         
+        if #available(iOS 15.0, *) {
+            self.tableView.sectionHeaderTopPadding = 0
+        }
+        
         SKStoreReviewController.requestReview()
     }
     
