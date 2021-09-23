@@ -78,7 +78,7 @@ class BaseTableViewCell: UITableViewCell {
         self.bgTextFieldView?.snp.makeConstraints({ (make) in
             make.centerY.equalTo(self.bgView)
             make.right.equalTo(self.bgView).offset(-15)
-            make.left.equalTo(self.bgView.snp.centerX).offset(40);
+            make.left.equalTo(self.bgView.snp.centerX).offset(20);
             make.height.equalTo(32);
         })
         
