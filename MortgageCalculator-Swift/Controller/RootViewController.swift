@@ -191,7 +191,7 @@ extension RootViewController:YBPopupMenuDelegate {
         }else if index == 1 {
             self.navigationController?.pushViewController(InterestTableViewController(), animated: true)
         }else if index == 2 {
-            self.navigationController?.pushViewController(UserViewController(), animated: true)
+            self.navigationController?.pushViewController(RateTableViewController(), animated: true)
         }
     }
     
@@ -227,6 +227,7 @@ extension RootViewController:AdKleinSDKBannerAdViewDelegate {
         self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
         self.bannerView?.animated = true
         self.bannerView?.autoSwitchInterval = 60
+        self.bannerView?.backgroundColor = UIColor.white
         self.view.addSubview(self.bannerView!)
         self.bannerView?.load()
     }

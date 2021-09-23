@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		168C659726E0B6B000B1F2DB /* PrivacyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 168C659526E0B6B000B1F2DB /* PrivacyAlert.m */; };
+		16A5151D26FAD77C001F0989 /* RateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5151C26FAD77C001F0989 /* RateTableViewController.swift */; };
+		16A5151F26FAD995001F0989 /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5151E26FAD995001F0989 /* RateTableViewCell.swift */; };
 		26E14845761BB25F8E7D19F7 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */; };
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */; };
@@ -68,6 +70,8 @@
 /* Begin PBXFileReference section */
 		168C659526E0B6B000B1F2DB /* PrivacyAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyAlert.m; sourceTree = "<group>"; };
 		168C659626E0B6B000B1F2DB /* PrivacyAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyAlert.h; sourceTree = "<group>"; };
+		16A5151C26FAD77C001F0989 /* RateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewController.swift; sourceTree = "<group>"; };
+		16A5151E26FAD995001F0989 /* RateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
 		27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 				5383304A1F3C6469004AAB2B /* LoanDetailsTableViewController.swift */,
 				537F926A1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift */,
 				53A375302339ADE600B62378 /* InterestTableViewController.swift */,
+				16A5151C26FAD77C001F0989 /* RateTableViewController.swift */,
 			);
 			name = Calculator;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				5332A97A1F4A8C30001465E4 /* RemindTableViewCell.swift */,
 				53351B8D1F669D1B00717C26 /* FriendshipTableViewCell.swift */,
 				5365A5782682C7BC00F1DEF1 /* CalculateView.swift */,
+				16A5151E26FAD995001F0989 /* RateTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 			files = (
 				531B1585265F5021005D5DBD /* UserViewController.swift in Sources */,
 				53D777001F30591A0074B52C /* BaseTableViewCell.swift in Sources */,
+				16A5151F26FAD995001F0989 /* RateTableViewCell.swift in Sources */,
 				537F926B1F43CD2C00ABAFC8 /* CombinationDetailsTableViewController.swift in Sources */,
 				5332A9861F4AB768001465E4 /* RemindCommercialViewController.swift in Sources */,
 				530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */,
@@ -529,6 +536,7 @@
 				5365A5792682C7BC00F1DEF1 /* CalculateView.swift in Sources */,
 				53D7771B1F308A600074B52C /* CombinationLoabsTableViewController.swift in Sources */,
 				53FFBB6A265E3AE7003DD85F /* YBPopupMenuPath.m in Sources */,
+				16A5151D26FAD77C001F0989 /* RateTableViewController.swift in Sources */,
 				168C659726E0B6B000B1F2DB /* PrivacyAlert.m in Sources */,
 				538330491F3C644B004AAB2B /* LoanDetailsTableViewCell.swift in Sources */,
 				5332A98E1F4ACE40001465E4 /* LoanCacheManage.swift in Sources */,

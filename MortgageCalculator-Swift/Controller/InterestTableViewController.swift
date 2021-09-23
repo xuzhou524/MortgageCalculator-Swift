@@ -9,7 +9,7 @@
 import UIKit
 
 class InterestTableViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "基准利率表"
