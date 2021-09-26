@@ -70,8 +70,8 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = getCell(tableView, cell: LeftTitleTableViewCell.self, indexPath: indexPath)
-            cell.nodeNameLabel.text = ["屏蔽广告","分享给贷友"][indexPath.row]
-            let names = ["ic_setting","ic_share"]
+            cell.nodeNameLabel.text = ["利率表","分享给贷友"][indexPath.row]
+            let names = ["ic_RateList","ic_share"]
             cell.nodeImageView.image = UIImage(named: names[indexPath.row])?.withRenderingMode(.alwaysTemplate)
             cell.isHiddenRightImage(hidden: false)
             cell.summeryLabel.isHidden = true
@@ -115,7 +115,8 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                self.navigationController?.pushViewController(SettingViewController(), animated: true)
+//                self.navigationController?.pushViewController(SettingViewController(), animated: true)
+                self.navigationController?.pushViewController(RateTableViewController(), animated: true)
             }else if indexPath.row == 1 {
                 let activityController = UIActivityViewController(activityItems: ["https://apps.apple.com/cn/app/id1272033544" + " (分享来自@房贷计算器) " ], applicationActivities: nil)
                 UIApplication.shared.windows.first?.rootViewController?.present(activityController, animated: true, completion: nil)
