@@ -32,7 +32,7 @@ extension UserDefaults { //1
     func saveCustomObject(customObject object: NSCoding, key: String) { //2
         do{
             let data = try NSKeyedArchiver.archivedData(withRootObject: object, requiringSecureCoding: false)
-            self.set(data, forKey: "people")
+            self.set(data, forKey: key)
         }catch{
             print(error)
         }
