@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     var placeholderView: UIView?
     var splashAd:AdKleinSDKSplashAd?
     
+    var logoView: UIView?
+    
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         self.pushRegisterNotifcation()
@@ -101,6 +103,29 @@ extension AppDelegate:AdKleinSDKSplashAdDelegate {
     func loadSplashAd() {
         self.splashAd = AdKleinSDKSplashAd.init(placementId: CONST_SPLASH_ID, window: self.window!)
         self.splashAd?.delegate = self
+        
+        logoView = UIView.init(frame: CGRect(x: 0, y: 0, width: XZClient.ScreenWidth(), height: XZClient.ScreenHeight() * 0.16))
+        logoView?.backgroundColor = UIColor.white
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "Icon-60")
+        logoView?.addSubview(imageView)
+        imageView.snp.makeConstraints{ (make) -> Void in
+            make.centerY.equalToSuperview()
+            make.right.equalTo(logoView!.snp_centerX).offset(-40)
+            make.width.height.equalTo(60)
+        }
+        
+        let label = UILabel()
+        label.text = "房贷计算器";
+        label.font = XZClient.XZFont3(size: 25)
+        logoView?.addSubview(label)
+        label.snp.makeConstraints({ (make) in
+            make.centerY.equalToSuperview()
+            make.left.equalTo(logoView!.snp_centerX).offset(-20)
+        })
+        
+        self.splashAd?.bottomView = logoView
+        
         self.splashAd?.load()
     }
     
