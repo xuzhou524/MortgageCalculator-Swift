@@ -12,21 +12,21 @@ class RateTableViewCell: UITableViewCell {
     
     var timeLabel: UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 15)
+        label.font = XZClient.XZFont2(size: 14)
         label.textAlignment = .center
         return label
     }()
     
     var rateOneLabel: UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 15)
+        label.font = XZClient.XZFont2(size: 14)
         label.textAlignment = .center
         return label
     }()
     
     var rateTwoLabel: UILabel = {
         let label = UILabel()
-        label.font = XZClient.XZFont2(size: 15)
+        label.font = XZClient.XZFont2(size: 14)
         label.textAlignment = .center
         return label
     }()
@@ -48,7 +48,7 @@ class RateTableViewCell: UITableViewCell {
         self.timeLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset(15)
             make.top.bottom.equalToSuperview()
-            make.width.equalTo((XZClient.ScreenWidth()-30) / 3.00)
+            make.width.equalTo((XZClient.ScreenWidth()-20) / 3.00)
         }
         
         self.rateOneLabel.text = "3.45"
@@ -144,10 +144,53 @@ class RateInstructionTableViewCell: UITableViewCell {
             make.height.equalTo(10)
         }
         
-        
         self.titleOneLabel.text = "最新贷款市场报价LPR（近6个月）"
         self.contentView.addSubview(self.titleOneLabel);
         self.titleOneLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(self).offset(15)
+            make.top.equalTo(self.linView.snp.bottom).offset(15)
+        }
+    
+    }
+
+}
+
+class RateOldTableViewCell: UITableViewCell {
+    
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = XZClient.XZFont(size: 15)
+        return label
+    }()
+    
+    var linView:UIView = {
+        let view = UIView()
+        view.backgroundColor = XZSwiftColor.convenientBackgroundColor
+        return view
+    }()
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier:reuseIdentifier)
+        self.sebView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func sebView(){
+        self.contentView.backgroundColor = XZSwiftColor.white;
+        self.clipsToBounds = true
+        
+        self.contentView.addSubview(self.linView);
+        self.linView.snp.makeConstraints { (make) in
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(10)
+        }
+        
+        self.titleLabel.text = "最新房贷基准利率"
+        self.contentView.addSubview(self.titleLabel);
+        self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset(15)
             make.top.equalTo(self.linView.snp.bottom).offset(15)
         }

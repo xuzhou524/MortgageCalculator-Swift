@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AdKleinSDK
 
 class RemindEditorViewController: UIViewController {
     var rootSegmentedVC : UISegmentedControl?
@@ -14,11 +15,16 @@ class RemindEditorViewController: UIViewController {
     var accumulationLoansVC : RemindAccumulationViewController?
     var combinationLoansVC : RemindCombinationViewController?
     
+    var bannerView:AdKleinSDKBannerAdView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "添加"
         self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.navigationController?.navigationBar.isTranslucent = false;
+        
+        //展示广告
+        showBannerView()
         
         self.rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
         self.rootSegmentedVC?.tintColor = XZSwiftColor.xzGlay50
@@ -49,6 +55,7 @@ class RemindEditorViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
+            self.view.bringSubviewToFront(bannerView!)
         }else if  segmented.selectedSegmentIndex == 1 {
             if ((self.accumulationLoansVC) == nil) {
                 self.accumulationLoansVC = RemindAccumulationViewController()
@@ -60,17 +67,20 @@ class RemindEditorViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.accumulationLoansVC?.view)!)
+            self.view.bringSubviewToFront(bannerView!)
         }else{
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = RemindCombinationViewController()
                 self.view.addSubview((self.combinationLoansVC?.view)!)
                 self.combinationLoansVC?.rootNavigationController = self.navigationController as? XZSwiftNavigationController
                 self.combinationLoansVC?.view.snp.makeConstraints({ (make) in
-                    make.left.right.bottom.equalTo(self.view)
+                    make.left.right.equalTo(self.view)
                     make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(15)
+                    make.bottom.equalTo(self.view).offset(-64)
                 })
             }
             self.view.addSubview((self.combinationLoansVC?.view)!)
+            self.view.bringSubviewToFront(bannerView!)
         }
     }
     
@@ -79,4 +89,19 @@ class RemindEditorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
         
+}
+
+
+extension RemindEditorViewController:AdKleinSDKBannerAdViewDelegate {
+    func showBannerView() {
+        self.bannerView = AdKleinSDKBannerAdView.init(placementId: CONST_BANNER_ID, viewController: self)
+        let h = (XZClient.ScreenWidth() - 20) / 6.4 + 10
+        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
+        self.bannerView?.animated = true
+        self.bannerView?.autoSwitchInterval = 60
+        self.bannerView?.backgroundColor = UIColor.white
+        self.view.addSubview(self.bannerView!)
+        self.bannerView?.load()
+    }
+    
 }
