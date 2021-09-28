@@ -257,7 +257,7 @@ extension RemindTableViewController:AdKleinSDKBannerAdViewDelegate {
         self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
         self.bannerView?.animated = true
         self.bannerView?.autoSwitchInterval = 60
-        self.bannerView?.backgroundColor = UIColor.white
+        self.bannerView?.backgroundColor = XZSwiftColor.convenientBackgroundColor
         self.view.addSubview(self.bannerView!)
         self.bannerView?.load()
     }
