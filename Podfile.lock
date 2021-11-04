@@ -1,30 +1,30 @@
 PODS:
-  - AdKleinSDK/AdKleinSDKFoundation (3.2.0)
-  - AdKleinSDK/AdKleinSDKPlatforms/CSJ (3.2.0):
-    - AdKleinSDK/core
-    - Ads-CN (~> 3.8.1.0)
-  - AdKleinSDK/AdKleinSDKPlatforms/GDT (3.2.0):
-    - AdKleinSDK/core
-    - GDTMobSDK (~> 4.13.01)
-  - AdKleinSDK/AdKleinSDKPlatforms/Mobius (3.2.0):
-    - AdKleinSDK/AdMobiusSDK
-    - AdKleinSDK/core
-  - AdKleinSDK/AdMobiusSDK (3.2.0)
-  - AdKleinSDK/core (3.2.0):
+  - AdKleinSDK/AdKleinSDKCore (3.3.2):
     - AdKleinSDK/AdKleinSDKFoundation
     - AdKleinSDK/NxPerfSDK
-  - AdKleinSDK/NxPerfSDK (3.2.0)
-  - Ads-CN (3.8.1.0):
-    - Ads-CN/BUAdSDK (= 3.8.1.0)
-  - Ads-CN/BUAdSDK (3.8.1.0):
+  - AdKleinSDK/AdKleinSDKFoundation (3.3.2)
+  - AdKleinSDK/AdKleinSDKPlatforms/CSJ (3.3.2):
+    - AdKleinSDK/AdKleinSDKCore
+    - Ads-CN (~> 4.0.0.1)
+  - AdKleinSDK/AdKleinSDKPlatforms/GDT (3.3.2):
+    - AdKleinSDK/AdKleinSDKCore
+    - GDTMobSDK (~> 4.13.22)
+  - AdKleinSDK/AdKleinSDKPlatforms/Mobius (3.3.2):
+    - AdKleinSDK/AdKleinSDKCore
+    - AdKleinSDK/AdMobiusSDK
+  - AdKleinSDK/AdMobiusSDK (3.3.2)
+  - AdKleinSDK/NxPerfSDK (3.3.2)
+  - Ads-CN (4.0.0.5):
+    - Ads-CN/BUAdSDK (= 4.0.0.5)
+  - Ads-CN/BUAdSDK (4.0.0.5):
     - Ads-CN/BUFoundation
     - Ads-CN/Domestic
-  - Ads-CN/BUFoundation (3.8.1.0)
-  - Ads-CN/Domestic (3.8.1.0)
-  - GDTMobSDK (4.13.02):
-    - GDTMobSDK/GDTMobSDK (= 4.13.02)
-  - GDTMobSDK/GDTMobSDK (4.13.02)
-  - SnapKit (4.2.0)
+  - Ads-CN/BUFoundation (4.0.0.5)
+  - Ads-CN/Domestic (4.0.0.5)
+  - GDTMobSDK (4.13.26):
+    - GDTMobSDK/GDTMobSDK (= 4.13.26)
+  - GDTMobSDK/GDTMobSDK (4.13.26)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - AdKleinSDK/AdKleinSDKPlatforms/CSJ
@@ -33,19 +33,18 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - SnapKit
   trunk:
     - AdKleinSDK
     - Ads-CN
     - GDTMobSDK
+    - SnapKit
 
 SPEC CHECKSUMS:
-  AdKleinSDK: fefde3bb69cbe4b1a916f652553abe7f63073e54
-  Ads-CN: 49af96ac9f7b1a43ef4cfb37b6a74863421d4ee1
-  GDTMobSDK: c614fccaf8267a6fd6eeecb0501d7cd804326003
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  AdKleinSDK: 35c0b525a6987a6a5dc70a67991e40d5be1eb92d
+  Ads-CN: 85c20c8e557b01f30bd0e1cb68244b90b061a8d5
+  GDTMobSDK: 5fd2b9754e187ea71f9d9dc43154f2248c132255
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 4f1e57e94bfbee2e424753cfe13ceab255063a6b
+PODFILE CHECKSUM: 42613a05a27b168c77aae09d072f569e2e33178f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
