@@ -1,51 +1,85 @@
 PODS:
-  - AdKleinSDK/AdKleinSDKFoundation (3.2.0)
-  - AdKleinSDK/AdKleinSDKPlatforms/CSJ (3.2.0):
-    - AdKleinSDK/core
-    - Ads-CN (~> 3.8.1.0)
-  - AdKleinSDK/AdKleinSDKPlatforms/GDT (3.2.0):
-    - AdKleinSDK/core
-    - GDTMobSDK (~> 4.13.01)
-  - AdKleinSDK/AdKleinSDKPlatforms/Mobius (3.2.0):
-    - AdKleinSDK/AdMobiusSDK
-    - AdKleinSDK/core
-  - AdKleinSDK/AdMobiusSDK (3.2.0)
-  - AdKleinSDK/core (3.2.0):
-    - AdKleinSDK/AdKleinSDKFoundation
-    - AdKleinSDK/NxPerfSDK
-  - AdKleinSDK/NxPerfSDK (3.2.0)
-  - Ads-CN (3.8.1.0):
-    - Ads-CN/BUAdSDK (= 3.8.1.0)
-  - Ads-CN/BUAdSDK (3.8.1.0):
-    - Ads-CN/BUFoundation
-    - Ads-CN/Domestic
-  - Ads-CN/BUFoundation (3.8.1.0)
-  - Ads-CN/Domestic (3.8.1.0)
-  - GDTMobSDK (4.13.02):
-    - GDTMobSDK/GDTMobSDK (= 4.13.02)
-  - GDTMobSDK/GDTMobSDK (4.13.02)
-  - SnapKit (4.2.0)
+  - AdColony (4.9.0)
+  - Google-Mobile-Ads-SDK (9.14.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (10.1.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.1.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.1.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.1.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleMobileAdsMediationAdColony (4.9.0.0):
+    - AdColony (= 4.9.0)
+    - Google-Mobile-Ads-SDK (~> 9.0)
+  - GoogleUserMessagingPlatform (2.0.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.8.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.8.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.8.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.8.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.8.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.8.0)"
+  - GoogleUtilities/Reachability (7.8.0):
+    - GoogleUtilities/Logger
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.1.1)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
-  - AdKleinSDK/AdKleinSDKPlatforms/CSJ
-  - AdKleinSDK/AdKleinSDKPlatforms/GDT
-  - AdKleinSDK/AdKleinSDKPlatforms/Mobius
+  - Google-Mobile-Ads-SDK
+  - GoogleMobileAdsMediationAdColony
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - SnapKit
   trunk:
-    - AdKleinSDK
-    - Ads-CN
-    - GDTMobSDK
+    - AdColony
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleMobileAdsMediationAdColony
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - nanopb
+    - PromisesObjC
+    - SnapKit
 
 SPEC CHECKSUMS:
-  AdKleinSDK: fefde3bb69cbe4b1a916f652553abe7f63073e54
-  Ads-CN: 49af96ac9f7b1a43ef4cfb37b6a74863421d4ee1
-  GDTMobSDK: c614fccaf8267a6fd6eeecb0501d7cd804326003
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  AdColony: 4f3738dc633d7aaa8ec60729df973076cc8e97ed
+  Google-Mobile-Ads-SDK: 4fe6304b771f8467d29978cb790ec1e56e646946
+  GoogleAppMeasurement: e490e248af3da95afe8fa8e7baac232dc8d020b7
+  GoogleMobileAdsMediationAdColony: dac67babc0a116f7e8c2afa804ebce284ab0d491
+  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
+  GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 4f1e57e94bfbee2e424753cfe13ceab255063a6b
+PODFILE CHECKSUM: fb6da1197bf9730d6c1e7321b1bcb265985d3959
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

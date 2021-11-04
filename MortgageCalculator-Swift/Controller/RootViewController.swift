@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 import StoreKit
-import AdKleinSDK
+import GoogleMobileAds
 
 class RootViewController: UIViewController {
     
@@ -17,10 +17,9 @@ class RootViewController: UIViewController {
     var commerciaiLoansVC : CommercialLoansTableViewController?
     var accumulationLoansVC : AccumulationFundTableViewController?
     var combinationLoansVC : CombinationLoabsTableViewController?
+    var bannerView: GADBannerView!
     
     var loanCacheModel : LoanCacheManage?
-    
-    var bannerView:AdKleinSDKBannerAdView?
     
     let titleLabel:UILabel = {
         let label = UILabel()
@@ -66,8 +65,21 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //展示广告
-        showBannerView()
+        
+        #if DEBUG
+        #else
+        bannerView = GADBannerView.init(frame: CGRect(x: 0,  y: XZClient.ScreenHeight() - 100, width: XZClient.ScreenWidth(), height: 50))
+        if (XZClient.XZiPhoneX()) {
+            bannerView.frame = CGRect(x: 0,  y: XZClient.ScreenHeight() - 150, width: XZClient.ScreenWidth(), height: 50)
+        }
+        bannerView.adSize = GADAdSizeBanner
+        bannerView.center.x = self.view.center.x
+        self.view.addSubview(bannerView)
+        self.view.bringSubviewToFront(bannerView)
+        bannerView.adUnitID = "ca-app-pub-9353975206269682/6008483340"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        #endif
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
@@ -117,8 +129,10 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.commerciaiLoansVC?.view)!)
-            self.view.bringSubviewToFront(bannerView!)
-            
+            #if DEBUG
+            #else
+            self.view.bringSubviewToFront(bannerView)
+            #endif
         }else if  segmented.selectedSegmentIndex == 1 {
             if ((self.accumulationLoansVC) == nil) {
                 self.accumulationLoansVC = AccumulationFundTableViewController()
@@ -130,7 +144,10 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.accumulationLoansVC?.view)!)
-            self.view.bringSubviewToFront(bannerView!)
+            #if DEBUG
+            #else
+            self.view.bringSubviewToFront(bannerView)
+            #endif
         }else{
             if ((self.combinationLoansVC) == nil) {
                 self.combinationLoansVC = CombinationLoabsTableViewController()
@@ -143,7 +160,10 @@ class RootViewController: UIViewController {
                 })
             }
             self.view.addSubview((self.combinationLoansVC?.view)!)
-            self.view.bringSubviewToFront(bannerView!)
+            #if DEBUG
+            #else
+            self.view.bringSubviewToFront(bannerView)
+            #endif
         }
     }
     
@@ -216,20 +236,6 @@ extension RootViewController {
             if error == nil {
             }
         }
-    }
-    
-}
-
-extension RootViewController:AdKleinSDKBannerAdViewDelegate {
-    func showBannerView() {
-        self.bannerView = AdKleinSDKBannerAdView.init(placementId: CONST_BANNER_ID, viewController: self)
-        let h = (XZClient.ScreenWidth() - 20) / 6.4 + 10
-        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
-        self.bannerView?.animated = true
-        self.bannerView?.autoSwitchInterval = 60
-        self.bannerView?.backgroundColor = XZSwiftColor.convenientBackgroundColor
-        self.view.addSubview(self.bannerView!)
-        self.bannerView?.load()
     }
     
 }

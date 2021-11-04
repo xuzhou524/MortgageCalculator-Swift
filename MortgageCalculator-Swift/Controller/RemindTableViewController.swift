@@ -8,14 +8,12 @@
 
 import UIKit
 import UserNotifications
-import AdKleinSDK
 
 class RemindTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var remindDayTitleView : RemindDayTitleView?
     var loanCacheModel : LoanCacheManage?
-    
-    var bannerView:AdKleinSDKBannerAdView?
+
     
     fileprivate var _tableView: UITableView!
     fileprivate var tableView: UITableView{
@@ -63,9 +61,6 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         super.viewDidLoad()
         self.navigationItem.title = "我的信息"
         self.view.backgroundColor = XZSwiftColor.convenientBackgroundColor;
-        
-        //展示广告
-        showBannerView()
         
         self.remindDayTitleView = RemindDayTitleView()
         self.view.addSubview(self.remindDayTitleView!)
@@ -248,18 +243,4 @@ class RemindTableViewController: UIViewController,UITableViewDataSource,UITableV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
-
-extension RemindTableViewController:AdKleinSDKBannerAdViewDelegate {
-    func showBannerView() {
-        self.bannerView = AdKleinSDKBannerAdView.init(placementId: CONST_BANNER_ID, viewController: self)
-        let h = (XZClient.ScreenWidth() - 20) / 6.4 + 10
-        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
-        self.bannerView?.animated = true
-        self.bannerView?.autoSwitchInterval = 60
-        self.bannerView?.backgroundColor = XZSwiftColor.convenientBackgroundColor
-        self.view.addSubview(self.bannerView!)
-        self.bannerView?.load()
-    }
-    
 }

@@ -8,13 +8,10 @@
 
 import UIKit
 import StoreKit
-import AdKleinSDK
 
 class UserViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var isHaveBuy = false
-    
-    var bannerView:AdKleinSDKBannerAdView?
     
     var tableView: UITableView = {
         let tableView = UITableView();
@@ -43,8 +40,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
         
         SKStoreReviewController.requestReview()
-        //展示广告
-        showBannerView()
+
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -137,20 +133,6 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 self.navigationController?.pushViewController(webViewVC, animated: true)
             }
         }
-    }
-    
-}
-
-extension UserViewController:AdKleinSDKBannerAdViewDelegate {
-    func showBannerView() {
-        self.bannerView = AdKleinSDKBannerAdView.init(placementId: CONST_BANNER_ID, viewController: self)
-        let h = (XZClient.ScreenWidth() - 20) / 6.4 + 10
-        self.bannerView?.frame = CGRect(x: 10, y: XZClient.ScreenHeight() - h - (XZClient.XZiPhoneX() ? 100 : 64), width: XZClient.ScreenWidth() - 20, height: h)
-        self.bannerView?.animated = true
-        self.bannerView?.autoSwitchInterval = 60
-        self.bannerView?.backgroundColor = XZSwiftColor.convenientBackgroundColor
-        self.view.addSubview(self.bannerView!)
-        self.bannerView?.load()
     }
     
 }

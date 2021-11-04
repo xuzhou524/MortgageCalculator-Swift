@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160AB80A28112716006AA5D3 /* MortgageCalculator-Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 160AB80928112716006AA5D3 /* MortgageCalculator-Swift.m */; };
 		168C659726E0B6B000B1F2DB /* PrivacyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 168C659526E0B6B000B1F2DB /* PrivacyAlert.m */; };
 		16A5151D26FAD77C001F0989 /* RateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5151C26FAD77C001F0989 /* RateTableViewController.swift */; };
 		16A5151F26FAD995001F0989 /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5151E26FAD995001F0989 /* RateTableViewCell.swift */; };
@@ -68,6 +69,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160AB80828112715006AA5D3 /* MortgageCalculator-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculator-Swift.h"; sourceTree = "<group>"; };
+		160AB80928112716006AA5D3 /* MortgageCalculator-Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MortgageCalculator-Swift.m"; sourceTree = "<group>"; };
 		168C659526E0B6B000B1F2DB /* PrivacyAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyAlert.m; sourceTree = "<group>"; };
 		168C659626E0B6B000B1F2DB /* PrivacyAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyAlert.h; sourceTree = "<group>"; };
 		16A5151C26FAD77C001F0989 /* RateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewController.swift; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				53D7770D1F307EE60074B52C /* XZSetting.swift */,
 				53D7770E1F307EE60074B52C /* XZSwiftColor.swift */,
 				53D7770F1F307EE60074B52C /* XZSwiftNavigationController.swift */,
+				160AB80828112715006AA5D3 /* MortgageCalculator-Swift.h */,
+				160AB80928112716006AA5D3 /* MortgageCalculator-Swift.m */,
 				168C659626E0B6B000B1F2DB /* PrivacyAlert.h */,
 				168C659526E0B6B000B1F2DB /* PrivacyAlert.m */,
 				53A0890C2422FFE500BC1192 /* ADImage.png */,
@@ -367,9 +372,8 @@
 				53A4EF201F2ED46B00EF58EB /* Sources */,
 				53A4EF211F2ED46B00EF58EB /* Frameworks */,
 				53A4EF221F2ED46B00EF58EB /* Resources */,
-				E8C602C13CE6289C683505DA /* [CP] Embed Pods Frameworks */,
 				53E45E5B1F690C05009DE104 /* ShellScript */,
-				9E695AD7F0FAA7637AD8264C /* [CP] Copy Pods Resources */,
+				D1E8D837B4EF63E3DEAFFE46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -459,28 +463,6 @@
 			shellScript = "
 ";
 		};
-		9E695AD7F0FAA7637AD8264C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-resources.sh",
-				"${PODS_ROOT}/AdKleinSDK/Frameworks/mobius/AdMobiusSDKBundle.bundle",
-				"${PODS_ROOT}/Ads-CN/PangleSDK/LICENSE",
-				"${PODS_ROOT}/Ads-CN/PangleSDK/BUAdSDK.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AdMobiusSDKBundle.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A992B7AE5FD15890745D33E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,18 +481,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E8C602C13CE6289C683505DA /* [CP] Embed Pods Frameworks */ = {
+		D1E8D837B4EF63E3DEAFFE46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -555,6 +543,7 @@
 				53A4EF891F2F353100EF58EB /* RootViewController.swift in Sources */,
 				53A375312339ADE600B62378 /* InterestTableViewController.swift in Sources */,
 				531B1587265F50B5005D5DBD /* LeftTitleTableViewCell.swift in Sources */,
+				160AB80A28112716006AA5D3 /* MortgageCalculator-Swift.m in Sources */,
 				53FFBB6B265E3AE7003DD85F /* YBPopupMenu.m in Sources */,
 				53C144352669C92900ABF437 /* XZNumberKeyBoard.m in Sources */,
 				534FB71B1F39BB73006E3144 /* LoanModel.swift in Sources */,
@@ -709,14 +698,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.2.2;
+				MARKETING_VERSION = 3.5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -758,14 +747,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MortgageCalculator-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.2.2;
+				MARKETING_VERSION = 3.5.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
