@@ -70,7 +70,7 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  AdColony: 4f3738dc633d7aaa8ec60729df973076cc8e97ed
+  AdColony: af8b7414f317641e0e1e9d23a7b739879e40e4b9
   Google-Mobile-Ads-SDK: 4fe6304b771f8467d29978cb790ec1e56e646946
   GoogleAppMeasurement: e490e248af3da95afe8fa8e7baac232dc8d020b7
   GoogleMobileAdsMediationAdColony: dac67babc0a116f7e8c2afa804ebce284ab0d491
