@@ -11,6 +11,8 @@
 		168C659726E0B6B000B1F2DB /* PrivacyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 168C659526E0B6B000B1F2DB /* PrivacyAlert.m */; };
 		16A5151D26FAD77C001F0989 /* RateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5151C26FAD77C001F0989 /* RateTableViewController.swift */; };
 		16A5151F26FAD995001F0989 /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5151E26FAD995001F0989 /* RateTableViewCell.swift */; };
+		16A5152126FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5152226FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentCalculatorViewController.swift */; };
+		16A5152326FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5152426FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentResultViewController.swift */; };
 		26E14845761BB25F8E7D19F7 /* Pods_MortgageCalculator_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531152C21F71134900E2B70E /* Pods_MortgageCalculator_Swift.framework */; };
 		530DDB851F4287EA0012A740 /* AccumulationFundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */; };
 		530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EF7E0265DEB3700854C27 /* MyLoanInfoView.swift */; };
@@ -65,6 +67,8 @@
 		53FFBB69265E3AE7003DD85F /* YBRectConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB64265E3AE7003DD85F /* YBRectConst.m */; };
 		53FFBB6A265E3AE7003DD85F /* YBPopupMenuPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB65265E3AE7003DD85F /* YBPopupMenuPath.m */; };
 		53FFBB6B265E3AE7003DD85F /* YBPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FFBB67265E3AE7003DD85F /* YBPopupMenu.m */; };
+		BA49D52E2FC33AE400C94904 /* PrepaymentCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA49D52C2FC33AE400C94904 /* PrepaymentCalculatorViewController.swift */; };
+		BA49D52F2FC33AE400C94904 /* PrepaymentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA49D52D2FC33AE400C94904 /* PrepaymentResultViewController.swift */; };
 		C55623FE257B8D0100AA352F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55623FD257B8D0100AA352F /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,8 @@
 		168C659626E0B6B000B1F2DB /* PrivacyAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyAlert.h; sourceTree = "<group>"; };
 		16A5151C26FAD77C001F0989 /* RateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewController.swift; sourceTree = "<group>"; };
 		16A5151E26FAD995001F0989 /* RateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		16A5152226FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MortgageCalculator-Swift/Controller/PrepaymentCalculatorViewController.swift"; sourceTree = "<group>"; };
+		16A5152426FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MortgageCalculator-Swift/Controller/PrepaymentResultViewController.swift"; sourceTree = "<group>"; };
 		27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculator_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DEC60004CE9954417B897E /* Pods-MortgageCalculator-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		530DDB841F4287EA0012A740 /* AccumulationFundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccumulationFundTableViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +146,8 @@
 		53FFBB67265E3AE7003DD85F /* YBPopupMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPopupMenu.m; sourceTree = "<group>"; };
 		53FFBB68265E3AE7003DD85F /* YBPopupMenuPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPopupMenuPath.h; sourceTree = "<group>"; };
 		9A03C1CF6B798BED0E72F7DD /* Pods-MortgageCalculator-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculator-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculator-Swift/Pods-MortgageCalculator-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		BA49D52C2FC33AE400C94904 /* PrepaymentCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepaymentCalculatorViewController.swift; sourceTree = "<group>"; };
+		BA49D52D2FC33AE400C94904 /* PrepaymentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepaymentResultViewController.swift; sourceTree = "<group>"; };
 		C55623FD257B8D0100AA352F /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +255,7 @@
 				53A4EF251F2ED46B00EF58EB /* Products */,
 				3E844AEEC0A1A7D69A0156D6 /* Pods */,
 				820F151D5DAEB95076796356 /* Frameworks */,
+				BA49D52B2FC335F700C94904 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,6 +288,8 @@
 		53A4EF841F2F350C00EF58EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BA49D52C2FC33AE400C94904 /* PrepaymentCalculatorViewController.swift */,
+				BA49D52D2FC33AE400C94904 /* PrepaymentResultViewController.swift */,
 				5332A9801F4AB1E2001465E4 /* Calculator */,
 				5332A9811F4AB1F3001465E4 /* Remind */,
 				5332A9821F4AB220001465E4 /* More */,
@@ -359,6 +370,15 @@
 				27C9C1988F24C78114E1FC27 /* Pods_MortgageCalculator_Swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA49D52B2FC335F700C94904 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				16A5152226FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentCalculatorViewController.swift */,
+				16A5152426FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentResultViewController.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,6 +557,8 @@
 				5321DE451F31D05C00184F9D /* BottonTableViewCell.swift in Sources */,
 				53A4EF281F2ED46B00EF58EB /* AppDelegate.swift in Sources */,
 				530EF7E1265DEB3700854C27 /* MyLoanInfoView.swift in Sources */,
+				BA49D52E2FC33AE400C94904 /* PrepaymentCalculatorViewController.swift in Sources */,
+				BA49D52F2FC33AE400C94904 /* PrepaymentResultViewController.swift in Sources */,
 				531B1589265F7D14005D5DBD /* BPYWebViewController.swift in Sources */,
 				53D777151F307EE60074B52C /* XZSwiftNavigationController.swift in Sources */,
 				5332A98C1F4AB9BD001465E4 /* RemindTableViewController.swift in Sources */,
@@ -552,6 +574,8 @@
 				5383304B1F3C6469004AAB2B /* LoanDetailsTableViewController.swift in Sources */,
 				C55623FE257B8D0100AA352F /* SettingViewController.swift in Sources */,
 				53D777101F307EE60074B52C /* UITableView+Extension.swift in Sources */,
+				16A5152126FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentCalculatorViewController.swift in Sources */,
+				16A5152326FAD995001F0990 /* MortgageCalculator-Swift/Controller/PrepaymentResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +729,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.5.1;
+				MARKETING_VERSION = 3.6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -754,7 +778,7 @@
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/MortgageCalculator-Swift/Libs/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				MARKETING_VERSION = 3.5.1;
+				MARKETING_VERSION = 3.6.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

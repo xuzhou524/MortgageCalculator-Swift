@@ -93,7 +93,7 @@ class RemindCombinationViewController: UITableViewController {
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
-            cell.textField?.text = "3.25"
+            cell.textField?.text = "2.6"
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.accumulationRateTextFiled = cell.textField
             cell.bgView.layer.mask = nil
@@ -119,7 +119,7 @@ class RemindCombinationViewController: UITableViewController {
                 cell.textField?.text = "4.9"
             }else{
                 cell.titleLabel?.text = "LPR - 基点（%）"
-                cell.textField?.text = "4.75"
+                cell.textField?.text = "3.50"
             }
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true

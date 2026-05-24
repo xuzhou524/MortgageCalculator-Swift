@@ -91,4 +91,142 @@ class LoanModel: NSObject {
         //总利息 = 贷款本金 - 已还本金
         return (principal - principal / totalMonths * numberMonth)
     }
+    
+    /*
+     *  提前还款计算
+     *
+     */
+    
+    // 等额本息：计算提前还款后的剩余本金
+    class func prepaymentACPIRemainingPrincipal(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        let remainingPrincipal = self.averageCapitalPlusInterestRemainingPrincipalTotalInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: paidMonths)
+        return max(0, remainingPrincipal - prepaymentAmount)
+    }
+    
+    // 等额本金：计算提前还款后的剩余本金
+    class func prepaymentEPRemainingPrincipal(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        let remainingPrincipal = self.equalPrincipalRemainingPrincipalTotalInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: paidMonths)
+        return max(0, remainingPrincipal - prepaymentAmount)
+    }
+    
+    // 等额本息：计算提前还款后的月供（缩短还款期限方式）
+    class func prepaymentACPINewMonthAmount(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        let remainingPrincipal = self.prepaymentACPIRemainingPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, paidMonths: paidMonths, prepaymentAmount: prepaymentAmount)
+        let remainingMonths = totalMonths - paidMonths
+        
+        if remainingPrincipal <= 0 || remainingMonths <= 0 {
+            return 0
+        }
+        
+        return self.averageCapitalPlusInterestMonthAmount(principal: remainingPrincipal, monthRate: monthRate, totalMonths: remainingMonths)
+    }
+    
+    // 等额本金：计算提前还款后的月供（缩短还款期限方式）
+    class func prepaymentEPNewMonthAmount(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        let remainingPrincipal = self.prepaymentEPRemainingPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, paidMonths: paidMonths, prepaymentAmount: prepaymentAmount)
+        let remainingMonths = totalMonths - paidMonths
+        
+        if remainingPrincipal <= 0 || remainingMonths <= 0 {
+            return 0
+        }
+        
+        return self.equalPrincipalFirstMonthAmount(principal: remainingPrincipal, monthRate: monthRate, totalMonths: remainingMonths)
+    }
+    
+    // 计算提前还款后的剩余还款月数（保持月供不变方式）
+    class func prepaymentNewTotalMonths(principal: CGFloat, monthRate: CGFloat, originalTotalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat, originalMonthAmount: CGFloat) -> CGFloat {
+        let remainingPrincipal = self.averageCapitalPlusInterestRemainingPrincipalTotalInterest(principal: principal, monthRate: monthRate, totalMonths: originalTotalMonths, numberMonth: paidMonths) - prepaymentAmount
+        
+        if remainingPrincipal <= 0 || originalMonthAmount <= 0 {
+            return 0
+        }
+        
+        let monthlyRate = monthRate / 100 / 12
+        // 月供公式: A = P * r * (1+r)^n / ((1+r)^n - 1)
+        // 反推n: n = log(A/(A-P*r)) / log(1+r)
+        let numerator = log(originalMonthAmount / (originalMonthAmount - remainingPrincipal * monthlyRate))
+        let denominator = log(1 + monthlyRate)
+        
+        return numerator / denominator
+    }
+    
+    // 计算利息节省（等额本息）
+    class func interestSavedACPI(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        // 原计划总利息
+        let originalTotalInterest = self.averageCapitalPlusInterestTotalInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths)
+        
+        // 已还利息
+        var paidInterest: CGFloat = 0
+        for i in 1...Int(paidMonths) {
+            paidInterest += self.averageCapitalPlusInterestMonthInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: CGFloat(i))
+        }
+        
+        // 提前还款后剩余本金
+        let remainingPrincipal = self.prepaymentACPIRemainingPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, paidMonths: paidMonths, prepaymentAmount: prepaymentAmount)
+        let remainingMonths = totalMonths - paidMonths
+        
+        // 提前还款后剩余利息
+        let remainingInterest = self.averageCapitalPlusInterestTotalInterest(principal: remainingPrincipal, monthRate: monthRate, totalMonths: remainingMonths)
+        
+        // 利息节省 = 原计划总利息 - (已还利息 + 剩余利息)
+        return originalTotalInterest - (paidInterest + remainingInterest)
+    }
+    
+    // 计算利息节省（等额本金）
+    class func interestSavedEP(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        // 原计划总利息
+        let originalTotalInterest = self.equalPrincipalTotalInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths)
+        
+        // 已还利息
+        var paidInterest: CGFloat = 0
+        for i in 1...Int(paidMonths) {
+            paidInterest += self.equalPrincipalMonthInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: CGFloat(i))
+        }
+        
+        // 提前还款后剩余本金
+        let remainingPrincipal = self.prepaymentEPRemainingPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, paidMonths: paidMonths, prepaymentAmount: prepaymentAmount)
+        let remainingMonths = totalMonths - paidMonths
+        
+        // 提前还款后剩余利息
+        let remainingInterest = self.equalPrincipalTotalInterest(principal: remainingPrincipal, monthRate: monthRate, totalMonths: remainingMonths)
+        
+        // 利息节省 = 原计划总利息 - (已还利息 + 剩余利息)
+        return originalTotalInterest - (paidInterest + remainingInterest)
+    }
+    
+    // 计算提前还款后的总利息（等额本息）
+    class func prepaymentNewTotalInterestACPI(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        // 已还利息
+        var paidInterest: CGFloat = 0
+        for i in 1...Int(paidMonths) {
+            paidInterest += self.averageCapitalPlusInterestMonthInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: CGFloat(i))
+        }
+        
+        // 提前还款后剩余本金
+        let remainingPrincipal = self.prepaymentACPIRemainingPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, paidMonths: paidMonths, prepaymentAmount: prepaymentAmount)
+        let remainingMonths = totalMonths - paidMonths
+        
+        // 提前还款后剩余利息
+        let remainingInterest = self.averageCapitalPlusInterestTotalInterest(principal: remainingPrincipal, monthRate: monthRate, totalMonths: remainingMonths)
+        
+        return paidInterest + remainingInterest
+    }
+    
+    // 计算提前还款后的总利息（等额本金）
+    class func prepaymentNewTotalInterestEP(principal: CGFloat, monthRate: CGFloat, totalMonths: CGFloat, paidMonths: CGFloat, prepaymentAmount: CGFloat) -> CGFloat {
+        // 已还利息
+        var paidInterest: CGFloat = 0
+        for i in 1...Int(paidMonths) {
+            paidInterest += self.equalPrincipalMonthInterest(principal: principal, monthRate: monthRate, totalMonths: totalMonths, numberMonth: CGFloat(i))
+        }
+        
+        // 提前还款后剩余本金
+        let remainingPrincipal = self.prepaymentEPRemainingPrincipal(principal: principal, monthRate: monthRate, totalMonths: totalMonths, paidMonths: paidMonths, prepaymentAmount: prepaymentAmount)
+        let remainingMonths = totalMonths - paidMonths
+        
+        // 提前还款后剩余利息
+        let remainingInterest = self.equalPrincipalTotalInterest(principal: remainingPrincipal, monthRate: monthRate, totalMonths: remainingMonths)
+        
+        return paidInterest + remainingInterest
+    }
 }

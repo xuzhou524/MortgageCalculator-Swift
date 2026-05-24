@@ -98,7 +98,7 @@ class AccumulationFundTableViewController: UITableViewController,CalculateDelega
             cell.bottomSepView?.isHidden = true
             cell.bottomShortSepView?.isHidden = false
             cell.tapImageView.isHidden = true
-            cell.textField?.text = "3.25"
+            cell.textField?.text = "2.6"
             cell.textField?.keyboardType = .numbersAndPunctuation
             self.loanRateTextFiled = cell.textField
             cell.bgView.layer.mask = nil

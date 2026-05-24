@@ -116,7 +116,6 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-//                self.navigationController?.pushViewController(SettingViewController(), animated: true)
                 self.navigationController?.pushViewController(RateTableViewController(), animated: true)
             }else if indexPath.row == 1 {
                 let activityController = UIActivityViewController(activityItems: ["https://apps.apple.com/cn/app/id1272033544" + " (分享来自@房贷计算器) " ], applicationActivities: nil)

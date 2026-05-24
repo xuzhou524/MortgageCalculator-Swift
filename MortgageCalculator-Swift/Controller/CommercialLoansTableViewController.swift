@@ -107,7 +107,7 @@ class CommercialLoansTableViewController: UITableViewController,CalculateDelegat
                 cell.textField?.text = "4.9"
             }else{
                 cell.titleLabel?.text = "LPR - 基点（%）"
-                cell.textField?.text = "4.75"
+                cell.textField?.text = "3.50"
             }
             cell.topSepView?.isHidden = true
             cell.bottomSepView?.isHidden = true

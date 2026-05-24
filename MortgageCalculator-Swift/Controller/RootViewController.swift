@@ -14,6 +14,7 @@ class RootViewController: UIViewController {
     var commerciaiLoansVC : CommercialLoansTableViewController?
     var accumulationLoansVC : AccumulationFundTableViewController?
     var combinationLoansVC : CombinationLoabsTableViewController?
+    var prepaymentVC : PrepaymentCalculatorViewController?
     var bannerView: GADBannerView!
 
     var loanCacheModel : LoanCacheManage?
@@ -119,7 +120,7 @@ class RootViewController: UIViewController {
 
         myLoanInfoView.addGestureRecognizer(tapGestureRecognizer)
 
-        rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款"])
+        rootSegmentedVC = UISegmentedControl(items: ["商业贷款","公积金贷款","组合贷款","提前还款"])
 
         rootSegmentedVC?.tintColor = XZSwiftColor.xzGlay50
 
@@ -219,7 +220,7 @@ class RootViewController: UIViewController {
 
             self.view.addSubview(accumulationLoansVC!.view)
 
-        }else{
+        }else if segmented.selectedSegmentIndex == 2 {
 
             if combinationLoansVC == nil {
 
@@ -238,6 +239,23 @@ class RootViewController: UIViewController {
             }
 
             self.view.addSubview(combinationLoansVC!.view)
+
+        }else if segmented.selectedSegmentIndex == 3 {
+
+            if prepaymentVC == nil {
+                prepaymentVC = PrepaymentCalculatorViewController()
+                self.addChild(prepaymentVC!)
+                self.view.addSubview(prepaymentVC!.view)
+                prepaymentVC!.view.snp.makeConstraints { make in
+                    make.left.right.equalTo(self.view)
+                    make.top.equalTo((self.rootSegmentedVC?.snp.bottom)!).offset(0)
+                    make.bottom.equalTo(self.view).offset(-64)
+                }
+                prepaymentVC!.didMove(toParent: self)
+            }
+
+            self.view.addSubview(prepaymentVC!.view)
+
         }
 
         #if DEBUG
